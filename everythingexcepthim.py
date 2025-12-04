@@ -1292,7 +1292,8 @@ async def process_effects(source : ProfileData, target : ProfileData, dice, trig
         "interaction": interaction,
         "damage": damage,
         "stagger": stagger,
-        "trigger": trigger
+        "trigger": trigger,
+        "effects": effects
     }
 
     def evaluate_cond(profile : ProfileData, page):
@@ -1895,6 +1896,8 @@ async def process_effects(source : ProfileData, target : ProfileData, dice, trig
 
             elif key == "lightcost":
                 val = source_page["light_cost"]
+            elif key == "random":
+                val = random.randint(transform["min"],transform["max"])
             elif key == "hand":
                 val = len(source.hand)
             elif key == "handname":
