@@ -1,0 +1,493 @@
+{
+    "The Queen's Loyal Hound": {
+        "id": 100001,
+        "name": "The Queen's Loyal Hound",
+        "source_file": "data/profiles\\bloodGolemProfiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 5,
+        "level": 58,
+        "base_hp_overwrite": 2000,
+        "base_stagger_overwrite": 500,
+        "base_max_light_overwrite": 9,
+        "base_light_gain_overwrite": 6,
+        "base_page_draw_overwrite": 9,
+        "base_min_speed_overwrite": 3,
+        "base_max_speed_overwrite": 6,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "The Queen's Empty Kingdom",
+            "Bound Servants of the Manor",
+            "Bloodfiend",
+            "4th Kindred",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 0.6,
+            "blunt": 0.6,
+            "pierce": 0.6
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 2.0,
+            "Lust": 0.5,
+            "Sloth": 1.2,
+            "Gluttony": 0.5,
+            "Gloom": 2.0,
+            "Pride": 1.2,
+            "Envy": 1.0,
+            "white": 4.0,
+            "black": 4.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Bereavement": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Prove Your Worth": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Training…": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Puncture": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Pierce and Tear": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Destroy Everything in Sight… Without Limit": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Loosening… Arrow": {
+                "cost": 0,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 0.6,
+            "blunt": 0.6,
+            "pierce": 0.6
+        },
+        "original_sin_resistances": {
+            "Wrath": 2.0,
+            "Lust": 0.5,
+            "Sloth": 1.2,
+            "Gluttony": 0.5,
+            "Gloom": 2.0,
+            "Pride": 1.2,
+            "Envy": 1.0,
+            "white": 4.0,
+            "black": 4.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 2000,
+        "current_shield": 0,
+        "current_stagger": 500,
+        "current_light": 9,
+        "current_speed": 7,
+        "offense_level_sources": {
+            "base": 174,
+            "Refracted Weakness": -120
+        },
+        "defense_level_sources": {
+            "base": 174,
+            "Refracted Weakness": -120
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "The Palm Blood Golem": {
+        "id": 100001,
+        "name": "The Palm Blood Golem",
+        "source_file": "data/profiles\\bloodGolemProfiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 4,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 2,
+        "level": 14,
+        "base_hp_overwrite": 150,
+        "base_stagger_overwrite": 50,
+        "base_max_light_overwrite": 9,
+        "base_light_gain_overwrite": 5,
+        "base_page_draw_overwrite": 9,
+        "base_min_speed_overwrite": 1,
+        "base_max_speed_overwrite": 1,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Bloodbag"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 2.0,
+            "Lust": 0.5,
+            "Sloth": 1.2,
+            "Gluttony": 0.5,
+            "Gloom": 2.0,
+            "Pride": 1.2,
+            "Envy": 1.0,
+            "white": 4.0,
+            "black": 4.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Back Away": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Bloodspreading": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Grasping Hands": {
+                "cost": 0,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 2.0,
+            "Lust": 0.5,
+            "Sloth": 1.2,
+            "Gluttony": 0.5,
+            "Gloom": 2.0,
+            "Pride": 1.2,
+            "Envy": 1.0,
+            "white": 4.0,
+            "black": 4.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 150,
+        "current_shield": 0,
+        "current_stagger": 50,
+        "current_light": 9,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42,
+            "OffenseLevelUpBuff": 2
+        },
+        "defense_level_sources": {
+            "base": 42,
+            "DefenseLevelUpBuff": 2
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "The Marking Blood Golem": {
+        "id": 100001,
+        "name": "The Marking Blood Golem",
+        "source_file": "data/profiles\\bloodGolemProfiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 4,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 2,
+        "level": 14,
+        "base_hp_overwrite": 150,
+        "base_stagger_overwrite": 50,
+        "base_max_light_overwrite": 9,
+        "base_light_gain_overwrite": 5,
+        "base_page_draw_overwrite": 9,
+        "base_min_speed_overwrite": 1,
+        "base_max_speed_overwrite": 1,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Bloodbag"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 2.0,
+            "Lust": 0.5,
+            "Sloth": 1.2,
+            "Gluttony": 0.5,
+            "Gloom": 2.0,
+            "Pride": 1.2,
+            "Envy": 1.0,
+            "white": 4.0,
+            "black": 4.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Back Away": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Mark": {
+                "cost": 0,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 2.0,
+            "Lust": 0.5,
+            "Sloth": 1.2,
+            "Gluttony": 0.5,
+            "Gloom": 2.0,
+            "Pride": 1.2,
+            "Envy": 1.0,
+            "white": 4.0,
+            "black": 4.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 150,
+        "current_shield": 0,
+        "current_stagger": 50,
+        "current_light": 9,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "The Hulking Blood Golem": {
+        "id": 100001,
+        "name": "The Hulking Blood Golem",
+        "source_file": "data/profiles\\bloodGolemProfiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 2,
+        "level": 14,
+        "base_hp_overwrite": 300,
+        "base_stagger_overwrite": 100,
+        "base_max_light_overwrite": 9,
+        "base_light_gain_overwrite": 5,
+        "base_page_draw_overwrite": 9,
+        "base_min_speed_overwrite": 3,
+        "base_max_speed_overwrite": 3,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Bloodbag"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.2,
+            "blunt": 1.2,
+            "pierce": 1.2
+        },
+        "stagger_resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "sin_resistances": {
+            "Wrath": 2.0,
+            "Lust": 0.5,
+            "Sloth": 1.2,
+            "Gluttony": 0.5,
+            "Gloom": 2.0,
+            "Pride": 1.2,
+            "Envy": 1.0,
+            "white": 4.0,
+            "black": 4.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Piercing": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Slashing": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Bludgeoning": {
+                "cost": 0,
+                "amount": 1
+            },
+            "This… is our Purpose": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.2,
+            "blunt": 1.2,
+            "pierce": 1.2
+        },
+        "original_sin_resistances": {
+            "Wrath": 2.0,
+            "Lust": 0.5,
+            "Sloth": 1.2,
+            "Gluttony": 0.5,
+            "Gloom": 2.0,
+            "Pride": 1.2,
+            "Envy": 1.0,
+            "white": 4.0,
+            "black": 4.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 300,
+        "current_shield": 0,
+        "current_stagger": 100,
+        "current_light": 9,
+        "current_speed": 3,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    }
+}

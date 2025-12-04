@@ -1,0 +1,1010 @@
+{
+    "Trihook Syndicate Member 1": {
+        "id": 200043,
+        "name": "Trihook Syndicate Member 1",
+        "source_file": "data/profiles\\trihookProfiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 16,
+            "int": 18,
+            "con": 18,
+            "cha": 14,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {
+            "Rupture": {
+                "stack": 12,
+                "count": 2
+            }
+        },
+        "passives": [],
+        "faction": [
+            "Trihook Syndicate",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [
+            "Trihook Syndicate"
+        ],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 0.8,
+            "Lust": 1.0,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.2,
+            "Pride": 1.2,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Hook In": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Lazy Jackasses": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Run Away, Then Dig In": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Yawn…. This Mission Kinda Sucks": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Flesh Diggin’": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Cross Em Out": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Tear Into Them": {
+                "cost": 4,
+                "amount": 1
+            }
+        },
+        "hand": {
+            "Run Away, Then Dig In": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Yawn…. This Mission Kinda Sucks": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Tear Into Them": {
+                "cost": 4,
+                "amount": 1
+            },
+            "Hook In": {
+                "cost": 0,
+                "amount": 2
+            }
+        },
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 0.8,
+            "Lust": 1.0,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.2,
+            "Pride": 1.2,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {
+            "on_use_{\"trigger\": \"on_use\", \"conditionTarget\": \"self\", \"modifierTarget\": \"random2\", \"filterfaction\": [\"AlliesOnly\"], \"limit_per_turn\": 1, \"condition\": {\"count_min\": {\"buff\": \"Charge\", \"value\": 10}}, \"get\": {}, \"modifiers\": {\"getbuff\": {\"Slash Damage Up\": {\"stack\": 1, \"nextturn\": true, \"volatile\": true}}}}": 1
+        },
+        "effect_limits_perm": {},
+        "current_hp": -485,
+        "current_shield": 0,
+        "current_stagger": -337,
+        "current_light": 3,
+        "current_speed": 4,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": true,
+        "staggeredThisTurn": true,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Trihook Syndicate Member 2": {
+        "id": 200043,
+        "name": "Trihook Syndicate Member 2",
+        "source_file": "data/profiles\\trihookProfiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 16,
+            "int": 18,
+            "con": 18,
+            "cha": 14,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0,
+            "buffs": {}
+        },
+        "buffs": {
+            "Ammo": {
+                "stack": 20
+            },
+            "Lights Out": {
+                "stack": 2
+            },
+            "Fragile": {
+                "stack": 5,
+                "volatile": true
+            },
+            "Bind": {
+                "stack": 5,
+                "volatile": true
+            },
+            "Clash Power Down": {
+                "stack": 5,
+                "volatile": true
+            }
+        },
+        "passives": [],
+        "faction": [
+            "Trihook Syndicate",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [
+            "Trihook Syndicate"
+        ],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 0.8,
+            "Lust": 1.0,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.2,
+            "Pride": 1.2,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Hook In": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Lazy Jackasses": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Run Away, Then Dig In": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Yawn…. This Mission Kinda Sucks": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Flesh Diggin’": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Cross Em Out": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Tear Into Them": {
+                "cost": 4,
+                "amount": 1
+            }
+        },
+        "hand": {
+            "Cross Em Out": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Hook In": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Flesh Diggin’": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Yawn…. This Mission Kinda Sucks": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Lazy Jackasses": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 0.8,
+            "Lust": 1.0,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.2,
+            "Pride": 1.2,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {
+            "on_use_{\"trigger\": \"on_use\", \"conditionTarget\": \"self\", \"modifierTarget\": \"random3\", \"filterfaction\": [\"AlliesOnly\"], \"limit_per_turn\": 1, \"condition\": {\"count_min\": {\"buff\": \"Charge\", \"value\": 15}}, \"get\": {}, \"modifiers\": {\"getbuff\": {\"Defense Power Up\": {\"stack\": 1, \"nextturn\": true, \"volatile\": true}}}}": 1,
+            "on_use_{\"trigger\": \"on_use\", \"conditionTarget\": \"self\", \"modifierTarget\": \"self\", \"limit_per_turn\": 1, \"condition\": {\"count_min\": {\"buff\": \"Charge\", \"value\": 15}}, \"get\": {}, \"modifiers\": {\"getbuff\": {\"Charge\": {\"count\": -4}}}}": 1
+        },
+        "effect_limits_perm": {},
+        "current_hp": -656,
+        "current_shield": 0,
+        "current_stagger": -182,
+        "current_light": 3,
+        "current_speed": 4,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": true,
+        "staggeredThisTurn": true,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Trihook Syndicate Member 3": {
+        "id": 200043,
+        "name": "Trihook Syndicate Member 3",
+        "source_file": "data/profiles\\trihookProfiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 16,
+            "int": 18,
+            "con": 18,
+            "cha": 14,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0,
+            "buffs": {}
+        },
+        "buffs": {
+            "Charge": {
+                "count": 9,
+                "stack": 1
+            },
+            "Ammo": {
+                "stack": 20
+            },
+            "Lights Out": {
+                "stack": 2
+            },
+            "Fragile": {
+                "stack": 5,
+                "volatile": true
+            },
+            "Bind": {
+                "stack": 5,
+                "volatile": true
+            },
+            "Clash Power Down": {
+                "stack": 5,
+                "volatile": true
+            }
+        },
+        "passives": [],
+        "faction": [
+            "Trihook Syndicate",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [
+            "Trihook Syndicate"
+        ],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 0.8,
+            "Lust": 1.0,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.2,
+            "Pride": 1.2,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Hook In": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Lazy Jackasses": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Run Away, Then Dig In": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Yawn…. This Mission Kinda Sucks": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Flesh Diggin’": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Cross Em Out": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Tear Into Them": {
+                "cost": 4,
+                "amount": 1
+            }
+        },
+        "hand": {
+            "Yawn…. This Mission Kinda Sucks": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Cross Em Out": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Flesh Diggin’": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Tear Into Them": {
+                "cost": 4,
+                "amount": 1
+            }
+        },
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 0.8,
+            "Lust": 1.0,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.2,
+            "Pride": 1.2,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {
+            "on_discard_{\"trigger\": \"on_discard\", \"conditionTarget\": \"self\", \"modifierTarget\": \"self\", \"limit_per_turn\": 1, \"condition\": {}, \"get\": {}, \"modifiers\": {\"draw\": 1}}": 1
+        },
+        "effect_limits_perm": {},
+        "current_hp": -666.0,
+        "current_shield": 0,
+        "current_stagger": -182,
+        "current_light": 0,
+        "current_speed": 5,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": true,
+        "staggeredThisTurn": true,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Trihook Syndicate Member 4": {
+        "id": 200043,
+        "name": "Trihook Syndicate Member 4",
+        "source_file": "data/profiles\\trihookProfiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 16,
+            "int": 18,
+            "con": 18,
+            "cha": 14,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0,
+            "buffs": {}
+        },
+        "buffs": {
+            "Ammo": {
+                "stack": 20
+            },
+            "Lights Out": {
+                "stack": 2
+            },
+            "Fragile": {
+                "stack": 5,
+                "volatile": true
+            },
+            "Bind": {
+                "stack": 5,
+                "volatile": true
+            },
+            "Clash Power Down": {
+                "stack": 5,
+                "volatile": true
+            }
+        },
+        "passives": [],
+        "faction": [
+            "Trihook Syndicate",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [
+            "Trihook Syndicate"
+        ],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 0.8,
+            "Lust": 1.0,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.2,
+            "Pride": 1.2,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Hook In": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Lazy Jackasses": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Run Away, Then Dig In": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Yawn…. This Mission Kinda Sucks": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Flesh Diggin’": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Cross Em Out": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Tear Into Them": {
+                "cost": 4,
+                "amount": 1
+            }
+        },
+        "hand": {
+            "Tear Into Them": {
+                "cost": 4,
+                "amount": 1
+            },
+            "Yawn…. This Mission Kinda Sucks": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Hook In": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Cross Em Out": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Flesh Diggin’": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 0.8,
+            "Lust": 1.0,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.2,
+            "Pride": 1.2,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {
+            "on_use_{\"trigger\": \"on_use\", \"conditionTarget\": \"self\", \"modifierTarget\": \"random3\", \"filterfaction\": [\"AlliesOnly\"], \"limit_per_turn\": 1, \"condition\": {\"count_min\": {\"buff\": \"Charge\", \"value\": 15}}, \"get\": {}, \"modifiers\": {\"getbuff\": {\"Defense Power Up\": {\"stack\": 1, \"nextturn\": true, \"volatile\": true}}}}": 1,
+            "on_use_{\"trigger\": \"on_use\", \"conditionTarget\": \"self\", \"modifierTarget\": \"self\", \"limit_per_turn\": 1, \"condition\": {\"count_min\": {\"buff\": \"Charge\", \"value\": 15}}, \"get\": {}, \"modifiers\": {\"getbuff\": {\"Charge\": {\"count\": -4}}}}": 1
+        },
+        "effect_limits_perm": {},
+        "current_hp": -656,
+        "current_shield": 0,
+        "current_stagger": -182,
+        "current_light": 4,
+        "current_speed": 7,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": true,
+        "staggeredThisTurn": true,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Trihook Syndicate Member 5": {
+        "id": 200043,
+        "name": "Trihook Syndicate Member 5",
+        "source_file": "data/profiles\\trihookProfiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 16,
+            "int": 18,
+            "con": 18,
+            "cha": 14,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0,
+            "buffs": {}
+        },
+        "buffs": {
+            "Ammo": {
+                "stack": 20
+            },
+            "Charge": {
+                "count": 10,
+                "stack": 1
+            },
+            "Lights Out": {
+                "stack": 2
+            },
+            "Haste": {
+                "stack": 1,
+                "volatile": true
+            },
+            "Fragile": {
+                "stack": 5,
+                "volatile": true
+            },
+            "Bind": {
+                "stack": 5,
+                "volatile": true
+            },
+            "Clash Power Down": {
+                "stack": 5,
+                "volatile": true
+            }
+        },
+        "passives": [],
+        "faction": [
+            "Trihook Syndicate",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [
+            "Trihook Syndicate"
+        ],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 0.8,
+            "Lust": 1.0,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.2,
+            "Pride": 1.2,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Hook In": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Lazy Jackasses": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Run Away, Then Dig In": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Yawn…. This Mission Kinda Sucks": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Flesh Diggin’": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Cross Em Out": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Tear Into Them": {
+                "cost": 4,
+                "amount": 1
+            }
+        },
+        "hand": {
+            "Tear Into Them": {
+                "cost": 4,
+                "amount": 1
+            },
+            "Cross Em Out": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Lazy Jackasses": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 0.8,
+            "Lust": 1.0,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.2,
+            "Pride": 1.2,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": -674.0,
+        "current_shield": 0,
+        "current_stagger": -182,
+        "current_light": 2,
+        "current_speed": 5,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": true,
+        "staggeredThisTurn": true,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Trihook Syndicate Member 6": {
+        "id": 200043,
+        "name": "Trihook Syndicate Member 6",
+        "source_file": "data/profiles\\trihookProfiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 16,
+            "int": 18,
+            "con": 18,
+            "cha": 14,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Trihook Syndicate",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [
+            "Trihook Syndicate"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 0.8,
+            "Lust": 1.0,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.2,
+            "Pride": 1.2,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Hook In": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Lazy Jackasses": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Run Away, Then Dig In": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Yawn…. This Mission Kinda Sucks": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Flesh Diggin’": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Cross Em Out": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Tear Into Them": {
+                "cost": 4,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 0.8,
+            "Lust": 1.0,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.2,
+            "Pride": 1.2,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 104,
+        "current_shield": 0,
+        "current_stagger": 71,
+        "current_light": 5,
+        "current_speed": 7,
+        "offense_level_sources": {
+            "base": 42,
+            "OffenseLevelUpBuff": 4
+        },
+        "defense_level_sources": {
+            "base": 42,
+            "DefenseLevelUpBuff": 4
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    }
+}

@@ -1,0 +1,621 @@
+{
+    "Severed Palm Fixer 1": {
+        "id": 200048,
+        "name": "Severed Palm Fixer 1",
+        "source_file": "data/profiles\\severedPalmProfile.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 75,
+        "base_stagger_overwrite": 40,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 1,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 8,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Severed Palm Office",
+            "The Thumb?",
+            "Soldato I?",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Rifle Puncture": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Ferrous Guard": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Musket Fire": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Smackdown": {
+                "cost": 2,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 75,
+        "current_shield": 0,
+        "current_stagger": 40,
+        "current_light": 5,
+        "current_speed": 5,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Severed Palm Fixer 2": {
+        "id": 200049,
+        "name": "Severed Palm Fixer 2",
+        "source_file": "data/profiles\\severedPalmProfile.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 75,
+        "base_stagger_overwrite": 40,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 1,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 8,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Severed Palm Office",
+            "The Thumb?",
+            "Soldato I?",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Rifle Puncture": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Ferrous Guard": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Musket Fire": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Smackdown": {
+                "cost": 2,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 75,
+        "current_shield": 0,
+        "current_stagger": 40,
+        "current_light": 5,
+        "current_speed": 7,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Severed Palm Fixer 3": {
+        "id": 200050,
+        "name": "Severed Palm Fixer 3",
+        "source_file": "data/profiles\\severedPalmProfile.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 75,
+        "base_stagger_overwrite": 40,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 1,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 8,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Severed Palm Office",
+            "The Thumb?",
+            "Soldato I?",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Rifle Puncture": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Ferrous Guard": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Musket Fire": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Smackdown": {
+                "cost": 2,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 75,
+        "current_shield": 0,
+        "current_stagger": 40,
+        "current_light": 5,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Severed Palm Fixer 4": {
+        "id": 200051,
+        "name": "Severed Palm Fixer 4",
+        "source_file": "data/profiles\\severedPalmProfile.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 75,
+        "base_stagger_overwrite": 40,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 1,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 8,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Severed Palm Office",
+            "The Thumb?",
+            "Soldato I?",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Rifle Puncture": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Ferrous Guard": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Musket Fire": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Smackdown": {
+                "cost": 2,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 75,
+        "current_shield": 0,
+        "current_stagger": 40,
+        "current_light": 5,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Severed Palm Rep": {
+        "id": 200052,
+        "name": "Severed Palm Rep",
+        "source_file": "data/profiles\\severedPalmProfile.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 100,
+        "base_stagger_overwrite": 55,
+        "base_max_light_overwrite": 6,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 3,
+        "base_max_speed_overwrite": 8,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Severed Palm Office",
+            "The Thumb?",
+            "Sottocapo I?",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Rifle Puncture": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Order Fire": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Suppressing Volley": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Musket Fire": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Smackdown": {
+                "cost": 2,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 100,
+        "current_shield": 0,
+        "current_stagger": 55,
+        "current_light": 6,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    }
+}

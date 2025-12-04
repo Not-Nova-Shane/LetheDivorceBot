@@ -1,0 +1,598 @@
+{
+    "SturdyFixer1": {
+        "id": 200020,
+        "name": "SturdyFixer1",
+        "source_file": "data/profiles\\anonymousProfile.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 45,
+        "base_stagger_overwrite": 35,
+        "base_max_light_overwrite": 4,
+        "base_light_gain_overwrite": 1,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 2.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Multi-Block": {
+                "cost": 0,
+                "amount": 4
+            },
+            "Quickness": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Weakness": {
+                "cost": 1,
+                "amount": 3
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 2.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 45,
+        "current_shield": 0,
+        "current_stagger": 35,
+        "current_light": 4,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "SturdyFixer2": {
+        "id": 200021,
+        "name": "SturdyFixer2",
+        "source_file": "data/profiles\\anonymousProfile.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 45,
+        "base_stagger_overwrite": 35,
+        "base_max_light_overwrite": 4,
+        "base_light_gain_overwrite": 1,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 2.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Multi-Block": {
+                "cost": 0,
+                "amount": 4
+            },
+            "Quickness": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Weakness": {
+                "cost": 1,
+                "amount": 3
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 2.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 45,
+        "current_shield": 0,
+        "current_stagger": 35,
+        "current_light": 4,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "SturdyFixer3": {
+        "id": 200022,
+        "name": "SturdyFixer3",
+        "source_file": "data/profiles\\anonymousProfile.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 750,
+        "base_stagger_overwrite": 450,
+        "base_max_light_overwrite": 10,
+        "base_light_gain_overwrite": 3,
+        "base_page_draw_overwrite": 3,
+        "base_min_speed_overwrite": 6,
+        "base_max_speed_overwrite": 15,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 0.75,
+            "blunt": 0.75,
+            "pierce": 0.75
+        },
+        "stagger_resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Multi-Block": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Quickness": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Weakness": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Swiftstrike": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Preemptive Strike": {
+                "cost": 2,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 0.75,
+            "blunt": 0.75,
+            "pierce": 0.75
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 750,
+        "current_shield": 0,
+        "current_stagger": 450,
+        "current_light": 10,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "VigilantFixer1": {
+        "id": 200025,
+        "name": "VigilantFixer1",
+        "source_file": "data/profiles\\anonymousProfile.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 30,
+        "base_stagger_overwrite": 25,
+        "base_max_light_overwrite": 4,
+        "base_light_gain_overwrite": 1,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 0.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 0.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Swiftstrike": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Preemptive Strike": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Quickness": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Weakness": {
+                "cost": 1,
+                "amount": 3
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 0.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 30,
+        "current_shield": 0,
+        "current_stagger": 25,
+        "current_light": 4,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "VigilantFixer2": {
+        "id": 200026,
+        "name": "VigilantFixer2",
+        "source_file": "data/profiles\\anonymousProfile.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 30,
+        "base_stagger_overwrite": 25,
+        "base_max_light_overwrite": 4,
+        "base_light_gain_overwrite": 1,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 0.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 0.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Swiftstrike": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Preemptive Strike": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Quickness": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Weakness": {
+                "cost": 1,
+                "amount": 3
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 0.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 30,
+        "current_shield": 0,
+        "current_stagger": 25,
+        "current_light": 4,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    }
+}

@@ -1,0 +1,623 @@
+{
+    "Crumbling Armor": {
+        "id": 200023,
+        "name": "Crumbling Armor",
+        "source_file": "data/profiles\\walpurgisOne.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 4,
+        "level": 16,
+        "base_hp_overwrite": 1000,
+        "base_stagger_overwrite": 500,
+        "base_max_light_overwrite": 1,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 3,
+        "base_max_speed_overwrite": 8,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Shimmering - Abnormality",
+            "Armor Stand",
+            "Show Your Courage",
+            "Undeserving of Life",
+            "Impending Torrent of Deterring",
+            "Crumbling Armor Damage Calc Bullshit"
+        ],
+        "faction": [
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 0.5,
+            "blunt": 0.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 0.5,
+            "blunt": 0.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 0.5,
+            "Lust": 0.5,
+            "Sloth": 0.5,
+            "Gluttony": 0.5,
+            "Gloom": 0.5,
+            "Pride": 0.5,
+            "Envy": 0.5,
+            "White": 0.5,
+            "Black": 0.5,
+            "none": 0.5
+        },
+        "deck": {
+            "Standby": {
+                "cost": 0,
+                "amount": 99
+            },
+            "Show Your Courage": {
+                "cost": 0,
+                "amount": 99
+            },
+            "Be Upstanding": {
+                "cost": 0,
+                "amount": 99
+            },
+            "Stand Tall": {
+                "cost": 0,
+                "amount": 99
+            },
+            "Behead": {
+                "cost": 0,
+                "amount": 99
+            },
+            "COWARDS!!": {
+                "cost": 0,
+                "amount": 99
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 0.5,
+            "blunt": 0.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 0.5,
+            "Lust": 0.5,
+            "Sloth": 0.5,
+            "Gluttony": 0.5,
+            "Gloom": 0.5,
+            "Pride": 0.5,
+            "Envy": 0.5,
+            "White": 0.5,
+            "Black": 0.5,
+            "none": 0.5
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 1000,
+        "current_shield": 0,
+        "current_stagger": 500,
+        "current_light": 1,
+        "current_speed": 7,
+        "offense_level_sources": {
+            "base": 48
+        },
+        "defense_level_sources": {
+            "base": 48
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "1.76 Mhz": {
+        "id": 200023,
+        "name": "1.76 Mhz",
+        "source_file": "data/profiles\\walpurgisOne.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 20,
+        "base_hp_overwrite": 2000,
+        "base_stagger_overwrite": 1000,
+        "base_max_light_overwrite": 1,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 1,
+        "base_max_speed_overwrite": 1,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "1.76 Mhz"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 0.0,
+            "blunt": 0.0,
+            "pierce": 0.0
+        },
+        "stagger_resistances": {
+            "slash": 0.0,
+            "blunt": 0.0,
+            "pierce": 0.0
+        },
+        "sin_resistances": {
+            "Wrath": 0.0,
+            "Lust": 0.0,
+            "Sloth": 0.0,
+            "Gluttony": 0.0,
+            "Gloom": 0.0,
+            "Pride": 0.0,
+            "Envy": 0.0,
+            "White": 0.0,
+            "Black": 0.0,
+            "none": 0.0
+        },
+        "deck": {
+            "##.532?@!": {
+                "cost": 0,
+                "amount": 99
+            },
+            "####t.. 3½#..": {
+                "cost": 0,
+                "amount": 99
+            },
+            "####....bçf.#": {
+                "cost": 0,
+                "amount": 99
+            },
+            "#..SG$5#3": {
+                "cost": 0,
+                "amount": 99
+            },
+            "War": {
+                "cost": 4,
+                "amount": 99
+            },
+            "Ruin": {
+                "cost": 9,
+                "amount": 99
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 0.0,
+            "blunt": 0.0,
+            "pierce": 0.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 0.0,
+            "Lust": 0.0,
+            "Sloth": 0.0,
+            "Gluttony": 0.0,
+            "Gloom": 0.0,
+            "Pride": 0.0,
+            "Envy": 0.0,
+            "White": 0.0,
+            "Black": 0.0,
+            "none": 0.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 2000,
+        "current_shield": 0,
+        "current_stagger": 1000,
+        "current_light": 1,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 60
+        },
+        "defense_level_sources": {
+            "base": 60
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "War Torn Memory of a Soldier 1": {
+        "id": 200023,
+        "name": "War Torn Memory of a Soldier 1",
+        "source_file": "data/profiles\\walpurgisOne.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 2,
+        "level": 16,
+        "base_hp_overwrite": 100,
+        "base_stagger_overwrite": 70,
+        "base_max_light_overwrite": 3,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 1,
+        "base_max_speed_overwrite": 1,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.25,
+            "blunt": 1.0,
+            "pierce": 1.25
+        },
+        "stagger_resistances": {
+            "slash": 1.25,
+            "blunt": 1.0,
+            "pierce": 1.25
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.2,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.2,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "##.532?@!": {
+                "cost": 0,
+                "amount": 99
+            },
+            "####t.. 3½#..": {
+                "cost": 0,
+                "amount": 99
+            },
+            "####....bçf.#": {
+                "cost": 0,
+                "amount": 99
+            },
+            "#..SG$5#3": {
+                "cost": 0,
+                "amount": 99
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.25,
+            "blunt": 1.0,
+            "pierce": 1.25
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.2,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.2,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 100,
+        "current_shield": 0,
+        "current_stagger": 70,
+        "current_light": 3,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 48
+        },
+        "defense_level_sources": {
+            "base": 48
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Helper Mk.I Number 1": {
+        "id": 200023,
+        "name": "Helper Mk.I Number 1",
+        "source_file": "data/profiles\\walpurgisOne.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 16,
+        "base_hp_overwrite": 120,
+        "base_stagger_overwrite": 50,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 1,
+        "base_page_draw_overwrite": 1,
+        "base_min_speed_overwrite": 3,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "All Around Helper Mk. I"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Charge Up": {
+                "cost": 0,
+                "amount": 99
+            },
+            "Rest": {
+                "cost": 0,
+                "amount": 99
+            },
+            "Clean": {
+                "cost": 4,
+                "amount": 99
+            },
+            "Connected Circuitry": {
+                "cost": 0,
+                "amount": 99
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 120,
+        "current_shield": 0,
+        "current_stagger": 50,
+        "current_light": 5,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 48
+        },
+        "defense_level_sources": {
+            "base": 48
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Helper Mk.II Number 1": {
+        "id": 200023,
+        "name": "Helper Mk.II Number 1",
+        "source_file": "data/profiles\\walpurgisOne.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 4,
+        "level": 18,
+        "base_hp_overwrite": 500,
+        "base_stagger_overwrite": 250,
+        "base_max_light_overwrite": 15,
+        "base_light_gain_overwrite": 1,
+        "base_page_draw_overwrite": 1,
+        "base_min_speed_overwrite": 3,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 0.5,
+            "blunt": 0.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 0.5,
+            "blunt": 0.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Charge Up Mk.II": {
+                "cost": 0,
+                "amount": 99
+            },
+            "Clean Mk. II": {
+                "cost": 5,
+                "amount": 99
+            },
+            "Disable Limiter": {
+                "cost": 15,
+                "amount": 99
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 0.5,
+            "blunt": 0.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 500,
+        "current_shield": 0,
+        "current_stagger": 250,
+        "current_light": 15,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 54
+        },
+        "defense_level_sources": {
+            "base": 54
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    }
+}

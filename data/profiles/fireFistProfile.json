@@ -1,0 +1,657 @@
+{
+    "Firefist Fixer 1": {
+        "id": 200043,
+        "name": "Firefist Fixer 1",
+        "source_file": "data/profiles\\fireFistProfile.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 16,
+            "int": 10,
+            "con": 16,
+            "cha": 10,
+            "dex": 14
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Firefist Office",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [
+            "Firefist Office"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 0.8,
+            "Lust": 1.0,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.2,
+            "Pride": 1.2,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Firewall": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Heating Up": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Spreading Heat": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Every Last Drop": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Flamethrower": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Firefist": {
+                "cost": 3,
+                "amount": 3
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 0.8,
+            "Lust": 1.0,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.2,
+            "Pride": 1.2,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 90,
+        "current_shield": 0,
+        "current_stagger": 71,
+        "current_light": 3,
+        "current_speed": 4,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Firefist Fixer 2": {
+        "id": 200043,
+        "name": "Firefist Fixer 2",
+        "source_file": "data/profiles\\fireFistProfile.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 16,
+            "int": 10,
+            "con": 16,
+            "cha": 10,
+            "dex": 14
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Firefist Office",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [
+            "Firefist Office"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 0.8,
+            "Lust": 1.0,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.2,
+            "Pride": 1.2,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Firewall": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Heating Up": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Spreading Heat": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Every Last Drop": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Flamethrower": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Firefist": {
+                "cost": 3,
+                "amount": 3
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 0.8,
+            "Lust": 1.0,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.2,
+            "Pride": 1.2,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 90,
+        "current_shield": 0,
+        "current_stagger": 71,
+        "current_light": 3,
+        "current_speed": 3,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Firefist Fixer 3": {
+        "id": 200043,
+        "name": "Firefist Fixer 3",
+        "source_file": "data/profiles\\fireFistProfile.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 16,
+            "int": 10,
+            "con": 16,
+            "cha": 10,
+            "dex": 14
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Firefist Office",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [
+            "Firefist Office"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 0.8,
+            "Lust": 1.0,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.2,
+            "Pride": 1.2,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Firewall": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Heating Up": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Spreading Heat": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Every Last Drop": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Flamethrower": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Firefist": {
+                "cost": 3,
+                "amount": 3
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 0.8,
+            "Lust": 1.0,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.2,
+            "Pride": 1.2,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 90,
+        "current_shield": 0,
+        "current_stagger": 71,
+        "current_light": 3,
+        "current_speed": 3,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Firefist Fixer 4": {
+        "id": 200043,
+        "name": "Firefist Fixer 4",
+        "source_file": "data/profiles\\fireFistProfile.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 16,
+            "int": 10,
+            "con": 16,
+            "cha": 10,
+            "dex": 14
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Firefist Office",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [
+            "Firefist Office"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 0.8,
+            "Lust": 1.0,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.2,
+            "Pride": 1.2,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Firewall": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Heating Up": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Spreading Heat": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Every Last Drop": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Flamethrower": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Firefist": {
+                "cost": 3,
+                "amount": 3
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 0.8,
+            "Lust": 1.0,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.2,
+            "Pride": 1.2,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 90,
+        "current_shield": 0,
+        "current_stagger": 71,
+        "current_light": 3,
+        "current_speed": 4,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Firefist Fixer 5": {
+        "id": 200043,
+        "name": "Firefist Fixer 5",
+        "source_file": "data/profiles\\fireFistProfile.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 16,
+            "int": 10,
+            "con": 16,
+            "cha": 10,
+            "dex": 14
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Firefist Office",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [
+            "Firefist Office"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 0.8,
+            "Lust": 1.0,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.2,
+            "Pride": 1.2,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Firewall": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Heating Up": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Spreading Heat": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Every Last Drop": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Flamethrower": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Firefist": {
+                "cost": 3,
+                "amount": 3
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 0.8,
+            "Lust": 1.0,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.2,
+            "Pride": 1.2,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 90,
+        "current_shield": 0,
+        "current_stagger": 71,
+        "current_light": 3,
+        "current_speed": 3,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    }
+}

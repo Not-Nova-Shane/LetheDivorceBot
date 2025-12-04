@@ -1,0 +1,1045 @@
+{
+    "Refracted Peccatulum Invidiae - Cass": {
+        "id": 100001,
+        "name": "Refracted Peccatulum Invidiae - Cass",
+        "source_file": "data/profiles\\envyPecca.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 4,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 2,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 14,
+            "int": 18,
+            "con": 14,
+            "cha": 20,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Mainstream Office",
+            "Retainer of the King in Binds",
+            "Grade 7 Fixer"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 0.5,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 0.5,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Rifle Puncture": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Smackdown": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Musket Fire": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Ferrous Guard": {
+                "cost": 0,
+                "amount": 3
+            },
+            "Suppressing Volley": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 0.5,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 104,
+        "current_shield": 0,
+        "current_stagger": 57,
+        "current_light": 5,
+        "current_speed": 4,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Peccatulum Invidiae - Jonathan": {
+        "id": 100002,
+        "name": "Refracted Peccatulum Invidiae - Jonathan",
+        "source_file": "data/profiles\\envyPecca.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 4,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 2,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 18,
+            "int": 16,
+            "con": 19,
+            "cha": 15,
+            "dex": 18
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Mainstream Office",
+            "Grade 7 Fixer"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": -3.499999999999999,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Every Last Drop": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Set Fire": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Firefist": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Firewall": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Heating Up": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Unleashing Fuel Restrictions!!": {
+                "cost": 0,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": -3.499999999999999,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 132,
+        "current_shield": 0,
+        "current_stagger": 85,
+        "current_light": 4,
+        "current_speed": 5,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Peccatulum Invidiae - Sunny": {
+        "id": 100003,
+        "name": "Refracted Peccatulum Invidiae - Sunny",
+        "source_file": "data/profiles\\envyPecca.json",
+        "base_hp": 30,
+        "hp_increment_by_level": 6,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 3,
+        "base_light_gain": 1,
+        "base_page_draw": 2,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 2,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 15,
+            "int": 16,
+            "con": 16,
+            "cha": 16,
+            "dex": 23
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Mainstream Office",
+            "Grade 7 Fixer"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 0.5,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 0.5,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Kick Feint": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Riddle Holes [刺す]": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Headband Toss": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Swiftstrike": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Silent Strikes": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Invigorate": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Two Guard [双守]": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Storm of Strikes [疾風斬]": {
+                "cost": 4,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 0.5,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 156,
+        "current_shield": 0,
+        "current_stagger": 57,
+        "current_light": 5,
+        "current_speed": 15,
+        "offense_level_sources": {
+            "base": 42,
+            "OffenseLevelUpBuff": 15
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 1
+    },
+    "Refracted Peccatulum Invidiae - Ralph": {
+        "id": 100004,
+        "name": "Refracted Peccatulum Invidiae - Ralph",
+        "source_file": "data/profiles\\envyPecca.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 6,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 15,
+            "int": 14,
+            "con": 15,
+            "cha": 12,
+            "dex": 17
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Mainstream Office",
+            "Grade 7 Fixer"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {},
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 132,
+        "current_shield": 0,
+        "current_stagger": 57,
+        "current_light": 4,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Peccatulum Invidiae - Isaac": {
+        "id": 100005,
+        "name": "Refracted Peccatulum Invidiae - Isaac",
+        "source_file": "data/profiles\\envyPecca.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 6,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 16,
+            "dex": 18,
+            "con": 16,
+            "int": 18,
+            "cha": 18
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Mainstream Office",
+            "Grade 7 Fixer"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Unnerfed Rifle Puncture": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Unnerfed Ferrous Guard": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Musket Fire": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Unnerfed Suppressing Volley": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Unnerfed Order Fire": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Smackdown": {
+                "cost": 2,
+                "amount": 3
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 146,
+        "current_shield": 0,
+        "current_stagger": 71,
+        "current_light": 5,
+        "current_speed": 4,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42,
+            "DefenseLevelDownBuff": -1
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Peccatulum Invidiae - Nabi": {
+        "id": 100006,
+        "name": "Refracted Peccatulum Invidiae - Nabi",
+        "source_file": "data/profiles\\envyPecca.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 6,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 14,
+            "dex": 15,
+            "con": 15,
+            "int": 15,
+            "cha": 15
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Mainstream Office",
+            "Grade 7 Fixer"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Diagonal Rend [倍増]": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]": {
+                "cost": 0,
+                "amount": 3
+            },
+            "One Guard [奥深い]": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Ready for Duel [一騎打ち]": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Riddle Holes [刺す]": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Redirection": {
+                "cost": 0,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 132,
+        "current_shield": 0,
+        "current_stagger": 57,
+        "current_light": 4,
+        "current_speed": 4,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Peccatulum Invidiae - Desmond": {
+        "id": 100012,
+        "name": "Refracted Peccatulum Invidiae - Desmond",
+        "source_file": "data/profiles\\envyPecca.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 6,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 14,
+            "dex": 18,
+            "con": 14,
+            "int": 14,
+            "cha": 14
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Mainstream Office",
+            "Grade 7 Fixer"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.5,
+            "blunt": 1.0,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.5,
+            "blunt": 1.0,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Kick Feint": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Disciplined Block and Pierce [盾穿衡]": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Preparation": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Silent Strikes": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Storm of Strikes [疾風斬]": {
+                "cost": 4,
+                "amount": 1
+            },
+            "Two Guard [双守]": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Three Step Slashing [三斬律]": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.5,
+            "blunt": 1.0,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 132,
+        "current_shield": 0,
+        "current_stagger": 57,
+        "current_light": 4,
+        "current_speed": 7,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Peccatulum Invidiae - Mayu Class 3": {
+        "id": 100007,
+        "name": "Refracted Peccatulum Invidiae - Mayu Class 3",
+        "source_file": "data/profiles\\envyPecca.json",
+        "base_hp": 340,
+        "hp_increment_by_level": 5,
+        "base_stagger": 25,
+        "stagger_increment_by_level": 5,
+        "base_max_light": 6,
+        "base_light_gain": 1,
+        "base_page_draw": 3,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 3,
+        "level": 15,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 16,
+            "dex": 19,
+            "con": 18,
+            "cha": 18,
+            "int": 18
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Mainstream Office",
+            "Retainer of the King in Binds",
+            "Grade ̸̡̡̨̙̠͙͍̹̫͇͈̗̲̙͑̊̑͐̄́͋̎̈̈́͗̎̋͗̕ Fixer"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 0.8,
+            "blunt": 0.8,
+            "pierce": 1.2
+        },
+        "stagger_resistances": {
+            "slash": 0.8,
+            "blunt": 0.8,
+            "pierce": 1.2
+        },
+        "sin_resistances": {
+            "Wrath": 1.1,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Riddle Through [刺す]": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Disciplined Block and Pierce [盾穿衡]": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Three Step Slashing [三斬律]": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Ready for a Firefist": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Me? A Traitor?": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Two Guard [双守]": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Kick Feint": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Exploit Breathing": {
+                "cost": 0,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 0.8,
+            "blunt": 0.8,
+            "pierce": 1.2
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.1,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 475,
+        "current_shield": 0,
+        "current_stagger": 145,
+        "current_light": 9,
+        "current_speed": 15,
+        "offense_level_sources": {
+            "base": 45
+        },
+        "defense_level_sources": {
+            "base": 45
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    }
+}

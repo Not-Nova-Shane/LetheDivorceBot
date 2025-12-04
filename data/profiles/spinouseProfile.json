@@ -1,0 +1,629 @@
+{
+    "Bloodthirsty Spinouse Syndicate Member 1": {
+        "id": 200015,
+        "name": "Bloodthirsty Spinouse Syndicate Member 1",
+        "source_file": "data/profiles\\spinouseProfile.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 45,
+        "base_stagger_overwrite": 20,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Spinouse Syndicate"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Bat Bash": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Barbed Strikes": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Sneak Attack": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Bat Parry": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Bleeding Strikes": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 45,
+        "current_shield": 0,
+        "current_stagger": 20,
+        "current_light": 5,
+        "current_speed": 4,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Bloodthirsty Spinouse Syndicate Member 2": {
+        "id": 200016,
+        "name": "Bloodthirsty Spinouse Syndicate Member 2",
+        "source_file": "data/profiles\\spinouseProfile.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 45,
+        "base_stagger_overwrite": 20,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Spinouse Syndicate"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Bat Bash": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Barbed Strikes": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Sneak Attack": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Bat Parry": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Bleeding Strikes": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 45,
+        "current_shield": 0,
+        "current_stagger": 20,
+        "current_light": 5,
+        "current_speed": 2,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Severing Spinouse Syndicate Member 1": {
+        "id": 200017,
+        "name": "Severing Spinouse Syndicate Member 1",
+        "source_file": "data/profiles\\spinouseProfile.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 45,
+        "base_stagger_overwrite": 20,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Spinouse Syndicate"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0
+        },
+        "deck": {
+            "Bat Bash": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Barbed Strikes": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Sneak Attack": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Bat Parry": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Rupturing Strikes": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 45,
+        "current_shield": 0,
+        "current_stagger": 20,
+        "current_light": 5,
+        "current_speed": 6,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Severing Spinouse Syndicate Member 2": {
+        "id": 200018,
+        "name": "Severing Spinouse Syndicate Member 2",
+        "source_file": "data/profiles\\spinouseProfile.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 45,
+        "base_stagger_overwrite": 20,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Spinouse Syndicate"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0
+        },
+        "deck": {
+            "Bat Bash": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Barbed Strikes": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Sneak Attack": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Bat Parry": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Rupturing Strikes": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 45,
+        "current_shield": 0,
+        "current_stagger": 20,
+        "current_light": 5,
+        "current_speed": 2,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Terrifying Spinouse Syndicate Member": {
+        "id": 200029,
+        "name": "Terrifying Spinouse Syndicate Member",
+        "source_file": "data/profiles\\spinouseProfile.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 50,
+        "base_stagger_overwrite": 30,
+        "base_max_light_overwrite": 6,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Spinouse Syndicate"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0
+        },
+        "deck": {
+            "Bat Bash": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Barbed Strikes": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Sneak Attack": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Bat Parry": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Rupturing Strikes": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Bleeding Strikes": {
+                "cost": 3,
+                "amount": 1
+            },
+            "DIE DIE DIE": {
+                "cost": 5,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 50,
+        "current_shield": 0,
+        "current_stagger": 30,
+        "current_light": 6,
+        "current_speed": 3,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    }
+}

@@ -1,0 +1,3002 @@
+{
+    "Test Fixer 1": {
+        "id": 200043,
+        "name": "Test Fixer 1",
+        "source_file": "data/profiles\\profiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 5,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 16,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 1,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 16,
+            "dex": 14,
+            "con": 16,
+            "int": 18,
+            "cha": 20
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Zwei Assoc. South Sec 6",
+            "Player"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Order Fire": {
+                "cost": 3,
+                "amount": 99
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 100,
+        "current_shield": 0,
+        "current_stagger": 69,
+        "current_light": 5,
+        "current_speed": 5,
+        "offense_level_sources": {
+            "base": 48
+        },
+        "defense_level_sources": {
+            "base": 48
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Player",
+        "deploymentOrder": 0
+    },
+    "Test Fixer 2": {
+        "id": 200043,
+        "name": "Test Fixer 2",
+        "source_file": "data/profiles\\profiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 5,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 16,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 1,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 16,
+            "dex": 14,
+            "con": 16,
+            "int": 18,
+            "cha": 20
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Zwei Assoc. South Sec 6",
+            "Player"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Musket Fire": {
+                "cost": 2,
+                "amount": 99
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 100,
+        "current_shield": 0,
+        "current_stagger": 69,
+        "current_light": 5,
+        "current_speed": 3,
+        "offense_level_sources": {
+            "base": 48
+        },
+        "defense_level_sources": {
+            "base": 48
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Player",
+        "deploymentOrder": 0
+    },
+    "Test Fixer 3": {
+        "id": 200043,
+        "name": "Test Fixer 3",
+        "source_file": "data/profiles\\profiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 5,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 16,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 1,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 16,
+            "dex": 14,
+            "con": 16,
+            "int": 18,
+            "cha": 20
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Zwei Assoc. South Sec 6",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Fence!": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Refracted Your Shield": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Refracted Combat Preparation": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Blade Whirl": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Shielded Suppressing": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Avert": {
+                "cost": 0,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 100,
+        "current_shield": 0,
+        "current_stagger": 69,
+        "current_light": 5,
+        "current_speed": 3,
+        "offense_level_sources": {
+            "base": 48
+        },
+        "defense_level_sources": {
+            "base": 48
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Paroxysm Office Fixer 1": {
+        "id": 100011,
+        "name": "Refracted Paroxysm Office Fixer 1",
+        "source_file": "data/profiles\\profiles.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 80,
+        "base_stagger_overwrite": 45,
+        "base_max_light_overwrite": 6,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 3,
+        "base_min_speed_overwrite": 3,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Paroxysm Office Section 3",
+            "Grade 7 Fixer"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Launcher Rev": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Refracted Spark The Flames": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Refracted Fully Charged": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Refracted D-dried Up": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Refracted Flaming Massacre": {
+                "cost": 5,
+                "amount": 1
+            },
+            "Acceleration": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 80,
+        "current_shield": 0,
+        "current_stagger": 45,
+        "current_light": 6,
+        "current_speed": 5,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Paroxysm Office Fixer 2": {
+        "id": 100011,
+        "name": "Refracted Paroxysm Office Fixer 2",
+        "source_file": "data/profiles\\profiles.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 80,
+        "base_stagger_overwrite": 45,
+        "base_max_light_overwrite": 6,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 3,
+        "base_min_speed_overwrite": 3,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Paroxysm Office Section 3",
+            "Grade 7 Fixer"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Launcher Rev": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Refracted Spark The Flames": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Refracted Fully Charged": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Refracted D-dried Up": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Refracted Flaming Massacre": {
+                "cost": 5,
+                "amount": 1
+            },
+            "Acceleration": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 80,
+        "current_shield": 0,
+        "current_stagger": 45,
+        "current_light": 6,
+        "current_speed": 5,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Paroxysm Office Fixer 3": {
+        "id": 100011,
+        "name": "Refracted Paroxysm Office Fixer 3",
+        "source_file": "data/profiles\\profiles.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 80,
+        "base_stagger_overwrite": 45,
+        "base_max_light_overwrite": 6,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 3,
+        "base_min_speed_overwrite": 3,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Paroxysm Office Section 3",
+            "Grade 7 Fixer"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Launcher Rev": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Refracted Spark The Flames": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Refracted Fully Charged": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Refracted D-dried Up": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Refracted Flaming Massacre": {
+                "cost": 5,
+                "amount": 1
+            },
+            "Acceleration": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 80,
+        "current_shield": 0,
+        "current_stagger": 45,
+        "current_light": 6,
+        "current_speed": 4,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Paroxysm Office Fixer 4": {
+        "id": 100011,
+        "name": "Refracted Paroxysm Office Fixer 4",
+        "source_file": "data/profiles\\profiles.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 80,
+        "base_stagger_overwrite": 45,
+        "base_max_light_overwrite": 6,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 3,
+        "base_min_speed_overwrite": 3,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Paroxysm Office Section 3",
+            "Grade 7 Fixer"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Launcher Rev": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Refracted Spark The Flames": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Refracted Fully Charged": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Refracted D-dried Up": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Refracted Flaming Massacre": {
+                "cost": 5,
+                "amount": 1
+            },
+            "Acceleration": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 80,
+        "current_shield": 0,
+        "current_stagger": 45,
+        "current_light": 6,
+        "current_speed": 3,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Maniacal Paroxysm Office Fixer 1": {
+        "id": 100011,
+        "name": "Maniacal Paroxysm Office Fixer 1",
+        "source_file": "data/profiles\\profiles.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 80,
+        "base_stagger_overwrite": 45,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 3,
+        "base_max_speed_overwrite": 6,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Paroxysm Office Section 3",
+            "Grade 7 Fixer"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Launcher Rev": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Spark The Flames": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Fully Charged": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Acceleration": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 80,
+        "current_shield": 0,
+        "current_stagger": 45,
+        "current_light": 5,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Maniacal Paroxysm Office Fixer 2": {
+        "id": 100012,
+        "name": "Maniacal Paroxysm Office Fixer 2",
+        "source_file": "data/profiles\\profiles.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 80,
+        "base_stagger_overwrite": 45,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 3,
+        "base_max_speed_overwrite": 6,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Paroxysm Office Section 3",
+            "Grade 7 Fixer"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Launcher Rev": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Spark The Flames": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Fully Charged": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Acceleration": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 80,
+        "current_shield": 0,
+        "current_stagger": 45,
+        "current_light": 5,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Maniacal Paroxysm Office Fixer 3": {
+        "id": 100013,
+        "name": "Maniacal Paroxysm Office Fixer 3",
+        "source_file": "data/profiles\\profiles.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 80,
+        "base_stagger_overwrite": 45,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 3,
+        "base_max_speed_overwrite": 6,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Paroxysm Office Section 3",
+            "Grade 7 Fixer"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Launcher Rev": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Spark The Flames": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Fully Charged": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Acceleration": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 80,
+        "current_shield": 0,
+        "current_stagger": 45,
+        "current_light": 5,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Sean": {
+        "id": 100014,
+        "name": "Sean",
+        "source_file": "data/profiles\\profiles.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 60,
+        "base_stagger_overwrite": 35,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 1,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 1,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Player"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 0.5,
+            "blunt": 0.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 0.5,
+            "blunt": 0.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "GET AWAY": {
+                "cost": 0,
+                "amount": 9
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 0.5,
+            "blunt": 0.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 60,
+        "current_shield": 0,
+        "current_stagger": 35,
+        "current_light": 1,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Player",
+        "deploymentOrder": 0
+    },
+    "Bankvorce": {
+        "id": 100019,
+        "name": "Bankvorce",
+        "source_file": "data/profiles\\profiles.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 1000000,
+        "base_stagger_overwrite": 500,
+        "base_max_light_overwrite": 1000000,
+        "base_light_gain_overwrite": 1000000,
+        "base_page_draw_overwrite": 10,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Player"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {},
+        "hand": {},
+        "original_resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 1000000,
+        "current_shield": 0,
+        "current_stagger": 500,
+        "current_light": 1000000,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Player",
+        "deploymentOrder": 0
+    },
+    "Black Belt Martial Artist SHU": {
+        "id": 200023,
+        "name": "Black Belt Martial Artist SHU",
+        "source_file": "data/profiles\\profiles.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 950,
+        "base_stagger_overwrite": 650,
+        "base_max_light_overwrite": 12,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 3,
+        "base_min_speed_overwrite": 5,
+        "base_max_speed_overwrite": 12,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "stagger_resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Kick Feint": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Martial Scuffle": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Judo Flip": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Headband Toss": {
+                "cost": 0,
+                "amount": 2
+            },
+            "It's time to get SERIOUS": {
+                "cost": 2,
+                "amount": 2
+            },
+            "COUP DE GRACE": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 950,
+        "current_shield": 0,
+        "current_stagger": 650,
+        "current_light": 12,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "God's Hail": {
+        "id": 200024,
+        "name": "God's Hail",
+        "source_file": "data/profiles\\profiles.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 1500,
+        "base_stagger_overwrite": 1500,
+        "base_max_light_overwrite": 9,
+        "base_light_gain_overwrite": 9,
+        "base_page_draw_overwrite": 9,
+        "base_min_speed_overwrite": 10,
+        "base_max_speed_overwrite": 10,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 0,
+            "blunt": 0,
+            "pierce": 0
+        },
+        "stagger_resistances": {
+            "slash": 0,
+            "blunt": 0,
+            "pierce": 0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Hail": {
+                "cost": 0,
+                "amount": 9
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 0,
+            "blunt": 0,
+            "pierce": 0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 1500,
+        "current_shield": 0,
+        "current_stagger": 1500,
+        "current_light": 9,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Lolang": {
+        "id": 100027,
+        "name": "Lolang",
+        "source_file": "data/profiles\\profiles.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 1000000,
+        "base_stagger_overwrite": 500,
+        "base_max_light_overwrite": 1000000,
+        "base_light_gain_overwrite": 1000000,
+        "base_page_draw_overwrite": 10,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Player"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Malfunction": {
+                "cost": 4,
+                "amount": 1
+            },
+            "Feel The Blazing Vibrations!!": {
+                "cost": 4,
+                "amount": 1
+            },
+            "Invigorate": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Activated Combustion": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Overwhelming": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Cranium Crusher": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Vibrating Fist": {
+                "cost": 1,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 1000000,
+        "current_shield": 0,
+        "current_stagger": 500,
+        "current_light": 1000000,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Player",
+        "deploymentOrder": 0
+    },
+    "Argalia": {
+        "id": 200028,
+        "name": "Argalia",
+        "source_file": "data/profiles\\profiles.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 100,
+        "base_hp_overwrite": 1000000,
+        "base_stagger_overwrite": 401,
+        "base_max_light_overwrite": 50,
+        "base_light_gain_overwrite": 1,
+        "base_page_draw_overwrite": 10,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 100,
+            "int": 100,
+            "con": 100,
+            "cha": 100,
+            "dex": 100
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Preludio": {
+                "cost": 5,
+                "amount": 9
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 1000000,
+        "current_shield": 0,
+        "current_stagger": 401,
+        "current_light": 50,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 300
+        },
+        "defense_level_sources": {
+            "base": 300
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Pluto": {
+        "id": 330031,
+        "name": "Pluto",
+        "source_file": "data/profiles\\profiles.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 100,
+        "base_hp_overwrite": 1000000,
+        "base_stagger_overwrite": 401,
+        "base_max_light_overwrite": 50,
+        "base_light_gain_overwrite": 1,
+        "base_page_draw_overwrite": 10,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 100,
+            "int": 100,
+            "con": 100,
+            "cha": 100,
+            "dex": 100
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Musket Fire": {
+                "cost": 2,
+                "amount": 9
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 1000000,
+        "current_shield": 0,
+        "current_stagger": 401,
+        "current_light": 50,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 300
+        },
+        "defense_level_sources": {
+            "base": 300
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Dummy": {
+        "id": 340031,
+        "name": "Dummy",
+        "source_file": "data/profiles\\profiles.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 16,
+        "base_hp_overwrite": 1000000,
+        "base_stagger_overwrite": 401,
+        "base_max_light_overwrite": 50,
+        "base_light_gain_overwrite": 1,
+        "base_page_draw_overwrite": 10,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0,
+            "buffs": {}
+        },
+        "buffs": {
+            "Ammo": {
+                "stack": 20
+            },
+            "Bleed": {
+                "stack": 4,
+                "count": 1
+            },
+            "Tremor": {
+                "stack": 39,
+                "count": 9
+            },
+            "Lights Out": {
+                "stack": 1
+            }
+        },
+        "passives": [],
+        "faction": [
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Testing Roll 1-1": {
+                "cost": 0,
+                "amount": 9
+            }
+        },
+        "hand": {
+            "Testing Roll 1-1": {
+                "cost": 0,
+                "amount": 9
+            }
+        },
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 949762.5,
+        "current_shield": 0,
+        "current_stagger": -8230,
+        "current_light": 50,
+        "current_speed": 2,
+        "offense_level_sources": {
+            "base": 48
+        },
+        "defense_level_sources": {
+            "base": 48
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": true,
+        "is_staggered": true,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Yun": {
+        "id": 200036,
+        "name": "Yun",
+        "source_file": "data/profiles\\profiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 2,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 14,
+            "int": 18,
+            "con": 14,
+            "cha": 18,
+            "dex": 15
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Yun's Office"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.2,
+            "blunt": 1.0,
+            "pierce": 0.8
+        },
+        "stagger_resistances": {
+            "slash": 1.2,
+            "blunt": 1.0,
+            "pierce": 0.8
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Commandeering": {
+                "cost": 3,
+                "amount": 3
+            },
+            "You're Too Slow": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Struggle": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Feelin’ Good": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Time for a Little Test": {
+                "cost": 0,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.2,
+            "blunt": 1.0,
+            "pierce": 0.8
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 76,
+        "current_shield": 0,
+        "current_stagger": 57,
+        "current_light": 5,
+        "current_speed": 6,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Hard Mode - Jeanne": {
+        "id": 200038,
+        "name": "Hard Mode - Jeanne",
+        "source_file": "data/profiles\\profiles.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 2,
+        "level": 14,
+        "base_hp_overwrite": 100,
+        "base_stagger_overwrite": 30,
+        "base_max_light_overwrite": 6,
+        "base_light_gain_overwrite": 3,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "P. Bistro"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Coupled Mutilation": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Unadulterated Slaughter": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Meat Injection": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Moisture Retention": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Pride as a Chef": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Subprimal Finish": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 100,
+        "current_shield": 0,
+        "current_stagger": 30,
+        "current_light": 6,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Uesugi": {
+        "id": 200047,
+        "name": "Refracted Uesugi",
+        "source_file": "data/profiles\\profiles.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 2,
+        "level": 14,
+        "base_hp_overwrite": 1500,
+        "base_stagger_overwrite": 200,
+        "base_max_light_overwrite": 15,
+        "base_light_gain_overwrite": 4,
+        "base_page_draw_overwrite": 4,
+        "base_min_speed_overwrite": 10,
+        "base_max_speed_overwrite": 15,
+        "hidden": [
+            "hp",
+            "stagger",
+            "light",
+            "staggerstate",
+            "sinres",
+            "deck",
+            "hand"
+        ],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Bladesworn Office Section 1 Rep",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Malfunction": {
+                "cost": 4,
+                "amount": 9
+            }
+        },
+        "hand": {
+            "Malfunction": {
+                "cost": 4,
+                "amount": 8
+            }
+        },
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 0.0,
+        "current_shield": 0,
+        "current_stagger": -1300.0,
+        "current_light": 13,
+        "current_speed": 10,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": true,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Flatfish": {
+        "id": 200047,
+        "name": "Flatfish",
+        "source_file": "data/profiles\\profiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 4,
+        "base_page_draw": 2,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 73,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [
+            "hp",
+            "stagger",
+            "speed",
+            "light",
+            "staggerstate"
+        ],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 32,
+            "int": 25,
+            "con": 72,
+            "cha": 25,
+            "dex": 20
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "The Thumb",
+            "The Thumb Capo",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 0.5,
+            "blunt": 0.5,
+            "pierce": 2
+        },
+        "stagger_resistances": {
+            "slash": 0.5,
+            "blunt": 0.5,
+            "pierce": 2
+        },
+        "sin_resistances": {
+            "Wrath": 0.8,
+            "Lust": 0.8,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Raise Them Up": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Knuckleduster": {
+                "cost": 2,
+                "amount": 3
+            },
+            "Rispetta Le Regole": {
+                "cost": 3,
+                "amount": 3
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 0.5,
+            "blunt": 0.5,
+            "pierce": 2
+        },
+        "original_sin_resistances": {
+            "Wrath": 0.8,
+            "Lust": 0.8,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 2429,
+        "current_shield": 0,
+        "current_stagger": 891,
+        "current_light": 16,
+        "current_speed": 9,
+        "offense_level_sources": {
+            "base": 219
+        },
+        "defense_level_sources": {
+            "base": 219
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Jeremy The Green Jeremy": {
+        "id": 100053,
+        "name": "Jeremy The Green Jeremy",
+        "source_file": "data/profiles\\profiles.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 5,
+        "level": 14,
+        "base_hp_overwrite": 19000,
+        "base_stagger_overwrite": 250,
+        "base_max_light_overwrite": 9,
+        "base_light_gain_overwrite": 4,
+        "base_page_draw_overwrite": 4,
+        "base_min_speed_overwrite": 10,
+        "base_max_speed_overwrite": 60,
+        "hidden": [
+            "hp",
+            "stagger",
+            "speed",
+            "res",
+            "light",
+            "staggerstate",
+            "staggerres",
+            "sinres",
+            "deck"
+        ],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Reality Being",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 0,
+            "blunt": 0,
+            "pierce": 0
+        },
+        "stagger_resistances": {
+            "slash": 0,
+            "blunt": 0,
+            "pierce": 0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "SHTOOOOOP!!!": {
+                "cost": 4,
+                "amount": 9
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 0,
+            "blunt": 0,
+            "pierce": 0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 19000,
+        "current_shield": 0,
+        "current_stagger": 250,
+        "current_light": 9,
+        "current_speed": 25,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Shady Individual": {
+        "id": 100054,
+        "name": "Shady Individual",
+        "source_file": "data/profiles\\profiles.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 19000,
+        "base_stagger_overwrite": 250,
+        "base_max_light_overwrite": 9,
+        "base_light_gain_overwrite": 4,
+        "base_page_draw_overwrite": 4,
+        "base_min_speed_overwrite": 10,
+        "base_max_speed_overwrite": 60,
+        "hidden": [
+            "hp",
+            "stagger",
+            "speed",
+            "res",
+            "light",
+            "staggerstate",
+            "staggerres",
+            "sinres",
+            "deck"
+        ],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "The Mirror Hood",
+            "Player"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 0,
+            "blunt": 0,
+            "pierce": 0
+        },
+        "stagger_resistances": {
+            "slash": 0,
+            "blunt": 0,
+            "pierce": 0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {},
+        "hand": {},
+        "original_resistances": {
+            "slash": 0,
+            "blunt": 0,
+            "pierce": 0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 19000,
+        "current_shield": 0,
+        "current_stagger": 250,
+        "current_light": 9,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Player",
+        "deploymentOrder": 0
+    },
+    "Polarity": {
+        "id": 300055,
+        "name": "Polarity",
+        "source_file": "data/profiles\\profiles.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 350,
+        "base_stagger_overwrite": 150,
+        "base_max_light_overwrite": 10,
+        "base_light_gain_overwrite": 3,
+        "base_page_draw_overwrite": 3,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 6,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Abnormality",
+            "SPless"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 0.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 0.0,
+            "blunt": 2.0,
+            "pierce": 1.75
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "DIVINE POLAR LIGHT": {
+                "cost": 1,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 0.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 350,
+        "current_shield": 0,
+        "current_stagger": 150,
+        "current_light": 10,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    }
+}

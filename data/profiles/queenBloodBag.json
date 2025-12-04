@@ -1,0 +1,2272 @@
+{
+    "Refracted The Queen's Bloodbag 1": {
+        "id": 200035,
+        "name": "Refracted The Queen's Bloodbag 1",
+        "source_file": "data/profiles\\queenBloodBag.json",
+        "base_hp": 25,
+        "hp_increment_by_level": 6,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 2,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 2,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 12,
+            "con": 16,
+            "cha": 12,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "The Queen's Empty Kingdom",
+            "Bloodbag"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Feed The Mistress!": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Blood…": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Spreading…. Gossypium": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Feast! Let’s… all Feast! For… Yes, For Her Sake!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Mwhaheheheh!!!": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 151,
+        "current_shield": 0,
+        "current_stagger": 43,
+        "current_light": 4,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted The Queen's Younger Bloodbag 1": {
+        "id": 200035,
+        "name": "Refracted The Queen's Younger Bloodbag 1",
+        "source_file": "data/profiles\\queenBloodBag.json",
+        "base_hp": 25,
+        "hp_increment_by_level": 6,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 2,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 2,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 12,
+            "con": 16,
+            "cha": 12,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "The Queen's Empty Kingdom",
+            "Bloodbag"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Feed The Mistress!": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Blood…": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Spreading…. Gossypium": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Feast! Let’s… all Feast! For… Yes, For Her Sake!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Mwhaheheheh!!!": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 151,
+        "current_shield": 0,
+        "current_stagger": 43,
+        "current_light": 4,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted The Queen's Younger Bloodbag 2": {
+        "id": 200035,
+        "name": "Refracted The Queen's Younger Bloodbag 2",
+        "source_file": "data/profiles\\queenBloodBag.json",
+        "base_hp": 25,
+        "hp_increment_by_level": 6,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 2,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 2,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 12,
+            "con": 16,
+            "cha": 12,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "The Queen's Empty Kingdom",
+            "Bloodbag"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Feed The Mistress!": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Blood…": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Spreading…. Gossypium": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Feast! Let’s… all Feast! For… Yes, For Her Sake!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Mwhaheheheh!!!": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 151,
+        "current_shield": 0,
+        "current_stagger": 43,
+        "current_light": 4,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted The Queen's Younger Bloodbag 3": {
+        "id": 200035,
+        "name": "Refracted The Queen's Younger Bloodbag 3",
+        "source_file": "data/profiles\\queenBloodBag.json",
+        "base_hp": 25,
+        "hp_increment_by_level": 6,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 2,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 2,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 12,
+            "con": 16,
+            "cha": 12,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "The Queen's Empty Kingdom",
+            "Bloodbag"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Feed The Mistress!": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Blood…": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Spreading…. Gossypium": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Feast! Let’s… all Feast! For… Yes, For Her Sake!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Mwhaheheheh!!!": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 151,
+        "current_shield": 0,
+        "current_stagger": 43,
+        "current_light": 4,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted The Queen's Younger Bloodbag 4": {
+        "id": 200035,
+        "name": "Refracted The Queen's Younger Bloodbag 4",
+        "source_file": "data/profiles\\queenBloodBag.json",
+        "base_hp": 25,
+        "hp_increment_by_level": 6,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 2,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 2,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 12,
+            "con": 16,
+            "cha": 12,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "The Queen's Empty Kingdom",
+            "Bloodbag"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Feed The Mistress!": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Blood…": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Spreading…. Gossypium": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Feast! Let’s… all Feast! For… Yes, For Her Sake!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Mwhaheheheh!!!": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 151,
+        "current_shield": 0,
+        "current_stagger": 43,
+        "current_light": 4,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Bloodbagged Cass": {
+        "id": 100001,
+        "name": "Refracted Bloodbagged Cass",
+        "source_file": "data/profiles\\queenBloodBag.json",
+        "base_hp": 120,
+        "hp_increment_by_level": 6,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 3,
+        "base_light_gain": 1,
+        "base_page_draw": 2,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 2,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 14,
+            "int": 18,
+            "con": 14,
+            "cha": 20,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "The Queen's Empty Kingdom",
+            "Bloodbag",
+            "Bloodbag",
+            "Grade 6 Fixer"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 0.5,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 0.5,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Unnerfed Rifle Puncture": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Smackdown": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Musket Fire": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Unnerfed Ferrous Guard": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Suppressing Volley": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 0.5,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 232,
+        "current_shield": 0,
+        "current_stagger": 57,
+        "current_light": 6,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted The Queen's Younger Bloodbag 10": {
+        "id": 200035,
+        "name": "Refracted The Queen's Younger Bloodbag 10",
+        "source_file": "data/profiles\\queenBloodBag.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 2,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 2,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 12,
+            "con": 16,
+            "cha": 12,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "The Queen's Empty Kingdom",
+            "Bloodbag"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Feed The Mistress!": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Blood…": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Spreading…. Gossypium": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Feast! Let’s… all Feast! For… Yes, For Her Sake!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Mwhaheheheh!!!": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 90,
+        "current_shield": 0,
+        "current_stagger": 43,
+        "current_light": 4,
+        "current_speed": 5,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted The Queen's Younger Bloodbag 11": {
+        "id": 200035,
+        "name": "Refracted The Queen's Younger Bloodbag 11",
+        "source_file": "data/profiles\\queenBloodBag.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 2,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 2,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 12,
+            "con": 16,
+            "cha": 12,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "The Queen's Empty Kingdom",
+            "Bloodbag"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Feed The Mistress!": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Blood…": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Spreading…. Gossypium": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Feast! Let’s… all Feast! For… Yes, For Her Sake!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Mwhaheheheh!!!": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 90,
+        "current_shield": 0,
+        "current_stagger": 43,
+        "current_light": 4,
+        "current_speed": 7,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted The Queen's Younger Bloodbag 12": {
+        "id": 200035,
+        "name": "Refracted The Queen's Younger Bloodbag 12",
+        "source_file": "data/profiles\\queenBloodBag.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 2,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 2,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 12,
+            "con": 16,
+            "cha": 12,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "The Queen's Empty Kingdom",
+            "Bloodbag"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Feed The Mistress!": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Blood…": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Spreading…. Gossypium": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Feast! Let’s… all Feast! For… Yes, For Her Sake!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Mwhaheheheh!!!": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 90,
+        "current_shield": 0,
+        "current_stagger": 43,
+        "current_light": 4,
+        "current_speed": 7,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted The Queen's Younger Bloodbag 13": {
+        "id": 200035,
+        "name": "Refracted The Queen's Younger Bloodbag 13",
+        "source_file": "data/profiles\\queenBloodBag.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 2,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 2,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 12,
+            "con": 16,
+            "cha": 12,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "The Queen's Empty Kingdom",
+            "Bloodbag"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Feed The Mistress!": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Blood…": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Spreading…. Gossypium": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Feast! Let’s… all Feast! For… Yes, For Her Sake!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Mwhaheheheh!!!": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 90,
+        "current_shield": 0,
+        "current_stagger": 43,
+        "current_light": 4,
+        "current_speed": 4,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted The Queen's Younger Bloodbag 14": {
+        "id": 200035,
+        "name": "Refracted The Queen's Younger Bloodbag 14",
+        "source_file": "data/profiles\\queenBloodBag.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 2,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 2,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 12,
+            "con": 16,
+            "cha": 12,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "The Queen's Empty Kingdom",
+            "Bloodbag"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Feed The Mistress!": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Blood…": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Spreading…. Gossypium": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Feast! Let’s… all Feast! For… Yes, For Her Sake!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Mwhaheheheh!!!": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 90,
+        "current_shield": 0,
+        "current_stagger": 43,
+        "current_light": 4,
+        "current_speed": 5,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted The Queen's Younger Bloodbag 15": {
+        "id": 200035,
+        "name": "Refracted The Queen's Younger Bloodbag 15",
+        "source_file": "data/profiles\\queenBloodBag.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 2,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 2,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 12,
+            "con": 16,
+            "cha": 12,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "The Queen's Empty Kingdom",
+            "Bloodbag"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Feed The Mistress!": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Blood…": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Spreading…. Gossypium": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Feast! Let’s… all Feast! For… Yes, For Her Sake!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Mwhaheheheh!!!": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 90,
+        "current_shield": 0,
+        "current_stagger": 43,
+        "current_light": 4,
+        "current_speed": 5,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted The Queen's Younger Bloodbag 16": {
+        "id": 200035,
+        "name": "Refracted The Queen's Younger Bloodbag 16",
+        "source_file": "data/profiles\\queenBloodBag.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 2,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 2,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 12,
+            "con": 16,
+            "cha": 12,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "The Queen's Empty Kingdom",
+            "Bloodbag"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Feed The Mistress!": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Blood…": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Spreading…. Gossypium": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Feast! Let’s… all Feast! For… Yes, For Her Sake!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Mwhaheheheh!!!": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 90,
+        "current_shield": 0,
+        "current_stagger": 43,
+        "current_light": 4,
+        "current_speed": 7,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted The Queen's Younger Bloodbag 17": {
+        "id": 200035,
+        "name": "Refracted The Queen's Younger Bloodbag 17",
+        "source_file": "data/profiles\\queenBloodBag.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 2,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 2,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 12,
+            "con": 16,
+            "cha": 12,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "The Queen's Empty Kingdom",
+            "Bloodbag"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Feed The Mistress!": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Blood…": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Spreading…. Gossypium": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Feast! Let’s… all Feast! For… Yes, For Her Sake!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Mwhaheheheh!!!": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 90,
+        "current_shield": 0,
+        "current_stagger": 43,
+        "current_light": 4,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted The Queen's Younger Bloodbag 18": {
+        "id": 200035,
+        "name": "Refracted The Queen's Younger Bloodbag 18",
+        "source_file": "data/profiles\\queenBloodBag.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 2,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 2,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 12,
+            "con": 16,
+            "cha": 12,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "The Queen's Empty Kingdom",
+            "Bloodbag"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Feed The Mistress!": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Blood…": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Spreading…. Gossypium": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Feast! Let’s… all Feast! For… Yes, For Her Sake!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Mwhaheheheh!!!": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 90,
+        "current_shield": 0,
+        "current_stagger": 43,
+        "current_light": 4,
+        "current_speed": 5,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted The Queen's Younger Bloodbag 19": {
+        "id": 200035,
+        "name": "Refracted The Queen's Younger Bloodbag 19",
+        "source_file": "data/profiles\\queenBloodBag.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 2,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 2,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 12,
+            "con": 16,
+            "cha": 12,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "The Queen's Empty Kingdom",
+            "Bloodbag"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Feed The Mistress!": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Blood…": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Spreading…. Gossypium": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Feast! Let’s… all Feast! For… Yes, For Her Sake!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Mwhaheheheh!!!": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 90,
+        "current_shield": 0,
+        "current_stagger": 43,
+        "current_light": 4,
+        "current_speed": 4,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted The Queen's Younger Bloodbag 20": {
+        "id": 200035,
+        "name": "Refracted The Queen's Younger Bloodbag 20",
+        "source_file": "data/profiles\\queenBloodBag.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 2,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 2,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 12,
+            "con": 16,
+            "cha": 12,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "The Queen's Empty Kingdom",
+            "Bloodbag"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Feed The Mistress!": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Blood…": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Spreading…. Gossypium": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Feast! Let’s… all Feast! For… Yes, For Her Sake!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Mwhaheheheh!!!": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 90,
+        "current_shield": 0,
+        "current_stagger": 43,
+        "current_light": 4,
+        "current_speed": 6,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted The Queen's Younger Bloodbag 21": {
+        "id": 200035,
+        "name": "Refracted The Queen's Younger Bloodbag 21",
+        "source_file": "data/profiles\\queenBloodBag.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 2,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 2,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 12,
+            "con": 16,
+            "cha": 12,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "The Queen's Empty Kingdom",
+            "Bloodbag"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Feed The Mistress!": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Blood…": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Spreading…. Gossypium": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Feast! Let’s… all Feast! For… Yes, For Her Sake!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Mwhaheheheh!!!": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.5,
+            "Sloth": 1.0,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 90,
+        "current_shield": 0,
+        "current_stagger": 43,
+        "current_light": 4,
+        "current_speed": 7,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    }
+}

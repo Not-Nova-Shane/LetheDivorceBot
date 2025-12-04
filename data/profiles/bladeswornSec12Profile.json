@@ -1,0 +1,1055 @@
+{
+    "Relentless Bladesworn Office Fixer 1": {
+        "id": 200043,
+        "name": "Relentless Bladesworn Office Fixer 1",
+        "source_file": "data/profiles\\bladeswornSec12Profile.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 85,
+        "base_stagger_overwrite": 45,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 5,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 1,
+        "base_max_speed_overwrite": 6,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0,
+            "buffs": {
+                "Paralyze": {
+                    "stack": 2,
+                    "volatile": true
+                }
+            }
+        },
+        "buffs": {
+            "Clash Power Down": {
+                "stack": 2,
+                "volatile": true
+            },
+            "Poise": {
+                "stack": 3,
+                "count": 1
+            },
+            "Bleed": {
+                "stack": 5,
+                "count": 4
+            },
+            "Tremor": {
+                "stack": 18,
+                "count": 11
+            }
+        },
+        "passives": [],
+        "faction": [
+            "Bladesworn Office Section 12",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Diagonal Rend [倍増]": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]": {
+                "cost": 0,
+                "amount": 3
+            },
+            "One Guard [奥深い]": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Ready for Duel [一騎打ち]": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Riddle Holes [刺す]": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "hand": {
+            "One Guard [奥深い]": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]": {
+                "cost": 0,
+                "amount": 3
+            },
+            "Ready for Duel [一騎打ち]": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Diagonal Rend [倍増]": {
+                "cost": 3,
+                "amount": 2
+            }
+        },
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": -13430,
+        "current_shield": 0,
+        "current_stagger": -3186,
+        "current_light": 3,
+        "current_speed": 2,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": true,
+        "staggeredThisTurn": true,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Relentless Bladesworn Office Fixer 2": {
+        "id": 200044,
+        "name": "Relentless Bladesworn Office Fixer 2",
+        "source_file": "data/profiles\\bladeswornSec12Profile.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 85,
+        "base_stagger_overwrite": 45,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 1,
+        "base_max_speed_overwrite": 6,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 1,
+            "buffs": {
+                "Poise": {
+                    "count": 3,
+                    "stack": 1
+                }
+            }
+        },
+        "buffs": {
+            "Ammo": {
+                "stack": 20
+            },
+            "Lights Out": {
+                "stack": 2
+            },
+            "Clash Power Down": {
+                "stack": 7,
+                "volatile": true
+            },
+            "Fragile": {
+                "stack": 5,
+                "volatile": true
+            },
+            "Bind": {
+                "stack": 5,
+                "volatile": true
+            },
+            "Bleed": {
+                "stack": 2,
+                "count": 1
+            },
+            "Tremor": {
+                "stack": 21,
+                "count": 10
+            }
+        },
+        "passives": [],
+        "faction": [
+            "Bladesworn Office Section 12",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Diagonal Rend [倍増]": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]": {
+                "cost": 0,
+                "amount": 3
+            },
+            "One Guard [奥深い]": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Ready for Duel [一騎打ち]": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Riddle Holes [刺す]": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "hand": {
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Riddle Holes [刺す]": {
+                "cost": 2,
+                "amount": 1
+            },
+            "One Guard [奥深い]": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Ready for Duel [一騎打ち]": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Diagonal Rend [倍増]": {
+                "cost": 3,
+                "amount": 2
+            }
+        },
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": -40843,
+        "current_shield": 0,
+        "current_stagger": -9660,
+        "current_light": 5,
+        "current_speed": 5,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": true,
+        "staggeredThisTurn": true,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Relentless Bladesworn Office Fixer 3": {
+        "id": 200045,
+        "name": "Relentless Bladesworn Office Fixer 3",
+        "source_file": "data/profiles\\bladeswornSec12Profile.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 85,
+        "base_stagger_overwrite": 45,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 5,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 1,
+        "base_max_speed_overwrite": 6,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0,
+            "buffs": {}
+        },
+        "buffs": {
+            "Poise": {
+                "stack": 3,
+                "count": 1
+            },
+            "Ammo": {
+                "stack": 20
+            },
+            "Lights Out": {
+                "stack": 2
+            },
+            "Fragile": {
+                "stack": 5,
+                "volatile": true
+            },
+            "Bind": {
+                "stack": 5,
+                "volatile": true
+            },
+            "Clash Power Down": {
+                "stack": 5,
+                "volatile": true
+            }
+        },
+        "passives": [],
+        "faction": [
+            "Bladesworn Office Section 12",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Diagonal Rend [倍増]": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]": {
+                "cost": 0,
+                "amount": 3
+            },
+            "One Guard [奥深い]": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Ready for Duel [一騎打ち]": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Riddle Holes [刺す]": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "hand": {
+            "One Guard [奥深い]": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Ready for Duel [一騎打ち]": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]": {
+                "cost": 0,
+                "amount": 3
+            },
+            "Diagonal Rend [倍増]": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Riddle Holes [刺す]": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": -598,
+        "current_shield": 0,
+        "current_stagger": -182,
+        "current_light": 3,
+        "current_speed": 5,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": true,
+        "staggeredThisTurn": true,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Relentless Bladesworn Office Fixer 4": {
+        "id": 200046,
+        "name": "Relentless Bladesworn Office Fixer 4",
+        "source_file": "data/profiles\\bladeswornSec12Profile.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 85,
+        "base_stagger_overwrite": 45,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 5,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 1,
+        "base_max_speed_overwrite": 6,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0,
+            "buffs": {}
+        },
+        "buffs": {
+            "Poise": {
+                "stack": 6,
+                "count": 2
+            },
+            "Ammo": {
+                "stack": 20
+            },
+            "Lights Out": {
+                "stack": 2
+            },
+            "Fragile": {
+                "stack": 5,
+                "volatile": true
+            },
+            "Bind": {
+                "stack": 5,
+                "volatile": true
+            },
+            "Clash Power Down": {
+                "stack": 5,
+                "volatile": true
+            }
+        },
+        "passives": [],
+        "faction": [
+            "Bladesworn Office Section 12",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Diagonal Rend [倍増]": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]": {
+                "cost": 0,
+                "amount": 3
+            },
+            "One Guard [奥深い]": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Ready for Duel [一騎打ち]": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Riddle Holes [刺す]": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "hand": {
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]": {
+                "cost": 0,
+                "amount": 3
+            },
+            "One Guard [奥深い]": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Diagonal Rend [倍増]": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Ready for Duel [一騎打ち]": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": -598,
+        "current_shield": 0,
+        "current_stagger": -182,
+        "current_light": 3,
+        "current_speed": 4,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": true,
+        "staggeredThisTurn": true,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Relentless Bladesworn Office Fixer 5": {
+        "id": 200045,
+        "name": "Relentless Bladesworn Office Fixer 5",
+        "source_file": "data/profiles\\bladeswornSec12Profile.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 85,
+        "base_stagger_overwrite": 45,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 5,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 1,
+        "base_max_speed_overwrite": 6,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Bladesworn Office Section 12",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Diagonal Rend [倍増]": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]": {
+                "cost": 0,
+                "amount": 3
+            },
+            "One Guard [奥深い]": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Ready for Duel [一騎打ち]": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Riddle Holes [刺す]": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 85,
+        "current_shield": 0,
+        "current_stagger": 45,
+        "current_light": 5,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Relentless Bladesworn Office Fixer 6": {
+        "id": 200046,
+        "name": "Relentless Bladesworn Office Fixer 6",
+        "source_file": "data/profiles\\bladeswornSec12Profile.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 85,
+        "base_stagger_overwrite": 45,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 5,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 1,
+        "base_max_speed_overwrite": 6,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Bladesworn Office Section 12",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Diagonal Rend [倍増]": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]": {
+                "cost": 0,
+                "amount": 3
+            },
+            "One Guard [奥深い]": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Ready for Duel [一騎打ち]": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Riddle Holes [刺す]": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 85,
+        "current_shield": 0,
+        "current_stagger": 45,
+        "current_light": 5,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Uesugi": {
+        "id": 200047,
+        "name": "Uesugi",
+        "source_file": "data/profiles\\bladeswornSec12Profile.json",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 19000,
+        "base_stagger_overwrite": 250,
+        "base_max_light_overwrite": 9,
+        "base_light_gain_overwrite": 4,
+        "base_page_draw_overwrite": 4,
+        "base_min_speed_overwrite": 10,
+        "base_max_speed_overwrite": 60,
+        "hidden": [
+            "hp",
+            "stagger",
+            "speed",
+            "res",
+            "light",
+            "staggerstate",
+            "staggerres",
+            "sinres",
+            "deck"
+        ],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Bladesworn Office Section 1 Rep",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 0.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 0.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Sacrilegious Rend [通路]": {
+                "cost": 2,
+                "amount": 6
+            },
+            "Rite of Judgement [正義の裂け目]": {
+                "cost": 4,
+                "amount": 3
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 0.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 19000,
+        "current_shield": 0,
+        "current_stagger": 250,
+        "current_light": 9,
+        "current_speed": 1,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    }
+}

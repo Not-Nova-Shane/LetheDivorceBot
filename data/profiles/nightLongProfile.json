@@ -1,0 +1,1009 @@
+{
+    "Nightlong Office Fixer 1": {
+        "id": 100001,
+        "name": "Nightlong Office Fixer 1",
+        "source_file": "data/profiles\\nightLongProfile.json",
+        "base_hp": 13,
+        "hp_increment_by_level": 1,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 14,
+            "con": 19,
+            "dex": 16,
+            "int": 18,
+            "cha": 18
+        },
+        "nextturn": {
+            "light": 0,
+            "buffs": {
+                "Offense Level Up": {
+                    "stack": 1,
+                    "volatile": true
+                }
+            }
+        },
+        "buffs": {
+            "Bleed": {
+                "count": 5,
+                "stack": 1
+            },
+            "Ammo": {
+                "stack": 20
+            },
+            "Lights Out": {
+                "stack": 2
+            },
+            "Fragile": {
+                "stack": 5,
+                "volatile": true
+            },
+            "Bind": {
+                "stack": 5,
+                "volatile": true
+            },
+            "Clash Power Down": {
+                "stack": 5,
+                "volatile": true
+            }
+        },
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Nightlong Office Section 5",
+            "Grade 7 Fixer"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.5,
+            "blunt": 1.0,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Lunge Through": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Exploit Shortcomings": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Dustlunge": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Through the Night": {
+                "cost": 4,
+                "amount": 1
+            },
+            "Nightlong": {
+                "cost": 1,
+                "amount": 1
+            }
+        },
+        "hand": {
+            "Nightlong": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Lunge Through": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Dustlunge": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Exploit Shortcomings": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "original_resistances": {
+            "slash": 1.5,
+            "blunt": 1.0,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": -803,
+        "current_shield": 0,
+        "current_stagger": -245,
+        "current_light": 1,
+        "current_speed": 4,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": true,
+        "staggeredThisTurn": true,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Nightlong Office Fixer 2": {
+        "id": 100001,
+        "name": "Nightlong Office Fixer 2",
+        "source_file": "data/profiles\\nightLongProfile.json",
+        "base_hp": 13,
+        "hp_increment_by_level": 1,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 14,
+            "con": 19,
+            "dex": 16,
+            "int": 18,
+            "cha": 18
+        },
+        "nextturn": {
+            "light": 0,
+            "buffs": {}
+        },
+        "buffs": {
+            "Ammo": {
+                "stack": 20
+            },
+            "Bleed": {
+                "stack": 3,
+                "count": 4
+            },
+            "Lights Out": {
+                "stack": 2
+            },
+            "Fragile": {
+                "stack": 5,
+                "volatile": true
+            },
+            "Bind": {
+                "stack": 5,
+                "volatile": true
+            },
+            "Clash Power Down": {
+                "stack": 5,
+                "volatile": true
+            }
+        },
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Nightlong Office Section 5",
+            "Grade 7 Fixer"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.5,
+            "blunt": 1.0,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Lunge Through": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Exploit Shortcomings": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Dustlunge": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Through the Night": {
+                "cost": 4,
+                "amount": 1
+            },
+            "Nightlong": {
+                "cost": 1,
+                "amount": 1
+            }
+        },
+        "hand": {
+            "Exploit Shortcomings": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Through the Night": {
+                "cost": 4,
+                "amount": 1
+            },
+            "Lunge Through": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Dustlunge": {
+                "cost": 0,
+                "amount": 1
+            }
+        },
+        "original_resistances": {
+            "slash": 1.5,
+            "blunt": 1.0,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": -1001,
+        "current_shield": 0,
+        "current_stagger": -315,
+        "current_light": 5,
+        "current_speed": 7,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": true,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Nightlong Office Fixer 3": {
+        "id": 100001,
+        "name": "Nightlong Office Fixer 3",
+        "source_file": "data/profiles\\nightLongProfile.json",
+        "base_hp": 13,
+        "hp_increment_by_level": 1,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 14,
+            "con": 19,
+            "dex": 16,
+            "int": 18,
+            "cha": 18
+        },
+        "nextturn": {
+            "light": 0,
+            "buffs": {}
+        },
+        "buffs": {
+            "Ammo": {
+                "stack": 20
+            },
+            "Lights Out": {
+                "stack": 2
+            },
+            "Fragile": {
+                "stack": 5,
+                "volatile": true
+            },
+            "Bind": {
+                "stack": 5,
+                "volatile": true
+            },
+            "Clash Power Down": {
+                "stack": 5,
+                "volatile": true
+            },
+            "Pierce Damage Up": {
+                "stack": 2,
+                "volatile": true
+            }
+        },
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Nightlong Office Section 5",
+            "Grade 7 Fixer"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.5,
+            "blunt": 1.0,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Lunge Through": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Exploit Shortcomings": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Dustlunge": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Through the Night": {
+                "cost": 4,
+                "amount": 1
+            },
+            "Nightlong": {
+                "cost": 1,
+                "amount": 1
+            }
+        },
+        "hand": {
+            "Dustlunge": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Lunge Through": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Through the Night": {
+                "cost": 4,
+                "amount": 1
+            },
+            "Nightlong": {
+                "cost": 1,
+                "amount": 1
+            }
+        },
+        "original_resistances": {
+            "slash": 1.5,
+            "blunt": 1.0,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": -792,
+        "current_shield": 0,
+        "current_stagger": -234,
+        "current_light": 3,
+        "current_speed": 7,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": true,
+        "staggeredThisTurn": true,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Nightlong Office Fixer 4": {
+        "id": 100001,
+        "name": "Nightlong Office Fixer 4",
+        "source_file": "data/profiles\\nightLongProfile.json",
+        "base_hp": 13,
+        "hp_increment_by_level": 1,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 14,
+            "con": 19,
+            "dex": 16,
+            "int": 18,
+            "cha": 18
+        },
+        "nextturn": {
+            "light": 1,
+            "buffs": {}
+        },
+        "buffs": {
+            "Ammo": {
+                "stack": 20
+            },
+            "Lights Out": {
+                "stack": 2
+            },
+            "Offense Level Up": {
+                "stack": 1,
+                "volatile": true
+            },
+            "Fragile": {
+                "stack": 5,
+                "volatile": true
+            },
+            "Bind": {
+                "stack": 5,
+                "volatile": true
+            },
+            "Clash Power Down": {
+                "stack": 5,
+                "volatile": true
+            }
+        },
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Nightlong Office Section 5",
+            "Grade 7 Fixer"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.5,
+            "blunt": 1.0,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Lunge Through": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Exploit Shortcomings": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Dustlunge": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Through the Night": {
+                "cost": 4,
+                "amount": 1
+            },
+            "Nightlong": {
+                "cost": 1,
+                "amount": 1
+            }
+        },
+        "hand": {
+            "Exploit Shortcomings": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Nightlong": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Lunge Through": {
+                "cost": 1,
+                "amount": 2
+            }
+        },
+        "original_resistances": {
+            "slash": 1.5,
+            "blunt": 1.0,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": -792,
+        "current_shield": 0,
+        "current_stagger": -234,
+        "current_light": 2,
+        "current_speed": 6,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": true,
+        "staggeredThisTurn": true,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Nightlong Office Fixer 5": {
+        "id": 100001,
+        "name": "Nightlong Office Fixer 5",
+        "source_file": "data/profiles\\nightLongProfile.json",
+        "base_hp": 13,
+        "hp_increment_by_level": 1,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 14,
+            "con": 19,
+            "dex": 16,
+            "int": 18,
+            "cha": 18
+        },
+        "nextturn": {
+            "light": 1,
+            "buffs": {}
+        },
+        "buffs": {
+            "Ammo": {
+                "stack": 20
+            },
+            "Offense Level Up": {
+                "stack": 1,
+                "volatile": true
+            },
+            "Lights Out": {
+                "stack": 2
+            },
+            "Fragile": {
+                "stack": 5,
+                "volatile": true
+            },
+            "Bind": {
+                "stack": 5,
+                "volatile": true
+            },
+            "Clash Power Down": {
+                "stack": 5,
+                "volatile": true
+            }
+        },
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Nightlong Office Section 5",
+            "Grade 7 Fixer"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.5,
+            "blunt": 1.0,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Lunge Through": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Exploit Shortcomings": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Dustlunge": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Through the Night": {
+                "cost": 4,
+                "amount": 1
+            },
+            "Nightlong": {
+                "cost": 1,
+                "amount": 1
+            }
+        },
+        "hand": {
+            "Exploit Shortcomings": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Lunge Through": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Nightlong": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Through the Night": {
+                "cost": 4,
+                "amount": 1
+            }
+        },
+        "original_resistances": {
+            "slash": 1.5,
+            "blunt": 1.0,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": -792,
+        "current_shield": 0,
+        "current_stagger": -234,
+        "current_light": 2,
+        "current_speed": 4,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": true,
+        "staggeredThisTurn": true,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Nightlong Office Fixer 6": {
+        "id": 100001,
+        "name": "Nightlong Office Fixer 6",
+        "source_file": "data/profiles\\nightLongProfile.json",
+        "base_hp": 13,
+        "hp_increment_by_level": 1,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 14,
+            "con": 19,
+            "dex": 16,
+            "int": 18,
+            "cha": 18
+        },
+        "nextturn": {
+            "light": 0,
+            "buffs": {}
+        },
+        "buffs": {
+            "Ammo": {
+                "stack": 20
+            },
+            "Lights Out": {
+                "stack": 2
+            },
+            "Offense Level Up": {
+                "stack": 2,
+                "volatile": true
+            },
+            "Fragile": {
+                "stack": 5,
+                "volatile": true
+            },
+            "Bind": {
+                "stack": 5,
+                "volatile": true
+            },
+            "Clash Power Down": {
+                "stack": 5,
+                "volatile": true
+            }
+        },
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Nightlong Office Section 5",
+            "Grade 7 Fixer"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.5,
+            "blunt": 1.0,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Lunge Through": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Exploit Shortcomings": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Dustlunge": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Through the Night": {
+                "cost": 4,
+                "amount": 1
+            },
+            "Nightlong": {
+                "cost": 1,
+                "amount": 1
+            }
+        },
+        "hand": {
+            "Through the Night": {
+                "cost": 4,
+                "amount": 1
+            },
+            "Lunge Through": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Exploit Shortcomings": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Dustlunge": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Nightlong": {
+                "cost": 1,
+                "amount": 1
+            }
+        },
+        "original_resistances": {
+            "slash": 1.5,
+            "blunt": 1.0,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": -792,
+        "current_shield": 0,
+        "current_stagger": -234,
+        "current_light": 4,
+        "current_speed": 5,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": true,
+        "staggeredThisTurn": true,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    }
+}

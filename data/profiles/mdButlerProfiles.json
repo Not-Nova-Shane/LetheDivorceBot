@@ -1,0 +1,1290 @@
+{
+    "Refracted Maid 1": {
+        "id": 200043,
+        "name": "Refracted Maid 1",
+        "source_file": "data/profiles\\mdButlerProfiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 14,
+            "int": 10,
+            "con": 16,
+            "cha": 10,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "The Queen's Empty Kingdom",
+            "Bound Servants of the Manor",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.2,
+            "blunt": 1.0,
+            "pierce": 1.2
+        },
+        "stagger_resistances": {
+            "slash": 1.2,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 1.2,
+            "Sloth": 0.6,
+            "Gluttony": 0.6,
+            "Gloom": 1.5,
+            "Pride": 1.5,
+            "Envy": 1.0,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Interloper Response": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Knocking": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Time… to Clean": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Slippery Rat!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "As The Queen Commands...!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Begone!": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.2,
+            "blunt": 1.0,
+            "pierce": 1.2
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 1.2,
+            "Sloth": 0.6,
+            "Gluttony": 0.6,
+            "Gloom": 1.5,
+            "Pride": 1.5,
+            "Envy": 1.0,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 90,
+        "current_shield": 0,
+        "current_stagger": 57,
+        "current_light": 3,
+        "current_speed": 4,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Maid 2": {
+        "id": 200043,
+        "name": "Refracted Maid 2",
+        "source_file": "data/profiles\\mdButlerProfiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 14,
+            "int": 10,
+            "con": 16,
+            "cha": 10,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "The Queen's Empty Kingdom",
+            "Bound Servants of the Manor",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.2,
+            "blunt": 1.0,
+            "pierce": 1.2
+        },
+        "stagger_resistances": {
+            "slash": 1.2,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 1.2,
+            "Sloth": 0.6,
+            "Gluttony": 0.6,
+            "Gloom": 1.5,
+            "Pride": 1.5,
+            "Envy": 1.0,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Interloper Response": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Knocking": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Time… to Clean": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Slippery Rat!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "As The Queen Commands...!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Begone!": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.2,
+            "blunt": 1.0,
+            "pierce": 1.2
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 1.2,
+            "Sloth": 0.6,
+            "Gluttony": 0.6,
+            "Gloom": 1.5,
+            "Pride": 1.5,
+            "Envy": 1.0,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 90,
+        "current_shield": 0,
+        "current_stagger": 57,
+        "current_light": 3,
+        "current_speed": 4,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Bloodbagged Maid 1": {
+        "id": 200043,
+        "name": "Refracted Bloodbagged Maid 1",
+        "source_file": "data/profiles\\mdButlerProfiles.json",
+        "base_hp": 25,
+        "hp_increment_by_level": 6,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 2,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 14,
+            "int": 10,
+            "con": 16,
+            "cha": 10,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "The Queen's Empty Kingdom",
+            "Bound Servants of the Manor",
+            "Bloodbag",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.2,
+            "blunt": 1.0,
+            "pierce": 1.2
+        },
+        "stagger_resistances": {
+            "slash": 1.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 1.2,
+            "Sloth": 0.6,
+            "Gluttony": 0.6,
+            "Gloom": 1.5,
+            "Pride": 1.5,
+            "Envy": 1.0,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Blood…": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Knocking": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Mwhaheheheh!!!": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Feast! Let’s… all Feast! For… Yes, For Her Sake!": {
+                "cost": 2,
+                "amount": 3
+            },
+            "Begone!": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.2,
+            "blunt": 1.0,
+            "pierce": 1.2
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 1.2,
+            "Sloth": 0.6,
+            "Gluttony": 0.6,
+            "Gloom": 1.5,
+            "Pride": 1.5,
+            "Envy": 1.0,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 151,
+        "current_shield": 0,
+        "current_stagger": 71,
+        "current_light": 3,
+        "current_speed": 4,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Bloodbagged Maid 2": {
+        "id": 200043,
+        "name": "Refracted Bloodbagged Maid 2",
+        "source_file": "data/profiles\\mdButlerProfiles.json",
+        "base_hp": 25,
+        "hp_increment_by_level": 6,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 2,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 14,
+            "int": 10,
+            "con": 16,
+            "cha": 10,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "The Queen's Empty Kingdom",
+            "Bound Servants of the Manor",
+            "Bloodbag",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.2,
+            "blunt": 1.0,
+            "pierce": 1.2
+        },
+        "stagger_resistances": {
+            "slash": 1.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 1.2,
+            "Sloth": 0.6,
+            "Gluttony": 0.6,
+            "Gloom": 1.5,
+            "Pride": 1.5,
+            "Envy": 1.0,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Blood…": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Knocking": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Mwhaheheheh!!!": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Feast! Let’s… all Feast! For… Yes, For Her Sake!": {
+                "cost": 2,
+                "amount": 3
+            },
+            "Begone!": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.2,
+            "blunt": 1.0,
+            "pierce": 1.2
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 1.2,
+            "Sloth": 0.6,
+            "Gluttony": 0.6,
+            "Gloom": 1.5,
+            "Pride": 1.5,
+            "Envy": 1.0,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 151,
+        "current_shield": 0,
+        "current_stagger": 71,
+        "current_light": 3,
+        "current_speed": 4,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Bloodbagged Maid 3": {
+        "id": 200043,
+        "name": "Refracted Bloodbagged Maid 3",
+        "source_file": "data/profiles\\mdButlerProfiles.json",
+        "base_hp": 25,
+        "hp_increment_by_level": 6,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 2,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 14,
+            "int": 10,
+            "con": 16,
+            "cha": 10,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "The Queen's Empty Kingdom",
+            "Bound Servants of the Manor",
+            "Bloodbag",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.2,
+            "blunt": 1.0,
+            "pierce": 1.2
+        },
+        "stagger_resistances": {
+            "slash": 1.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 1.2,
+            "Sloth": 0.6,
+            "Gluttony": 0.6,
+            "Gloom": 1.5,
+            "Pride": 1.5,
+            "Envy": 1.0,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Blood…": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Knocking": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Mwhaheheheh!!!": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Feast! Let’s… all Feast! For… Yes, For Her Sake!": {
+                "cost": 2,
+                "amount": 3
+            },
+            "Begone!": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.2,
+            "blunt": 1.0,
+            "pierce": 1.2
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 1.2,
+            "Sloth": 0.6,
+            "Gluttony": 0.6,
+            "Gloom": 1.5,
+            "Pride": 1.5,
+            "Envy": 1.0,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 151,
+        "current_shield": 0,
+        "current_stagger": 71,
+        "current_light": 3,
+        "current_speed": 4,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Bloodbagged Maid 4": {
+        "id": 200043,
+        "name": "Refracted Bloodbagged Maid 4",
+        "source_file": "data/profiles\\mdButlerProfiles.json",
+        "base_hp": 25,
+        "hp_increment_by_level": 6,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 2,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 14,
+            "int": 10,
+            "con": 16,
+            "cha": 10,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "The Queen's Empty Kingdom",
+            "Bound Servants of the Manor",
+            "Bloodbag",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.2,
+            "blunt": 1.0,
+            "pierce": 1.2
+        },
+        "stagger_resistances": {
+            "slash": 1.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 1.2,
+            "Sloth": 0.6,
+            "Gluttony": 0.6,
+            "Gloom": 1.5,
+            "Pride": 1.5,
+            "Envy": 1.0,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Blood…": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Knocking": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Mwhaheheheh!!!": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Feast! Let’s… all Feast! For… Yes, For Her Sake!": {
+                "cost": 2,
+                "amount": 3
+            },
+            "Begone!": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.2,
+            "blunt": 1.0,
+            "pierce": 1.2
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 1.2,
+            "Sloth": 0.6,
+            "Gluttony": 0.6,
+            "Gloom": 1.5,
+            "Pride": 1.5,
+            "Envy": 1.0,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 151,
+        "current_shield": 0,
+        "current_stagger": 71,
+        "current_light": 3,
+        "current_speed": 8,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Maid 3": {
+        "id": 200043,
+        "name": "Refracted Maid 3",
+        "source_file": "data/profiles\\mdButlerProfiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 14,
+            "int": 10,
+            "con": 16,
+            "cha": 10,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "The Queen's Empty Kingdom",
+            "Bound Servants of the Manor",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.2,
+            "blunt": 1.0,
+            "pierce": 1.2
+        },
+        "stagger_resistances": {
+            "slash": 1.2,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 1.2,
+            "Sloth": 0.6,
+            "Gluttony": 0.6,
+            "Gloom": 1.5,
+            "Pride": 1.5,
+            "Envy": 1.0,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Interloper Response": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Knocking": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Time… to Clean": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Slippery Rat!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "As The Queen Commands...!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Begone!": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.2,
+            "blunt": 1.0,
+            "pierce": 1.2
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 1.2,
+            "Sloth": 0.6,
+            "Gluttony": 0.6,
+            "Gloom": 1.5,
+            "Pride": 1.5,
+            "Envy": 1.0,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 90,
+        "current_shield": 0,
+        "current_stagger": 57,
+        "current_light": 3,
+        "current_speed": 5,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Maid 4": {
+        "id": 200043,
+        "name": "Refracted Maid 4",
+        "source_file": "data/profiles\\mdButlerProfiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 14,
+            "int": 10,
+            "con": 16,
+            "cha": 10,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "The Queen's Empty Kingdom",
+            "Bound Servants of the Manor",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.2,
+            "blunt": 1.0,
+            "pierce": 1.2
+        },
+        "stagger_resistances": {
+            "slash": 1.2,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 1.2,
+            "Sloth": 0.6,
+            "Gluttony": 0.6,
+            "Gloom": 1.5,
+            "Pride": 1.5,
+            "Envy": 1.0,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Interloper Response": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Knocking": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Time… to Clean": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Slippery Rat!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "As The Queen Commands...!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Begone!": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.2,
+            "blunt": 1.0,
+            "pierce": 1.2
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 1.2,
+            "Sloth": 0.6,
+            "Gluttony": 0.6,
+            "Gloom": 1.5,
+            "Pride": 1.5,
+            "Envy": 1.0,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 90,
+        "current_shield": 0,
+        "current_stagger": 57,
+        "current_light": 3,
+        "current_speed": 6,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Maid 5": {
+        "id": 200043,
+        "name": "Refracted Maid 5",
+        "source_file": "data/profiles\\mdButlerProfiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 14,
+            "int": 10,
+            "con": 16,
+            "cha": 10,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "The Queen's Empty Kingdom",
+            "Bound Servants of the Manor",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.2,
+            "blunt": 1.0,
+            "pierce": 1.2
+        },
+        "stagger_resistances": {
+            "slash": 1.2,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 1.2,
+            "Sloth": 0.6,
+            "Gluttony": 0.6,
+            "Gloom": 1.5,
+            "Pride": 1.5,
+            "Envy": 1.0,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Interloper Response": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Knocking": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Time… to Clean": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Slippery Rat!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "As The Queen Commands...!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Begone!": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.2,
+            "blunt": 1.0,
+            "pierce": 1.2
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 1.2,
+            "Sloth": 0.6,
+            "Gluttony": 0.6,
+            "Gloom": 1.5,
+            "Pride": 1.5,
+            "Envy": 1.0,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 90,
+        "current_shield": 0,
+        "current_stagger": 57,
+        "current_light": 3,
+        "current_speed": 3,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Maid 6": {
+        "id": 200043,
+        "name": "Refracted Maid 6",
+        "source_file": "data/profiles\\mdButlerProfiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 14,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 14,
+            "int": 10,
+            "con": 16,
+            "cha": 10,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "The Queen's Empty Kingdom",
+            "Bound Servants of the Manor",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.2,
+            "blunt": 1.0,
+            "pierce": 1.2
+        },
+        "stagger_resistances": {
+            "slash": 1.2,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 1.2,
+            "Sloth": 0.6,
+            "Gluttony": 0.6,
+            "Gloom": 1.5,
+            "Pride": 1.5,
+            "Envy": 1.0,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Interloper Response": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Knocking": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Time… to Clean": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Slippery Rat!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "As The Queen Commands...!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Begone!": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.2,
+            "blunt": 1.0,
+            "pierce": 1.2
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 1.2,
+            "Sloth": 0.6,
+            "Gluttony": 0.6,
+            "Gloom": 1.5,
+            "Pride": 1.5,
+            "Envy": 1.0,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 90,
+        "current_shield": 0,
+        "current_stagger": 57,
+        "current_light": 3,
+        "current_speed": 4,
+        "offense_level_sources": {
+            "base": 42
+        },
+        "defense_level_sources": {
+            "base": 42
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    }
+}

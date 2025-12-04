@@ -1,0 +1,2204 @@
+{
+    "The Queen Of The Empty Castle": {
+        "id": 200047,
+        "name": "The Queen Of The Empty Castle",
+        "source_file": "data/profiles\\queenBloodfiends.json",
+        "base_hp": 2030,
+        "hp_increment_by_level": 2,
+        "base_stagger": 30,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 4,
+        "base_page_draw": 6,
+        "base_min_speed": 2,
+        "base_max_speed": 3,
+        "attack_slot": 6,
+        "level": 90,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 27,
+        "base_max_speed_overwrite": 37,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 32,
+            "int": 26,
+            "con": 62,
+            "cha": 26,
+            "dex": 36
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "The Queen",
+            "Monster of the Outskirts",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 0.5,
+            "blunt": 0.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 0.5,
+            "blunt": 0.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 0.2,
+            "Lust": 0.2,
+            "Sloth": 0.75,
+            "Gluttony": 0.75,
+            "Gloom": 2.0,
+            "Pride": 2.0,
+            "Envy": 0.75,
+            "White": 2.0,
+            "Black": 2.0,
+            "none": 1.0
+        },
+        "deck": {
+            "A Queen... Should Not Fight": {
+                "cost": 0,
+                "amount": 8
+            },
+            "Entertainment": {
+                "cost": 12,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 0.5,
+            "blunt": 0.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 0.2,
+            "Lust": 0.2,
+            "Sloth": 0.75,
+            "Gluttony": 0.75,
+            "Gloom": 2.0,
+            "Pride": 2.0,
+            "Envy": 0.75,
+            "White": 2.0,
+            "Black": 2.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 4550,
+        "current_shield": 0,
+        "current_stagger": 1110,
+        "current_light": 19,
+        "current_speed": 26,
+        "offense_level_sources": {
+            "base": 270,
+            "OffenseLevelUpBuff": 9
+        },
+        "defense_level_sources": {
+            "base": 270
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Head Maid": {
+        "id": 200043,
+        "name": "Refracted Head Maid",
+        "source_file": "data/profiles\\queenBloodfiends.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 6,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 6,
+        "base_light_gain": 1,
+        "base_page_draw": 2,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 16,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 18,
+            "int": 18,
+            "con": 28,
+            "cha": 10,
+            "dex": 18
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "The Queen's Empty Kingdom",
+            "Bound Servants of the Manor",
+            "Bloodfiend",
+            "6th Kindred",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 0.5,
+            "blunt": 1.2,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 0.5,
+            "blunt": 1.2,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.5,
+            "Lust": 1.5,
+            "Sloth": 0.5,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.5,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Interloper Response": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Knocking": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Time… to Clean": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Slippery Rat!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "As The Queen Commands...!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Not Even a Speck of Dust!": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Begone!": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 0.5,
+            "blunt": 1.2,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.5,
+            "Lust": 1.5,
+            "Sloth": 0.5,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.5,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 260,
+        "current_shield": 0,
+        "current_stagger": 95,
+        "current_light": 9,
+        "current_speed": 6,
+        "offense_level_sources": {
+            "base": 48
+        },
+        "defense_level_sources": {
+            "base": 48
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Loyal Retainer of the Queen 1": {
+        "id": 200043,
+        "name": "Refracted Loyal Retainer of the Queen 1",
+        "source_file": "data/profiles\\queenBloodfiends.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 4,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 3,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 2,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 16,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 18,
+            "int": 18,
+            "con": 24,
+            "cha": 10,
+            "dex": 18
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "The Queen's Empty Kingdom",
+            "Bloodfiend",
+            "5th Kindred",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.5,
+            "Lust": 1.5,
+            "Sloth": 0.5,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.5,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Bloodcharger": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Bloodied Palms": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Recharger": {
+                "cost": 1,
+                "amount": 1
+            },
+            "The Whip": {
+                "cost": 2,
+                "amount": 1
+            },
+            "That’s… Mine!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Luke 23:34": {
+                "cost": 3,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.5,
+            "Lust": 1.5,
+            "Sloth": 0.5,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.5,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 196,
+        "current_shield": 0,
+        "current_stagger": 127,
+        "current_light": 5,
+        "current_speed": 7,
+        "offense_level_sources": {
+            "base": 48
+        },
+        "defense_level_sources": {
+            "base": 48
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Loyal Retainer of the Queen 2": {
+        "id": 200043,
+        "name": "Refracted Loyal Retainer of the Queen 2",
+        "source_file": "data/profiles\\queenBloodfiends.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 4,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 3,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 2,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 16,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 18,
+            "int": 18,
+            "con": 24,
+            "cha": 10,
+            "dex": 18
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "The Queen's Empty Kingdom",
+            "Bloodfiend",
+            "5th Kindred",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.5,
+            "Lust": 1.5,
+            "Sloth": 0.5,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.5,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Bloodcharger": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Bloodied Palms": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Recharger": {
+                "cost": 1,
+                "amount": 1
+            },
+            "The Whip": {
+                "cost": 2,
+                "amount": 1
+            },
+            "That’s… Mine!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Luke 23:34": {
+                "cost": 3,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.5,
+            "Lust": 1.5,
+            "Sloth": 0.5,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.5,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 196,
+        "current_shield": 0,
+        "current_stagger": 127,
+        "current_light": 5,
+        "current_speed": 9,
+        "offense_level_sources": {
+            "base": 48
+        },
+        "defense_level_sources": {
+            "base": 48
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Loyal Retainer of the Queen 3": {
+        "id": 200043,
+        "name": "Refracted Loyal Retainer of the Queen 3",
+        "source_file": "data/profiles\\queenBloodfiends.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 4,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 3,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 2,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 16,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 18,
+            "int": 18,
+            "con": 24,
+            "cha": 10,
+            "dex": 18
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "The Queen's Empty Kingdom",
+            "Bloodfiend",
+            "5th Kindred",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.5,
+            "Lust": 1.5,
+            "Sloth": 0.5,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.5,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Bloodcharger": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Bloodied Palms": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Recharger": {
+                "cost": 1,
+                "amount": 1
+            },
+            "The Whip": {
+                "cost": 2,
+                "amount": 1
+            },
+            "That’s… Mine!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Luke 23:34": {
+                "cost": 3,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.5,
+            "Lust": 1.5,
+            "Sloth": 0.5,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.5,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 196,
+        "current_shield": 0,
+        "current_stagger": 127,
+        "current_light": 5,
+        "current_speed": 5,
+        "offense_level_sources": {
+            "base": 48
+        },
+        "defense_level_sources": {
+            "base": 48
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Loyal Retainer of the Queen 4": {
+        "id": 200043,
+        "name": "Refracted Loyal Retainer of the Queen 4",
+        "source_file": "data/profiles\\queenBloodfiends.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 4,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 3,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 2,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 16,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 18,
+            "int": 18,
+            "con": 24,
+            "cha": 10,
+            "dex": 18
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "The Queen's Empty Kingdom",
+            "Bloodfiend",
+            "5th Kindred",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.5,
+            "Lust": 1.5,
+            "Sloth": 0.5,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.5,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Bloodcharger": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Bloodied Palms": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Recharger": {
+                "cost": 1,
+                "amount": 1
+            },
+            "The Whip": {
+                "cost": 2,
+                "amount": 1
+            },
+            "That’s… Mine!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Luke 23:34": {
+                "cost": 3,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.5,
+            "Lust": 1.5,
+            "Sloth": 0.5,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.5,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 196,
+        "current_shield": 0,
+        "current_stagger": 127,
+        "current_light": 5,
+        "current_speed": 10,
+        "offense_level_sources": {
+            "base": 48
+        },
+        "defense_level_sources": {
+            "base": 48
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Loyal Retainer of the Queen 5": {
+        "id": 200043,
+        "name": "Refracted Loyal Retainer of the Queen 5",
+        "source_file": "data/profiles\\queenBloodfiends.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 4,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 3,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 2,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 16,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 18,
+            "int": 18,
+            "con": 24,
+            "cha": 10,
+            "dex": 18
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "The Queen's Empty Kingdom",
+            "Bloodfiend",
+            "5th Kindred",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.5,
+            "Lust": 1.5,
+            "Sloth": 0.5,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.5,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Bloodcharger": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Bloodied Palms": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Recharger": {
+                "cost": 1,
+                "amount": 1
+            },
+            "The Whip": {
+                "cost": 2,
+                "amount": 1
+            },
+            "That’s… Mine!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Luke 23:34": {
+                "cost": 3,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.5,
+            "Lust": 1.5,
+            "Sloth": 0.5,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.5,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 196,
+        "current_shield": 0,
+        "current_stagger": 127,
+        "current_light": 5,
+        "current_speed": 8,
+        "offense_level_sources": {
+            "base": 48
+        },
+        "defense_level_sources": {
+            "base": 48
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Loyal Retainer of the Queen 6": {
+        "id": 200043,
+        "name": "Refracted Loyal Retainer of the Queen 6",
+        "source_file": "data/profiles\\queenBloodfiends.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 4,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 3,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 2,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 16,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 18,
+            "int": 18,
+            "con": 24,
+            "cha": 10,
+            "dex": 18
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "The Queen's Empty Kingdom",
+            "Bloodfiend",
+            "5th Kindred",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.5,
+            "Lust": 1.5,
+            "Sloth": 0.5,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.5,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Bloodcharger": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Bloodied Palms": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Recharger": {
+                "cost": 1,
+                "amount": 1
+            },
+            "The Whip": {
+                "cost": 2,
+                "amount": 1
+            },
+            "That’s… Mine!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Luke 23:34": {
+                "cost": 3,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.5,
+            "Lust": 1.5,
+            "Sloth": 0.5,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.5,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 196,
+        "current_shield": 0,
+        "current_stagger": 127,
+        "current_light": 5,
+        "current_speed": 9,
+        "offense_level_sources": {
+            "base": 48
+        },
+        "defense_level_sources": {
+            "base": 48
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Loyal Retainer of the Queen 7": {
+        "id": 200043,
+        "name": "Refracted Loyal Retainer of the Queen 7",
+        "source_file": "data/profiles\\queenBloodfiends.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 4,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 3,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 2,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 16,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 18,
+            "int": 18,
+            "con": 24,
+            "cha": 10,
+            "dex": 18
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "The Queen's Empty Kingdom",
+            "Bloodfiend",
+            "5th Kindred",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.5,
+            "Lust": 1.5,
+            "Sloth": 0.5,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.5,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Bloodcharger": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Bloodied Palms": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Recharger": {
+                "cost": 1,
+                "amount": 1
+            },
+            "The Whip": {
+                "cost": 2,
+                "amount": 1
+            },
+            "That’s… Mine!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Luke 23:34": {
+                "cost": 3,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.5,
+            "Lust": 1.5,
+            "Sloth": 0.5,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.5,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 196,
+        "current_shield": 0,
+        "current_stagger": 127,
+        "current_light": 5,
+        "current_speed": 8,
+        "offense_level_sources": {
+            "base": 48
+        },
+        "defense_level_sources": {
+            "base": 48
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Loyal Retainer of the Queen 8": {
+        "id": 200043,
+        "name": "Refracted Loyal Retainer of the Queen 8",
+        "source_file": "data/profiles\\queenBloodfiends.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 4,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 3,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 2,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 16,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 18,
+            "int": 18,
+            "con": 24,
+            "cha": 10,
+            "dex": 18
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "The Queen's Empty Kingdom",
+            "Bloodfiend",
+            "5th Kindred",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.5,
+            "Lust": 1.5,
+            "Sloth": 0.5,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.5,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Bloodcharger": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Bloodied Palms": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Recharger": {
+                "cost": 1,
+                "amount": 1
+            },
+            "The Whip": {
+                "cost": 2,
+                "amount": 1
+            },
+            "That’s… Mine!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Luke 23:34": {
+                "cost": 3,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.5,
+            "Lust": 1.5,
+            "Sloth": 0.5,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.5,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 196,
+        "current_shield": 0,
+        "current_stagger": 127,
+        "current_light": 5,
+        "current_speed": 6,
+        "offense_level_sources": {
+            "base": 48
+        },
+        "defense_level_sources": {
+            "base": 48
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Loyal Retainer of the Queen 9": {
+        "id": 200043,
+        "name": "Refracted Loyal Retainer of the Queen 9",
+        "source_file": "data/profiles\\queenBloodfiends.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 4,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 3,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 2,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 16,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 18,
+            "int": 18,
+            "con": 24,
+            "cha": 10,
+            "dex": 18
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "The Queen's Empty Kingdom",
+            "Bloodfiend",
+            "5th Kindred",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.5,
+            "Lust": 1.5,
+            "Sloth": 0.5,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.5,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Bloodcharger": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Bloodied Palms": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Recharger": {
+                "cost": 1,
+                "amount": 1
+            },
+            "The Whip": {
+                "cost": 2,
+                "amount": 1
+            },
+            "That’s… Mine!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Luke 23:34": {
+                "cost": 3,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.5,
+            "Lust": 1.5,
+            "Sloth": 0.5,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.5,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 196,
+        "current_shield": 0,
+        "current_stagger": 127,
+        "current_light": 5,
+        "current_speed": 10,
+        "offense_level_sources": {
+            "base": 48
+        },
+        "defense_level_sources": {
+            "base": 48
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Loyal Retainer of the Queen 10": {
+        "id": 200043,
+        "name": "Refracted Loyal Retainer of the Queen 10",
+        "source_file": "data/profiles\\queenBloodfiends.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 4,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 3,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 2,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 16,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 18,
+            "int": 18,
+            "con": 24,
+            "cha": 10,
+            "dex": 18
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "The Queen's Empty Kingdom",
+            "Bloodfiend",
+            "5th Kindred",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.5,
+            "Lust": 1.5,
+            "Sloth": 0.5,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.5,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Bloodcharger": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Bloodied Palms": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Recharger": {
+                "cost": 1,
+                "amount": 1
+            },
+            "The Whip": {
+                "cost": 2,
+                "amount": 1
+            },
+            "That’s… Mine!": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Luke 23:34": {
+                "cost": 3,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.5,
+            "Lust": 1.5,
+            "Sloth": 0.5,
+            "Gluttony": 0.5,
+            "Gloom": 1.5,
+            "Pride": 1.0,
+            "Envy": 1.5,
+            "White": 3.0,
+            "Black": 3.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 196,
+        "current_shield": 0,
+        "current_stagger": 127,
+        "current_light": 5,
+        "current_speed": 5,
+        "offense_level_sources": {
+            "base": 48
+        },
+        "defense_level_sources": {
+            "base": 48
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Bloodbagged Arrowedge Office Fixer 1": {
+        "id": 100011,
+        "name": "Refracted Bloodbagged Arrowedge Office Fixer 1",
+        "source_file": "data/profiles\\queenBloodfiends.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 10,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 17,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 14,
+            "con": 18,
+            "dex": 16,
+            "int": 18,
+            "cha": 18
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "The Queen's Empty Kingdom",
+            "Bloodbag",
+            "Arrowedge Office Section 2",
+            "Grade 7 Fixer"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.2,
+            "blunt": 1.2,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.2,
+            "pierce": 0.8
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 0.6,
+            "Gloom": 1.0,
+            "Pride": 1.5,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Tendon Piercer": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Refracted Frantic Maelstrom": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Drawstring": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Death From Above": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Quiver Smack": {
+                "cost": 0,
+                "amount": 3
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.2,
+            "blunt": 1.2,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 0.6,
+            "Gloom": 1.0,
+            "Pride": 1.5,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 122,
+        "current_shield": 0,
+        "current_stagger": 61,
+        "current_light": 5,
+        "current_speed": 7,
+        "offense_level_sources": {
+            "base": 51
+        },
+        "defense_level_sources": {
+            "base": 51
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Bloodbagged Arrowedge Office Fixer 2": {
+        "id": 100011,
+        "name": "Refracted Bloodbagged Arrowedge Office Fixer 2",
+        "source_file": "data/profiles\\queenBloodfiends.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 10,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 17,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 14,
+            "con": 18,
+            "dex": 16,
+            "int": 18,
+            "cha": 18
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "The Queen's Empty Kingdom",
+            "Bloodbag",
+            "Arrowedge Office Section 2",
+            "Grade 7 Fixer"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.2,
+            "blunt": 1.2,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.2,
+            "pierce": 0.8
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 0.6,
+            "Gloom": 1.0,
+            "Pride": 1.5,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Tendon Piercer": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Refracted Frantic Maelstrom": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Drawstring": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Death From Above": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Quiver Smack": {
+                "cost": 0,
+                "amount": 3
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.2,
+            "blunt": 1.2,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 0.6,
+            "Gloom": 1.0,
+            "Pride": 1.5,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 122,
+        "current_shield": 0,
+        "current_stagger": 61,
+        "current_light": 5,
+        "current_speed": 4,
+        "offense_level_sources": {
+            "base": 51,
+            "OffenseLevelUpBuff": 3
+        },
+        "defense_level_sources": {
+            "base": 51
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Bloodbagged Arrowedge Office Fixer 3": {
+        "id": 100011,
+        "name": "Refracted Bloodbagged Arrowedge Office Fixer 3",
+        "source_file": "data/profiles\\queenBloodfiends.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 10,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 17,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 14,
+            "con": 18,
+            "dex": 16,
+            "int": 18,
+            "cha": 18
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "The Queen's Empty Kingdom",
+            "Bloodbag",
+            "Arrowedge Office Section 2",
+            "Grade 7 Fixer"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.2,
+            "blunt": 1.2,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.2,
+            "pierce": 0.8
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 0.6,
+            "Gloom": 1.0,
+            "Pride": 1.5,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Tendon Piercer": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Refracted Frantic Maelstrom": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Drawstring": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Death From Above": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Quiver Smack": {
+                "cost": 0,
+                "amount": 3
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.2,
+            "blunt": 1.2,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 0.6,
+            "Gloom": 1.0,
+            "Pride": 1.5,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 122,
+        "current_shield": 0,
+        "current_stagger": 61,
+        "current_light": 5,
+        "current_speed": 5,
+        "offense_level_sources": {
+            "base": 51
+        },
+        "defense_level_sources": {
+            "base": 51
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Bloodbagged Arrowedge Office Fixer 4": {
+        "id": 100011,
+        "name": "Refracted Bloodbagged Arrowedge Office Fixer 4",
+        "source_file": "data/profiles\\queenBloodfiends.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 10,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 17,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 14,
+            "con": 18,
+            "dex": 16,
+            "int": 18,
+            "cha": 18
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "The Queen's Empty Kingdom",
+            "Bloodbag",
+            "Arrowedge Office Section 2",
+            "Grade 7 Fixer"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.2,
+            "blunt": 1.2,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.2,
+            "pierce": 0.8
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 0.6,
+            "Gloom": 1.0,
+            "Pride": 1.5,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Tendon Piercer": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Refracted Frantic Maelstrom": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Drawstring": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Death From Above": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Quiver Smack": {
+                "cost": 0,
+                "amount": 3
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.2,
+            "blunt": 1.2,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 0.6,
+            "Gloom": 1.0,
+            "Pride": 1.5,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 122,
+        "current_shield": 0,
+        "current_stagger": 61,
+        "current_light": 5,
+        "current_speed": 6,
+        "offense_level_sources": {
+            "base": 51
+        },
+        "defense_level_sources": {
+            "base": 51
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Refracted Bloodbagged Arrowedge Office Fixer 5": {
+        "id": 100011,
+        "name": "Refracted Bloodbagged Arrowedge Office Fixer 5",
+        "source_file": "data/profiles\\queenBloodfiends.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 10,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 17,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 14,
+            "con": 18,
+            "dex": 16,
+            "int": 18,
+            "cha": 18
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "The Queen's Empty Kingdom",
+            "Bloodbag",
+            "Arrowedge Office Section 2",
+            "Grade 7 Fixer"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.2,
+            "blunt": 1.2,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.2,
+            "pierce": 0.8
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 0.6,
+            "Gloom": 1.0,
+            "Pride": 1.5,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Tendon Piercer": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Refracted Frantic Maelstrom": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Drawstring": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Death From Above": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Quiver Smack": {
+                "cost": 0,
+                "amount": 3
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.2,
+            "blunt": 1.2,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 0.6,
+            "Gloom": 1.0,
+            "Pride": 1.5,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 122,
+        "current_shield": 0,
+        "current_stagger": 61,
+        "current_light": 5,
+        "current_speed": 5,
+        "offense_level_sources": {
+            "base": 51
+        },
+        "defense_level_sources": {
+            "base": 51
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    }
+}

@@ -1,0 +1,1574 @@
+{
+    "Zwei Assoc. South Sec 6 Fixer 1": {
+        "id": 200043,
+        "name": "Zwei Assoc. South Sec 6 Fixer 1",
+        "source_file": "data/profiles\\zweiFixerProfiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 5,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 16,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 1,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 16,
+            "dex": 14,
+            "con": 16,
+            "int": 18,
+            "cha": 20
+        },
+        "nextturn": {
+            "light": 0,
+            "buffs": {
+                "Protection": {
+                    "stack": 1,
+                    "volatile": true
+                }
+            }
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Zwei Assoc. South Sec 6",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Fence!": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Refracted Your Shield": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Refracted Combat Preparation": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Blade Whirl": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Shielded Suppressing": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Avert": {
+                "cost": 0,
+                "amount": 2
+            }
+        },
+        "hand": {
+            "Refracted Shielded Suppressing": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Your Shield": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": -131,
+        "current_shield": 0,
+        "current_stagger": -8,
+        "current_light": 4,
+        "current_speed": 4,
+        "offense_level_sources": {
+            "base": 48
+        },
+        "defense_level_sources": {
+            "base": 48
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": true,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Zwei Assoc. South Sec 6 Fixer 2": {
+        "id": 200043,
+        "name": "Zwei Assoc. South Sec 6 Fixer 2",
+        "source_file": "data/profiles\\zweiFixerProfiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 5,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 16,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 1,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 16,
+            "dex": 14,
+            "con": 16,
+            "int": 18,
+            "cha": 20
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Zwei Assoc. South Sec 6",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Fence!": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Refracted Your Shield": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Refracted Combat Preparation": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Blade Whirl": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Shielded Suppressing": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Avert": {
+                "cost": 0,
+                "amount": 2
+            }
+        },
+        "hand": {
+            "Refracted Shielded Suppressing": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Your Shield": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": -107,
+        "current_shield": 0,
+        "current_stagger": 0,
+        "current_light": 5,
+        "current_speed": 5,
+        "offense_level_sources": {
+            "base": 48
+        },
+        "defense_level_sources": {
+            "base": 48
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": true,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Zwei Assoc. South Sec 6 Fixer 3": {
+        "id": 200043,
+        "name": "Zwei Assoc. South Sec 6 Fixer 3",
+        "source_file": "data/profiles\\zweiFixerProfiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 5,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 16,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 1,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 16,
+            "dex": 14,
+            "con": 16,
+            "int": 18,
+            "cha": 20
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Zwei Assoc. South Sec 6",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Fence!": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Refracted Your Shield": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Refracted Combat Preparation": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Blade Whirl": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Shielded Suppressing": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Avert": {
+                "cost": 0,
+                "amount": 2
+            }
+        },
+        "hand": {
+            "Refracted Shielded Suppressing": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Your Shield": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": -131,
+        "current_shield": 0,
+        "current_stagger": -8,
+        "current_light": 3,
+        "current_speed": 5,
+        "offense_level_sources": {
+            "base": 48
+        },
+        "defense_level_sources": {
+            "base": 48
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": true,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Zwei Assoc. South Sec 6 Fixer 4": {
+        "id": 200043,
+        "name": "Zwei Assoc. South Sec 6 Fixer 4",
+        "source_file": "data/profiles\\zweiFixerProfiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 5,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 16,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 1,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 16,
+            "dex": 14,
+            "con": 16,
+            "int": 18,
+            "cha": 20
+        },
+        "nextturn": {
+            "light": 0,
+            "buffs": {
+                "Protection": {
+                    "stack": 1,
+                    "volatile": true
+                }
+            }
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Zwei Assoc. South Sec 6",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Fence!": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Refracted Your Shield": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Refracted Combat Preparation": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Blade Whirl": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Shielded Suppressing": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Avert": {
+                "cost": 0,
+                "amount": 2
+            }
+        },
+        "hand": {
+            "Refracted Blade Whirl": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Your Shield": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": -163,
+        "current_shield": 0,
+        "current_stagger": -18,
+        "current_light": 4,
+        "current_speed": 4,
+        "offense_level_sources": {
+            "base": 48
+        },
+        "defense_level_sources": {
+            "base": 48
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": true,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Zwei Assoc. South Sec 6 Fixer 5": {
+        "id": 200043,
+        "name": "Zwei Assoc. South Sec 6 Fixer 5",
+        "source_file": "data/profiles\\zweiFixerProfiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 5,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 16,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 1,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 16,
+            "dex": 14,
+            "con": 16,
+            "int": 18,
+            "cha": 20
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Zwei Assoc. South Sec 6",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Fence!": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Refracted Your Shield": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Refracted Combat Preparation": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Blade Whirl": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Shielded Suppressing": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Avert": {
+                "cost": 0,
+                "amount": 2
+            }
+        },
+        "hand": {
+            "Refracted Combat Preparation": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Fence!": {
+                "cost": 1,
+                "amount": 1
+            }
+        },
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": -131,
+        "current_shield": 0,
+        "current_stagger": -8,
+        "current_light": 3,
+        "current_speed": 4,
+        "offense_level_sources": {
+            "base": 48
+        },
+        "defense_level_sources": {
+            "base": 48
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": true,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Zwei Assoc. South Sec 6 Fixer 6": {
+        "id": 200043,
+        "name": "Zwei Assoc. South Sec 6 Fixer 6",
+        "source_file": "data/profiles\\zweiFixerProfiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 5,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 16,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 1,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 16,
+            "dex": 14,
+            "con": 16,
+            "int": 18,
+            "cha": 20
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Zwei Assoc. South Sec 6",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Fence!": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Refracted Your Shield": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Refracted Combat Preparation": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Blade Whirl": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Shielded Suppressing": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Avert": {
+                "cost": 0,
+                "amount": 2
+            }
+        },
+        "hand": {
+            "Refracted Shielded Suppressing": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Avert": {
+                "cost": 0,
+                "amount": 1
+            }
+        },
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": -38,
+        "current_shield": 0,
+        "current_stagger": 23,
+        "current_light": 5,
+        "current_speed": 4,
+        "offense_level_sources": {
+            "base": 48
+        },
+        "defense_level_sources": {
+            "base": 48
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Zwei Assoc. South Sec 6 Fixer 7": {
+        "id": 200043,
+        "name": "Zwei Assoc. South Sec 6 Fixer 7",
+        "source_file": "data/profiles\\zweiFixerProfiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 16,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 1,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 16,
+            "dex": 14,
+            "con": 18,
+            "int": 18,
+            "cha": 20
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Zwei Assoc. South Sec 6",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Fence!": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Refracted Your Shield": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Refracted Combat Preparation": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Blade Whirl": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Shielded Suppressing": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Avert": {
+                "cost": 0,
+                "amount": 2
+            }
+        },
+        "hand": {
+            "Refracted Combat Preparation": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Avert": {
+                "cost": 0,
+                "amount": 1
+            }
+        },
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": -125,
+        "current_shield": 0,
+        "current_stagger": -1,
+        "current_light": 3,
+        "current_speed": 3,
+        "offense_level_sources": {
+            "base": 48
+        },
+        "defense_level_sources": {
+            "base": 48
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": true,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Zwei Assoc. South Sec 6 Fixer 8": {
+        "id": 200043,
+        "name": "Zwei Assoc. South Sec 6 Fixer 8",
+        "source_file": "data/profiles\\zweiFixerProfiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 16,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 1,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 16,
+            "dex": 14,
+            "con": 18,
+            "int": 18,
+            "cha": 20
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Zwei Assoc. South Sec 6",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Fence!": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Refracted Your Shield": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Refracted Combat Preparation": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Blade Whirl": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Shielded Suppressing": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Avert": {
+                "cost": 0,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 116,
+        "current_shield": 0,
+        "current_stagger": 79,
+        "current_light": 5,
+        "current_speed": 5,
+        "offense_level_sources": {
+            "base": 48
+        },
+        "defense_level_sources": {
+            "base": 48
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Zwei Assoc. South Sec 6 Fixer 9": {
+        "id": 200043,
+        "name": "Zwei Assoc. South Sec 6 Fixer 9",
+        "source_file": "data/profiles\\zweiFixerProfiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 16,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 1,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 16,
+            "dex": 14,
+            "con": 18,
+            "int": 18,
+            "cha": 20
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Zwei Assoc. South Sec 6",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Fence!": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Refracted Your Shield": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Refracted Combat Preparation": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Blade Whirl": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Shielded Suppressing": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Avert": {
+                "cost": 0,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": 116,
+        "current_shield": 0,
+        "current_stagger": 79,
+        "current_light": 5,
+        "current_speed": 3,
+        "offense_level_sources": {
+            "base": 48,
+            "OffenseLevelUpBuff": 3
+        },
+        "defense_level_sources": {
+            "base": 48,
+            "DefenseLevelUpBuff": 4
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Merla": {
+        "id": 200043,
+        "name": "Merla",
+        "source_file": "data/profiles\\zweiFixerProfiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 2,
+        "level": 18,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 8,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 18,
+            "dex": 16,
+            "con": 30,
+            "int": 23,
+            "cha": 5
+        },
+        "nextturn": {
+            "light": 0,
+            "buffs": {
+                "Protection": {
+                    "stack": 1,
+                    "volatile": true
+                }
+            }
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Zwei Assoc. South Sec 6",
+            "Zwei Association Section 6 Lieutenant",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Fence!": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Refracted Your Shield": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Refracted Combat Preparation": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Blade Whirl": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Shielded Suppressing": {
+                "cost": 2,
+                "amount": 1
+            },
+            "By All Means": {
+                "cost": 3,
+                "amount": 2
+            }
+        },
+        "hand": {
+            "Refracted Combat Preparation": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Shielded Suppressing": {
+                "cost": 2,
+                "amount": 1
+            },
+            "By All Means": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Refracted Blade Whirl": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": -31,
+        "current_shield": 0,
+        "current_stagger": 16,
+        "current_light": 5,
+        "current_speed": 5,
+        "offense_level_sources": {
+            "base": 54
+        },
+        "defense_level_sources": {
+            "base": 54
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+    "Synapse": {
+        "id": 200043,
+        "name": "Synapse",
+        "source_file": "data/profiles\\zweiFixerProfiles.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 2,
+        "level": 18,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 9,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 20,
+            "dex": 16,
+            "con": 42,
+            "int": 50,
+            "cha": 37
+        },
+        "nextturn": {
+            "light": 0,
+            "buffs": {
+                "Defense Power Down": {
+                    "stack": 2,
+                    "volatile": true
+                },
+                "Fragile": {
+                    "stack": 3,
+                    "volatile": true
+                },
+                "Bind": {
+                    "stack": 3,
+                    "volatile": true
+                }
+            }
+        },
+        "buffs": {
+            "Clash Power Down": {
+                "stack": 2,
+                "volatile": true
+            },
+            "Charge": {
+                "count": 15,
+                "stack": 1
+            },
+            "Bleed": {
+                "stack": 2,
+                "count": 1
+            },
+            "Tremor": {
+                "stack": 18,
+                "count": 11
+            }
+        },
+        "passives": [],
+        "faction": [
+            "Zwei Association Section 3 Acting Supervisor",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Fence!": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Refracted Your Shield": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Combat Preparation": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Blade Whirl": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Shielded Suppressing": {
+                "cost": 2,
+                "amount": 1
+            },
+            ":D! No Thanks!": {
+                "cost": 2,
+                "amount": 2
+            },
+            ">:C! SUPPRESSION!!": {
+                "cost": 4,
+                "amount": 2
+            }
+        },
+        "hand": {
+            "Refracted Combat Preparation": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Refracted Shielded Suppressing": {
+                "cost": 2,
+                "amount": 1
+            },
+            ">:C! SUPPRESSION!!": {
+                "cost": 4,
+                "amount": 1
+            },
+            "Refracted Blade Whirl": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "effect_limits": {},
+        "effect_limits_perm": {},
+        "current_hp": -11042,
+        "current_shield": 0,
+        "current_stagger": -2390,
+        "current_light": 3,
+        "current_speed": 5,
+        "offense_level_sources": {
+            "base": 54
+        },
+        "defense_level_sources": {
+            "base": 54
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": true,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    }
+}
