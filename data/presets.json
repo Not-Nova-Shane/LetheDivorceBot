@@ -1,0 +1,598 @@
+{
+    "J-Blupture": {
+        "pages": [
+            "Bat Parry",
+            "Bat Parry",
+            "Multi-Block",
+            "Bat Bash",
+            "Bat Bash",
+            "Barbed Strikes",
+            "Rupturing Strikes",
+            "Bat Bash",
+            "Barbed Strikes"
+        ],
+        "creator": 744293019901231158
+    },
+    "J-Haste": {
+        "pages": [
+            "Bat Parry",
+            "Bat Parry",
+            "Quickness",
+            "Quickness",
+            "Light Defense",
+            "Bat Bash",
+            "Bat Bash",
+            "Preemptive Strike",
+            "Swiftstrike"
+        ],
+        "creator": 744293019901231158
+    },
+    "J-Bleed": {
+        "pages": [
+            "Bat Parry",
+            "Bat Parry",
+            "Pride as a Chef",
+            "Bat Bash",
+            "Bat Bash",
+            "Bat Bash",
+            "Unadulterated Slaughter",
+            "Barbed Strikes",
+            "Torn Copy of 'DIE DIE DIE'"
+        ],
+        "creator": 744293019901231158
+    },
+    "PRIDE AS A CHEF": {
+        "pages": [
+            "Meat Injection",
+            "Pride as a Chef",
+            "Pride as a Chef",
+            "Unadulterated Slaughter",
+            "Pride as a Chef",
+            "Bat Bash",
+            "Bat Bash",
+            "Unadulterated Slaughter",
+            "Bat Bash"
+        ],
+        "creator": 296378053016420352
+    },
+    "J-Burn": {
+        "pages": [
+            "Firewall",
+            "Unleashing Fuel Restrictions!!",
+            "Heating Up",
+            "Spreading Heat",
+            "Spreading Heat",
+            "Flamethrower",
+            "Flamethrower",
+            "Ashes to Ashes",
+            "Overheating"
+        ],
+        "creator": 744293019901231158
+    },
+    "Poise-Shu": {
+        "pages": [
+            "Headband Toss",
+            "Headband Toss",
+            "It's time to get SERIOUS",
+            "It's time to get SERIOUS",
+            "COUP DE GRACE",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Judo Flip",
+            "Judo Flip"
+        ],
+        "creator": 952246430364491796
+    },
+    "J-Charge": {
+        "pages": [
+            "Overcharger",
+            "Overcharger",
+            "Makeshift Blitz",
+            "Makeshift Blitz",
+            "Circuits Unsundered",
+            "D-dried Up",
+            "D-dried Up",
+            "Faulty Equipment",
+            "Faulty Equipment"
+        ],
+        "creator": 744293019901231158
+    },
+    "Len-Charge": {
+        "pages": [
+            "Powered in his Likeship",
+            "Powered in his Likeship",
+            "Powered in his Likeship",
+            "Deceitful Brawl",
+            "Deceitful Brawl",
+            "Makeshift Blitz",
+            "Dynamite Rave",
+            "Overcharger",
+            "Overcharger"
+        ],
+        "creator": 952246430364491796
+    },
+    "BladeswornPoise": {
+        "pages": [
+            "This Will Be Easy",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Ready for Duel [一騎打ち]",
+            "Riddle Holes [刺す]",
+            "Riddle Holes [刺す]",
+            "Ready for Duel [一騎打ち]",
+            "Ready for Duel [一騎打ち]",
+            "This Will Be Easy"
+        ],
+        "creator": 286463112855420928
+    },
+    "Shu + Bladesworn Poise Drone": {
+        "pages": [
+            "Kick Feint",
+            "Riddle Holes [刺す]",
+            "Headband Toss",
+            "Swiftstrike",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Two Guard [双守]",
+            "Storm of Strikes [疾風斬]",
+            "Swiftblock"
+        ],
+        "creator": 1375130091725783150
+    },
+    "Funny Bleed???": {
+        "pages": [
+            "Pride as a Chef",
+            "Pride as a Chef",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Torn Copy of 'DIE DIE DIE'",
+            "Bat Parry",
+            "Bat Bash",
+            "Bat Bash",
+            "Barbed Strikes",
+            "Pride as a Chef"
+        ],
+        "creator": 286463112855420928
+    },
+    "the deck mayu will use when the stats come into effect": {
+        "pages": [
+            "YAGAWT",
+            "Ready for Duel [一騎打ち]",
+            "Riddle Holes [刺す]",
+            "Smackdown",
+            "Smackdown",
+            "Order Fire",
+            "Fists Of Strife",
+            "This Will Be Easy",
+            "Load em Up"
+        ],
+        "creator": 296378053016420352
+    },
+    "super generic poise": {
+        "pages": [
+            "This Will Be Easy",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "This Will Be Easy",
+            "Ready for Duel [一騎打ち]",
+            "Riddle Holes [刺す]",
+            "YAGAWT",
+            "Smackdown",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Smackdown"
+        ],
+        "creator": 296378053016420352
+    },
+    "Gass or Ass": {
+        "pages": [
+            "This Will Be Easy",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Ready for Duel [一騎打ち]",
+            "Riddle Holes [刺す]",
+            "Riddle Holes [刺す]",
+            "Ready for Duel [一騎打ち]",
+            "Smackdown",
+            "YAGAWT"
+        ],
+        "creator": 286463112855420928
+    },
+    "J-Tremor": {
+        "pages": [
+            "Vibrating Fist",
+            "Rifle Puncture",
+            "Rifle Puncture",
+            "Musket Fire",
+            "Musket Fire",
+            "Order Fire",
+            "Bat Parry",
+            "Bat Parry",
+            "Feel The Blazing Vibrations!!"
+        ],
+        "creator": 744293019901231158
+    },
+    "Poise": {
+        "pages": [],
+        "creator": 786263976489123841
+    },
+    "Sinking": {
+        "pages": [],
+        "creator": 786263976489123841
+    },
+    "Isaac - SeveredPalm": {
+        "pages": [
+            "Smackdown",
+            "Smackdown",
+            "Ferrous Guard",
+            "Ferrous Guard",
+            "Order Fire",
+            "Order Fire",
+            "Rifle Puncture",
+            "Suppressing Volley",
+            "Load em Up"
+        ],
+        "creator": 286463112855420928
+    },
+    "J-Poise": {
+        "pages": [
+            "This Will Be Easy",
+            "This Will Be Easy",
+            "Riddle Holes [刺す]",
+            "Riddle Holes [刺す]",
+            "YAGAWT",
+            "YAGAWT",
+            "Swiftstrike",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]"
+        ],
+        "creator": 744293019901231158
+    },
+    "win the game preset": {
+        "pages": [
+            "Load em Up",
+            "YAGAWT",
+            "Suppressing Volley",
+            "Order Fire",
+            "Musket Fire",
+            "Ferrous Guard",
+            "Smackdown",
+            "Fists Of Strife",
+            "Riddle Holes [刺す]"
+        ],
+        "creator": 296378053016420352
+    },
+    "Dardscard": {
+        "pages": [
+            "Rifle Puncture",
+            "Rifle Puncture",
+            "Rifle Puncture",
+            "Smackdown",
+            "Musket Fire",
+            "Musket Fire",
+            "Order Fire",
+            "Ferrous Guard",
+            "Suppressing Volley"
+        ],
+        "creator": 297821915387527168
+    },
+    "Beefcake Charg": {
+        "pages": [
+            "Makeshift Blitz",
+            "Makeshift Blitz",
+            "Circuits Unsundered",
+            "Deceitful Brawl",
+            "Dynamite Rave",
+            "This Will Be Easy",
+            "This Will Be Easy",
+            "Faulty Equipment",
+            "Overcharger"
+        ],
+        "creator": 297821915387527168
+    },
+    "potential build": {
+        "pages": [
+            "Quiver Smack",
+            "Quiver Smack",
+            "Drawstring",
+            "Death From Above",
+            "Frantic Maelstrom",
+            "Barbed Strikes",
+            "Torn Copy of 'DIE DIE DIE'",
+            "Pride as a Chef",
+            "Bloodlusted Massacre"
+        ],
+        "creator": 296378053016420352
+    },
+    "Bladesworn + Arrowedge": {
+        "pages": [
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Quiver Smack",
+            "Quiver Smack",
+            "Ready for Duel [一騎打ち]",
+            "Riddle Holes [刺す]",
+            "Drawstring",
+            "Death From Above",
+            "Frantic Maelstrom"
+        ],
+        "creator": 296378053016420352
+    },
+    "SmackdownDiscardCore": {
+        "pages": [
+            "YAGAWT",
+            "Smackdown",
+            "Smackdown",
+            "Smackdown",
+            "Rifle Puncture",
+            "Fistful O Buckshot",
+            "Load em Up",
+            "Ferrous Guard",
+            "Engulf"
+        ],
+        "creator": 286463112855420928
+    },
+    "J-Archer": {
+        "pages": [
+            "Quiver Smack",
+            "Quiver Smack",
+            "Quiver Smack",
+            "Frantic Maelstrom",
+            "Frantic Maelstrom",
+            "Drawstring",
+            "Drawstring",
+            "Drawstring",
+            "Suppressing Volley"
+        ],
+        "creator": 744293019901231158
+    },
+    "J-Suppression": {
+        "pages": [
+            "Rifle Puncture",
+            "Rifle Puncture",
+            "Rifle Puncture",
+            "Suppressing Volley",
+            "Smackdown",
+            "Smackdown",
+            "Smackdown",
+            "Ferrous Guard",
+            "Ferrous Guard"
+        ],
+        "creator": 744293019901231158
+    },
+    "SmackdownAOE": {
+        "pages": [
+            "YAGAWT",
+            "Smackdown",
+            "Smackdown",
+            "Smackdown",
+            "Fistful O Buckshot",
+            "Ferrous Guard",
+            "Feel The Blazing Vibrations!!",
+            "Rifle Puncture",
+            "Rifle Puncture"
+        ],
+        "creator": 286463112855420928
+    },
+    "Poise 2": {
+        "pages": [
+            "YAGAWT",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Invigorate",
+            "Ready for Duel [一騎打ち]",
+            "Ready for Duel [一騎打ち]",
+            "Riddle Holes [刺す]",
+            "Riddle Holes [刺す]",
+            "Smackdown"
+        ],
+        "creator": 882655111418118185
+    },
+    "Self Burn with All Natural Fuel, Scorching Passion, Burning Fists": {
+        "pages": [
+            "Firefist",
+            "Heating Up",
+            "Unleashing Fuel Restrictions!!",
+            "Set Fire",
+            "Overheating",
+            "Warm Embrace",
+            "Firewall",
+            "Every Last Drop",
+            "Ashes to Ashes"
+        ],
+        "creator": 296378053016420352
+    },
+    "too many singletons (its poise lol)": {
+        "pages": [
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Riddle Holes [刺す]",
+            "Disciplined Block and Pierce [盾穿衡]",
+            "Three Step Slashing [三斬律]",
+            "Ready for Duel [一騎打ち]",
+            "Storm of Strikes [疾風斬]",
+            "Two Guard [双守]",
+            "Kick Feint",
+            "Lunge Through"
+        ],
+        "creator": 296378053016420352
+    },
+    "funny joke deck with at least 1 page from each urban myth mission  (passives: Accurate Slice, The Way of Serene Discipline [静律道], All Natural Fuel, Short Ammo Magazine, Ready Quiver)": {
+        "pages": [
+            "Quiver Smack",
+            "Riddle Holes [刺す]",
+            "Drawstring",
+            "Rifle Puncture",
+            "Order Fire",
+            "Exploit Shortcomings",
+            "Firefist",
+            "Disciplined Block and Pierce [盾穿衡]",
+            "Heating Up"
+        ],
+        "creator": 296378053016420352
+    },
+    "funny joke deck with at least 1 page from each cannard mission (no passives sorry)": {
+        "pages": [
+            "Pride as a Chef",
+            "Bat Parry",
+            "Barbed Strikes",
+            "Unadulterated Slaughter",
+            "Feel The Blazing Vibrations!!",
+            "Light Attack",
+            "Swiftstrike",
+            "Bat Bash",
+            "Charge and Cover"
+        ],
+        "creator": 296378053016420352
+    },
+    "idk if i saved this before": {
+        "pages": [
+            "Suppressing Volley",
+            "Ferrous Guard",
+            "Rifle Puncture",
+            "YAGAWT",
+            "Hook In",
+            "Smackdown",
+            "Tear Into Them",
+            "Run Away, Then Dig In",
+            "Musket Fire"
+        ],
+        "creator": 296378053016420352
+    },
+    "Prime Nightlong": {
+        "pages": [
+            "Riddle Holes [刺す]",
+            "Death From Above",
+            "Kick Feint",
+            "Quiver Smack",
+            "Lunge Through",
+            "Lunge Through",
+            "Drawstring",
+            "Nightlong",
+            "Dustlunge"
+        ],
+        "creator": 1375130091725783150
+    },
+    "J-Burn/Singleton": {
+        "pages": [
+            "Firewall",
+            "Unleashing Fuel Restrictions!!",
+            "Heating Up",
+            "Spreading Heat",
+            "Flamethrower",
+            "Ashes to Ashes",
+            "Overheating",
+            "Firefist",
+            "Engulf"
+        ],
+        "creator": 744293019901231158
+    },
+    "Yurodivy singleton cuz why not": {
+        "pages": [
+            "Crafty Cleavers",
+            "Yurodiviye Virtues: Guts (Кишки)",
+            "Yurodiviye Virtues: Influence (Влияние)",
+            "Yurodiviye Virtues: Keenness (Острота)",
+            "Yurodiviye Virtues: Knowledge (Знание)",
+            "Yurodiviye Virtues: Perseverance (Упорство)",
+            "For the Betterment of Humanity",
+            "Hook In",
+            "Smackdown"
+        ],
+        "creator": 296378053016420352
+    },
+    "Resource Sustain Charge/Discard": {
+        "pages": [
+            "Crafty Cleavers",
+            "Crafty Cleavers",
+            "Yurodiviye Virtues: Knowledge (Знание)",
+            "Yurodiviye Virtues: Knowledge (Знание)",
+            "For the Betterment of Humanity",
+            "Rifle Puncture",
+            "Hook In",
+            "Yurodiviye Virtues: Influence (Влияние)",
+            "Yurodiviye Virtues: Influence (Влияние)"
+        ],
+        "creator": 297821915387527168
+    },
+    "J-Aegis": {
+        "pages": [
+            "Aegis Unit - Charging Procedure",
+            "Aegis Unit - Deploy Energy Shield",
+            "Aegis Unit - Energy Shield Bash",
+            "Aegis Unit - Immobilize Target",
+            "Aegis Unit - Self-Defense Maneuvers",
+            "Aegis Unit - Sentry Duty",
+            "Skillful Prediction",
+            "D-dried Up",
+            "Yurodiviye Virtues: Perseverance (Упорство)"
+        ],
+        "creator": 744293019901231158
+    },
+    "cancer supreme": {
+        "pages": [
+            "Yurodiviye Virtues: Influence (Влияние)",
+            "Yurodiviye Virtues: Influence (Влияние)",
+            "Yurodiviye Virtues: Influence (Влияние)",
+            "Yurodiviye Virtues: Knowledge (Знание)",
+            "Yurodiviye Virtues: Knowledge (Знание)",
+            "Yurodiviye Virtues: Knowledge (Знание)",
+            "For the Betterment of Humanity",
+            "Hook In",
+            "Smackdown"
+        ],
+        "creator": 296378053016420352
+    },
+    "Modern Burn Deck": {
+        "pages": [
+            "Ashes to Ashes",
+            "Overheating",
+            "Firefist",
+            "Firefist",
+            "Unleashing Fuel Restrictions!!",
+            "Unleashing Fuel Restrictions!!",
+            "Firewall",
+            "Heating Up",
+            "Every Last Drop"
+        ],
+        "creator": 286463112855420928
+    },
+    "Zwei + Discard tomfoolery": {
+        "pages": [
+            "Silent Strikes",
+            "Fence",
+            "Combat Preparation",
+            "Synergetic Superpower",
+            "Kinetic Energy Absorption",
+            "Yawn…. This Mission Kinda Sucks",
+            "Yurodiviye Virtues: Guts (Кишки)",
+            "Yurodiviye Virtues: Perseverance (Упорство)",
+            "Yurodiviye Virtues: Knowledge (Знание)"
+        ],
+        "creator": 286463112855420928
+    },
+    "mayu synapse meant to work with teams Complete Drive + Synergy + Minimum Offense + All Natural Fuel": {
+        "pages": [
+            "Kinetic Energy Absorption",
+            "Synergetic Superpower",
+            "Yurodiviye Virtues: Perseverance (Упорство)",
+            "Yurodiviye Virtues: Knowledge (Знание)",
+            "Yurodiviye Virtues: Influence (Влияние)",
+            "Fence",
+            "YAGAWT",
+            "Run Away, Then Dig In",
+            "For the Betterment of Humanity"
+        ],
+        "creator": 296378053016420352
+    },
+    "\"Yo how many status effects you want?\"": {
+        "pages": [
+            "Kinetic Energy Absorption",
+            "Firefist",
+            "Ashes to Ashes",
+            "Heating Up",
+            "Unleashing Fuel Restrictions!!",
+            "Overheating",
+            "Set Fire",
+            "Every Last Drop",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]"
+        ],
+        "creator": 296378053016420352
+    }
+}

@@ -1,0 +1,851 @@
+{
+    "SHOP": {
+        "currentlyselling": {
+            "Swiftblock": 36099,
+            "Tendon Piercer": 8139,
+            "Blade Whirl": 55064,
+            "Butcher Cleave": 6095,
+            "Yawn…. This Mission Kinda Sucks": 31216,
+            "Footwork": 16130,
+            "Judo Flip": 17362,
+            "Invigorate": 19849,
+            "Rupturing Strikes": 7624,
+            "Order Fire": 44469,
+            "Unleashing Fuel Restrictions!!": 7348,
+            "Pride as a Chef": 24027
+        },
+        "cansell": [
+            "Swiftblock",
+            "Tendon Piercer",
+            "Blade Whirl",
+            "Butcher Cleave",
+            "Yawn…. This Mission Kinda Sucks",
+            "Footwork",
+            "Judo Flip",
+            "Invigorate",
+            "Rupturing Strikes",
+            "Order Fire",
+            "Unleashing Fuel Restrictions!!",
+            "Pride as a Chef",
+            "YAGAWT",
+            "Three Step Slashing [三斬律]",
+            "Ferrous Guard",
+            "Yurodiviye Virtues: Perseverance (Упорство)",
+            "Skitter Away",
+            "Demolish",
+            "Rifle Puncture",
+            "Silent Strikes",
+            "Aegis Unit - Self-Defense Maneuvers",
+            "Flesh Diggin’",
+            "Powered in his Likeship",
+            "Give Chase [追擊]",
+            "Deadlock",
+            "Circuits Unsundered",
+            "Fierce Flames",
+            "COUP DE GRACE",
+            "Dark Feathers",
+            "Goin’ First",
+            "The Lord’s Loyal Hound",
+            "Unrestricted Outburst",
+            "You're Too Slow",
+            "Awful Contemplation",
+            "Ready for Duel [一騎打ち]",
+            "This Will Be Easy",
+            "Time for a Little Test",
+            "Martial Scuffle",
+            "BANG BANG BANG!",
+            "Dynamite Rave",
+            "Headband Toss",
+            "Gut-harvesting",
+            "Backstreets Dash",
+            "One Guard [奥深い]",
+            "Cross Em Out",
+            "One Tap",
+            "Avert",
+            "Tear and Pierce",
+            "Subprimal Finish",
+            "Overheating",
+            "Crafty Cleavers",
+            "Under The Veil",
+            "Ashes to Ashes",
+            "Sneak Attack",
+            "After Dark Cleaning",
+            "Flamethrower",
+            "Every Last Drop",
+            "Dirty Blow",
+            "Nightlong",
+            "Overcharger",
+            "Aegis Unit - Energy Shield Bash",
+            "Fade Slash [残影斩]",
+            "Liberating Volley",
+            "Feelin’ Good",
+            "Volley of Arrows",
+            "Frantic Maelstrom",
+            "Grapple",
+            "Lazy Jackasses",
+            "Bat Bash",
+            "Synergetic Superpower",
+            "Cranium Crusher",
+            "Run Away, Then Dig In",
+            "Data Collection",
+            "Beat Em Up",
+            "Death From Above",
+            "Vibrating Fist",
+            "Overwhelming",
+            "Kick Feint",
+            "Disciplined Block and Pierce [盾穿衡]",
+            "Suppressing Volley",
+            "Meat Injection",
+            "Dustlunge",
+            "Bleeding Strikes",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Feel The Blazing Vibrations!!",
+            "Burn Up",
+            "Rat's Guide to Survival",
+            "Diagonal Rend [倍増]",
+            "Set Fire",
+            "Your Shield",
+            "Blazing Power",
+            "Preparation",
+            "Spreading Heat",
+            "D-dried Up",
+            "Until The Collapse",
+            "Engulf",
+            "Load em Up",
+            "Multi-Block",
+            "Faulty Equipment",
+            "Bite Off",
+            "The Warmup",
+            "Fists Of Strife",
+            "Bat Parry",
+            "Struggle",
+            "Moisture Retention",
+            "Torn Copy of 'DIE DIE DIE'",
+            "Aegis Unit - Deploy Energy Shield",
+            "Through the Night",
+            "Riddle Holes [刺す]",
+            "Lunge Through",
+            "Firewall",
+            "Yurodiviye Virtues: Keenness (Острота)",
+            "IM GONNA FUCKING EXPLODE!",
+            "Heating Up",
+            "Goin' First",
+            "Musket Fire",
+            "In The Shadows, We Hunt",
+            "Smackdown",
+            "Unadulterated Slaughter",
+            "Preemptive Strike",
+            "Aegis Unit - Charging Procedure",
+            "Yurodiviye Virtues: Guts (Кишки)",
+            "Swiftstrike",
+            "It's time to get SERIOUS",
+            "Coupled Mutilation",
+            "Activated Combustion",
+            "Aegis Unit - Sentry Duty",
+            "Firefist",
+            "Exploit Shortcomings",
+            "Hook In",
+            "Aegis Unit - Immobilize Target",
+            "Skillful Prediction",
+            "01101000 01100101 01101100 01110000",
+            "Fistful O Buckshot",
+            "Shielded Suppressing",
+            "Commandeering",
+            "Bloodlusted Massacre",
+            "Stolen Machinery",
+            "Don’t Touch Me!!!!",
+            "Makeshift Blitz",
+            "Traces of Heat",
+            "Gather Intel",
+            "Two Guard [双守]",
+            "Warm Embrace",
+            "Weakness",
+            "Quickness",
+            "To Safeguard The Future…",
+            "Nightshaded Wall",
+            "Blank Up",
+            "Yurodiviye Virtues: Knowledge (Знание)",
+            "Quiver Smack",
+            "Combat Preparation",
+            "Lord’s Guard",
+            "Suppressing",
+            "Storm of Strikes [疾風斬]",
+            "Wait For It",
+            "Redirection",
+            "Tear Into Them",
+            "Calculate",
+            "Forward, We March",
+            "Yurodiviye Virtues: Influence (Влияние)",
+            "Fence",
+            "Deceitful Brawl",
+            "Starting Vibration",
+            "For the Betterment of Humanity",
+            "Interfere",
+            "Fwoot… Kaboom!",
+            "Barbed Strikes",
+            "There Is No Coincidence",
+            "Kinetic Energy Absorption",
+            "Drawstring",
+            "Empty Calculations",
+            "Kill Em With Kindness",
+            "There… A Heavy SLAM!",
+            "Bury Yourself Even Deeper",
+            "KILL THEM ALL!",
+            "UwU; Laser Beam!!!"
+        ],
+        "sellingamount": 12
+    },
+    "gainedPages": [
+        "Shielded Suppressing",
+        "Your Shield",
+        "Combat Preparation",
+        "Blade Whirl",
+        "Avert"
+    ],
+    "UwU; Laser Beam!!!": {
+        "tier": "Limited",
+        "stage": "Urban Myth"
+    },
+    "Kill Em With Kindness": {
+        "tier": "Paperback",
+        "stage": "Urban Myth"
+    },
+    "There… A Heavy SLAM!": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Bury Yourself Even Deeper": {
+        "tier": "Masterwork",
+        "stage": "Urban Myth"
+    },
+    "KILL THEM ALL!": {
+        "tier": "Limited",
+        "stage": "Urban Myth"
+    },
+    "Starting Vibration": {
+        "tier": "Limited",
+        "stage": "Urban Myth"
+    },
+    "Stolen Machinery": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Grapple": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Fwoot… Kaboom!": {
+        "tier": "Limited",
+        "stage": "Urban Myth"
+    },
+    "IM GONNA FUCKING EXPLODE!": {
+        "tier": "Paperback",
+        "stage": "Urban Myth"
+    },
+    "Under The Veil": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Nightshaded Wall": {
+        "tier": "Paperback",
+        "stage": "Urban Myth"
+    },
+    "In The Shadows, We Hunt": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Kinetic Energy Absorption": {
+        "tier": "Masterwork",
+        "stage": "Urban Legend"
+    },
+    "Synergetic Superpower": {
+        "tier": "Masterwork",
+        "stage": "Urban Legend"
+    },
+    "Dark Feathers": {
+        "tier": "Limited",
+        "stage": "Urban Legend"
+    },
+    "Unrestricted Outburst": {
+        "tier": "Limited",
+        "stage": "Urban Legend"
+    },
+    "Shielded Suppressing": {
+        "tier": "Hardcover",
+        "stage": "Urban Legend"
+    },
+    "Your Shield": {
+        "tier": "Hardcover",
+        "stage": "Urban Legend"
+    },
+    "Combat Preparation": {
+        "tier": "Limited",
+        "stage": "Urban Legend"
+    },
+    "Blade Whirl": {
+        "tier": "Limited",
+        "stage": "Urban Legend"
+    },
+    "Avert": {
+        "tier": "Hardcover",
+        "stage": "Urban Legend"
+    },
+    "Interfere": {
+        "tier": "Paperback",
+        "stage": "Urban Legend"
+    },
+    "Deadlock": {
+        "tier": "Paperback",
+        "stage": "Urban Legend"
+    },
+    "Lord’s Guard": {
+        "tier": "Hardcover",
+        "stage": "Urban Legend"
+    },
+    "The Lord’s Loyal Hound": {
+        "tier": "Limited",
+        "stage": "Urban Legend"
+    },
+    "Fade Slash [残影斩]": {
+        "tier": "Hardcover",
+        "stage": "Urban Legend"
+    },
+    "Give Chase [追擊]": {
+        "tier": "Limited",
+        "stage": "Urban Legend"
+    },
+    "Forward, We March": {
+        "tier": "Hardcover",
+        "stage": "Urban Legend"
+    },
+    "Aegis Unit - Charging Procedure": {
+        "tier": "Hardcover",
+        "stage": "Urban Legend"
+    },
+    "Aegis Unit - Self-Defense Maneuvers": {
+        "tier": "Hardcover",
+        "stage": "Urban Legend"
+    },
+    "Aegis Unit - Energy Shield Bash": {
+        "tier": "Paperback",
+        "stage": "Urban Legend"
+    },
+    "Aegis Unit - Sentry Duty": {
+        "tier": "Hardcover",
+        "stage": "Urban Legend"
+    },
+    "Aegis Unit - Immobilize Target": {
+        "tier": "Limited",
+        "stage": "Urban Legend"
+    },
+    "Aegis Unit - Deploy Energy Shield": {
+        "tier": "Limited",
+        "stage": "Urban Legend"
+    },
+    "Crafty Cleavers": {
+        "tier": "Paperback",
+        "stage": "Urban Legend"
+    },
+    "Yurodiviye Virtues: Perseverance (Упорство)": {
+        "tier": "Hardcover",
+        "stage": "Urban Legend"
+    },
+    "Yurodiviye Virtues: Guts (Кишки)": {
+        "tier": "Hardcover",
+        "stage": "Urban Legend"
+    },
+    "Yurodiviye Virtues: Keenness (Острота)": {
+        "tier": "Hardcover",
+        "stage": "Urban Legend"
+    },
+    "Yurodiviye Virtues: Influence (Влияние)": {
+        "tier": "Hardcover",
+        "stage": "Urban Legend"
+    },
+    "Yurodiviye Virtues: Knowledge (Знание)": {
+        "tier": "Limited",
+        "stage": "Urban Legend"
+    },
+    "For the Betterment of Humanity": {
+        "tier": "Masterwork",
+        "stage": "Urban Legend"
+    },
+    "Calculate": {
+        "tier": "Paperback",
+        "stage": "Urban Legend"
+    },
+    "Empty Calculations": {
+        "tier": "Paperback",
+        "stage": "Urban Legend"
+    },
+    "Skillful Prediction": {
+        "tier": "Hardcover",
+        "stage": "Urban Legend"
+    },
+    "Data Collection": {
+        "tier": "Hardcover",
+        "stage": "Urban Legend"
+    },
+    "To Safeguard The Future…": {
+        "tier": "Limited",
+        "stage": "Urban Legend"
+    },
+    "01101000 01100101 01101100 01110000": {
+        "tier": "Hardcover",
+        "stage": "Urban Legend"
+    },
+    "Tear and Pierce": {
+        "tier": "Paperback",
+        "stage": "Urban Legend"
+    },
+    "There Is No Coincidence": {
+        "tier": "Paperback",
+        "stage": "Urban Legend"
+    },
+    "Until The Collapse": {
+        "tier": "Limited",
+        "stage": "Urban Legend"
+    },
+    "Hook In": {
+        "tier": "Hardcover",
+        "stage": "Urban Legend"
+    },
+    "Lazy Jackasses": {
+        "tier": "Paperback",
+        "stage": "Urban Legend"
+    },
+    "Run Away, Then Dig In": {
+        "tier": "Paperback",
+        "stage": "Urban Legend"
+    },
+    "Yawn…. This Mission Kinda Sucks": {
+        "tier": "Hardcover",
+        "stage": "Urban Legend"
+    },
+    "Flesh Diggin’": {
+        "tier": "Limited",
+        "stage": "Urban Legend"
+    },
+    "Cross Em Out": {
+        "tier": "Limited",
+        "stage": "Urban Legend"
+    },
+    "Tear Into Them": {
+        "tier": "Hardcover",
+        "stage": "Urban Legend"
+    },
+    "Disciplined Block and Pierce [盾穿衡]": {
+        "tier": "Paperback",
+        "stage": "Urban Myth"
+    },
+    "Three Step Slashing [三斬律]": {
+        "tier": "Limited",
+        "stage": "Urban Myth"
+    },
+    "Two Guard [双守]": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Storm of Strikes [疾風斬]": {
+        "tier": "Limited",
+        "stage": "Urban Myth"
+    },
+    "Silent Strikes": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Firewall": {
+        "tier": "Paperback",
+        "stage": "Urban Myth"
+    },
+    "Wait For It": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Heating Up": {
+        "tier": "Paperback",
+        "stage": "Urban Myth"
+    },
+    "Spreading Heat": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Every Last Drop": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Flamethrower": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Firefist": {
+        "tier": "Limited",
+        "stage": "Urban Myth"
+    },
+    "Blazing Power": {
+        "tier": "Limited",
+        "stage": "Urban Myth"
+    },
+    "Unleashing Fuel Restrictions!!": {
+        "tier": "Paperback",
+        "stage": "Urban Myth"
+    },
+    "Tendon Piercer": {
+        "tier": "Paperback",
+        "stage": "Urban Myth"
+    },
+    "Frantic Maelstrom": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Drawstring": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Death From Above": {
+        "tier": "Limited",
+        "stage": "Urban Myth"
+    },
+    "Volley of Arrows": {
+        "tier": "Limited",
+        "stage": "Urban Myth"
+    },
+    "Quiver Smack": {
+        "tier": "Paperback",
+        "stage": "Urban Myth"
+    },
+    "Lunge Through": {
+        "tier": "Paperback",
+        "stage": "Urban Myth"
+    },
+    "Exploit Shortcomings": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Through the Night": {
+        "tier": "Limited",
+        "stage": "Urban Myth"
+    },
+    "Dustlunge": {
+        "tier": "Paperback",
+        "stage": "Urban Myth"
+    },
+    "Nightlong": {
+        "tier": "Limited",
+        "stage": "Urban Myth"
+    },
+    "Blank Up": {
+        "tier": "Paperback"
+    },
+    "Don’t Touch Me!!!!": {
+        "tier": "Paperback"
+    },
+    "One Tap": {
+        "tier": "Hardcover"
+    },
+    "After Dark Cleaning": {
+        "tier": "Hardcover"
+    },
+    "Liberating Volley": {
+        "tier": "Limited"
+    },
+    "BANG BANG BANG!": {
+        "tier": "Limited"
+    },
+    "Set Fire": {
+        "tier": "Hardcover"
+    },
+    "D-dried Up": {
+        "tier": "Paperback"
+    },
+    "Swiftblock": {
+        "tier": "Limited"
+    },
+    "Fence": {
+        "tier": "Hardcover"
+    },
+    "Bite Off": {
+        "tier": "Paperback"
+    },
+    "Rat's Guide to Survival": {
+        "tier": "Paperback"
+    },
+    "Backstreets Dash": {
+        "tier": "Hardcover"
+    },
+    "Skitter Away": {
+        "tier": "Hardcover"
+    },
+    "Dirty Blow": {
+        "tier": "Limited"
+    },
+    "Gut-harvesting": {
+        "tier": "Limited"
+    },
+    "You're Too Slow": {
+        "tier": "Hardcover"
+    },
+    "Commandeering": {
+        "tier": "Limited"
+    },
+    "Struggle": {
+        "tier": "Limited"
+    },
+    "Demolish": {
+        "tier": "Hardcover"
+    },
+    "Preparation": {
+        "tier": "Paperback"
+    },
+    "Feelin’ Good": {
+        "tier": "Hardcover"
+    },
+    "Time for a Little Test": {
+        "tier": "Paperback"
+    },
+    "Goin’ First": {
+        "tier": "Paperback"
+    },
+    "Bloodlusted Massacre": {
+        "tier": "Limited"
+    },
+    "Coupled Mutilation": {
+        "tier": "Hardcover"
+    },
+    "Footwork": {
+        "tier": "Hardcover"
+    },
+    "Redirection": {
+        "tier": "Paperback"
+    },
+    "Gather Intel": {
+        "tier": "Paperback"
+    },
+    "Awful Contemplation": {
+        "tier": "Hardcover"
+    },
+    "Suppressing": {
+        "tier": "Hardcover"
+    },
+    "Weakness": {
+        "tier": "Paperback"
+    },
+    "Preemptive Strike": {
+        "tier": "Hardcover"
+    },
+    "Quickness": {
+        "tier": "Paperback"
+    },
+    "Swiftstrike": {
+        "tier": "Limited"
+    },
+    "Multi-Block": {
+        "tier": "Hardcover"
+    },
+    "Vibrating Fist": {
+        "tier": "Paperback"
+    },
+    "Cranium Crusher": {
+        "tier": "Hardcover"
+    },
+    "Overwhelming": {
+        "tier": "Hardcover"
+    },
+    "Activated Combustion": {
+        "tier": "Limited"
+    },
+    "Invigorate": {
+        "tier": "Hardcover"
+    },
+    "Feel The Blazing Vibrations!!": {
+        "tier": "Limited"
+    },
+    "Malfunction": {
+        "tier": "Hardcover"
+    },
+    "Bat Bash": {
+        "tier": "Paperback"
+    },
+    "Barbed Strikes": {
+        "tier": "Limited"
+    },
+    "Sneak Attack": {
+        "tier": "Paperback"
+    },
+    "Bat Parry": {
+        "tier": "Hardcover"
+    },
+    "Rupturing Strikes": {
+        "tier": "Paperback"
+    },
+    "Bleeding Strikes": {
+        "tier": "Paperback"
+    },
+    "DIE DIE DIE": {
+        "tier": "Limited"
+    },
+    "S-steady..": {
+        "tier": "Paperback"
+    },
+    "Reluctant Gut Harvest": {
+        "tier": "Limited"
+    },
+    "Fearful Scramble": {
+        "tier": "Hardcover"
+    },
+    "Catching Breath": {
+        "tier": "Hardcover"
+    },
+    "Regretful Prone": {
+        "tier": "Paperback"
+    },
+    "Torn Copy of 'DIE DIE DIE'": {
+        "tier": "Limited"
+    },
+    "Butcher Cleave": {
+        "tier": "Paperback"
+    },
+    "Unadulterated Slaughter": {
+        "tier": "Hardcover"
+    },
+    "Meat Injection": {
+        "tier": "Limited"
+    },
+    "Moisture Retention": {
+        "tier": "Limited"
+    },
+    "Subprimal Finish": {
+        "tier": "Limited"
+    },
+    "Pride as a Chef": {
+        "tier": "Hardcover"
+    },
+    "Silent Cutter": {
+        "tier": "Paperback"
+    },
+    "Powered in his Likeship": {
+        "tier": "Paperback"
+    },
+    "Deceitful Brawl": {
+        "tier": "Paperback"
+    },
+    "Faulty Equipment": {
+        "tier": "Hardcover"
+    },
+    "Makeshift Blitz": {
+        "tier": "Hardcover"
+    },
+    "Overcharger": {
+        "tier": "Hardcover"
+    },
+    "Dynamite Rave": {
+        "tier": "Limited"
+    },
+    "Circuits Unsundered": {
+        "tier": "Limited"
+    },
+    "Warm Embrace": {
+        "tier": "Paperback"
+    },
+    "Overheating": {
+        "tier": "Hardcover"
+    },
+    "Burn Up": {
+        "tier": "Paperback"
+    },
+    "Fierce Flames": {
+        "tier": "Paperback"
+    },
+    "Traces of Heat": {
+        "tier": "Hardcover"
+    },
+    "Engulf": {
+        "tier": "Hardcover"
+    },
+    "Ashes to Ashes": {
+        "tier": "Limited"
+    },
+    "Load em Up": {
+        "tier": "Hardcover"
+    },
+    "The Warmup": {
+        "tier": "Hardcover"
+    },
+    "This Will Be Easy": {
+        "tier": "Hardcover"
+    },
+    "Beat Em Up": {
+        "tier": "Limited"
+    },
+    "YAGAWT": {
+        "tier": "Hardcover"
+    },
+    "Fists Of Strife": {
+        "tier": "Limited"
+    },
+    "Fistful O Buckshot": {
+        "tier": "Limited"
+    },
+    "Kick Feint": {
+        "tier": "Paperback"
+    },
+    "Martial Scuffle": {
+        "tier": "Paperback"
+    },
+    "Judo Flip": {
+        "tier": "Hardcover"
+    },
+    "Headband Toss": {
+        "tier": "Paperback"
+    },
+    "It's time to get SERIOUS": {
+        "tier": "Hardcover"
+    },
+    "COUP DE GRACE": {
+        "tier": "Limited"
+    },
+    "Draw of the Sword - Vaiśravaṇa Style [切れ]": {
+        "tier": "Paperback",
+        "stage": "Urban Myth"
+    },
+    "Riddle Holes [刺す]": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Ready for Duel [一騎打ち]": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Diagonal Rend [倍増]": {
+        "tier": "Limited",
+        "stage": "Urban Myth"
+    },
+    "One Guard [奥深い]": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Rifle Puncture": {
+        "tier": "Paperback",
+        "stage": "Urban Myth"
+    },
+    "Ferrous Guard": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Musket Fire": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Smackdown": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Suppressing Volley": {
+        "tier": "Limited",
+        "stage": "Urban Myth"
+    },
+    "Order Fire": {
+        "tier": "Limited",
+        "stage": "Urban Myth"
+    }
+}

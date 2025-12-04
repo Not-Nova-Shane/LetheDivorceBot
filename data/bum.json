@@ -1,0 +1,492 @@
+{
+    "Zwei Assoc. South Sec 6 Fixer 7": {
+        "id": 200043,
+        "name": "Bladesworn Sec 11 Fixer 1",
+        "source_file": "data/profiles\\bladeswornSec11Profile.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 16,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 1,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 16,
+            "dex": 14,
+            "con": 18,
+            "int": 18,
+            "cha": 20
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Keeping In Stride",
+            "Best Defense",
+            "Minimum Offense",
+            "Your Shield"
+        ],
+        "faction": [
+            "Zwei Assoc. South Sec 6",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+                "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Fence": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Your Shield": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Combat Preparation": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Blade Whirl": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Suppressing": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Avert": {
+                "cost": 0,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+              "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+      "Zwei Assoc. South Sec 6 Fixer 8": {
+        "id": 200043,
+        "name": "Bladesworn Sec 11 Fixer 1",
+        "source_file": "data/profiles\\bladeswornSec11Profile.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 16,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 1,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 16,
+            "dex": 14,
+            "con": 18,
+            "int": 18,
+            "cha": 20
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Keeping In Stride",
+            "Best Defense",
+            "Minimum Offense",
+            "Your Shield"
+        ],
+        "faction": [
+            "Zwei Assoc. South Sec 6",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+                "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Fence": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Your Shield": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Combat Preparation": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Blade Whirl": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Suppressing": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Avert": {
+                "cost": 0,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+              "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+      "Merla": {
+        "id": 200043,
+        "name": "Bladesworn Sec 11 Fixer 1",
+        "source_file": "data/profiles\\bladeswornSec11Profile.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 2,
+        "level": 18,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 8,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 18,
+            "dex": 16,
+            "con": 20,
+            "int": 23,
+            "cha": 5
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Keeping In Stride",
+            "Best Defense",
+            "Black Wings",
+            "Your Shield"
+        ],
+        "faction": [
+            "Zwei Assoc. South Sec 6",
+          "Zwei Association Section 6 Lieutenant",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+                "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Fence": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Your Shield": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Combat Preparation": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Blade Whirl": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Suppressing": {
+                "cost": 2,
+                "amount": 1
+            },
+            "By All Means": {
+                "cost": 3,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+              "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    },
+  "Synapse": {
+        "id": 200043,
+        "name": "Bladesworn Sec 11 Fixer 1",
+        "source_file": "data/profiles\\bladeswornSec11Profile.json",
+        "base_hp": 20,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 2,
+        "level": 18,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 9,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 20,
+            "dex": 16,
+            "con": 42,
+            "int": 50,
+            "cha": 37
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Keeping In Stride",
+           ">:)!! Synergy!!",
+            "Best Defense",
+            "Minimum Offense",
+            "Your Shield"
+        ],
+        "faction": [
+            "Zwei Association Section 3 Acting Supervisor",
+            "Enemy"
+        ],
+        "exclude_targets_from_indiscriminate": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+                "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Fence": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Your Shield": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Combat Preparation": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Blade Whirl": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Suppressing": {
+                "cost": 2,
+                "amount": 1
+            },
+            ":D! No Thanks!": {
+                "cost": 2,
+                "amount": 2
+            },
+                      ">:C! SUPPRESSION!!": {
+                "cost": 4,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+              "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "original_sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 1.2,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 0.8,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy",
+        "deploymentOrder": 0
+    }
+}

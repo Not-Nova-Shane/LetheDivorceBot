@@ -1,0 +1,51 @@
+{
+    "enabled": false,
+      "force_rolls": {
+        "Enemy": "min",
+        "Player": "max",
+        "profiles": {}
+    },
+    "margins": {
+        "Player": {
+            "min": [
+                0
+            ],
+            "max": [
+                0,
+                0,
+                0,
+                -1,
+                -1
+            ],
+            "normal": [
+                1,
+                1,
+                2,
+                2,
+                2
+            ]
+        },
+        "Enemy": {
+            "min": [
+                0,
+                0,
+                0,
+                1,
+                1
+            ],
+            "max": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "normal": [
+                -1,
+                -1,
+                -1,
+                -2,
+                -2
+            ]
+        }
+    }
+}

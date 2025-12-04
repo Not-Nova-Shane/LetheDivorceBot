@@ -1,0 +1,205 @@
+{
+    "SHOP": {
+        "currentlyselling": {
+            "Steady As She Goes": 1393,
+            "Your Shield": 1032,
+            "Bolus of Ten-Thousand Not-Entirely-Phantasmal Rounds That Are Fired To Fake a Withdrawal, Reclaim Your Footing, Recenter Your Spine, Reboot Your Confidence, And Slowly, Very Quietly, Actually Heal Your Aim And Resolve【彈藥虛實交錯復歸之術穩心定魂返本還原無限輪迴】": 783,
+            "Accursed Blade - Untrained [悪魔祓い]": 245,
+            "The Way of Serene Discipline [静律道]": 215,
+            "Toxicant Breath": 933
+        },
+        "cansell": [
+            "Steady As She Goes",
+            "Your Shield",
+            "Bolus of Ten-Thousand Not-Entirely-Phantasmal Rounds That Are Fired To Fake a Withdrawal, Reclaim Your Footing, Recenter Your Spine, Reboot Your Confidence, And Slowly, Very Quietly, Actually Heal Your Aim And Resolve【彈藥虛實交錯復歸之術穩心定魂返本還原無限輪迴】",
+            "Accursed Blade - Untrained [悪魔祓い]",
+            "The Way of Serene Discipline [静律道]",
+            "Toxicant Breath",
+            "Short Ammo Magazine",
+            "Complete Drive",
+            "Full Throttle",
+            "Hack Away",
+            "I’m Bout To Go Wild!",
+            "Gashing Wounds",
+            "Get Em!",
+            "Trailblazer",
+            "Bloodtainted Hooks",
+            "Best Defense",
+            "Synergy",
+            "Reaction Force",
+            "Unseen Threat",
+            "Reshuffle",
+            "Parasitism",
+            "Burning Fists",
+            "Poison-tipped Muscleripper",
+            "Parasitic Sanctimony",
+            "Scorching Passion",
+            "Ready Quiver",
+            "All Natural Fuel",
+            "Accurate Slice",
+            "First Impressions [頼む]",
+            "None Left Behind",
+            "Imperfect Battery",
+            "Gluttonous Exploitation",
+            "District 20 Enkephalin Recharging",
+            "Keeping In Stride",
+            "Instant Cooking",
+            "Lowstrider",
+            "Nuthin’s As Thick As Blood",
+            "Oh Fuck",
+            "For Our Office… Firefist Office",
+            "Minimum Offense"
+        ],
+        "sellingamount": 6
+    },
+    "Rusty Taps": {
+        "tier": "Paperback"
+    },
+    "Get Em!": {
+        "tier": "Hardcover"
+    },
+    "Bolus of Ten-Thousand Not-Entirely-Phantasmal Rounds That Are Fired To Fake a Withdrawal, Reclaim Your Footing, Recenter Your Spine, Reboot Your Confidence, And Slowly, Very Quietly, Actually Heal Your Aim And Resolve【彈藥虛實交錯復歸之術穩心定魂返本還原無限輪迴】": {
+        "tier": "Limited"
+    },
+    "Synergy": {
+        "tier": "Masterwork",
+        "stage": "Urban Legend"
+    },
+    "Parasitic Sanctimony": {
+        "tier": "Limited",
+        "stage": "Urban Legend"
+    },
+    "Best Defense": {
+        "tier": "Masterwork",
+        "stage": "Urban Legend"
+    },
+    "Minimum Offense": {
+        "tier": "Hardcover",
+        "stage": "Urban Legend"
+    },
+    "Keeping In Stride": {
+        "tier": "Paperback",
+        "stage": "Urban Legend"
+    },
+    "Your Shield": {
+        "tier": "Limited",
+        "stage": "Urban Legend"
+    },
+    "Steady As She Goes": {
+        "tier": "Limited",
+        "stage": "Urban Legend"
+    },
+    "I’m Bout To Go Wild!": {
+        "tier": "Hardcover",
+        "stage": "Urban Legend"
+    },
+    "Nuthin’s As Thick As Blood": {
+        "tier": "Hardcover",
+        "stage": "Urban Legend"
+    },
+    "Oh Fuck": {
+        "tier": "Paperback",
+        "stage": "Urban Legend"
+    },
+    "Bloodtainted Hooks": {
+        "tier": "Hardcover",
+        "stage": "Urban Legend"
+    },
+    "Hack Away": {
+        "tier": "Paperback",
+        "stage": "Urban Legend"
+    },
+    "The Way of Serene Discipline [静律道]": {
+        "tier": "Paperback",
+        "stage": "Urban Myth"
+    },
+    "All Natural Fuel": {
+        "tier": "Paperback",
+        "stage": "Urban Myth"
+    },
+    "For Our Office… Firefist Office": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "District 20 Enkephalin Recharging": {
+        "tier": "Limited",
+        "stage": "Urban Myth"
+    },
+    "Burning Fists": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Scorching Passion": {
+        "tier": "Paperback"
+    },
+    "Lowstrider": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Unseen Threat": {
+        "tier": "Limited",
+        "stage": "Urban Myth"
+    },
+    "None Left Behind": {
+        "tier": "Paperback",
+        "stage": "Urban Myth"
+    },
+    "Ready Quiver": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Poison-tipped Muscleripper": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Toxicant Breath": {
+        "tier": "Limited",
+        "stage": "Urban Myth"
+    },
+    "Full Throttle": {
+        "tier": "Paperback",
+        "stage": "Urban Myth"
+    },
+    "Complete Drive": {
+        "tier": "Limited",
+        "stage": "Urban Myth"
+    },
+    "First Impressions [頼む]": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Accursed Blade - Untrained [悪魔祓い]": {
+        "tier": "Paperback",
+        "stage": "Urban Myth"
+    },
+    "Instant Cooking": {
+        "tier": "Limited"
+    },
+    "Gashing Wounds": {
+        "tier": "Paperback"
+    },
+    "Parasitism": {
+        "tier": "Hardcover"
+    },
+    "Trailblazer": {
+        "tier": "Limited"
+    },
+    "Accurate Slice": {
+        "tier": "Paperback"
+    },
+    "Imperfect Battery": {
+        "tier": "Hardcover"
+    },
+    "Gluttonous Exploitation": {
+        "tier": "Paperback"
+    },
+    "Reshuffle": {
+        "tier": "Limited"
+    },
+    "Short Ammo Magazine": {
+        "tier": "Hardcover"
+    },
+    "Reaction Force": {
+        "tier": "Hardcover"
+    }
+}

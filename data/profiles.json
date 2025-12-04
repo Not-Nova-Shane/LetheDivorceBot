@@ -1,0 +1,5350 @@
+{
+    "Cass": {
+        "id": null,
+        "name": "Cass",
+        "base_hp": 30,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 14,
+            "int": 16,
+            "con": 14,
+            "cha": 17,
+            "dex": 15
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Player",
+            "Mainstream Office",
+            "Grade 8 Fixer"
+        ],
+        "resistances": {
+            "slash": 0.5,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 0.5,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {},
+        "hand": {},
+        "original_resistances": {
+            "slash": 0.5,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "current_hp": 70,
+        "max_stagger": 45,
+        "current_stagger": 45,
+        "current_light": 3,
+        "current_speed": 3,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": true,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Player"
+    },
+    "Jonathan": {
+        "id": null,
+        "name": "Jonathan",
+        "base_hp": 30,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 17,
+            "int": 15,
+            "con": 16,
+            "cha": 15,
+            "dex": 17
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Pages of Scorching Blades Effect"
+        ],
+        "faction": [
+            "Player",
+            "Mainstream Office",
+            "Grade 8 Fixer"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {},
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "current_hp": 80,
+        "max_stagger": 60,
+        "current_stagger": 60,
+        "current_light": 3,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Player"
+    },
+    "Sunny": {
+        "id": null,
+        "name": "Sunny",
+        "base_hp": 30,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 15,
+            "int": 16,
+            "con": 16,
+            "cha": 16,
+            "dex": 17
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Player",
+            "Mainstream Office",
+            "Grade 8 Fixer"
+        ],
+        "resistances": {
+            "slash": 0.5,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 0.5,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {},
+        "hand": {},
+        "original_resistances": {
+            "slash": 0.5,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "current_hp": 80,
+        "max_stagger": 50,
+        "current_stagger": 50,
+        "current_light": 3,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Player"
+    },
+    "Ralph": {
+        "id": null,
+        "name": "Ralph",
+        "base_hp": 30,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 15,
+            "int": 14,
+            "con": 15,
+            "cha": 12,
+            "dex": 17
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Player",
+            "Mainstream Office",
+            "Grade 8 Fixer"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {},
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "current_hp": 75,
+        "max_stagger": 50,
+        "current_stagger": 50,
+        "current_light": 3,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Player"
+    },
+    "Isaac": {
+        "id": null,
+        "name": "Isaac",
+        "base_hp": 30,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 16,
+            "dex": 15,
+            "con": 15,
+            "int": 16,
+            "cha": 18
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Player",
+            "Mainstream Office",
+            "Grade 8 Fixer"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "This Will Be Easy": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Ready for Duel [一騎打ち]": {
+                "cost": 2,
+                "amount": 3
+            },
+            "Riddle Holes [刺す]": {
+                "cost": 2,
+                "amount": 2
+            }
+        },
+        "hand": {
+            "Ready for Duel [一騎打ち]": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Riddle Holes [刺す]": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "current_hp": 75,
+        "max_stagger": 55,
+        "current_stagger": 55,
+        "current_light": 3,
+        "current_speed": 3,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": true,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Player"
+    },
+    "Nabi": {
+        "id": null,
+        "name": "Nabi",
+        "base_hp": 30,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 11,
+            "int": 10,
+            "con": 13,
+            "cha": 14,
+            "dex": 13
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Player",
+            "Mainstream Office",
+            "Grade 8 Fixer"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {},
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "current_hp": 65,
+        "max_stagger": 30,
+        "current_stagger": 30,
+        "current_light": 3,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Player"
+    },
+    "Mayu": {
+        "id": null,
+        "name": "Mayu",
+        "base_hp": 30,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 16,
+            "int": 18,
+            "con": 15,
+            "cha": 18,
+            "dex": 16
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Player",
+            "Mainstream Office",
+            "Grade 8 Fixer"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {},
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "current_hp": 75,
+        "max_stagger": 55,
+        "current_stagger": 55,
+        "current_light": 3,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Player"
+    },
+    "Lenore": {
+        "id": null,
+        "name": "Lenore",
+        "base_hp": 30,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 21,
+            "int": 16,
+            "con": 14,
+            "cha": 12,
+            "dex": 12
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Player",
+            "Mainstream Office",
+            "Grade 8 Fixer"
+        ],
+        "resistances": {
+            "slash": 1.5,
+            "blunt": 0.5,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.5,
+            "blunt": 0.5,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {},
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.5,
+            "blunt": 0.5,
+            "pierce": 1.0
+        },
+        "current_hp": 70,
+        "max_stagger": 80,
+        "current_stagger": 80,
+        "current_light": 3,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Player"
+    },
+    "Isma": {
+        "id": null,
+        "name": "Isma",
+        "base_hp": 30,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Player",
+            "Mainstream Office",
+            "Grade 8 Fixer"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.6,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.6,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {},
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.6,
+            "pierce": 0.5
+        },
+        "current_hp": 50,
+        "max_stagger": 25,
+        "current_stagger": 25,
+        "current_light": 3,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Player"
+    },
+    "Guy": {
+        "id": null,
+        "name": "Guy",
+        "base_hp": 30,
+        "hp_increment_by_level": 2,
+        "base_stagger": 15,
+        "stagger_increment_by_level": 1,
+        "base_max_light": 2,
+        "base_light_gain": 1,
+        "base_page_draw": 1,
+        "base_min_speed": 1,
+        "base_max_speed": 2,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 0,
+        "base_stagger_overwrite": 0,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 14,
+            "int": 10,
+            "con": 12,
+            "cha": 11,
+            "dex": 15
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Player",
+            "Mainstream Office",
+            "Grade 8 Fixer"
+        ],
+        "resistances": {
+            "slash": 0.5,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 0.5,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {},
+        "hand": {},
+        "original_resistances": {
+            "slash": 0.5,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "current_hp": 60,
+        "max_stagger": 45,
+        "current_stagger": 45,
+        "current_light": 3,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Player"
+    },
+    "Maniacal Paroxysm Office Fixer 1": {
+        "id": null,
+        "name": "Maniacal Paroxysm Office Fixer 1",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 80,
+        "base_stagger_overwrite": 45,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 3,
+        "base_max_speed_overwrite": 6,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Player",
+            "Paroxysm Office Section 3",
+            "Grade 7 Fixer"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Launcher Rev": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Spark The Flames": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Fully Charged": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Acceleration": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "current_hp": 80,
+        "max_stagger": 45,
+        "current_stagger": 45,
+        "current_light": 5,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Player"
+    },
+    "Maniacal Paroxysm Office Fixer 2": {
+        "id": null,
+        "name": "Maniacal Paroxysm Office Fixer 1",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 80,
+        "base_stagger_overwrite": 45,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 3,
+        "base_max_speed_overwrite": 6,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Player",
+            "Paroxysm Office Section 3",
+            "Grade 7 Fixer"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Launcher Rev": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Spark The Flames": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Fully Charged": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Acceleration": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "current_hp": 80,
+        "max_stagger": 45,
+        "current_stagger": 45,
+        "current_light": 5,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Player"
+    },
+    "Maniacal Paroxysm Office Fixer 3": {
+        "id": null,
+        "name": "Maniacal Paroxysm Office Fixer 1",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 80,
+        "base_stagger_overwrite": 45,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 3,
+        "base_max_speed_overwrite": 6,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Player",
+            "Paroxysm Office Section 3",
+            "Grade 7 Fixer"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.2,
+            "Lust": 0.8,
+            "Sloth": 0.8,
+            "Gluttony": 1.2,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Launcher Rev": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Spark The Flames": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Fully Charged": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Acceleration": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "current_hp": 80,
+        "max_stagger": 45,
+        "current_stagger": 45,
+        "current_light": 5,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Player"
+    },
+    "Sean": {
+        "id": null,
+        "name": "Sean",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 60,
+        "base_stagger_overwrite": 35,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 1,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 1,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Player"
+        ],
+        "resistances": {
+            "slash": 0.5,
+            "blunt": 0.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 0.5,
+            "blunt": 0.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "GET AWAY": {
+                "cost": 0,
+                "amount": 9
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 0.5,
+            "blunt": 0.5,
+            "pierce": 0.5
+        },
+        "current_hp": 60,
+        "max_stagger": 35,
+        "current_stagger": 35,
+        "current_light": 1,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Player"
+    },
+    "Bloodthirsty Spinouse Syndicate Member 1": {
+        "id": null,
+        "name": "Bloodthirsty Spinouse Syndicate Member 1",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 45,
+        "base_stagger_overwrite": 20,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Hematolagnia",
+            "Barbaric Terror"
+        ],
+        "faction": [
+            "Enemy",
+            "Spinouse Syndicate"
+        ],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Bat Bash": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Barbed Strikes": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Sneak Attack": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Bat Parry": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Bleeding Strikes": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "current_hp": 45,
+        "max_stagger": 20,
+        "current_stagger": 20,
+        "current_light": 5,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "Bloodthirsty Spinouse Syndicate Member 2": {
+        "id": null,
+        "name": "Bloodthirsty Spinouse Syndicate Member 2",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 45,
+        "base_stagger_overwrite": 20,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Hematolagnia",
+            "Barbaric Terror"
+        ],
+        "faction": [
+            "Enemy",
+            "Spinouse Syndicate"
+        ],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Bat Bash": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Barbed Strikes": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Sneak Attack": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Bat Parry": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Bleeding Strikes": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "current_hp": 45,
+        "max_stagger": 20,
+        "current_stagger": 20,
+        "current_light": 5,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "Severing Spinouse Syndicate Member 1": {
+        "id": null,
+        "name": "Severing Spinouse Syndicate Member 1",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 45,
+        "base_stagger_overwrite": 20,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Acrotomophilia",
+            "Fear Inducing Terror"
+        ],
+        "faction": [
+            "Enemy",
+            "Spinouse Syndicate"
+        ],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0
+        },
+        "deck": {
+            "Bat Bash": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Barbed Strikes": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Sneak Attack": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Bat Parry": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Rupturing Strikes": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "current_hp": 45,
+        "max_stagger": 20,
+        "current_stagger": 20,
+        "current_light": 5,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "Severing Spinouse Syndicate Member 2": {
+        "id": null,
+        "name": "Severing Spinouse Syndicate Member 2",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 45,
+        "base_stagger_overwrite": 20,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Acrotomophilia",
+            "Fear Inducing Terror"
+        ],
+        "faction": [
+            "Enemy",
+            "Spinouse Syndicate"
+        ],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0
+        },
+        "deck": {
+            "Bat Bash": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Barbed Strikes": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Sneak Attack": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Bat Parry": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Rupturing Strikes": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "current_hp": 45,
+        "max_stagger": 20,
+        "current_stagger": 20,
+        "current_light": 5,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "Bankvorce": {
+        "id": null,
+        "name": "Bankvorce",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 1000000,
+        "base_stagger_overwrite": 500,
+        "base_max_light_overwrite": 1000000,
+        "base_light_gain_overwrite": 1000000,
+        "base_page_draw_overwrite": 10,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Player"
+        ],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {},
+        "hand": {},
+        "original_resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "current_hp": 1000000,
+        "max_stagger": 500,
+        "current_stagger": 500,
+        "current_light": 1000000,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Player"
+    },
+    "SturdyFixer1": {
+        "id": null,
+        "name": "SturdyFixer1",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 45,
+        "base_stagger_overwrite": 35,
+        "base_max_light_overwrite": 4,
+        "base_light_gain_overwrite": 1,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Foolhardy"
+        ],
+        "faction": [
+            "Enemy"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 2.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Multi-Block": {
+                "cost": 0,
+                "amount": 4
+            },
+            "Quickness": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Weakness": {
+                "cost": 1,
+                "amount": 3
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 2.0
+        },
+        "current_hp": 45,
+        "max_stagger": 35,
+        "current_stagger": 35,
+        "current_light": 4,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "SturdyFixer2": {
+        "id": null,
+        "name": "SturdyFixer2",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 45,
+        "base_stagger_overwrite": 35,
+        "base_max_light_overwrite": 4,
+        "base_light_gain_overwrite": 1,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Foolhardy"
+        ],
+        "faction": [
+            "Enemy"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 2.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Multi-Block": {
+                "cost": 0,
+                "amount": 4
+            },
+            "Quickness": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Weakness": {
+                "cost": 1,
+                "amount": 3
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 2.0
+        },
+        "current_hp": 45,
+        "max_stagger": 35,
+        "current_stagger": 35,
+        "current_light": 4,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "SturdyFixer3": {
+        "id": null,
+        "name": "SturdyFixer3",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 750,
+        "base_stagger_overwrite": 450,
+        "base_max_light_overwrite": 10,
+        "base_light_gain_overwrite": 3,
+        "base_page_draw_overwrite": 3,
+        "base_min_speed_overwrite": 6,
+        "base_max_speed_overwrite": 15,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Foolhardy",
+            "Lightweight"
+        ],
+        "faction": [
+            "Enemy"
+        ],
+        "resistances": {
+            "slash": 0.75,
+            "blunt": 0.75,
+            "pierce": 0.75
+        },
+        "stagger_resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Multi-Block": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Quickness": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Weakness": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Swiftstrike": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Preemptive Strike": {
+                "cost": 2,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 0.75,
+            "blunt": 0.75,
+            "pierce": 0.75
+        },
+        "current_hp": 750,
+        "max_stagger": 450,
+        "current_stagger": 450,
+        "current_light": 10,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "Black Belt Martial Artist SHU": {
+        "id": null,
+        "name": "Black Belt Martial Artist SHU",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 950,
+        "base_stagger_overwrite": 650,
+        "base_max_light_overwrite": 12,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 3,
+        "base_min_speed_overwrite": 5,
+        "base_max_speed_overwrite": 12,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy"
+        ],
+        "resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "stagger_resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Kick Feint": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Martial Scuffle": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Judo Flip": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Headband Toss": {
+                "cost": 0,
+                "amount": 2
+            },
+            "It's time to get SERIOUS": {
+                "cost": 2,
+                "amount": 2
+            },
+            "COUP DE GRACE": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "current_hp": 950,
+        "max_stagger": 650,
+        "current_stagger": 650,
+        "current_light": 12,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "God's Hail": {
+        "id": null,
+        "name": "God's Hail",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 1500,
+        "base_stagger_overwrite": 1500,
+        "base_max_light_overwrite": 9,
+        "base_light_gain_overwrite": 9,
+        "base_page_draw_overwrite": 9,
+        "base_min_speed_overwrite": 10,
+        "base_max_speed_overwrite": 10,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy"
+        ],
+        "resistances": {
+            "slash": 0,
+            "blunt": 0,
+            "pierce": 0
+        },
+        "stagger_resistances": {
+            "slash": 0,
+            "blunt": 0,
+            "pierce": 0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Hail": {
+                "cost": 0,
+                "amount": 9
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 0,
+            "blunt": 0,
+            "pierce": 0
+        },
+        "current_hp": 1500,
+        "max_stagger": 1500,
+        "current_stagger": 1500,
+        "current_light": 9,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "VigilantFixer1": {
+        "id": null,
+        "name": "VigilantFixer1",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 30,
+        "base_stagger_overwrite": 25,
+        "base_max_light_overwrite": 4,
+        "base_light_gain_overwrite": 1,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Lightweight"
+        ],
+        "faction": [
+            "Enemy"
+        ],
+        "resistances": {
+            "slash": 0.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 0.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Swiftstrike": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Preemptive Strike": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Quickness": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Weakness": {
+                "cost": 1,
+                "amount": 3
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 0.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "current_hp": 30,
+        "max_stagger": 25,
+        "current_stagger": 25,
+        "current_light": 4,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "VigilantFixer2": {
+        "id": null,
+        "name": "VigilantFixer2",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 30,
+        "base_stagger_overwrite": 25,
+        "base_max_light_overwrite": 4,
+        "base_light_gain_overwrite": 1,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Lightweight"
+        ],
+        "faction": [
+            "Enemy"
+        ],
+        "resistances": {
+            "slash": 0.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 0.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Swiftstrike": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Preemptive Strike": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Quickness": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Weakness": {
+                "cost": 1,
+                "amount": 3
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 0.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "current_hp": 30,
+        "max_stagger": 25,
+        "current_stagger": 25,
+        "current_light": 4,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "Lolang": {
+        "id": null,
+        "name": "Lolang",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 1000000,
+        "base_stagger_overwrite": 500,
+        "base_max_light_overwrite": 1000000,
+        "base_light_gain_overwrite": 1000000,
+        "base_page_draw_overwrite": 10,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Player"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Malfunction": {
+                "cost": 4,
+                "amount": 1
+            },
+            "Feel The Blazing Vibrations!!": {
+                "cost": 4,
+                "amount": 1
+            },
+            "Invigorate": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Activated Combustion": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Overwhelming": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Cranium Crusher": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Vibrating Fist": {
+                "cost": 1,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "current_hp": 1000000,
+        "max_stagger": 500,
+        "current_stagger": 500,
+        "current_light": 1000000,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Player"
+    },
+    "Argalia": {
+        "id": null,
+        "name": "Argalia",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 100,
+        "base_hp_overwrite": 1000000,
+        "base_stagger_overwrite": 401,
+        "base_max_light_overwrite": 50,
+        "base_light_gain_overwrite": 1,
+        "base_page_draw_overwrite": 10,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 100,
+            "int": 100,
+            "con": 100,
+            "cha": 100,
+            "dex": 100
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Preludio": {
+                "cost": 5,
+                "amount": 9
+            }
+        },
+        "hand": {
+            "Preludio": {
+                "cost": 5,
+                "amount": 9
+            }
+        },
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "current_hp": 1000000,
+        "max_stagger": 401,
+        "current_stagger": 401,
+        "current_light": 50,
+        "current_speed": 2,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": true,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "Terrifying Spinouse Syndicate Member": {
+        "id": null,
+        "name": "Terrifying Spinouse Syndicate Member",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 50,
+        "base_stagger_overwrite": 30,
+        "base_max_light_overwrite": 6,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Acrotomophilia",
+            "Hematolagnia",
+            "Desecrate Carcass",
+            "Enticing Rampage"
+        ],
+        "faction": [
+            "Enemy",
+            "Spinouse Syndicate"
+        ],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0
+        },
+        "deck": {
+            "Bat Bash": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Barbed Strikes": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Sneak Attack": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Bat Parry": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Rupturing Strikes": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Bleeding Strikes": {
+                "cost": 3,
+                "amount": 1
+            },
+            "DIE DIE DIE": {
+                "cost": 5,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "current_hp": 50,
+        "max_stagger": 30,
+        "current_stagger": 30,
+        "current_light": 6,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "Ren": {
+        "id": null,
+        "name": "Ren",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 60,
+        "base_stagger_overwrite": 45,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Overhead",
+            "Supressed Recoil",
+            "Sinking Advantage"
+        ],
+        "faction": [
+            "Enemy",
+            "Quaver Office"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Malfunction": {
+                "cost": 4,
+                "amount": 1
+            },
+            "Invigorate": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Feel The Blazing Vibrations!!": {
+                "cost": 4,
+                "amount": 1
+            },
+            "Activated Combustion": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Overwhelming": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Cranium Crusher": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Vibrating Fist": {
+                "cost": 1,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "current_hp": 60,
+        "max_stagger": 45,
+        "current_stagger": 45,
+        "current_light": 5,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "Stubborn Quaver Office Fixer": {
+        "id": null,
+        "name": "Stubborn Quaver Office Fixer",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 55,
+        "base_stagger_overwrite": 40,
+        "base_max_light_overwrite": 4,
+        "base_light_gain_overwrite": 1,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Overhead",
+            "Tremor Kick-Back"
+        ],
+        "faction": [
+            "Enemy",
+            "Quaver Office"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Malfunction": {
+                "cost": 4,
+                "amount": 1
+            },
+            "Activated Combustion": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Overwhelming": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Cranium Crusher": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Vibrating Fist": {
+                "cost": 1,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "current_hp": 55,
+        "max_stagger": 40,
+        "current_stagger": 40,
+        "current_light": 4,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "Reluctant Quaver Office Fixer": {
+        "id": null,
+        "name": "Reluctant Quaver Office Fixer",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 50,
+        "base_stagger_overwrite": 40,
+        "base_max_light_overwrite": 4,
+        "base_light_gain_overwrite": 1,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Overhead",
+            "Tremor Recoil"
+        ],
+        "faction": [
+            "Enemy",
+            "Quaver Office"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Malfunction": {
+                "cost": 4,
+                "amount": 1
+            },
+            "Invigorate": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Overwhelming": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Cranium Crusher": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Vibrating Fist": {
+                "cost": 1,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "current_hp": 50,
+        "max_stagger": 40,
+        "current_stagger": 40,
+        "current_light": 4,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "Stubborn Quaver Office Fixer 2": {
+        "id": null,
+        "name": "Stubborn Quaver Office Fixer 2",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 55,
+        "base_stagger_overwrite": 40,
+        "base_max_light_overwrite": 4,
+        "base_light_gain_overwrite": 1,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Overhead",
+            "Tremor Kick-Back"
+        ],
+        "faction": [
+            "Enemy",
+            "Quaver Office"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Malfunction": {
+                "cost": 4,
+                "amount": 1
+            },
+            "Activated Combustion": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Overwhelming": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Cranium Crusher": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Vibrating Fist": {
+                "cost": 1,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "current_hp": 55,
+        "max_stagger": 40,
+        "current_stagger": 40,
+        "current_light": 4,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "Reluctant Quaver Office Fixer 2": {
+        "id": null,
+        "name": "Reluctant Quaver Office Fixer 2",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 50,
+        "base_stagger_overwrite": 40,
+        "base_max_light_overwrite": 4,
+        "base_light_gain_overwrite": 1,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 7,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Overhead",
+            "Tremor Recoil"
+        ],
+        "faction": [
+            "Enemy",
+            "Quaver Office"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Malfunction": {
+                "cost": 4,
+                "amount": 1
+            },
+            "Invigorate": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Overwhelming": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Cranium Crusher": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Vibrating Fist": {
+                "cost": 1,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "current_hp": 50,
+        "max_stagger": 40,
+        "current_stagger": 40,
+        "current_light": 4,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "Bistro Chef 1": {
+        "id": null,
+        "name": "Bistro Chef 1",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 55,
+        "base_stagger_overwrite": 27,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 6,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Instant Cooking",
+            "Marbling"
+        ],
+        "faction": [
+            "Enemy",
+            "P. Bistro"
+        ],
+        "resistances": {
+            "slash": 1.5,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Butcher Cleave": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Unadulterated Slaughter": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Meat Injection": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Moisture Retention": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Pride as a Chef": {
+                "cost": 1,
+                "amount": 3
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.5,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "current_hp": 55,
+        "max_stagger": 27,
+        "current_stagger": 27,
+        "current_light": 5,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "Bistro Chef 2": {
+        "id": null,
+        "name": "Bistro Chef 2",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 55,
+        "base_stagger_overwrite": 27,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 6,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Instant Cooking",
+            "Marbling"
+        ],
+        "faction": [
+            "Enemy",
+            "P. Bistro"
+        ],
+        "resistances": {
+            "slash": 1.5,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Butcher Cleave": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Unadulterated Slaughter": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Meat Injection": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Moisture Retention": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Pride as a Chef": {
+                "cost": 1,
+                "amount": 3
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.5,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "current_hp": 55,
+        "max_stagger": 27,
+        "current_stagger": 27,
+        "current_light": 5,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "Bistro Chef 3": {
+        "id": null,
+        "name": "Bistro Chef 3",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 55,
+        "base_stagger_overwrite": 27,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 6,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Instant Cooking",
+            "Marbling"
+        ],
+        "faction": [
+            "Enemy",
+            "P. Bistro"
+        ],
+        "resistances": {
+            "slash": 1.5,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Butcher Cleave": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Unadulterated Slaughter": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Meat Injection": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Moisture Retention": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Pride as a Chef": {
+                "cost": 1,
+                "amount": 3
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.5,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "current_hp": 55,
+        "max_stagger": 27,
+        "current_stagger": 27,
+        "current_light": 5,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "Jeanne": {
+        "id": null,
+        "name": "Jeanne",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 55,
+        "base_stagger_overwrite": 30,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 6,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Instant Cooking",
+            "Marbling",
+            "Inherited Cruelty"
+        ],
+        "faction": [
+            "Enemy",
+            "P. Bistro"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Butcher Cleave": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Unadulterated Slaughter": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Meat Injection": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Moisture Retention": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Pride as a Chef": {
+                "cost": 1,
+                "amount": 1
+            },
+            "Silent Cutter": {
+                "cost": 0,
+                "amount": 1
+            },
+            "Subprimal Finish": {
+                "cost": 3,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "current_hp": 55,
+        "max_stagger": 30,
+        "current_stagger": 30,
+        "current_light": 5,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "Bound Captive 1": {
+        "id": null,
+        "name": "Bound Captive 1",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 10,
+        "base_stagger_overwrite": 10,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Bound Captive",
+            "Player"
+        ],
+        "resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "stagger_resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {},
+        "hand": {},
+        "original_resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "current_hp": 10,
+        "max_stagger": 10,
+        "current_stagger": 10,
+        "current_light": 1,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Player"
+    },
+    "Jeff the rat": {
+        "id": null,
+        "name": "Jeff the rat",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 1.2,
+        "base_stagger_overwrite": 1.2,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Rat",
+            "Player"
+        ],
+        "resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "stagger_resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {},
+        "hand": {},
+        "original_resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "current_hp": 1.2,
+        "max_stagger": 1.2,
+        "current_stagger": 1.2,
+        "current_light": 1,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Player"
+    },
+    "Bound Captive 2": {
+        "id": null,
+        "name": "Bound Captive 2",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 10,
+        "base_stagger_overwrite": 10,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Bound Captive",
+            "Player"
+        ],
+        "resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "stagger_resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {},
+        "hand": {},
+        "original_resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "current_hp": 10,
+        "max_stagger": 10,
+        "current_stagger": 10,
+        "current_light": 1,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Player"
+    },
+    "Bound Captive 3": {
+        "id": null,
+        "name": "Bound Captive 3",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 10,
+        "base_stagger_overwrite": 10,
+        "base_max_light_overwrite": 0,
+        "base_light_gain_overwrite": 0,
+        "base_page_draw_overwrite": 0,
+        "base_min_speed_overwrite": 0,
+        "base_max_speed_overwrite": 0,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Bound Captive",
+            "Player"
+        ],
+        "resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "stagger_resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {},
+        "hand": {},
+        "original_resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "current_hp": 10,
+        "max_stagger": 10,
+        "current_stagger": 10,
+        "current_light": 1,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Player"
+    },
+    "Relentless Bladesworn Office Fixer 1": {
+        "id": null,
+        "name": "Relentless Bladesworn Office Fixer 1",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 85,
+        "base_stagger_overwrite": 45,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 5,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 1,
+        "base_max_speed_overwrite": 6,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "First Impressions [頼む]",
+            "Severing Slash [未実践]",
+            "Accursed Blade - Untrained [悪魔祓い]"
+        ],
+        "faction": [
+            "Bladesworn Office Section 12",
+            "Enemy"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Diagonal Rend [倍増]": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]": {
+                "cost": 0,
+                "amount": 3
+            },
+            "One Guard [奥深い]": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Ready for Duel [一騎打ち]": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Riddle Holes [刺す]": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "current_hp": 85,
+        "max_stagger": 45,
+        "current_stagger": 45,
+        "current_light": 5,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "Relentless Bladesworn Office Fixer 2": {
+        "id": null,
+        "name": "Relentless Bladesworn Office Fixer 2",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 85,
+        "base_stagger_overwrite": 45,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 1,
+        "base_max_speed_overwrite": 6,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "First Impressions [頼む]",
+            "Severing Slash [未実践]",
+            "Accursed Blade - Untrained [悪魔祓い]"
+        ],
+        "faction": [
+            "Bladesworn Office Section 12",
+            "Enemy"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Diagonal Rend [倍増]": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]": {
+                "cost": 0,
+                "amount": 3
+            },
+            "One Guard [奥深い]": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Ready for Duel [一騎打ち]": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Riddle Holes [刺す]": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "current_hp": 85,
+        "max_stagger": 45,
+        "current_stagger": 45,
+        "current_light": 5,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "Relentless Bladesworn Office Fixer 3": {
+        "id": null,
+        "name": "Relentless Bladesworn Office Fixer 3",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 85,
+        "base_stagger_overwrite": 45,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 5,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 1,
+        "base_max_speed_overwrite": 6,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "First Impressions [頼む]",
+            "Severing Slash [未実践]",
+            "Accursed Blade - Untrained [悪魔祓い]"
+        ],
+        "faction": [
+            "Bladesworn Office Section 12",
+            "Enemy"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Diagonal Rend [倍増]": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]": {
+                "cost": 0,
+                "amount": 3
+            },
+            "One Guard [奥深い]": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Ready for Duel [一騎打ち]": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Riddle Holes [刺す]": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "current_hp": 85,
+        "max_stagger": 45,
+        "current_stagger": 45,
+        "current_light": 5,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "Relentless Bladesworn Office Fixer 4": {
+        "id": null,
+        "name": "Relentless Bladesworn Office Fixer 4",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 85,
+        "base_stagger_overwrite": 45,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 5,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 1,
+        "base_max_speed_overwrite": 6,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "First Impressions [頼む]",
+            "Severing Slash [未実践]",
+            "Accursed Blade - Untrained [悪魔祓い]"
+        ],
+        "faction": [
+            "Bladesworn Office Section 12",
+            "Enemy"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Diagonal Rend [倍増]": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]": {
+                "cost": 0,
+                "amount": 3
+            },
+            "One Guard [奥深い]": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Ready for Duel [一騎打ち]": {
+                "cost": 2,
+                "amount": 1
+            },
+            "Riddle Holes [刺す]": {
+                "cost": 2,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "current_hp": 85,
+        "max_stagger": 45,
+        "current_stagger": 45,
+        "current_light": 5,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "Uesugi": {
+        "id": null,
+        "name": "Uesugi",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 19000,
+        "base_stagger_overwrite": 250,
+        "base_max_light_overwrite": 9,
+        "base_light_gain_overwrite": 4,
+        "base_page_draw_overwrite": 4,
+        "base_min_speed_overwrite": 10,
+        "base_max_speed_overwrite": 60,
+        "hidden": [
+            "hp",
+            "stagger",
+            "speed",
+            "res",
+            "light",
+            "staggerstate",
+            "staggerres",
+            "sinres",
+            "deck"
+        ],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Effloresced E.G.O - Nagao",
+            "Scare factor 1",
+            "Scare factor 2",
+            "Scare factor 3",
+            "Scare factor 4",
+            "Scare factor 5",
+            "Scare factor 6"
+        ],
+        "faction": [
+            "Bladesworn Office Section 1 Rep",
+            "Enemy"
+        ],
+        "resistances": {
+            "slash": 0.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 0.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Sacrilegious Rend [通路]": {
+                "cost": 2,
+                "amount": 6
+            },
+            "Rite of Judgement [正義の裂け目]": {
+                "cost": 4,
+                "amount": 3
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 0.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "current_hp": 19000,
+        "max_stagger": 250,
+        "current_stagger": 250,
+        "current_light": 9,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "Severed Palm Fixer 1": {
+        "id": null,
+        "name": "Severed Palm Fixer 1",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 75,
+        "base_stagger_overwrite": 40,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 1,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 8,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Page Efficiency",
+            "Ranged Proficiency",
+            "Defending Prowess"
+        ],
+        "faction": [
+            "Severed Palm Office",
+            "The Thumb?",
+            "Soldato I?",
+            "Enemy"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Rifle Puncture": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Ferrous Guard": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Musket Fire": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Smackdown": {
+                "cost": 2,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "current_hp": 75,
+        "max_stagger": 40,
+        "current_stagger": 40,
+        "current_light": 5,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "Severed Palm Fixer 2": {
+        "id": null,
+        "name": "Severed Palm Fixer 2",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 75,
+        "base_stagger_overwrite": 40,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 1,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 8,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Page Efficiency",
+            "Ranged Proficiency",
+            "Attacking Prowess"
+        ],
+        "faction": [
+            "Severed Palm Office",
+            "The Thumb?",
+            "Soldato I?",
+            "Enemy"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Rifle Puncture": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Ferrous Guard": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Musket Fire": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Smackdown": {
+                "cost": 2,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "current_hp": 75,
+        "max_stagger": 40,
+        "current_stagger": 40,
+        "current_light": 5,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "Severed Palm Fixer 3": {
+        "id": null,
+        "name": "Severed Palm Fixer 3",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 75,
+        "base_stagger_overwrite": 40,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 1,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 8,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Page Efficiency",
+            "Ranged Proficiency",
+            "Blitzing Prowess"
+        ],
+        "faction": [
+            "Severed Palm Office",
+            "The Thumb?",
+            "Soldato I?",
+            "Enemy"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Rifle Puncture": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Ferrous Guard": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Musket Fire": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Smackdown": {
+                "cost": 2,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "current_hp": 75,
+        "max_stagger": 40,
+        "current_stagger": 40,
+        "current_light": 5,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "Severed Palm Fixer 4": {
+        "id": null,
+        "name": "Severed Palm Fixer 4",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 75,
+        "base_stagger_overwrite": 40,
+        "base_max_light_overwrite": 5,
+        "base_light_gain_overwrite": 1,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 8,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Page Efficiency",
+            "Ranged Proficiency",
+            "Instructional Prowess"
+        ],
+        "faction": [
+            "Severed Palm Office",
+            "The Thumb?",
+            "Soldato I?",
+            "Enemy"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Rifle Puncture": {
+                "cost": 1,
+                "amount": 3
+            },
+            "Ferrous Guard": {
+                "cost": 0,
+                "amount": 2
+            },
+            "Musket Fire": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Smackdown": {
+                "cost": 2,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "current_hp": 75,
+        "max_stagger": 40,
+        "current_stagger": 40,
+        "current_light": 5,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "Severed Palm Rep": {
+        "id": null,
+        "name": "Severed Palm Rep",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 100,
+        "base_stagger_overwrite": 55,
+        "base_max_light_overwrite": 6,
+        "base_light_gain_overwrite": 2,
+        "base_page_draw_overwrite": 2,
+        "base_min_speed_overwrite": 3,
+        "base_max_speed_overwrite": 8,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Page Efficiency",
+            "Ranged Proficiency"
+        ],
+        "faction": [
+            "Severed Palm Office",
+            "The Thumb?",
+            "Sottocapo I?",
+            "Enemy"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "Rifle Puncture": {
+                "cost": 1,
+                "amount": 2
+            },
+            "Order Fire": {
+                "cost": 3,
+                "amount": 1
+            },
+            "Suppressing Volley": {
+                "cost": 3,
+                "amount": 2
+            },
+            "Musket Fire": {
+                "cost": 2,
+                "amount": 2
+            },
+            "Smackdown": {
+                "cost": 2,
+                "amount": 2
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "current_hp": 100,
+        "max_stagger": 55,
+        "current_stagger": 55,
+        "current_light": 6,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    },
+    "Jeremy The Green Jeremy": {
+        "id": null,
+        "name": "Jeremy The Green Jeremy",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 19000,
+        "base_stagger_overwrite": 250,
+        "base_max_light_overwrite": 9,
+        "base_light_gain_overwrite": 4,
+        "base_page_draw_overwrite": 4,
+        "base_min_speed_overwrite": 10,
+        "base_max_speed_overwrite": 60,
+        "hidden": [
+            "hp",
+            "stagger",
+            "speed",
+            "res",
+            "light",
+            "staggerstate",
+            "staggerres",
+            "sinres",
+            "deck"
+        ],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Scare factor 1",
+            "Scare factor 2",
+            "Scare factor 3",
+            "Scare factor 4",
+            "Scare factor 5",
+            "Scare factor 6"
+        ],
+        "faction": [
+            "Reality Being",
+            "Player"
+        ],
+        "resistances": {
+            "slash": 0,
+            "blunt": 0,
+            "pierce": 0
+        },
+        "stagger_resistances": {
+            "slash": 0,
+            "blunt": 0,
+            "pierce": 0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {},
+        "hand": {},
+        "original_resistances": {
+            "slash": 0,
+            "blunt": 0,
+            "pierce": 0
+        },
+        "current_hp": 19000,
+        "max_stagger": 250,
+        "current_stagger": 250,
+        "current_light": 9,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Player"
+    },
+    "Shady Individual": {
+        "id": null,
+        "name": "Shady Individual",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 19000,
+        "base_stagger_overwrite": 250,
+        "base_max_light_overwrite": 9,
+        "base_light_gain_overwrite": 4,
+        "base_page_draw_overwrite": 4,
+        "base_min_speed_overwrite": 10,
+        "base_max_speed_overwrite": 60,
+        "hidden": [
+            "hp",
+            "stagger",
+            "speed",
+            "res",
+            "light",
+            "staggerstate",
+            "staggerres",
+            "sinres",
+            "deck"
+        ],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Scare factor 1",
+            "Scare factor 2",
+            "Scare factor 3",
+            "Scare factor 4",
+            "Scare factor 5",
+            "Scare factor 6"
+        ],
+        "faction": [
+            "The Mirror Hood",
+            "Player"
+        ],
+        "resistances": {
+            "slash": 0,
+            "blunt": 0,
+            "pierce": 0
+        },
+        "stagger_resistances": {
+            "slash": 0,
+            "blunt": 0,
+            "pierce": 0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {},
+        "hand": {},
+        "original_resistances": {
+            "slash": 0,
+            "blunt": 0,
+            "pierce": 0
+        },
+        "current_hp": 19000,
+        "max_stagger": 250,
+        "current_stagger": 250,
+        "current_light": 9,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Player"
+    },
+    "Polarity": {
+        "id": null,
+        "name": "Polarity",
+        "base_hp": 0,
+        "hp_increment_by_level": 0,
+        "base_stagger": 0,
+        "stagger_increment_by_level": 0,
+        "base_max_light": 0,
+        "base_light_gain": 0,
+        "base_page_draw": 0,
+        "base_min_speed": 0,
+        "base_max_speed": 0,
+        "attack_slot": 1,
+        "level": 10,
+        "base_hp_overwrite": 350,
+        "base_stagger_overwrite": 150,
+        "base_max_light_overwrite": 10,
+        "base_light_gain_overwrite": 3,
+        "base_page_draw_overwrite": 3,
+        "base_min_speed_overwrite": 2,
+        "base_max_speed_overwrite": 6,
+        "hidden": [],
+        "evade_queue": [],
+        "temphidden": [],
+        "stats_dict": {
+            "str": 10,
+            "int": 10,
+            "con": 10,
+            "cha": 10,
+            "dex": 10
+        },
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy",
+            "Abnormality",
+            "SPless"
+        ],
+        "resistances": {
+            "slash": 0.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 0.0,
+            "blunt": 2.0,
+            "pierce": 1.75
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": {
+            "DIVINE POLAR LIGHT": {
+                "cost": 1,
+                "amount": 1
+            }
+        },
+        "hand": {},
+        "original_resistances": {
+            "slash": 0.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "current_hp": 350,
+        "max_stagger": 150,
+        "current_stagger": 150,
+        "current_light": 10,
+        "current_speed": 1,
+        "attackslotchange": 0,
+        "used": [],
+        "is_active": false,
+        "is_staggered": false,
+        "staggeredThisTurn": false,
+        "PlayerOrEnemy": "Enemy"
+    }
+}

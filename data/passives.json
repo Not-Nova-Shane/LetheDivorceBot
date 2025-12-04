@@ -1,0 +1,4472 @@
+{
+    "Shimmering - Abnormality": {
+        "description": "Has a custom pattern. Pages do not consume any Light. ",
+        "hidden": false,
+        "effects": []
+    },
+    "Armor Stand": {
+        "description": "Description: When this unit goes at or below 500 HP for the first time during a combat, change pattern. HP does not go below 500 HP for the rest of the turn; next turn, heal 200 HP and forcibly recover from stagger. \n\nEncounter Start: Turn all resistances to 0.5x \n\nThis unit can not be killed by opponents who do not have Obligatory Courage.\n",
+        "hidden": false,
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "everyone",
+                "condition": {
+                    "storagebox_check": [
+                        {
+                            "name": "self",
+                            "valuename": "Phase1TriggerFirstCheck",
+                            "equal": 1
+                        }
+                    ]
+                },
+                "get": {},
+                "modifiers": {
+                    "recoverhp": 25,
+                    "recoverstagger": 25
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "storagebox_check": [
+                        {
+                            "name": "self",
+                            "valuename": "Phase1TriggerFirstCheck",
+                            "equal": 1
+                        }
+                    ]
+                },
+                "get": {},
+                "modifiers": {
+                    "setstat": {
+                        "current_hp": 700,
+                        "is_active": true,
+                        "is_staggered": true
+                    },
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "Phase1TriggerSecondCheck",
+                            "value": 1,
+                            "mode": "set"
+                        },
+                        {
+                            "name": "self",
+                            "valuename": "Phase1TriggerFirstCheck",
+                            "value": 2,
+                            "mode": "set"
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "when_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "storagebox_check": [
+                        {
+                            "name": "self",
+                            "valuename": "Phase1TriggerSecondCheck",
+                            "equal": 0
+                        }
+                    ],
+                    "hp_max": 501
+                },
+                "get": {},
+                "modifiers": {
+                    "setstat": {
+                        "current_hp": 500,
+                        "is_active": true
+                    },
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "Phase1TriggerFirstCheck",
+                            "value": 1,
+                            "mode": "set"
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "on_death",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Obligatory Courage",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "setstat": {
+                        "current_hp": 1,
+                        "is_active": true
+                    }
+                }
+            }
+        ]
+    },
+    "Show Your Courage": {
+        "description": "Turn Start: If this unit has been attacked by an opponent last turn, the unit who dealt the most damage gains 1 Daredevil. All other opponents gain 5 Offense Level Down and 5 Defense Level Down. When an opponent gains  Daredevil, the target draws the card “Life for a Daredevil”\n\nWhen an opponent has Daredevil, gain additional Speed Dice and Offense Level Up  equal to (# sum of the total opponent count /2 max 4.)",
+        "hidden": false,
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "everyone",
+                "modifierTarget": "everyone",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "addpassive": "Crumbling Armor Damage Calc Bullshit"
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "everyone",
+                "modifierTarget": "everyone",
+                "condition": {
+                    "crumblingArmorCondBelongs": 100
+                },
+                "filterfaction": [
+                    "OpponentsOnly"
+                ],
+                "get": {},
+                "modifiers": {
+                    "drawspecific": "Life for a Daredevil",
+                    "getbuff": {
+                        "Daredevil": {
+                            "stack": 1,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "everyone",
+                "modifierTarget": "everyone",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "CrumblingArmorHighestDamageCalc",
+                            "valuename": "ClearAllStoragebox",
+                            "value": 0,
+                            "mode": "ClearAllStoragebox"
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "CrumblingArmorHighestDamageCalc",
+                            "valuename": "ClearAllStoragebox",
+                            "value": 0,
+                            "mode": "ClearAllStoragebox"
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "everyone",
+                "modifierTarget": "everyone",
+                "condition": {},
+                "filterfaction": [
+                    "OpponentsOnly"
+                ],
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "CrumblingArmorOpponentCount",
+                            "valuename": "CrumblingArmorOpponentCount",
+                            "value": 1,
+                            "mode": "add"
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "everyone",
+                "modifierTarget": "everyone",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Daredevil",
+                        "value": 1
+                    }
+                },
+                "filterfaction": [
+                    "OpponentsOnly"
+                ],
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "CrumblingArmorHasDaredevil",
+                            "valuename": "CrumblingArmorHasDaredevil",
+                            "value": 1,
+                            "mode": "set"
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "CrumblingArmorOpponentCount",
+                            "valuename": "CrumblingArmorOpponentCount",
+                            "value": 0,
+                            "mode": "set"
+                        },
+                        {
+                            "name": "CrumblingArmorHasDaredevil",
+                            "valuename": "CrumblingArmorHasDaredevil",
+                            "value": 0,
+                            "mode": "set"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "Crumbling Armor Damage Calc Bullshit": {
+        "description": "",
+        "hidden": false,
+        "effects": [
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "damagedealt": 100
+                },
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "CrumblingArmorHighestDamageCalc",
+                            "valuename": "self",
+                            "value": "damagedealt",
+                            "mode": "add"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "Undeserving of Life": {
+        "description": "Description: If this unit has not gained Wreckage in the last 2 turns, use “COWARDS!!”. This passive only activates during Phase 1.",
+        "hidden": false,
+        "effects": []
+    },
+    "Impending Torrent of Deterring": {
+        "description": "Description: If this unit has not gained Wreckage in the last 2 turns, use “COWARDS!!”. This passive only activates during Phase 1.",
+        "hidden": false,
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "storagebox_check": [
+                        {
+                            "name": "self",
+                            "valuename": "Phase1TriggerFirstCheck",
+                            "equal": 2
+                        }
+                    ],
+                    "ifstaggered": false
+                },
+                "get": {},
+                "modifiers": {
+                    "overwriteresistance": {
+                        "slash": 1.25,
+                        "blunt": 1.25,
+                        "pierce": 1.25,
+                        "Wrath": 1.0,
+                        "Lust": 1.0,
+                        "Sloth": 1.0,
+                        "Gluttony": 1.0,
+                        "Gloom": 1.0,
+                        "Pride": 1.0,
+                        "Envy": 1.0
+                    }
+                }
+            }
+        ]
+    },
+    "War Torn Memory": {
+        "description": "Speed Fixed at 1.\nSpeed Dice +1.\n",
+        "hidden": false,
+        "effects": []
+    },
+    "Shared Misery": {
+        "description": "On a clash, inflict 1 Noise (once per turn.)\nOn Hit, inflict 1 Noise\nClash Power +1 if the target has +7 Sinking \n",
+        "hidden": false,
+        "effects": [
+            {
+                "trigger": "on_roll",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "limit_per_turn": 1,
+                "condition": {
+                    "pageusetype": [
+                        "Clash"
+                    ]
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Noise": {
+                            "stack": 1,
+                            "volatile": false
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_roll",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "pageusetype": [
+                        "Clash"
+                    ],
+                    "stack_min": {
+                        "buff": "Sinking",
+                        "value": 7
+                    }
+                },
+                "modifiers": {
+                    "power_bonus": 1
+                }
+            },
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Noise": {
+                            "stack": 1,
+                            "volatile": false
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Recordings": {
+        "description": "On a clash, inflict 1 Noise (once per turn.)\nOn Hit, inflict 1 Noise\nClash Power +1 if the target has +7 Sinking \n",
+        "hidden": false,
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "everyone",
+                "modifierTarget": "everyone",
+                "filterfaction": [
+                    "OpponentsOnly"
+                ],
+                "condition": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Noise": {
+                            "stack": 1,
+                            "volatile": false
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Protection": {
+                            "stack": 100,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "turn_end",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "modifiers": {
+                    "gainlight": 1
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "everyone",
+                "modifierTarget": "everyone",
+                "filterfaction": [
+                    "OpponentsOnly"
+                ],
+                "condition": {
+                    "antipassivecheck": "Recording Debug Passive"
+                },
+                "get": {},
+                "modifiers": {
+                    "addpassive": "Recording Debug Passive"
+                }
+            }
+        ]
+    },
+    "Recording Debug Passive": {
+        "description": "",
+        "hidden": false,
+        "effects": [
+            {
+                "trigger": "on_kill",
+                "conditionTarget": "everyone",
+                "modifierTarget": "everyone",
+                "filterfaction": [
+                    "1.76 Mhz"
+                ],
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "takehpdamage": 200
+                }
+            }
+        ]
+    },
+    "Repetitive Pattern-Recognition": {
+        "description": "Encounter Start: Lose all Light\n\nRestore 1 Light at turn end, does not activate if this unit is staggered\nWhen this unit has less than 3 Light, take +3 damage from all attacks\nAt +4 Light, use “Clean”, if this unit has used “Clean” last turn, use “Connected Circuitry”\n",
+        "cost": 0,
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "limit_per_encounter": 1,
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "gainlight": -99
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "gainlight": -1
+                }
+            },
+            {
+                "trigger": "turn_end",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "ifstaggered": false
+                },
+                "get": {},
+                "modifiers": {
+                    "gainlight": 1
+                }
+            },
+            {
+                "trigger": "before_when_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "light_max": 3
+                },
+                "get": {},
+                "modifiers": {
+                    "changedamage": {
+                        "value": 3,
+                        "stagger": true,
+                        "mode": "add"
+                    }
+                }
+            },
+            {
+                "trigger": "on_death",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "Mk2HelperDeathCount",
+                            "valuename": "Mk2HelperDeathCount",
+                            "mode": "add",
+                            "value": 1
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "The Helpers": {
+        "description": "Encounter Start: Lose all Light\n\nIncrease all resistances by +0.25 for every Helper Unit defeated in this encounter. When there are no other Helper unit’s, use “Disable Limiter”. \nMax Light Cap +10\n",
+        "cost": 0,
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "limit_per_encounter": 1,
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "gainlight": -99
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "gainlight": -1
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "storagebox_check": [
+                        {
+                            "name": "ConnectedCircuitryBox",
+                            "valuename": "ConnectedCircuitryBox",
+                            "min": 1
+                        }
+                    ]
+                },
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "ConnectedCircuitryBox",
+                            "valuename": "ConnectedCircuitryBox"
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "gainlight": "SB_ConnectedCircuitryBox",
+                    "storagebox": [
+                        {
+                            "name": "ConnectedCircuitryBox",
+                            "valuename": "ConnectedCircuitryBox",
+                            "mode": "set",
+                            "value": 0
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "storagebox_check": [
+                        {
+                            "name": "Mk2HelperDeathCount",
+                            "valuename": "Mk2HelperDeathCount",
+                            "min": 1
+                        }
+                    ]
+                },
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "Mk2HelperDeathCount",
+                            "valuename": "Mk2HelperDeathCount",
+                            "mult": 2500
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "increaseresistance": {
+                        "source": "TheHelpers",
+                        "slash": "SB_Mk2HelperDeathCount",
+                        "pierce": "SB_Mk2HelperDeathCount",
+                        "blunt": "SB_Mk2HelperDeathCount"
+                    }
+                }
+            }
+        ]
+    },
+    "Blood Is Fuel": {
+        "description": "Encounter Start: Lose all Light\n\nIncrease all resistances by +0.25 for every Helper Unit defeated in this encounter. When there are no other Helper unit’s, use “Disable Limiter”. \nMax Light Cap +10\n",
+        "cost": 0,
+        "effects": [
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Bleed",
+                        "value": 1
+                    }
+                },
+                "get": {
+                    "Bleed": {
+                        "value": "stack",
+                        "multbycountstack": "count",
+                        "targetOverride": "target"
+                    }
+                },
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "BloodIsFuelCounter",
+                            "mode": "set",
+                            "value": "Bleed_stack"
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "target",
+                "modifierTarget": "target",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Bleed",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Bleed": {
+                            "stack": -99,
+                            "count": -99
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "storagebox_check": [
+                        {
+                            "name": "self",
+                            "valuename": "BloodIsFuelCounter",
+                            "min": 1
+                        }
+                    ]
+                },
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "self",
+                            "valuename": "BloodIsFuelCounter",
+                            "divide": 10
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "gainlight": "SB_BloodIsFuelCounter",
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "BloodIsFuelCounter",
+                            "mode": "set",
+                            "value": 0
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "Mirror Refraction Buff 8: Clash Up 1": {
+        "description": "Clash Power +2 and 2 Stagger Protection",
+        "cost": 0,
+        "effects": [
+            {
+                "trigger": "on_roll",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "pageusetype": [
+                        "Clash"
+                    ]
+                },
+                "modifiers": {
+                    "power_bonus": 2
+                }
+            },
+            {
+                "trigger": "before_when_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "changedamage": {
+                        "value": -2,
+                        "stagger": true,
+                        "mode": "add"
+                    }
+                }
+            }
+        ]
+    },
+    "Margin": {
+        "description": "Turn Start: If this unit has less than 4 pages in hand, draw 1 page, restore 1 light and gain 1 Clash Power Up",
+        "cost": 0,
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "hand_max": 4
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Clash Power Up": {
+                            "stack": 1,
+                            "volatile": true
+                        }
+                    },
+                    "gainlight": 1,
+                    "draw": 1
+                }
+            }
+        ]
+    },
+    "In Times Like These!": {
+        "description": "Turn Start: If this unit has less than 4 pages in hand, draw 1 page and gain 1 Power Up",
+        "cost": 0,
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "hand_max": 4
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Power Up": {
+                            "stack": 1,
+                            "volatile": true
+                        }
+                    },
+                    "draw": 1
+                }
+            }
+        ]
+    },
+    "Drinking Boast": {
+        "description": "On Discard: Gain +1 Tremor Count",
+        "cost": 0,
+        "effects": [
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Tremor": {
+                            "count": 1
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Best Choice": {
+        "description": "On Discard: Heal 3 HP",
+        "cost": 0,
+        "effects": [
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "recoverhp": 3
+                }
+            }
+        ]
+    },
+    "Commander": {
+        "description": "0n Turn Start: 3 random allies gain 1 Clash Power Up",
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "random3",
+                "filterfaction": [
+                    "Enemy"
+                ],
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Clash Power Up": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Downpour": {
+        "description": "Turn Start: All players gain 4 Tremor Potency and Count, then trigger 1 Tremor Burst",
+        "cost": 2,
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "everyone",
+                "filterfaction": [
+                    "Player"
+                ],
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Tremor": {
+                            "stack": 4,
+                            "count": 4
+                        }
+                    },
+                    "tremorburst": 1
+                }
+            }
+        ]
+    },
+    "Effloresced E.G.O : Commandeering": {
+        "description": "On Hit With Commandeering: Deal 5 Bonus Pierce Damage, and all allies heal 5 HP and gain 1 Attack Power Up next turn",
+        "effects": [
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {
+                    "pagecheck": "Musket Fire"
+                },
+                "get": {},
+                "modifiers": {
+                    "flatdamage": {
+                        "pierce": 5
+                    }
+                }
+            },
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "everyone",
+                "filterfaction": [
+                    "Enemy"
+                ],
+                "condition": {
+                    "absolutefactioncheck": [
+                        "Enemy"
+                    ],
+                    "pagecheck": "Commandeering"
+                },
+                "get": {},
+                "modifiers": {
+                    "recoverhp": 5,
+                    "getbuff": {
+                        "Attack Power Up": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Delle Lacrime Stage 1 - Combat": {
+        "description": "This unit's HP does not go below 1. When at 1 HP, retreat the encounter.",
+        "cost": 0,
+        "effects": [
+            {
+                "trigger": "on_death",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "setstat": {
+                        "is_active": false,
+                        "hp": 1
+                    },
+                    "log": [
+                        {
+                            "text": "HP Fell to 11 Retreating..."
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "Nightlong": {
+        "description": "If this combat is 'Lights Out', obfuscate the names of all pages",
+        "effects": []
+    },
+    "Peccatulum Invidiae Class 1": {
+        "description": "Deal 20% more damage.",
+        "cost": 2,
+        "effects": [
+            {
+                "trigger": "before_on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "changedamage": {
+                        "value": 3,
+                        "mode": "mult",
+                        "inverse_percent": -0.2
+                    }
+                }
+            }
+        ]
+    },
+    "Peccatulum Invidiae Class 3": {
+        "description": "Deal 40% more damage.",
+        "cost": 2,
+        "effects": [
+            {
+                "trigger": "before_on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "changedamage": {
+                        "value": 3,
+                        "mode": "mult",
+                        "inverse_percent": -0.4
+                    }
+                }
+            }
+        ]
+    },
+    "Steady As She Goes": {
+        "description": "Turn Start: If this unit has less than 3 pages in hand, draw 1 page and restore 1 light",
+        "cost": 5,
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "hand_max": 3
+                },
+                "get": {},
+                "modifiers": {
+                    "gainlight": 1,
+                    "draw": 1
+                }
+            }
+        ]
+    },
+    "Garamund": {
+        "description": "compensation for the fact this guy uses quaver pages, on roll +3 power",
+        "effects": [
+            {
+                "trigger": "on_roll",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "power_bonus": 3
+                }
+            }
+        ]
+    },
+    "Nuthin’s As Thick As Blood": {
+        "description": "On Discard: Lose 1 HP and gain +1 Charge Count",
+        "cost": 2,
+        "effects": [
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "takehpdamage": 1,
+                    "getbuff": {
+                        "Charge": {
+                            "count": 1
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "I’m Bout To Go Wild!": {
+        "description": "If this unit is below 50% HP: Dice Power +1; When inflict Bleed, inflict 1 additional Bleed Potency",
+        "cost": 2,
+        "effects": [
+            {
+                "trigger": "on_roll",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "hp_max%": 50
+                },
+                "get": {},
+                "modifiers": {
+                    "power_bonus": 1
+                }
+            },
+            {
+                "trigger": "oninflict_Bleed",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {
+                    "hp_max%": 50
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Bleed": {
+                            "stack": 1
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Oh Fuck": {
+        "description": "On Death: Apply 4 Offense Level Up and 4 Defense Level Up to all allies next turn",
+        "cost": 3,
+        "effects": [
+            {
+                "trigger": "on_death",
+                "conditionTarget": "self",
+                "modifierTarget": "everyone",
+                "filterfaction": [
+                    "Player"
+                ],
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Offense Level Up": {
+                            "stack": 4,
+                            "nextturn": true,
+                            "volatile": true
+                        },
+                        "Defense Level Up": {
+                            "stack": 4,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Bloodtainted Hooks": {
+        "description": "On Hit: Heal 2 HP. If target has Bleed, heal 1 additional HP",
+        "cost": 3,
+        "effects": [
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "limit_per_turn": 1,
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "recoverhp": 2
+                }
+            },
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "limit_per_turn": 1,
+                "condition": {
+                    "stack_min": {
+                        "buff": "Bleed",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "recoverhp": 2
+                }
+            }
+        ]
+    },
+    "Hack Away": {
+        "description": "On Hit with a Slash Dice: 50% chance to inflict 1 Bleed",
+        "cost": 2,
+        "effects": [
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {
+                    "chance": 50,
+                    "dice_type": [
+                        "slash"
+                    ]
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Bleed": {
+                            "stack": 1
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Instability": {
+        "description": "Turn Start: Gain 1 Attack Power Up for every time this unit has been staggered this combat.",
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "storagebox_check": [
+                        {
+                            "name": "self",
+                            "valuename": "StaggerCount",
+                            "min": 1
+                        }
+                    ]
+                },
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "self",
+                            "valuename": "StaggerCount"
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Attack Power Up": {
+                            "stack": "SB_StaggerCount",
+                            "nextturn": false,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "when_stagger",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "limit_per_encounter": 1,
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "StaggerCount",
+                            "value": 1,
+                            "mode": "add"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "Satiate Us... Please": {
+        "description": "Turn Start: At 30+ Bloodfeast, gain 1 Power Up",
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "storagebox_check": [
+                        {
+                            "name": "Bloodfeast",
+                            "valuename": "Bloodfeast",
+                            "min": 30
+                        }
+                    ]
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Power Up": {
+                            "stack": 1,
+                            "nextturn": false,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "when_stagger",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "limit_per_encounter": 1,
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "StaggerCount",
+                            "value": 1,
+                            "mode": "add"
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "storagebox_check": [
+                        {
+                            "name": "Bloodfeast",
+                            "valuename": "Bloodfeast",
+                            "min": 1
+                        }
+                    ]
+                },
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "Bloodfeast",
+                            "valuename": "Bloodfeast"
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "log": [
+                        {
+                            "text": "Current Bloodfeast: ",
+                            "value": "SB_Bloodfeast"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "Refracted Weakness": {
+        "description": "* -120 Offense Level\n* -120 Defense Level",
+        "effects": [
+            {
+                "trigger": "earliest_roll",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "setoffenselevel": {
+                        "source": "Refracted Weakness",
+                        "value": -120
+                    },
+                    "setdefenselevel": {
+                        "source": "Refracted Weakness",
+                        "value": -120
+                    }
+                }
+            }
+        ]
+    },
+    "Banquet of Blood": {
+        "description": "Turn Start: Gain +99 Bleed Count\n\nClash Win: Gain 3 Bleed.\nClash Lose: Lose 3 Bleed.\n\nOn Hit: Inflict (Bleed on self / 4) Bleed.\n",
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Bleed": {
+                            "count": 99
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "clash_win",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Bleed": {
+                            "stack": 3
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "clash_lose",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Bleed": {
+                            "stack": -3
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {},
+                "get": {
+                    "Bleed": {
+                        "value": "stack",
+                        "divide": 4,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Bleed": {
+                            "stack": "Bleed_stack"
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "This… is my Punishment?": {
+        "description": "Whenever another ally dies, a random player unit with the highest  Congealing Wound Stack gains 1  Spinalcord Ripped Arrow and switch to Pattern 2\n\nClash Win: If target has  Spinalcord Ripped Arrow, gain 1  Bloodtipped Bone Arrow.\nClash Lose: If target has  Spinalcord Ripped Arrow, they consume 1  Spinalcord Ripped Arrow to inflict 1The Hounds Tarnished Jaws",
+        "effects": [
+            {
+                "trigger": "clash_win",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Spinalcord Ripped Arrow",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Bloodtipped Bone Arrow": {
+                            "stack": 1
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "clash_lose",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Spinalcord Ripped Arrow",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "The Hounds Tarnished Jaws": {
+                            "stack": 1
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "clash_lose",
+                "conditionTarget": "target",
+                "modifierTarget": "target",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Spinalcord Ripped Arrow",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Spinalcord Ripped Arrow": {
+                            "stack": -1
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Do Your Best!": {
+        "description": "Clash Win: Heal 5 HP and Stagger",
+        "effects": [
+            {
+                "trigger": "clash_win",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "recoverhp": 5,
+                    "recoverstagger": 5
+                }
+            }
+        ]
+    },
+    "Blessing from the King In Binds": {
+        "description": "Massively increases this unit's HP",
+        "effects": []
+    },
+    "This... is my Purpose": {
+        "description": "Turn Start: If this unit is Staggered, gain 2 Protection, Stagger Protection, Power Up and Damage Up next turn",
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "ifstaggered": true
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Stagger Protection": {
+                            "stack": 2,
+                            "nextturn": true,
+                            "volatile": true
+                        },
+                        "Protection": {
+                            "stack": 2,
+                            "nextturn": true,
+                            "volatile": true
+                        },
+                        "Power Up": {
+                            "stack": 2,
+                            "nextturn": true,
+                            "volatile": true
+                        },
+                        "Damage Up": {
+                            "stack": 2,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Expert Bloodsucking": {
+        "description": "On Hit: If target has Bleed, heal HP by 50% of damage dealt",
+        "effects": [
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Bleed",
+                        "value": 1
+                    }
+                },
+                "get": {
+                    "damagedealt": 50
+                },
+                "modifiers": {
+                    "recoverhp": "damagedealt"
+                }
+            }
+        ]
+    },
+    "Beast of Darkness": {
+        "description": "Turn Start: Discard all pages in hand. Then, draw 9 pages\nEncounter Start: Lose all Light",
+        "cost": 99,
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "discard": {
+                        "amount": 9,
+                        "mode": "random"
+                    }
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "draw": 9
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "limit_per_encounter": 1,
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "gainlight": -99
+                }
+            }
+        ]
+    },
+    "A Humble Prayer [별에게 비는 소원]": {
+        "description": "Against enemies with 4+ status effects, deal +40% more damage with Offensive Dice",
+        "cost": 2,
+        "effects": [
+            {
+                "trigger": "before_on_hit",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "buffamount_min": {
+                        "type": "all",
+                        "value": 3
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "changedamage": {
+                        "value": 4,
+                        "mode": "mult",
+                        "inverse_percent": -0.1
+                    }
+                }
+            }
+        ]
+    },
+    "I've Overcome All Hunger... But For What Cause?": {
+        "description": "Turn Start: For every 15 Bloodfeast, gain 1 Offense Level Up",
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "storagebox_check": [
+                        {
+                            "name": "Bloodfeast",
+                            "valuename": "Bloodfeast",
+                            "min": 15
+                        }
+                    ]
+                },
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "Bloodfeast",
+                            "valuename": "Bloodfeast",
+                            "divide": 15
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Offense Level Up": {
+                            "stack": "SB_Bloodfeast",
+                            "nextturn": false,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Puncturing Thorns Born From A Vapid Wish": {
+        "description": "On Hit with a Pierce Die: Inflict 1 Fragile next turn; 80% chance to inflict 2 Pierce Fragility next turn",
+        "cost": 3,
+        "effects": [
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {
+                    "dice_type": [
+                        "pierce"
+                    ]
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Fragile": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {
+                    "dice_type": [
+                        "pierce"
+                    ],
+                    "chance": 80
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Pierce Fragility": {
+                            "stack": 2,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Extremely Unrelenting": {
+        "description": "On Death: Prevent Death, unstagger, and then recover HP by 25% of this unit's max HP\nThen, end the Encounter.",
+        "hidden": false,
+        "effects": [
+            {
+                "trigger": "on_death",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "currentHP": 25
+                },
+                "modifiers": {
+                    "setstat": {
+                        "is_active": true,
+                        "is_staggered": false
+                    },
+                    "recoverhp": "currentHP",
+                    "removepassive": "Artificial Weakness"
+                }
+            }
+        ]
+    },
+    "Just... For These Manufactured Friendships": {
+        "description": "Turn Start: For every single ally that has died last turn, consume 125 HP to summon another ally",
+        "hidden": false,
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "storagebox_check": [
+                        {
+                            "name": "The Queen Of The Empty Castle",
+                            "valuename": "DeadAllyCounter",
+                            "min": 1
+                        }
+                    ]
+                },
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "The Queen Of The Empty Castle",
+                            "valuename": "DeadAllyCounter",
+                            "mult": 12500
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "takehpdamage": "SB_DeadAllyCounter",
+                    "storagebox": [
+                        {
+                            "name": "The Queen Of The Empty Castle",
+                            "valuename": "DeadAllyCounter",
+                            "value": 0,
+                            "mode": "set"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "Debug Passive to Give DeathCounter": {
+        "description": "",
+        "hidden": true,
+        "effects": [
+            {
+                "trigger": "on_kill",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "limit_per_encounter": 3,
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "The Queen Of The Empty Castle",
+                            "valuename": "DeadAllyCounter",
+                            "value": 1,
+                            "mode": "add"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "Artificial Weakness": {
+        "description": "*\"Now, tell me, what is the purpose of a villain in a fairytale? It's for the heroes to eventually defeat them, right? Well then.... I'll play the role you've always expected me to\"*\n* -219 Offense Level\n* -219 Defense Level",
+        "effects": [
+            {
+                "trigger": "earliest_roll",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "setoffenselevel": {
+                        "source": "Refracted Weakness",
+                        "value": -219
+                    },
+                    "setdefenselevel": {
+                        "source": "Refracted Weakness",
+                        "value": -219
+                    }
+                }
+            }
+        ]
+    },
+    "Bloodsucking": {
+        "description": "On Hit: If target has Bleed, heal HP by 20% of damage dealt",
+        "effects": [
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Bleed",
+                        "value": 1
+                    }
+                },
+                "get": {
+                    "damagedealt": 20
+                },
+                "modifiers": {
+                    "recoverhp": "damagedealt"
+                }
+            }
+        ]
+    },
+    "Bloodying Up": {
+        "description": "On Use: If target has 15+ Charge Count, Dice Power +1 and consume 10 HP to increase Bloodfeast by 10",
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 15
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "power_bonus": 1,
+                    "takehpdamage": 10,
+                    "storagebox": [
+                        {
+                            "name": "Bloodfeast",
+                            "valuename": "Bloodfeast",
+                            "value": 10,
+                            "mode": "add"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "Accursed Blade - Untrained [悪魔祓い]": {
+        "description": "Against opponents who have over +4 types of status effects, deal 20% more damage with offensive dice",
+        "cost": 2,
+        "effects": [
+            {
+                "trigger": "before_on_hit",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "buffamount_min": {
+                        "type": "all",
+                        "value": 4
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "changedamage": {
+                        "value": 2,
+                        "mode": "mult",
+                        "inverse_percent": -0.1
+                    }
+                }
+            }
+        ]
+    },
+    "Hana Association's Commemorative Brooch: Light and Pages": {
+        "description": "Turn Start: Draw 1 page, and restore 1 light",
+        "cost": 0,
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "gainlight": 1,
+                    "draw": 1
+                }
+            }
+        ]
+    },
+    "Shimmering": {
+        "description": "Turn Start: Discard all pages in hand. Then, draw 9 pages, and restore all light",
+        "cost": 99,
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "discard": {
+                        "amount": 9,
+                        "mode": "random"
+                    }
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "gainlight": 99,
+                    "draw": 9
+                }
+            }
+        ]
+    },
+    "Budding Implosion": {
+        "description": "Turn Start: For every 20 Bloodfeast, apply 1 Offense Level Up to all allies\n",
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "everyone",
+                "condition": {
+                    "storagebox_check": [
+                        {
+                            "name": "Bloodfeast",
+                            "valuename": "Bloodfeast",
+                            "min": 20
+                        }
+                    ]
+                },
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "Bloodfeast",
+                            "valuename": "Bloodfeast",
+                            "divide": 20
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Offense Level Up": {
+                            "stack": "SB_Bloodfeast",
+                            "nextturn": false,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "when_stagger",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "limit_per_encounter": 1,
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "StaggerCount",
+                            "value": 1,
+                            "mode": "add"
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "storagebox_check": [
+                        {
+                            "name": "Bloodfeast",
+                            "valuename": "Bloodfeast",
+                            "min": 1
+                        }
+                    ]
+                },
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "Bloodfeast",
+                            "valuename": "Bloodfeast"
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "log": [
+                        {
+                            "text": "Current Bloodfeast: ",
+                            "value": "SB_Bloodfeast"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "Hana Association's Commemorative Brooch: Health and Stagger": {
+        "description": "Increase this unit's HP and Stagger by 10%",
+        "cost": 0,
+        "effects": []
+    },
+    "Lowstrider": {
+        "description": "On Hit with a Pierce Die, 70% chance to inflict 1 Pierce Fragility",
+        "cost": 3,
+        "effects": [
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {
+                    "dice_type": [
+                        "pierce"
+                    ],
+                    "chance": 70
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Pierce Fragility": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Unseen Threat": {
+        "description": "Turn Start: When Lights Out is active, activate the following effects:\n- Lower the Cost of all pages in hand by 1\n- Gain (Pages in hand / 2) Pierce Damage Up (max 3)\n- All opponents gain 1 Bind next turn",
+        "cost": 4,
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "limit_per_encounter": 1,
+                "condition": {
+                    "stack_min": {
+                        "buff": "Lights Out",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "lightcostchange": {
+                        "all": -1
+                    }
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Lights Out",
+                        "value": 1
+                    }
+                },
+                "get": {
+                    "hand": {
+                        "mult": 50,
+                        "max": 3
+                    }
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Pierce Damage Up": {
+                            "stack": "hand",
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "everyone",
+                "filterfaction": [
+                    "Enemy"
+                ],
+                "condition": {
+                    "stack_min": {
+                        "buff": "Lights Out",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Bind": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "None Left Behind": {
+        "description": "On Kill: Gain 3 Offense Level Up next turn (Max 3 times per encounter",
+        "cost": 3,
+        "effects": [
+            {
+                "trigger": "on_kill",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "limit_per_encounter": 3,
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Offense Level Up": {
+                            "stack": 3,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Gashing Wounds": {
+        "description": "Upon inflicting bleed against enemies with 10+ Bleed, 50% chance to inflict +1 additional Bleed.",
+        "cost": 3,
+        "effects": [
+            {
+                "trigger": "oninflict_Bleed",
+                "conditionTarget": "target",
+                "modifierTarget": "target",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Bleed",
+                        "value": 10
+                    },
+                    "chance": 50
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Bleed": {
+                            "stack": 1
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Parasitism": {
+        "description": "On Hit: If target has Sinking, 50% chance to heal (Sinking damage dealt) Stagger.",
+        "cost": 4,
+        "effects": [
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Sinking",
+                        "value": 3
+                    },
+                    "chance": 50
+                },
+                "get": {
+                    "Sinking": {
+                        "value": "stack",
+                        "mult": 34,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "recoverstagger": "Sinking_stack"
+                }
+            }
+        ]
+    },
+    "Trailblazer": {
+        "description": "For every 10 Burn on the target, enemy Wrath Resistance +0.1 (Max +0.6)\nFor every 5 Burn on self, Wrath Resistance -0.1 on self (Max -0.6)",
+        "cost": 3,
+        "effects": [
+            {
+                "trigger": "before_on_hit",
+                "conditionTarget": "target",
+                "modifierTarget": "target",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Burn",
+                        "value": 10
+                    }
+                },
+                "get": {
+                    "Burn": {
+                        "value": "stack",
+                        "max": 6,
+                        "divide": 10,
+                        "fix": "",
+                        "targetOverride": ""
+                    }
+                },
+                "modifiers": {
+                    "increaseresistance": {
+                        "source": "TrailblazerPassive",
+                        "Wrath": "Burn_stack"
+                    }
+                }
+            },
+            {
+                "trigger": "before_when_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "limit_per_turn": 1,
+                "condition": {
+                    "stack_min": {
+                        "buff": "Burn",
+                        "value": 5
+                    }
+                },
+                "get": {
+                    "Burn": {
+                        "value": "stack",
+                        "max": 6,
+                        "divide": 5,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "increaseresistance": {
+                        "source": "TrailblazerPassive",
+                        "lowerResistance": true,
+                        "Wrath": "Burn_stack"
+                    }
+                }
+            }
+        ]
+    },
+    "Scorching Passion": {
+        "description": "Turn Start: Heal HP equal to ((Burn on self / 2) - 3) (Min 0)\n*Note: These don’t stack with similar Turn End effects*",
+        "cost": 5,
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Burn": {
+                        "value": "stack",
+                        "divide": 2,
+                        "add": -3,
+                        "min": 0
+                    }
+                },
+                "modifiers": {
+                    "recoverhp": "Burn_stack"
+                }
+            }
+        ]
+    },
+    "Accurate Slice": {
+        "description": "When landing a critical hit, deal +3 damage",
+        "cost": 3,
+        "effects": [
+            {
+                "trigger": "on_crit",
+                "conditionTarget": "target",
+                "modifierTarget": "target",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "changedamage": {
+                        "value": 3,
+                        "mode": "add"
+                    }
+                }
+            }
+        ]
+    },
+    "Imperfect Battery": {
+        "description": "When spending Charge, inflict an additional (Charge Count on self / 4) damage. At 20+ Charge Count, inflict an additional 3 damage",
+        "cost": 4,
+        "effects": [
+            {
+                "trigger": "onspend_Charge",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "self",
+                            "valuename": "Charge_count_change",
+                            "toAbsoluteValue": "",
+                            "divide": 4,
+                            "max": 4
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "changedamage": {
+                        "value": "SB_Charge_count_change",
+                        "mode": "add"
+                    }
+                }
+            },
+            {
+                "trigger": "onspend_Charge",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "storagebox_check": [
+                        {
+                            "name": "self",
+                            "valuename": "Charge_count_change",
+                            "max": -9
+                        }
+                    ]
+                },
+                "get": {},
+                "modifiers": {
+                    "changedamage": {
+                        "value": 3,
+                        "mode": "add"
+                    }
+                }
+            }
+        ]
+    },
+    "Gluttonous Exploitation": {
+        "description": "On Roll: If the target has Rupture and this unit is using an Offensive dice, deal +1 HP damage\nOn Roll: If the target has Rupture and this unit is using a Defensive Dice, deal +1 stagger damage",
+        "cost": 2,
+        "effects": [
+            {
+                "trigger": "on_roll",
+                "conditionTarget": "target",
+                "modifierTarget": "target",
+                "condition": {
+                    "dice_type": [
+                        "slash",
+                        "pierce",
+                        "blunt"
+                    ],
+                    "stack_min": {
+                        "buff": "Rupture",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "takehpdamage": 1
+                }
+            },
+            {
+                "trigger": "on_roll",
+                "conditionTarget": "target",
+                "modifierTarget": "target",
+                "condition": {
+                    "dice_type": [
+                        "guard",
+                        "evade"
+                    ],
+                    "stack_min": {
+                        "buff": "Rupture",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "takestaggerdamage": 1
+                }
+            }
+        ]
+    },
+    "Reshuffle": {
+        "description": "Turn Start: Discard 1 random page and draw 1 page",
+        "cost": 4,
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "discard": {
+                        "amount": 1,
+                        "mode": "random"
+                    },
+                    "draw": 1
+                }
+            }
+        ]
+    },
+    "Short Ammo Magazine": {
+        "description": "Encounter Start: Gain 2 Ammo",
+        "cost": 3,
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "limit_per_encounter": 1,
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Ammo": {
+                            "stack": 2
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "First Impressions [頼む]": {
+        "description": "Encounter Start: Gain 3 Poise and +3 Poise Count. Whenever this unit has over +20 Poise, gain +1 Min. Speed and 1 Haste at the start of each turn.",
+        "cost": 4,
+        "effects": [
+            {
+                "trigger": "newturn",
+                "limit_per_encounter": 1,
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Poise": {
+                            "stack": 3,
+                            "count": 3
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Poise",
+                        "value": 20
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Haste": {
+                            "stack": 1,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Reaction Force": {
+        "description": "Turn Start: If this unit did not use any page last scene, gain 1 Power Up and Protection",
+        "cost": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "DidNotUsePage",
+                            "value": 1,
+                            "mode": "set"
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "storagebox_check": [
+                        {
+                            "name": "self",
+                            "valuename": "DidNotUsePage",
+                            "equal": 0
+                        }
+                    ]
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Protection": {
+                            "stack": 1,
+                            "volatile": true
+                        },
+                        "Power Up": {
+                            "stack": 1,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "DidNotUsePage",
+                            "value": 0,
+                            "mode": "set"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "Ready Quiver": {
+        "description": "Encounter Start: Gain 3 Thorn Arrow",
+        "cost": 2,
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "limit_per_encounter": 1,
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "ThornArrow": {
+                            "stack": 3
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Poison-tipped Muscleripper": {
+        "description": "On Crit: If target has Poison, gain 1 Poise and inflict 1 Rupture",
+        "cost": 5,
+        "effects": [
+            {
+                "trigger": "on_crit",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Poison",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Poise": {
+                            "stack": 1
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_crit",
+                "conditionTarget": "target",
+                "modifierTarget": "target",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Poison",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Rupture": {
+                            "stack": 1
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Toxicant Breath": {
+        "description": "On Hit: If target has 3+ Poison, gain 3 Poise and +2 Poise Count\n\nOn Hit: If target does not have Poison, Pierce Damage +2",
+        "cost": 3,
+        "effects": [
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Poison",
+                        "value": 5
+                    },
+                    "resonance_min": {
+                        "value": 3,
+                        "sin": "Gluttony",
+                        "faction": "Player"
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Poise": {
+                            "stack": 3,
+                            "count": 2
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "target",
+                "modifierTarget": "target",
+                "condition": {
+                    "stack_max": {
+                        "buff": "Poison",
+                        "value": 1
+                    },
+                    "resonance_min": {
+                        "value": 3,
+                        "sin": "Gluttony",
+                        "faction": "Player"
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "flatdamage": {
+                        "pierce": 2
+                    }
+                }
+            }
+        ]
+    },
+    "Full Throttle": {
+        "description": "At the start of the encounter, start the battle with +3  Charge Count.\nWhen gaining Charge, 10% chance to gain an additional +1 Charge Count.\nOn Clash Win, deal additional stagger damage equal to (Charge Count / 5).",
+        "cost": 4,
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "limit_per_encounter": 1,
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": 3
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "ongain_Charge",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "chance": 10
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": 1
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "clash_win",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {},
+                "get": {
+                    "Charge": {
+                        "value": "count",
+                        "mult": 20,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "takestaggerdamage": "Charge_count"
+                }
+            }
+        ]
+    },
+    "Complete Drive": {
+        "description": "Turn Start: Draw an additional page equal to (Charge Count/9)",
+        "cost": 4,
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Charge": {
+                        "value": "count",
+                        "divide": 9,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "draw": "Charge_count"
+                }
+            }
+        ]
+    },
+    "All Natural Fuel": {
+        "description": "Encounter Start: Gain 100 Raw Fuel and 3  Heated\nTurn Start: If this unit does not have any Fuel, gain 1 Power Down\n\nOn Kill: Gain 35 Raw Fuel",
+        "cost": 1,
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "limit_per_encounter": 1,
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "RawFuel": {
+                            "stack": 100
+                        },
+                        "Heated": {
+                            "stack": 3
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": [
+                    {
+                        "stack_max": {
+                            "buff": "RawFuel",
+                            "value": 1
+                        }
+                    },
+                    {
+                        "stack_max": {
+                            "buff": "ReadyFuel",
+                            "value": 11
+                        }
+                    }
+                ],
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Power Down": {
+                            "stack": 1,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_kill",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "RawFuel": {
+                            "stack": 35
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "For Our Office… Firefist Office": {
+        "description": "Combat Start: If this unit’s HP is below 50%, draw “Unleashing Fuel Restrictions!!” and then play it.",
+        "cost": 3,
+        "effects": [
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_max": {
+                        "buff": "Overheated",
+                        "value": 1
+                    },
+                    "stack_min": {
+                        "buff": "Heated",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Heated": {
+                            "stack": -3
+                        },
+                        "Overheated": {
+                            "stack": 3
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "District 20 Enkephalin Recharging": {
+        "description": "On Kill: Gain 100 Raw Fuel",
+        "cost": 1,
+        "effects": [
+            {
+                "trigger": "on_kill",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "RawFuel": {
+                            "stack": 100
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Rusty Taps": {
+        "description": "Start the battle with 3 Bullet..?\nOn Round Start, if this unit has no Bullet..?, gain 1 Bullet..?",
+        "cost": 1,
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "limit_per_encounter": 1,
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Bullet..?": {
+                            "stack": 3
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_max": {
+                        "buff": "Bullet..?",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Bullet..?": {
+                            "stack": 1
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Get Em!": {
+        "description": "On Spend Bullet..? : 1 random ally gains 1 Haste next turn (Max two times per turn)",
+        "cost": 3,
+        "effects": [
+            {
+                "trigger": "onspend_Bullet..?",
+                "conditionTarget": "self",
+                "modifierTarget": "random1",
+                "filterfaction": [
+                    "Player"
+                ],
+                "limit_per_turn": 2,
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Haste": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Bolus of Ten-Thousand Not-Entirely-Phantasmal Rounds That Are Fired To Fake a Withdrawal, Reclaim Your Footing, Recenter Your Spine, Reboot Your Confidence, And Slowly, Very Quietly, Actually Heal Your Aim And Resolve【彈藥虛實交錯復歸之術穩心定魂返本還原無限輪迴】": {
+        "description": "On Spend Bullet..? : Restore 1 Light",
+        "cost": 6,
+        "effects": [
+            {
+                "trigger": "onspend_Bullet..?",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "gainlight": 1
+                }
+            }
+        ]
+    },
+    "Clenched Grudge": {
+        "description": "Recover 5 Stagger Resist on hit; lose 8 Stagger Resist on clash lose. ",
+        "cost": 1,
+        "effects": [
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "get": {},
+                "modifiers": {
+                    "recoverstagger": 5
+                }
+            },
+            {
+                "trigger": "clash_lose",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "get": {},
+                "modifiers": {
+                    "recoverstagger": -8
+                }
+            }
+        ]
+    },
+    "Burning Fists": {
+        "description": "Burning Fists",
+        "cost": 3,
+        "effects": [
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Burn",
+                        "value": 5
+                    }
+                },
+                "get": {
+                    "Burn": {
+                        "value": "stack",
+                        "divide": 5,
+                        "max": 8,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "takehpdamage": "Burn_stack"
+                }
+            }
+        ]
+    },
+    "The Way of Serene Discipline [静律道]": {
+        "description": "On Crit: 50% chance to inflict 1 Rupture Potency and Count",
+        "cost": 4,
+        "effects": [
+            {
+                "trigger": "on_crit",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {
+                    "condition": {
+                        "chance": 50
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Rupture": {
+                            "stack": 1,
+                            "count": 1
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Best Defense": {
+        "description": "Pride Res x3\n\nClash Power +1 for every 2 Defense Level Up on self (Max 2)\nWhen this unit has Defense Power Up, Gain 1Clash Power Up ",
+        "cost": 4,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "pageusetype": [
+                        "Clash"
+                    ],
+                    "resonance_min": {
+                        "value": 3,
+                        "sin": "Pride",
+                        "faction": "Player"
+                    },
+                    "stack_min": {
+                        "buff": "Defense Level Up",
+                        "value": 2
+                    }
+                },
+                "get": {
+                    "Defense Level Up": {
+                        "value": "stack",
+                        "divide": 2,
+                        "fix": "",
+                        "max": 3
+                    }
+                },
+                "modifiers": {
+                    "power_bonus": "Defense Level Up"
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "resonance_min": {
+                        "value": 3,
+                        "sin": "Pride",
+                        "faction": "Player"
+                    },
+                    "stack_min": {
+                        "buff": "Defense Power Up",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Clash Power Up": {
+                            "stack": 1,
+                            "volatile": true,
+                            "nextturn": false
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Minimum Offense": {
+        "description": "When this unit has Protection, deal an additional 10% more damage for every stack of Protection on self",
+        "cost": 4,
+        "effects": [
+            {
+                "trigger": "before_on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Protection",
+                        "value": 1
+                    }
+                },
+                "get": {
+                    "Protection": {
+                        "value": "stack"
+                    }
+                },
+                "modifiers": {
+                    "changedamage": {
+                        "value": "Protection_stack",
+                        "mode": "mult",
+                        "inverse_percent": -0.1
+                    }
+                }
+            }
+        ]
+    },
+    "Keeping In Stride": {
+        "description": "Clash Win: Heal 1 HP",
+        "cost": 1,
+        "effects": [
+            {
+                "trigger": "clash_win",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "recoverhp": 1
+                }
+            }
+        ]
+    },
+    "Your Shield": {
+        "description": "Defensive Dice Power +1 ",
+        "cost": 3,
+        "effects": [
+            {
+                "trigger": "on_roll",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "dice_type": [
+                        "guard",
+                        "evade"
+                    ],
+                    "resource_min": {
+                        "value": 5,
+                        "sin": "Pride",
+                        "faction": "Enemy"
+                    }
+                },
+                "modifiers": {
+                    "power_bonus": 1
+                }
+            }
+        ]
+    },
+    ">:)!! Synergy!!": {
+        "description": "When an ally receives Defense Level Up, gain the same amount of Defense Level Up. When this unit receives  Defense Level Up or Protection, apply the same amount to a random ally.  When this unit gains Defense Level Up, gain Charge count equal to Defense Level Up gained.\n\nTurn Start: If this unit has a total sum of 4+ Status effects, heal 10 SR and Restore 1 Light. If said status effects were positive status effects, heal a bonus +3 SR and Restore an additional +1 Light.\n",
+        "cost": 5,
+        "effects": [
+            {
+                "trigger": "ongain_Defense Level Up",
+                "conditionTarget": "self",
+                "modifierTarget": "random1",
+                "filterfaction": [
+                    "Enemy"
+                ],
+                "condition": {},
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "self",
+                            "valuename": "Defense Level Up_stack_change",
+                            "toAbsoluteValue": ""
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Defense Level Up": {
+                            "stack": "SB_Defense Level Up_stack_change",
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "ongain_Defense Level Up",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "self",
+                            "valuename": "Defense Level Up_stack_change",
+                            "toAbsoluteValue": ""
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": 3
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "ongain_Protection",
+                "conditionTarget": "self",
+                "modifierTarget": "random1",
+                "filterfaction": [
+                    "Enemy"
+                ],
+                "condition": {},
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "self",
+                            "valuename": "Protection_stack_change",
+                            "toAbsoluteValue": ""
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Protection": {
+                            "stack": "SB_Protection_stack_change",
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "buffamount_min": {
+                        "type": "all",
+                        "value": 4
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "recoverstagger": 10,
+                    "gainlight": 1
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "buffamount_min": {
+                        "type": "Pos",
+                        "value": 4
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "recoverstagger": 3,
+                    "gainlight": 1
+                }
+            }
+        ]
+    },
+    "Synergy Effects": {
+        "description": "When an ally receives Defense Level Up, Synapse the same amount of Defense Level Up. ",
+        "cost": 0,
+        "effects": [
+            {
+                "trigger": "ongain_Defense Level Up",
+                "conditionTarget": "self",
+                "modifierTarget": "everyone",
+                "filterfaction": [
+                    "Zwei Association Section 3 Acting Supervisor"
+                ],
+                "condition": {},
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "self",
+                            "valuename": "Defense Level Up_stack_change",
+                            "toAbsoluteValue": ""
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Defense Level Up": {
+                            "stack": "SB_Defense Level Up_stack_change",
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Black Wings": {
+        "description": "When attacking an opponent with lower offensive level than this unit, deal bonus fixed damage to a random opponent equal to 20% of Damage dealt (Max 15). (Twice per turn)",
+        "cost": 3,
+        "effects": []
+    },
+    "Synergy": {
+        "description": "When this unit gains Defense Level Up, gain Charge count equal to Defense Level Up gained. (Max 5)\n\nTurn Start: If this unit has a total sum of 5+ Status effects, heal 5 SR and Restore 1 Light. If said status effects were positive status effects, heal a bonus +5 SR.\n",
+        "cost": 4,
+        "requiresTag": "Zwei Association Section 3 Acting Supervisor",
+        "effects": [
+            {
+                "trigger": "ongain_Defense Level Up",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "self",
+                            "valuename": "Defense Level Up_stack_change",
+                            "max": 5,
+                            "toAbsoluteValue": ""
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": "SB_Defense Level Up_stack_change"
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "buffamount_min": {
+                        "type": "all",
+                        "value": 5
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "recoverstagger": 5,
+                    "gainlight": 1
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "buffamount_min": {
+                        "type": "Pos",
+                        "value": 5
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "recoverstagger": 5
+                }
+            }
+        ]
+    },
+    "Parasitic Sanctimony": {
+        "description": "When this unit gains Defense Level Up, gain Charge count equal to Defense Level Up gained. (Max 5)\n\nTurn Start: If this unit has a total sum of 5+ Status effects, heal 5 SR and Restore 1 Light. If said status effects were positive status effects, heal a bonus +5 SR.\n",
+        "cost": 4,
+        "requiresTag": "Zwei Association Section 6 Lieutenant",
+        "effects": [
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "target",
+                "modifierTarget": "random1",
+                "limit_per_turn": 1,
+                "filterfaction": [
+                    "OpponentsOnly"
+                ],
+                "condition": {
+                    "HasMoreOLThanCondTarget": 100
+                },
+                "get": {
+                    "damagedealt": 20
+                },
+                "modifiers": {
+                    "takehpdamage": "damagedealt"
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "everyone",
+                "modifierTarget": "everyone",
+                "filterfaction": [
+                    "OpponentsOnly"
+                ],
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "ParasiticSanctimonyCounter",
+                            "valuename": "ParasiticSanctimonyCounter",
+                            "value": 1,
+                            "mode": "add"
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "everyone",
+                "modifierTarget": "everyone",
+                "filterfaction": [
+                    "AlliesOnly"
+                ],
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "ParasiticSanctimonyAllyCounter",
+                            "valuename": "ParasiticSanctimonyAllyCounter",
+                            "value": 1,
+                            "mode": "add"
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "ParasiticSanctimonyCounter",
+                            "valuename": "ParasiticSanctimonyCounter",
+                            "divide": 3,
+                            "fix": "",
+                            "max": 3,
+                            "toAbsoluteValue": ""
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Defense Level Up": {
+                            "stack": "SB_ParasiticSanctimonyCounter",
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "storagebox_check": [
+                        {
+                            "name": "self",
+                            "valuename": "ParasiticSanctimonyAllyCounter",
+                            "equal": 1
+                        }
+                    ]
+                },
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "ParasiticSanctimonyCounter",
+                            "valuename": "ParasiticSanctimonyCounter",
+                            "divide": 3,
+                            "fix": "",
+                            "max": 3,
+                            "toAbsoluteValue": ""
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Defense Level Up": {
+                            "stack": "SB_ParasiticSanctimonyCounter",
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "ParasiticSanctimonyCounter",
+                            "valuename": "ParasiticSanctimonyCounter",
+                            "value": 0,
+                            "mode": "set"
+                        },
+                        {
+                            "name": "ParasiticSanctimonyAllyCounter",
+                            "valuename": "ParasiticSanctimonyAllyCounter",
+                            "value": 0,
+                            "mode": "set"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "Foolhardy": {
+        "description": "",
+        "effects": [
+            {
+                "trigger": "clash_win",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {
+                    "dice_type": [
+                        "evade",
+                        "guard"
+                    ]
+                },
+                "get": {},
+                "modifiers": {
+                    "takestaggerdamage": 3
+                }
+            }
+        ]
+    },
+    "Lightweight": {
+        "description": "On Hit: Inflict (Speed Difference) damage (Max 3)",
+        "effects": [
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {},
+                "get": {
+                    "speedDifference": {
+                        "max": 3
+                    }
+                },
+                "modifiers": {
+                    "takehpdamage": "speedDifference"
+                }
+            }
+        ]
+    },
+    "Overhead": {
+        "description": "On Hit: If target has 10+ Tremor, deal 1 damage",
+        "cost": 1,
+        "effects": [
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "target",
+                "modifierTarget": "target",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Tremor",
+                        "value": 10
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "takehpdamage": 1
+                }
+            }
+        ]
+    },
+    "Tremor Kick-Back": {
+        "description": "When triggering Tremor Burst, gain 2 Stagger Protection and 2 Blunt Stagger Damage Down ",
+        "effects": [
+            {
+                "trigger": "on_burst",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Stagger Protection": {
+                            "stack": 2,
+                            "volatile": true
+                        },
+                        "Blunt Stagger Damage Down": {
+                            "stack": 2,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Tremor Recoil": {
+        "description": "When triggering Tremor Burst, gain 2 Blunt Stagger Damage Up and 2 Stagger Fragile",
+        "effects": [
+            {
+                "trigger": "on_burst",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Stagger Fragile": {
+                            "stack": 2,
+                            "volatile": true
+                        },
+                        "Blunt Stagger Damage Up": {
+                            "stack": 2,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Supressed Recoil": {
+        "description": "When triggering Tremor Burst, gain 1 Stagger Protection and 1 Stagger Damage Up (Max 2)",
+        "effects": [
+            {
+                "trigger": "on_burst",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "limit_per_turn": 2,
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Stagger Protection": {
+                            "stack": 1,
+                            "volatile": true
+                        },
+                        "Stagger Damage Up": {
+                            "stack": 1,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Shaking Advantage": {
+        "description": "At the start of each turn, if every opponent on the field has Tremor, gain 1 Haste",
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "everyone",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_min": 1
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Haste": {
+                            "stack": 1,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Overwhelming's Effect": {
+        "description": "On hit, inflict +1 tremor",
+        "effects": [
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Tremor": {
+                            "stack": 1,
+                            "volatile": false
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "removepassive": "Overwhelming's Effect"
+                }
+            }
+        ]
+    },
+    "Hematolagnia": {
+        "description": "On Kill with an opponent who has +5 Bleed, heal back 10% of Max HP",
+        "effects": [
+            {
+                "trigger": "on_kill",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Bleed",
+                        "value": 5
+                    }
+                },
+                "get": {
+                    "max_hp": -10
+                },
+                "modifiers": {
+                    "takehpdamage": "max_hp"
+                }
+            }
+        ]
+    },
+    "Barbaric Terror": {
+        "description": "Opponents who have above +5 at turn start and Lose 1 Speed",
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "everyone",
+                "modifierTarget": "everyone",
+                "filterfaction": [
+                    "Enemy"
+                ],
+                "condition": {
+                    "stack_min": {
+                        "buff": "Bleed",
+                        "value": 5
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "speed_bonus": -1
+                }
+            }
+        ]
+    },
+    "Acrotomophilia": {
+        "description": "On Kill with an opponent who has +5 Rupture, heal back 10% of Max HP",
+        "effects": [
+            {
+                "trigger": "on_kill",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Rupture",
+                        "value": 5
+                    }
+                },
+                "get": {
+                    "max_hp": -10
+                },
+                "modifiers": {
+                    "takehpdamage": "max_hp"
+                }
+            },
+            {
+                "trigger": "on_kill",
+                "conditionTarget": "target",
+                "modifierTarget": "everyone",
+                "filterfaction": [
+                    "Enemy"
+                ],
+                "condition": {
+                    "stack_min": {
+                        "buff": "Rupture",
+                        "value": 5
+                    }
+                },
+                "get": {},
+                "modifiers": {}
+            }
+        ]
+    },
+    "Fear Inducing Terror": {
+        "description": "Opponents who have above +5 Rupture at turn start and Lose 1 Speed",
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "everyone",
+                "modifierTarget": "everyone",
+                "filterfaction": [
+                    "Enemy"
+                ],
+                "condition": {
+                    "stack_min": {
+                        "buff": "Rupture",
+                        "value": 5
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "speed_bonus": -1
+                }
+            }
+        ]
+    },
+    "Desecrate Carcass": {
+        "description": "Deal 5% more damage against opponents with Rupture, Deal 5% more damage against opponents with Bleed",
+        "effects": [
+            {
+                "trigger": "before_on_hit",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Rupture",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "changedamage": {
+                        "value": 5,
+                        "mode": "mult",
+                        "inverse_percent": -0.01
+                    }
+                }
+            },
+            {
+                "trigger": "before_on_hit",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Bleed",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "changedamage": {
+                        "value": 5,
+                        "mode": "mult",
+                        "inverse_percent": -0.01
+                    }
+                }
+            }
+        ]
+    },
+    "Enticing Rampage": {
+        "description": "After using the combat page 'DIE DIE DIE', a random ally gains 'DIE DIE DIE' in their current hand. ",
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "random1",
+                "condition": {
+                    "pagecheck": "DIE DIE DIE",
+                    "factioncheck": [
+                        "Player"
+                    ]
+                },
+                "get": {},
+                "modifiers": {
+                    "drawspecific": "DIE DIE DIE"
+                }
+            }
+        ]
+    },
+    "Rats Guide to Survival": {
+        "description": "Deal 10% more damage towards opponents with Bleed. On Evade, heal +2 more stagger.",
+        "effects": [
+            {
+                "trigger": "before_on_hit",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Bleed",
+                        "value": 1
+                    },
+                    "resource_min": {
+                        "value": 4,
+                        "sin": "Gloom",
+                        "faction": "Player"
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "changedamage": {
+                        "value": 5,
+                        "inverse_percent": -0.01,
+                        "mode": "mult"
+                    }
+                }
+            },
+            {
+                "trigger": "on_evade",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "resource_min": {
+                        "value": 4,
+                        "sin": "Gloom",
+                        "faction": "Player"
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "takestaggerdamage": -2
+                }
+            }
+        ]
+    },
+    "Instant Cooking": {
+        "description": "On Kill, restore 10% of Max HP and Max SR.",
+        "cost": 3,
+        "effects": [
+            {
+                "trigger": "on_kill",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "targetOverrideStat": "",
+                    "max_hp": 10,
+                    "max_stagger": 10
+                },
+                "modifiers": {
+                    "recoverhp": "max_hp",
+                    "recoverstagger": "max_stagger"
+                }
+            }
+        ]
+    },
+    "Marbling": {
+        "description": "If the target has a total of cumulative of 20 Bleed, deal 35% more damage.",
+        "effects": [
+            {
+                "trigger": "before_on_hit",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "total_min": {
+                        "buff": "Bleed",
+                        "value": 20
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "changedamage": {
+                        "value": 35,
+                        "mode": "mult",
+                        "inverse_percent": -0.01
+                    }
+                }
+            }
+        ]
+    },
+    "Inherited Cruelty": {
+        "description": "When attacking an opponent with Bleed, deal a quarter of the damage dealt as Fixed Lust Damage. When this unit is staggered for the first time, unstagger self",
+        "effects": [
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "target",
+                "modifierTarget": "target",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Bleed",
+                        "value": 1
+                    }
+                },
+                "get": {
+                    "damagedealt": 25
+                },
+                "modifiers": {
+                    "flatdamage": {
+                        "Lust": "damagedealt"
+                    }
+                }
+            },
+            {
+                "trigger": "when_stagger",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "limit_per_encounter": 1,
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "setstat": {
+                        "is_staggered": false,
+                        "stagger": 30
+                    },
+                    "log": [
+                        {
+                            "text": "<:stagger:1390624005593239643> Jeanne Has Been Unstaggered! ('Inherited Cruelty' Passive Activationn) <:stagger:1390624005593239643>"
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "when_stagger",
+                "conditionTarget": "everyone",
+                "modifierTarget": "everyone",
+                "limit_per_encounter": 1,
+                "filterfaction": [
+                    "Player"
+                ],
+                "condition": {},
+                "get": {},
+                "modifiers": {}
+            }
+        ]
+    },
+    "Scare factor 1": {
+        "description": "",
+        "hidden": true,
+        "effects": []
+    },
+    "Scare factor 2": {
+        "description": "",
+        "hidden": true,
+        "effects": []
+    },
+    "Scare factor 3": {
+        "description": "",
+        "hidden": true,
+        "effects": []
+    },
+    "Scare factor 4": {
+        "description": "",
+        "hidden": true,
+        "effects": []
+    },
+    "Scare factor 5": {
+        "description": "",
+        "hidden": true,
+        "effects": []
+    },
+    "Scare factor 6": {
+        "description": "",
+        "hidden": true,
+        "effects": []
+    },
+    "Effloresced E.G.O - Nagao": {
+        "description": "All opponent's Lose 5 Defensive Dice power while this unit is present on the field. Against opponents with slower speed, gain Dice Power equal to (# of the sum of Poise and Poise Count on this unit/Speed Difference x 5 (rounded up)).Deal 50% more damage on critical hits. When this unit has over 50 (# of the sum of Poise and Poise Count on this unit, automatically Invoke all dices on all pages. Afterwards, discard all pages from hand and gain a new selection. Their costs become 0.",
+        "effects": []
+    },
+    "Severing Slash [未実践]": {
+        "description": "This unit's slash resistance counts as 1.5X towards opponents who have over 1.4X slash resistance. Against opponents who have lower than 1.0X Slash Resistance, deal 50% more damage with Slash Dice.",
+        "effects": [
+            {
+                "trigger": "before_when_hit",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "resist_min": {
+                        "res": "slash",
+                        "restype": "resistances",
+                        "value": 1.5
+                    },
+                    "dice_type": [
+                        "slash"
+                    ]
+                },
+                "get": {},
+                "modifiers": {
+                    "overwriteresistance": {
+                        "slash": 1.5
+                    }
+                }
+            },
+            {
+                "trigger": "before_on_hit",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "resist_max": {
+                        "res": "slash",
+                        "restype": "resistances",
+                        "value": 1.0
+                    },
+                    "dice_type": [
+                        "slash"
+                    ]
+                },
+                "get": {},
+                "modifiers": {
+                    "changedamage": {
+                        "value": 5,
+                        "mode": "mult",
+                        "inverse_percent": -0.1
+                    }
+                }
+            }
+        ]
+    },
+    "Unparalleled Body [解決する固まる]": {
+        "description": "Immune to the effects of Paralyze and Poison.",
+        "effects": []
+    },
+    "Fourfold Tenacity": {
+        "description": "Every fourth offensive dice gains +2 Power. Starting from the 8th Scene, at the start of each turn gain 2 Blunt Power Up and deal an additional +5 Stagger Damage with all dice.\n\nWhen winning a Clash with a counter dice, gain 1 Protection next scene (Max 5).",
+        "effects": []
+    },
+    "Divine Polarity": {
+        "description": "Upon Recieving Fatal Damage, Polarize Own HP",
+        "hidden": true,
+        "effects": [
+            {
+                "trigger": "on_death",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "log": [
+                        {
+                            "text": "!!!UNIQUE PASSIVE ACTIVATION!!!"
+                        },
+                        {
+                            "text": "SECRET PASSIVE: DIVINE POLARITY ACTIVATION"
+                        },
+                        {
+                            "text": "POLARITY HAS INVERSED ITS OWN HP"
+                        },
+                        {
+                            "text": "!!!UNIQUE PASSIVE ACTIVATION!!!"
+                        }
+                    ],
+                    "polarize": [
+                        "is_active",
+                        "hp"
+                    ],
+                    "revealpassive": "Divine Polarity"
+                }
+            }
+        ]
+    },
+    "Southern Winds": {
+        "description": "On Round Start,For all enemies, 50% chance to Polarize the type resistances, 50% chance to polarize Sin Resistances (Not Mutually Exclusive Or Grouped)",
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "everyone",
+                "modifierTarget": "everyone",
+                "filterfaction": [
+                    "Enemy"
+                ],
+                "condition": {
+                    "chance": 50
+                },
+                "get": {},
+                "modifiers": {
+                    "polarize": [
+                        "pierce",
+                        "slash",
+                        "blunt"
+                    ]
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "everyone",
+                "modifierTarget": "everyone",
+                "filterfaction": [
+                    "Enemy"
+                ],
+                "condition": {
+                    "chance": 50
+                },
+                "get": {},
+                "modifiers": {
+                    "polarize": [
+                        "Pride",
+                        "Wrath",
+                        "Lust",
+                        "Sloth",
+                        "Gluttony",
+                        "Gloom",
+                        "Envy",
+                        "White",
+                        "Black"
+                    ]
+                }
+            }
+        ]
+    },
+    "Northern Lights": {
+        "description": "On Round Start, For all enemies, 50% chance to Polarize the Light, 50% chance to Polarize Stagger (Not Mutually Exclusive Or Grouped)",
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "everyone",
+                "modifierTarget": "everyone",
+                "filterfaction": [
+                    "Enemy"
+                ],
+                "condition": {
+                    "chance": 50
+                },
+                "get": {},
+                "modifiers": {
+                    "polarize": [
+                        "light"
+                    ]
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "everyone",
+                "modifierTarget": "everyone",
+                "filterfaction": [
+                    "Enemy"
+                ],
+                "condition": {
+                    "chance": 50
+                },
+                "get": {},
+                "modifiers": {
+                    "polarize": [
+                        "stagger"
+                    ]
+                }
+            }
+        ]
+    },
+    "Northern Lights E.G.O. Gift Effect": {
+        "description": "Whenever this unit falls below 20% HP, Polarize this unit's HP, Light and Stagger. Whenever this unit uses more than +3 Light with a skill while being less than 50% HP,25% chance to Polarize the opponent's HP.",
+        "effects": [
+            {
+                "trigger": "when_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "absolutefactioncheck": [
+                        "Player"
+                    ],
+                    "hp_max%": 20
+                },
+                "get": {},
+                "modifiers": {
+                    "polarize": [
+                        "light",
+                        "hp",
+                        "stagger"
+                    ],
+                    "setstat": {
+                        "is_active": true,
+                        "is_staggered": false
+                    }
+                }
+            },
+            {
+                "trigger": "on_death",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "absolutefactioncheck": [
+                        "Player"
+                    ]
+                },
+                "get": {},
+                "modifiers": {
+                    "polarize": [
+                        "light",
+                        "hp",
+                        "stagger"
+                    ],
+                    "setstat": {
+                        "is_active": true,
+                        "is_staggered": false
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {
+                    "absolutefactioncheck": [
+                        "Player"
+                    ],
+                    "light_min": 3,
+                    "hp_max%": 50,
+                    "chance": 25
+                },
+                "get": {},
+                "modifiers": {
+                    "polarize": [
+                        "hp"
+                    ]
+                }
+            }
+        ]
+    },
+    "Pages of Scorching Blades Effect": {
+        "description": "Heal HP equal to Burn stack on self - 3 (Min 0)",
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "antipassivecheck": "Scorching Passion"
+                },
+                "get": {
+                    "Burn": {
+                        "value": "stack",
+                        "divide": 2,
+                        "add": -3,
+                        "min": 0
+                    }
+                },
+                "modifiers": {
+                    "recoverhp": "Burn_stack",
+                    "removepassive": "Pages of Scorching Blades Effect"
+                }
+            }
+        ]
+    },
+    "Page Efficiency": {
+        "description": "Turn Start, Discard a page",
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "discard": {
+                        "amount": 1,
+                        "mode": "random"
+                    },
+                    "getbuff": {}
+                }
+            }
+        ]
+    },
+    "Ranged Proficiency": {
+        "description": "On Hit with a Dice that is ranged, Trigger Tremor Burst, if the target is staggered, Deal 5 Bonus Pierce Damage",
+        "effects": [
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {
+                    "pagecheck": "Musket Fire"
+                },
+                "get": {},
+                "modifiers": {
+                    "tremorburst": 1
+                }
+            },
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {
+                    "pagecheck": "Order Fire"
+                },
+                "get": {},
+                "modifiers": {
+                    "tremorburst": 1
+                }
+            },
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "target",
+                "modifierTarget": "target",
+                "condition": {
+                    "pagecheck": "Musket Fire",
+                    "ifstaggered": true
+                },
+                "get": {},
+                "modifiers": {
+                    "flatdamage": {
+                        "pierce": 5
+                    }
+                }
+            },
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "target",
+                "modifierTarget": "target",
+                "condition": {
+                    "pagecheck": "Order Fire",
+                    "ifstaggered": true
+                },
+                "get": {},
+                "modifiers": {
+                    "flatdamage": {
+                        "pierce": 5
+                    }
+                }
+            }
+        ]
+    },
+    "The Commander": {
+        "description": "When Using Order Fire, Order up to 2 Random Allies with “Musket Fire” in Hand to attack the target using it again",
+        "effects": []
+    },
+    "Defending Prowess": {
+        "description": "On Discard: Apply 1 Protection and Stagger Protection next turn to a random ally",
+        "effects": [
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "random1",
+                "filterfaction": [
+                    "Player"
+                ],
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Protection": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        },
+                        "Stagger Protection": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Attacking Prowess": {
+        "description": "On Discard: Apply 1 Clash Power Up next turn to a random ally",
+        "effects": [
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "random1",
+                "filterfaction": [
+                    "Player"
+                ],
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Clash Power Up": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Blitzing Prowess": {
+        "description": "On Discard: Apply 1 Haste next turn to a random ally",
+        "effects": [
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "random1",
+                "filterfaction": [
+                    "Player"
+                ],
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Haste": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Instructional Prowess": {
+        "description": "On Discard: Apply 1 Damage Up next turn to 2 random allies",
+        "effects": [
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "random2",
+                "filterfaction": [
+                    "Player"
+                ],
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Damage Up": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}
