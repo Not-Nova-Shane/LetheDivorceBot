@@ -4468,5 +4468,21 @@
                 }
             }
         ]
+    },
+    "Skim Prescript": {
+        "description": "At the start of the Encounter, draw 2 Pages",
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "limit_per_encounter": 1,
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "draw": 2
+                }
+            }
+        ]
     }
 }
