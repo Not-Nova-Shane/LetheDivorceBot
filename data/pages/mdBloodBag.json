@@ -1,0 +1,830 @@
+{
+    "Feed The Mistress!": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Bleed",
+                        "value": 3
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Attack Power Up": {
+                            "stack": 1,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "min": 1,
+                "max": 5,
+                "type": "blunt",
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "count": 5
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Bleed": {
+                                "value": "count",
+                                "max": 15,
+                                "targetOverride": "target"
+                            }
+                        },
+                        "modifiers": {
+                            "flatdamage": {
+                                "pierce": "Bleed_count"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "min": 1,
+                "max": 5,
+                "type": "blunt",
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "count": 5
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Bleed": {
+                                "value": "count",
+                                "max": 15,
+                                "targetOverride": "target"
+                            }
+                        },
+                        "modifiers": {
+                            "flatdamage": {
+                                "pierce": "Bleed_count"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Paralyze",
+            "Rupture",
+            "Bleed"
+        ],
+        "globalpower": []
+    },
+    "Blood…": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Bleed": {
+                            "stack": 6,
+                            "count": 5
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "min": 2,
+                "max": 6,
+                "type": "blunt",
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "stack": 3
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {
+                            "Bleed": {
+                                "value": "stack",
+                                "max": 3,
+                                "divide": 3,
+                                "fix": "",
+                                "targetOverride": "target"
+                            }
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Attack Power Up": {
+                                    "stack": "Bleed_stack",
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "min": 3,
+                "max": 3,
+                "type": "blunt",
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "count": 3
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Bleed"
+        ]
+    },
+    "Efflorescing Flower": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "storagebox_check": [
+                        {
+                            "name": "Bloodfeast",
+                            "valuename": "Bloodfeast",
+                            "min": 10
+                        }
+                    ]
+                },
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "Bloodfeast",
+                            "valuename": "Bloodfeast",
+                            "max": 40,
+                            "firstDivideThenMult": {
+                                "divide": 10,
+                                "multiply": 2
+                            },
+                            "toAbsoluteValue": ""
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "power_bonus": "SB_Bloodfeast"
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "storagebox_check": [
+                        {
+                            "name": "Bloodfeast",
+                            "valuename": "Bloodfeast",
+                            "min": 10
+                        }
+                    ]
+                },
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "Bloodfeast",
+                            "valuename": "Bloodfeast",
+                            "max": 40,
+                            "divide": 10,
+                            "mult": 1000,
+                            "toNegative": ""
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "Bloodfeast",
+                            "valuename": "Bloodfeast",
+                            "value": "SB_Bloodfeast",
+                            "mode": "add"
+                        }
+                    ]
+                }
+            }
+        ],
+        "dice": [
+            {
+                "min": 2,
+                "max": 6,
+                "type": "blunt",
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "stack": 3
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {
+                            "Bleed": {
+                                "value": "stack",
+                                "max": 3,
+                                "divide": 3,
+                                "fix": "",
+                                "targetOverride": "target"
+                            }
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Attack Power Up": {
+                                    "stack": "Bleed_stack",
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "min": 3,
+                "max": 3,
+                "type": "blunt",
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "min": 6,
+                "max": 6,
+                "type": "slash",
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "stack": 3
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {
+                            "Bleed": {
+                                "value": "stack",
+                                "max": 3,
+                                "divide": 3,
+                                "fix": "",
+                                "targetOverride": "target"
+                            }
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Attack Power Up": {
+                                    "stack": "Bleed_stack",
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "min": 4,
+                "max": 4,
+                "type": "slash",
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Bleed"
+        ],
+        "globalpower": []
+    },
+    "Mwhaheheheh!!!": {
+        "description": "",
+        "light_cost": 3,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "storagebox_check": [
+                        {
+                            "name": "Bloodfeast",
+                            "valuename": "Bloodfeast",
+                            "max": 30
+                        }
+                    ]
+                },
+                "get": {},
+                "modifiers": {
+                    "power_bonus": -10
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "pageusetype": [
+                        "Clash"
+                    ]
+                },
+                "modifiers": {
+                    "power_bonus": -2
+                }
+            }
+        ],
+        "dice": [
+            {
+                "min": 13,
+                "max": 18,
+                "type": "blunt",
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "stack": 6
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Bleed": {
+                                "value": "count",
+                                "max": 6
+                            }
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Paralyze": {
+                                    "volatile": true,
+                                    "stack": "Bleed_count"
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "min": 13,
+                "max": 18,
+                "type": "blunt",
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Bleed": {
+                                "value": "count",
+                                "max": 15,
+                                "targetOverride": "target"
+                            }
+                        },
+                        "modifiers": {
+                            "flatdamage": {
+                                "pierce": "Bleed_count"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "min": 13,
+                "max": 18,
+                "type": "blunt",
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Bleed": {
+                                "value": "count",
+                                "max": 15,
+                                "targetOverride": "target"
+                            }
+                        },
+                        "modifiers": {
+                            "flatdamage": {
+                                "pierce": "Bleed_count"
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "clash_lose",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "storagebox_check": [
+                                {
+                                    "name": "Bloodfeast",
+                                    "valuename": "Bloodfeast",
+                                    "max": 30
+                                }
+                            ]
+                        },
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "Bloodfeast",
+                                    "valuename": "Bloodfeast",
+                                    "max": 30,
+                                    "add": -30,
+                                    "toAbsoluteValue": ""
+                                }
+                            ]
+                        },
+                        "modifiers": {
+                            "takehpdamage": "SB_Bloodfeast",
+                            "storagebox": [
+                                {
+                                    "name": "Bloodfeast",
+                                    "valuename": "Bloodfeast",
+                                    "value": "SB_Bloodfeast",
+                                    "mode": "add"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Paralyze",
+            "Rupture",
+            "Bleed"
+        ],
+        "globalpower": []
+    },
+    "Spreading…. Gossypium": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Gossypium": {
+                            "stack": 2
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Gossypium": {
+                            "stack": 2
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 5,
+                "sin": "Gluttony",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 1,
+                "max": 5,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 4,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Paralyze": {
+                                    "stack": 3,
+                                    "volatile": true,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Paralyze",
+            "Bleed"
+        ]
+    },
+    "Feast! Let’s… all Feast! For… Yes, For Her Sake!": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Gossypium": {
+                            "stack": 3
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Gossypium": {
+                            "stack": 3
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "draw": 1
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "evade",
+                "min": 1,
+                "max": 6,
+                "sin": "Lust",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 3,
+                "max": 6,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "stack": 3
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 1,
+                "max": 6,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "stack": 3
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Paralyze",
+            "Bleed"
+        ]
+    }
+}

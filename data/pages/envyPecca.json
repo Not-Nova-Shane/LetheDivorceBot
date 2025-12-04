@@ -1,0 +1,664 @@
+{
+    "Me? A Traitor?": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Rupture",
+                        "value": 11
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "power_bonus": 1
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Poise",
+                        "value": 5
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "power_bonus": 1
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Poise",
+                        "value": 10
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "power_bonus": 1
+                }
+            },
+            {
+                "trigger": "on_crit",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Rupture": {
+                            "stack": 1
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 6,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "stack": 5
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "count": 5
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 6,
+                "sin": "Envy",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 6,
+                "sin": "Envy",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 6,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "on_kill",
+                        "conditionTarget": "target",
+                        "modifierTarget": "random3",
+                        "filterfaction": [
+                            "Player"
+                        ],
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "takehpdamage": -5,
+                            "takestaggerdamage": -5,
+                            "getbuff": {
+                                "Poise": {
+                                    "count": 2,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Poise",
+            "Rupture"
+        ],
+        "globalpower": []
+    },
+    "Ready for a Firefist": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Poise",
+                        "value": 8
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "power_bonus": 2
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 3,
+                "max": 7,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "stack": 3
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Burn": {
+                                    "stack": 6
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 3,
+                "max": 7,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "stack": 3
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Burn": {
+                                    "stack": 6
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 6,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Burn": {
+                                    "count": 4
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Poise"
+        ],
+        "globalpower": []
+    },
+    "Riddle Through [刺す]": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "draw": 1
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Poise": {
+                            "stack": 3
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Poise",
+                        "value": 5
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "power_bonus": 1
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "evade",
+                "min": 4,
+                "max": 6,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_evade",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "limit_per_turn": 2,
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "count": 1
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 2,
+                "max": 4,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "count": 1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Pierce Fragility": {
+                                    "stack": 2,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 6,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Paralyze": {
+                                    "stack": 2,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Pierce Fragility": {
+                                    "stack": 1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Paralyze",
+            "Bind",
+            "Bleed",
+            "Poise"
+        ],
+        "globalpower": []
+    },
+    "Exploit Breathing": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Poise": {
+                            "stack": 3
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Poise",
+                        "value": 5
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "power_bonus": 1
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Damage Up": {
+                            "stack": 2,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "resist_max": {
+                        "res": "pierce",
+                        "restype": "resistances",
+                        "value": 1.4
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "power_bonus": 2
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "piercedamageadder",
+                            "mode": "set",
+                            "value": 0
+                        }
+                    ]
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 6,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bind": {
+                                    "stack": 2,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Pierce Damage Up": {
+                                    "stack": 1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "storagebox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "piercedamageadder",
+                                    "mode": "set",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 6,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "storagebox_check": [
+                                {
+                                    "name": "self",
+                                    "valuename": "piercedamageadder",
+                                    "equal": 1
+                                }
+                            ]
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "flatdamage": {
+                                "pierce": 5
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "negativeBuffCount": {
+                                "max": 10
+                            }
+                        },
+                        "modifiers": {
+                            "flatdamage": {
+                                "pierce": "negativeBuffCount"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 7,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "negativeBuffCount": {
+                                "max": 3
+                            }
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Defense Level Up": {
+                                    "stack": "negativeBuffCount",
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Tremor",
+            "Defense Level Up",
+            "Bind",
+            "Pierce Damage Up",
+            "Damage Up"
+        ],
+        "globalpower": []
+    }
+}

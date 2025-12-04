@@ -1,0 +1,311 @@
+{
+    "Commandeering": {
+        "description": "",
+        "light_cost": 3,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "everyone",
+                "filterfaction": [
+                    "Enemy"
+                ],
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Protection": {
+                            "stack": 1,
+                            "volatile": true,
+                            "nextturn": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "min": 4,
+                "max": 8,
+                "type": "blunt",
+                "sin": "Pride",
+                "effects": []
+            },
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 4,
+                "sin": "Pride",
+                "effects": []
+            },
+            {
+                "min": 3,
+                "max": 4,
+                "type": "pierce ",
+                "sin": "Pride",
+                "effects": []
+            }
+        ],
+        "pageTagList": [
+            "Protection"
+        ]
+    },
+    "You're Too Slow": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [],
+        "dice": [
+            {
+                "type": "evade",
+                "min": 1,
+                "max": 9,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "changedice": {
+                                "dice": 2,
+                                "boostmax": 2,
+                                "boostmin": 2
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "min": 2,
+                "max": 4,
+                "type": "slash",
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Fragile": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Fragile"
+        ]
+    },
+    "Struggle": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Poise": {
+                            "stack": 1
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 2,
+                "max": 7,
+                "sin": "Pride",
+                "effects": []
+            },
+            {
+                "type": "guard",
+                "min": 2,
+                "max": 6,
+                "sin": "Pride",
+                "effects": []
+            },
+            {
+                "type": "guard",
+                "min": 2,
+                "max": 4,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "gainlight": 1
+                        }
+                    }
+                ]
+            },
+            {
+                "min": 2,
+                "max": 6,
+                "type": "blunt",
+                "sin": "Pride",
+                "effects": []
+            }
+        ],
+        "pageTagList": [
+            "Poise"
+        ]
+    },
+    "Preparation": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [],
+        "dice": [
+            {
+                "min": 2,
+                "max": 6,
+                "type": "pierce",
+                "sin": "Wrath",
+                "effects": []
+            },
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 3,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "gainlight": 3,
+                            "getbuff": {
+                                "Poise": {
+                                    "stack": 3,
+                                    "count": 3
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "gainlight": -3,
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 3
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Sinking",
+            "Poise"
+        ]
+    },
+    "Feelin’ Good": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [],
+        "dice": [
+            {
+                "min": 1,
+                "max": 5,
+                "type": "pierce",
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Fragile": {
+                                    "stack": 1
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 4,
+                "sin": "Envy",
+                "effects": []
+            }
+        ],
+        "pageTagList": [
+            "Fragile"
+        ]
+    },
+    "Time for a Little Test": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [],
+        "dice": [
+            {
+                "min": 2,
+                "max": 6,
+                "type": "guard",
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "changedice": {
+                                "dice": 2,
+                                "boostmax": 3,
+                                "boostmin": 3
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 4,
+                "sin": "Sloth",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 3,
+                "sin": "Sloth",
+                "effects": []
+            }
+        ],
+        "pageTagList": []
+    }
+}

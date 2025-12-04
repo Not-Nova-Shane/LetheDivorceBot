@@ -1,0 +1,500 @@
+{
+    "Refracted D-dried Up": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_max": {
+                        "buff": "Charge",
+                        "value": 15
+                    }
+                },
+                "get": {
+                    "Charge": {
+                        "value": "count",
+                        "max": 15,
+                        "add": -15,
+                        "toAbsoluteValue": ""
+                    }
+                },
+                "modifiers": {
+                    "takehpdamage": "Charge_count",
+                    "getbuff": {
+                        "Charge": {
+                            "count": "Charge_count"
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "evade",
+                "min": 5,
+                "max": 8,
+                "sin": "Wrath",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 1,
+                "max": 5,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "random1",
+                        "modifierTarget": "random1",
+                        "filterfaction": [
+                            "Player"
+                        ],
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Charge": {
+                                    "count": 3,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bind",
+            "Bleed",
+            "Charge"
+        ]
+    },
+    "Refracted Flaming Massacre": {
+        "description": "",
+        "light_cost": 5,
+        "attackweight": 3,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Burn",
+                        "value": 5
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "changedice": {
+                        "dice": "all",
+                        "boostmax": 1
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 5
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "changedice": {
+                        "dice": "all",
+                        "boostmax": 1
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 7,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Burn",
+                                "value": 1
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "flatdamage": {
+                                "slash": 3
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 3,
+                "max": 7,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Burn",
+                                "value": 1
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "flatdamage": {
+                                "slash": 2
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 3,
+                "max": 7,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Burn",
+                                "value": 1
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "flatdamage": {
+                                "slash": 2
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bind",
+            "Bleed",
+            "Burn",
+            "Charge"
+        ]
+    },
+    "Refracted Spark The Flames": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Burn": {
+                        "value": "stack",
+                        "max": 2,
+                        "mult": 17
+                    }
+                },
+                "modifiers": {
+                    "power_bonus": "Burn_stack"
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_max": {
+                        "buff": "Burn",
+                        "value": 0
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "moreburn",
+                            "mode": "add",
+                            "value": 1
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "moreburn",
+                            "value": "Delete"
+                        }
+                    ]
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 8,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Charge": {
+                                    "count": 3
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Burn": {
+                                    "stack": 3,
+                                    "count": 1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "storagebox_check": [
+                                {
+                                    "name": "self",
+                                    "valuename": "moreburn",
+                                    "min": 1
+                                }
+                            ]
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Burn": {
+                                    "stack": 3,
+                                    "count": 1
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "globalpower": [],
+        "pageTagList": [
+            "Burn",
+            "Charge"
+        ]
+    },
+    "Refracted Fully Charged": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 10
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "power_bonus": 2,
+                    "getbuff": {
+                        "Charge": {
+                            "count": -20
+                        },
+                        "Overstimulated": {
+                            "stack": 3
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 4,
+                "max": 5,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "before_on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {
+                            "Burn": {
+                                "value": "stack",
+                                "max": 5,
+                                "mult": 20,
+                                "fix": ""
+                            }
+                        },
+                        "modifiers": {
+                            "changedamage": {
+                                "value": "Burn_stack",
+                                "mode": "add"
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "damagedealt": 50
+                        },
+                        "modifiers": {
+                            "takestaggerdamage": "damagedealt"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 4,
+                "max": 5,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "before_on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {
+                            "Burn": {
+                                "value": "stack",
+                                "max": 5,
+                                "mult": 20,
+                                "fix": ""
+                            }
+                        },
+                        "modifiers": {
+                            "changedamage": {
+                                "value": "Burn_stack",
+                                "mode": "add"
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Burn": {
+                                    "stack": 3,
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 7,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "before_on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {
+                            "Burn": {
+                                "value": "stack",
+                                "max": 5,
+                                "mult": 20,
+                                "fix": ""
+                            }
+                        },
+                        "modifiers": {
+                            "changedamage": {
+                                "value": "Burn_stack",
+                                "mode": "add"
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "damagedealt": 50
+                        },
+                        "modifiers": {
+                            "takestaggerdamage": "damagedealt"
+                        }
+                    },
+                    {
+                        "trigger": "clash_lose",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "lightcostchange": {
+                                "'IT'S GONNA BLOW!!'": -1
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "globalpower": [],
+        "pageTagList": [
+            "Overstimulated",
+            "Burn",
+            "Charge"
+        ]
+    }
+}

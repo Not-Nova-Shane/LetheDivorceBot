@@ -1,0 +1,1280 @@
+{
+    "Calculate": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 10
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "changedice": {
+                        "dice": "all",
+                        "boostmin": 1
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "draw": 1
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 5,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Charge": {
+                                "value": "count",
+                                "divide": 8,
+                                "fix": ""
+                            }
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "count": "Charge_count"
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 2,
+                "max": 5,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Charge": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ],
+        "attackweight": 1
+    },
+    "Empty Calculations": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": 3
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 2,
+                "max": 7,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "count": 3
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 1,
+                "max": 2,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "clash_lose",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "count_min": {
+                                "buff": "Charge",
+                                "value": 10
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "gainlight": 1
+                        }
+                    },
+                    {
+                        "trigger": "clash_lose",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "count_min": {
+                                "buff": "Charge",
+                                "value": 10
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Charge": {
+                                    "count": -5
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "clash_lose",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Charge": {
+                                "value": "count",
+                                "divide": 3,
+                                "fix": "",
+                                "max": 3
+                            }
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": "Charge_count"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ]
+    },
+    "Skillful Prediction": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [],
+        "dice": [
+            {
+                "type": "evade",
+                "min": 1,
+                "max": 1,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_failed_evade",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "drawspecific": "Ordered 01101000 01100101 01101100 01110000",
+                            "forceaction": {
+                                "attacker": "modifier_target",
+                                "target": "target",
+                                "page": "Ordered 01101000 01100101 01101100 01110000"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Haste"
+        ]
+    },
+    "Data Collection": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "hp_max%": 80
+                },
+                "get": {},
+                "modifiers": {
+                    "changedice": {
+                        "dice": "all",
+                        "boostmin": 1
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "hp_max%": 50
+                },
+                "get": {},
+                "modifiers": {
+                    "changedice": {
+                        "dice": "all",
+                        "boostmin": 1
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "evade",
+                "min": 1,
+                "max": 8,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_evade",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 1
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 2,
+                "max": 4,
+                "sin": "Gluttony",
+                "effects": []
+            },
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 5,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "count_min": {
+                                "buff": "Charge",
+                                "value": 10
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 3,
+                                    "count": 2
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "count_min": {
+                                "buff": "Charge",
+                                "value": 10
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Charge": {
+                                    "count": -5
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ]
+    },
+    "To Safeguard The Future…": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Haste": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "random2",
+                "filterfaction": [
+                    "Player"
+                ],
+                "condition": {
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 15
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Haste": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 15
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": -5
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "filterfaction": [
+                    "Player"
+                ],
+                "condition": {
+                    "hp_max%": 80
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Protection": {
+                            "stack": 1,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "random2",
+                "filterfaction": [
+                    "Player"
+                ],
+                "condition": {
+                    "hp_max%": 80,
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 10
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Protection": {
+                            "stack": 1,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 4,
+                "max": 6,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 1
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 2,
+                "max": 4,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 1
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ]
+    },
+    "Ordered 01101000 01100101 01101100 01110000": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": 5
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Envy": {
+                        "faction": "Player",
+                        "absolute": true,
+                        "resonance": "",
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": "Envy_resource"
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Gloom": {
+                        "faction": "Player",
+                        "absolute": true,
+                        "resonance": "",
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": "Gloom_resource"
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {
+                    "hp_max%": 80,
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 10
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Sinking": {
+                            "count": 1
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 3,
+                "max": 6,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 1
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 6,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 1
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 2,
+                "max": 6,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "count_max": {
+                                "buff": "Charge",
+                                "value": 10
+                            }
+                        },
+                        "get": {
+                            "Charge": {
+                                "value": "count",
+                                "max": 10,
+                                "add": -10,
+                                "toAbsoluteValue": ""
+                            }
+                        },
+                        "modifiers": {
+                            "takehpdamage": "Charge_count",
+                            "getbuff": {
+                                "Charge": {
+                                    "count": "Charge_count"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ],
+        "attackweight": 1
+    },
+    "01101000 01100101 01101100 01110000": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": 5
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Envy": {
+                        "faction": "Player",
+                        "absolute": true,
+                        "resonance": "",
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": "Envy_resource"
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Gloom": {
+                        "faction": "Player",
+                        "absolute": true,
+                        "resonance": "",
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": "Gloom_resource"
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {
+                    "hp_max%": 80,
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 10
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Sinking": {
+                            "count": 1
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 3,
+                "max": 6,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 1
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 6,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 1
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 2,
+                "max": 6,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "count_max": {
+                                "buff": "Charge",
+                                "value": 10
+                            }
+                        },
+                        "get": {
+                            "Charge": {
+                                "value": "count",
+                                "max": 10,
+                                "add": -10,
+                                "toAbsoluteValue": ""
+                            }
+                        },
+                        "modifiers": {
+                            "takehpdamage": "Charge_count",
+                            "getbuff": {
+                                "Charge": {
+                                    "count": "Charge_count"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ]
+    },
+    "Tear and Pierce": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 5
+                    }
+                },
+                "get": {
+                    "Charge": {
+                        "value": "count",
+                        "divide": 3,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "recoverstagger": "Charge_count"
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {
+                    "hp_max%": 80,
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 5
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Sinking": {
+                            "count": 2
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 5
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": -5
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 4,
+                "max": 6,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 4,
+                "max": 6,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ]
+    },
+    "There Is No Coincidence": {
+        "description": "",
+        "light_cost": 3,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 8
+                    }
+                },
+                "get": {
+                    "Charge": {
+                        "value": "count",
+                        "divide": 8,
+                        "mult": 200,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "power_bonus": "Charge_count"
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 8
+                    }
+                },
+                "get": {
+                    "Charge": {
+                        "value": "count",
+                        "fix": "",
+                        "max": 16
+                    }
+                },
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "ChargeSpentByCoincidence",
+                            "value": "Charge_count",
+                            "mode": "set"
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 8
+                    }
+                },
+                "get": {
+                    "Charge": {
+                        "value": "count",
+                        "max": 16,
+                        "toNegative": ""
+                    }
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": "Charge_count"
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "ChargeSpentByCoincidence",
+                            "value": 0,
+                            "mode": "set"
+                        }
+                    ]
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 3,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "count": 3
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "ChargeSpentByCoincidence",
+                                    "divide": 5
+                                }
+                            ]
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "count": "SB_ChargeSpentByCoincidence"
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 2,
+                "max": 3,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "ChargeSpentByCoincidence",
+                                    "divide": 5
+                                }
+                            ]
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": "SB_ChargeSpentByCoincidence"
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 2,
+                "max": 3,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "storagebox_check": [
+                                {
+                                    "name": "self",
+                                    "valuename": "ChargeSpentByCoincidence",
+                                    "min": 10
+                                }
+                            ]
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ]
+    },
+    "Until The Collapse": {
+        "description": "",
+        "light_cost": 3,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Sinking": {
+                        "value": "count",
+                        "divide": 5,
+                        "max": 3,
+                        "fix": "",
+                        "targetOverride": "target"
+                    }
+                },
+                "modifiers": {
+                    "changedice": {
+                        "dice": "all",
+                        "boostmin": "Sinking_count"
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 4,
+                "max": 14,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 3,
+                                    "count": 3
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ]
+    }
+}

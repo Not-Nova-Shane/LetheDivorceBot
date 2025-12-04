@@ -1,0 +1,263 @@
+{
+    "Weakness": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "modifiers": {
+                    "gainlightnext": 1
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "light_min": 2
+                },
+                "modifiers": {
+                    "power_bonus": 1
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 2,
+                "max": 5,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {
+                            "damagedealt": -100
+                        },
+                        "modifiers": {
+                            "takestaggerdamage": "damagedealt"
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [],
+        "globalpower": []
+    },
+    "Preemptive Strike": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 3,
+                "max": 5,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "changedice": {
+                                "dice": 1,
+                                "boostmin": 2
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "evade",
+                "min": 1,
+                "max": 7,
+                "sin": "Wrath",
+                "effects": []
+            }
+        ],
+        "pageTagList": []
+    },
+    "Quickness": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Haste": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 4,
+                "sin": "Pride",
+                "effects": []
+            },
+            {
+                "type": "evade",
+                "min": 1,
+                "max": 6,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_evade",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Haste": {
+                                    "stack": 1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Haste"
+        ]
+    },
+    "Swiftstrike": {
+        "description": "",
+        "light_cost": 3,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "speedDifference": {
+                        "max": 3
+                    }
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Attack Power Up": {
+                            "stack": "speedDifference",
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 4,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Haste": {
+                                    "stack": 1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 5,
+                "sin": "Pride",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 3,
+                "max": 5,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "speed_min": 8
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "flatdamage": {
+                                "slash": 5
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Haste"
+        ]
+    },
+    "Multi-Block": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "modifiers": {
+                    "gainlightnext": 1
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 6,
+                "sin": "Sloth",
+                "effects": []
+            },
+            {
+                "type": "guard",
+                "min": 1,
+                "max": 5,
+                "sin": "Sloth",
+                "effects": []
+            }
+        ],
+        "pageTagList": []
+    }
+}

@@ -1,0 +1,505 @@
+{
+    "Vibrating Fist": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [],
+        "dice": [
+            {
+                "type": "blunt",
+                "min": 2,
+                "max": 6,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 3
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 3,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Tremor"
+        ]
+    },
+    "Cranium Crusher": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [],
+        "dice": [
+            {
+                "type": "blunt",
+                "min": 4,
+                "max": 7,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 4
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "tremorburst": 1,
+                            "getbuff": {
+                                "Tremor": {
+                                    "count": -2
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Tremor"
+        ]
+    },
+    "Overwhelming": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "addpassive": "Overwhelming's Effect"
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 1,
+                "max": 5,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "count": 1
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 5,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {
+                            "roll": -100
+                        },
+                        "modifiers": {
+                            "takestaggerdamage": "roll"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 2,
+                "max": 4,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Tremor"
+        ]
+    },
+    "Activated Combustion": {
+        "description": "",
+        "light_cost": 3,
+        "effects": [
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "everyone",
+                "modifierTarget": "everyone",
+                "filterfaction": [
+                    "Enemy"
+                ],
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Tremor": {
+                            "stack": 2
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 4,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 2,
+                "max": 5,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 1,
+                "max": 6,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "tremorburst": 1,
+                            "getbuff": {
+                                "Tremor": {
+                                    "count": -2
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Tremor"
+        ]
+    },
+    "Invigorate": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "draw": 1
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "evade",
+                "min": 3,
+                "max": 8,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_evade",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_evade",
+                        "conditionTarget": "self",
+                        "modifierTarget": "random1",
+                        "filterfaction": [
+                            "Player"
+                        ],
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Power Up": {
+                                    "stack": 1,
+                                    "volatile": true,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Tremor"
+        ]
+    },
+    "Feel The Blazing Vibrations!!": {
+        "description": "",
+        "light_cost": 4,
+        "attackweight": 3,
+        "effects": [],
+        "dice": [
+            {
+                "type": "blunt",
+                "min": 2,
+                "max": 4,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 3
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 1,
+                "max": 4,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 3
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Tremor": {
+                                "value": "stack",
+                                "max": 6,
+                                "mult": 50,
+                                "targetOverride": "target"
+                            }
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Burn": {
+                                    "stack": "Tremor_stack"
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 1,
+                "max": 4,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "tremorburst": 1,
+                            "getbuff": {
+                                "Tremor": {
+                                    "count": -2
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Burn",
+            "Tremor"
+        ]
+    },
+    "Malfunction": {
+        "description": "",
+        "light_cost": 4,
+        "attackweight": 1,
+        "indiscriminate": true,
+        "effects": [
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "currentHP": 100
+                },
+                "modifiers": {
+                    "takehpdamage": "currentHP",
+                    "takestaggerdamage": "currentHP"
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "blunt",
+                "min": 1,
+                "max": 10,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "roll": -100
+                        },
+                        "modifiers": {
+                            "takehpdamage": "roll",
+                            "takestaggerdamage": "roll"
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "roll": 50
+                        },
+                        "modifiers": {
+                            "takehpdamage": "roll",
+                            "takestaggerdamage": "roll"
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    }
+}

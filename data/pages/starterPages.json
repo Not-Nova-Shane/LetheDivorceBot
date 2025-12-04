@@ -1,0 +1,195 @@
+{
+    "Evade": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [],
+        "dice": [
+            {
+                "type": "evade",
+                "min": 1,
+                "max": 5,
+                "sin": "none",
+                "effects": [
+                    {
+                        "trigger": "on_evade",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "limit_per_turn": 1,
+                        "condition": {},
+                        "modifiers": {
+                            "gainlight": 1
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "Light Attack": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 2,
+                "max": 4,
+                "sin": "none",
+                "effects": []
+            },
+            {
+                "type": "blunt",
+                "min": 1,
+                "max": 3,
+                "sin": "none",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "flatdamage": {
+                                "blunt": 3
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "Light Defense": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [],
+        "dice": [
+            {
+                "type": "evade",
+                "min": 1,
+                "max": 5,
+                "sin": "none",
+                "effects": []
+            },
+            {
+                "type": "guard",
+                "min": 2,
+                "max": 4,
+                "sin": "none",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "changedice": {
+                                "dice": 2,
+                                "boostmax": 2
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 1,
+                "max": 3,
+                "sin": "none",
+                "effects": []
+            }
+        ],
+        "pageTagList": []
+    },
+    "Charge and Cover": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "modifiers": {
+                    "draw": 1
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 4,
+                "max": 6,
+                "sin": "none",
+                "effects": []
+            },
+            {
+                "type": "guard",
+                "min": 1,
+                "max": 5,
+                "sin": "none",
+                "effects": []
+            }
+        ],
+        "pageTagList": []
+    },
+    "Focused Strikes": {
+        "description": "",
+        "light_cost": 3,
+        "effects": [],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 3,
+                "max": 5,
+                "sin": "none",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "changedice": {
+                                "dice": 2,
+                                "boostmax": 2
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 3,
+                "max": 5,
+                "sin": "none",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "changedice": {
+                                "dice": 2,
+                                "boostmin": 2
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 2,
+                "max": 3,
+                "sin": "none",
+                "effects": []
+            }
+        ],
+        "pageTagList": []
+    }
+}

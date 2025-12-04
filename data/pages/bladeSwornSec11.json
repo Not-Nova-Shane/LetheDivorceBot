@@ -1,0 +1,444 @@
+{
+    "Disciplined Block and Pierce [盾穿衡]": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Poise": {
+                            "count": 3
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 1,
+                "max": 6,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "count": 1
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 4,
+                "max": 6,
+                "sin": "Pride",
+                "effects": []
+            },
+            {
+                "type": "pierce",
+                "min": 1,
+                "max": 6,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "count": 1
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Rupture"
+        ]
+    },
+    "Three Step Slashing [三斬律]": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 1,
+                "max": 7,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 5,
+                "sin": "Lust",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 5,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "stack": 3
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Poise",
+            "Rupture"
+        ],
+        "globalpower": []
+    },
+    "Two Guard [双守]": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Poise",
+                        "value": 11
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "gainlight": 1
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_max": {
+                        "buff": "Poise",
+                        "value": 11
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Poise": {
+                            "count": 2,
+                            "stack": 2
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 6,
+                "sin": "Envy",
+                "effects": []
+            },
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 6,
+                "sin": "Envy",
+                "effects": []
+            }
+        ],
+        "globalpower": [],
+        "pageTagList": [
+            "Poise",
+            "Protection"
+        ]
+    },
+    "Storm of Strikes [疾風斬]": {
+        "description": "",
+        "light_cost": 4,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Rupture",
+                        "value": 11
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "power_bonus": 1
+                }
+            },
+            {
+                "trigger": "on_crit",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Rupture": {
+                            "stack": 1
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 5,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "stack": 5
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "count": 5
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 5,
+                "sin": "Envy",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 5,
+                "sin": "Envy",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 5,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "on_kill",
+                        "conditionTarget": "target",
+                        "modifierTarget": "random3",
+                        "filterfaction": [
+                            "AlliesOnly"
+                        ],
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "recoverhp": -5,
+                            "recoverstagger": -5,
+                            "getbuff": {
+                                "Poise": {
+                                    "count": 2,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Poise",
+            "Rupture"
+        ],
+        "globalpower": []
+    },
+    "Silent Strikes": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "filterfaction": [
+                    "AlliesOnly"
+                ],
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Defense Power Up": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "everyone",
+                "filterfaction": [
+                    "AlliesOnly"
+                ],
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Defense Power Up": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 3,
+                "max": 4,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 2,
+                "max": 6,
+                "sin": "Pride",
+                "effects": []
+            },
+            {
+                "type": "evade",
+                "min": 2,
+                "max": 8,
+                "sin": "Pride",
+                "effects": []
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Power Up",
+            "Defense Power Up",
+            "Rupture"
+        ],
+        "globalpower": [],
+        "attackweight": 1
+    }
+}

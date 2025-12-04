@@ -1,0 +1,590 @@
+{
+    "Wait Up!": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "gainlightnext": 1,
+                    "draw": 1
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 2,
+                "max": 7,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 3
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ]
+    },
+    "Daring Decision": {
+        "description": "",
+        "light_cost": 3,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "discard": {
+                        "amount": 8,
+                        "mode": "random"
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 4,
+                "max": 8,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "count": 3
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 4,
+                "max": 8,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 3
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 7,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "tremorburst": 2,
+                            "getbuff": {
+                                "Tremor": {
+                                    "count": -2
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ]
+    },
+    "Slice": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Power Up": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 5,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 5,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 5,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "tremorburst": 1,
+                            "getbuff": {
+                                "Tremor": {
+                                    "count": -1
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "globalpower": [],
+        "pageTagList": [
+            "Power Up",
+            "Tremor"
+        ]
+    },
+    "The Art of Rapid Steps": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Haste": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "evade",
+                "min": 3,
+                "max": 9,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "count_min": {
+                                "buff": "Tremor",
+                                "value": 10
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "power_bonus": 2
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 8,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bind": {
+                                    "stack": 2,
+                                    "volatile": true,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bind",
+            "Bleed",
+            "Haste",
+            "Tremor"
+        ]
+    },
+    "Fierce Onslaught": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Tremor": {
+                        "value": "count",
+                        "max": 5,
+                        "divide": 4,
+                        "fix": "",
+                        "targetOverride": "target"
+                    }
+                },
+                "modifiers": {
+                    "power_bonus": "Tremor_count"
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "discard": {
+                        "amount": 1,
+                        "mode": "lowest"
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 5,
+                "sin": "Sloth",
+                "effects": []
+            },
+            {
+                "type": "pierce",
+                "min": 2,
+                "max": 5,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 5,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bind",
+            "Bleed",
+            "Tremor"
+        ],
+        "globalpower": []
+    },
+    "Hangover Cure": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "gainlight": 1
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "draw": 1,
+                    "discard": {
+                        "amount": 1,
+                        "mode": "random"
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "random2",
+                "filterfaction": [
+                    "Enemy"
+                ],
+                "condition": {
+                    "hand_check": "Wait Up!"
+                },
+                "get": {},
+                "modifiers": {
+                    "draw": "Wait Up!",
+                    "forceaction": {
+                        "attacker": "modifier_target",
+                        "target": "target",
+                        "page": "Wait Up!"
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 5,
+                "max": 7,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "clash_lose",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "discard": {
+                                "amount": 2,
+                                "mode": "random"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "globalpower": [],
+        "pageTagList": [],
+        "attackweight": 1
+    },
+    "Gamble": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_max": {
+                        "buff": "Tremor",
+                        "value": 15
+                    }
+                },
+                "get": {
+                    "Tremor": {
+                        "value": "count",
+                        "max": 15,
+                        "add": -15,
+                        "toAbsoluteValue": ""
+                    }
+                },
+                "modifiers": {
+                    "takehpdamage": "Tremor_count",
+                    "getbuff": {
+                        "Tremor": {
+                            "count": "Tremor_count"
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "discard": {
+                        "amount": 1,
+                        "mode": "lowest"
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 6,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 3
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 5,
+                "sin": "Sloth",
+                "effects": []
+            },
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 6,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "count": 3
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ]
+    }
+}

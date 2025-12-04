@@ -1,0 +1,673 @@
+{
+    "Aegis Unit - Charging Procedure": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Aegis Unit - Stabilized Charge": {
+                            "stack": 6,
+                            "nextturn": true
+                        },
+                        "Charge": {
+                            "count": 2,
+                            "nextturn": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "evade",
+                "min": 2,
+                "max": 6,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "on_evade",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "limit_per_turn": 2,
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Charge": {
+                                    "count": 2,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ],
+        "attackweight": 1
+    },
+    "Aegis Unit - Self-Defense Maneuvers": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 1
+                    }
+                },
+                "get": {
+                    "Charge": {
+                        "value": "count",
+                        "divide": 2,
+                        "max": 5,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Charge Barrier": {
+                            "stack": "Charge_count"
+                        },
+                        "Charge": {
+                            "count": -10
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 1,
+                "max": 3,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "clash_lose",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Haste": {
+                                    "stack": 1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 1,
+                "max": 3,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "clash_lose",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Haste": {
+                                    "stack": 1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 1,
+                "max": 3,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "clash_lose",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Haste": {
+                                    "stack": 1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ],
+        "attackweight": 1
+    },
+    "Aegis Unit - Energy Shield Bash": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Charge",
+                        "value": 2
+                    }
+                },
+                "get": {
+                    "Charge": {
+                        "value": "stack",
+                        "add": -1,
+                        "max": 3,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "changedice": {
+                        "dice": 1,
+                        "boostmin": "Charge_stack"
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 2,
+                "max": 4,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "clash_lose",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "changedice": {
+                                "dice": 1,
+                                "boostmax": 3,
+                                "boostmin": 3
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 5,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "count_min": {
+                                "buff": "Charge",
+                                "value": 5
+                            }
+                        },
+                        "get": {
+                            "Charge": {
+                                "value": "stack",
+                                "max": 5,
+                                "fix": ""
+                            }
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Paralyze": {
+                                    "stack": "Charge_stack",
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "count_min": {
+                                "buff": "Charge",
+                                "value": 5
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Charge": {
+                                    "count": -5
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Haste"
+        ],
+        "attackweight": 1
+    },
+    "Aegis Unit - Sentry Duty": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "self",
+                "modifierTarget": "lowest_current_hp",
+                "filterfaction": [
+                    "Player"
+                ],
+                "condition": {
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 1
+                    }
+                },
+                "get": {
+                    "Charge": {
+                        "value": "count",
+                        "divide": 2,
+                        "max": 9,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Charge Barrier": {
+                            "stack": "Charge_count"
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Charge": {
+                        "value": "count",
+                        "toNegative": ""
+                    }
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": "Charge_count"
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "draw": 1
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 5,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Charge": {
+                                    "count": 2,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 5,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Charge": {
+                                    "count": 2,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ],
+        "attackweight": 1
+    },
+    "Aegis Unit - Immobilize Target": {
+        "description": "",
+        "light_cost": 3,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Charge",
+                        "value": 2
+                    }
+                },
+                "get": {
+                    "Charge": {
+                        "value": "stack",
+                        "add": -1,
+                        "max": 3,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "power_bonus": "Charge_stack"
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 5
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Bind": {
+                            "stack": 3,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 5
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": -5
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 4,
+                "max": 7,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Power Down": {
+                                    "stack": 1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 4,
+                "max": 7,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Power Down": {
+                                    "stack": 1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ],
+        "globalpower": []
+    },
+    "Aegis Unit - Deploy Energy Shield": {
+        "description": "",
+        "light_cost": 3,
+        "effects": [
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 1
+                    }
+                },
+                "get": {
+                    "Charge": {
+                        "value": "count",
+                        "divide": 2,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "ChargeCountOnSelfDivide2",
+                            "value": "Charge_count",
+                            "mode": "set"
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "self",
+                "modifierTarget": "random_VALUE:Charge_stack",
+                "filterfaction": [
+                    "Player"
+                ],
+                "condition": {
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 1
+                    }
+                },
+                "get": {
+                    "Charge": {
+                        "value": "stack",
+                        "fix": ""
+                    },
+                    "StorageBox": [
+                        {
+                            "name": "self",
+                            "valuename": "ChargeCountOnSelfDivide2",
+                            "toAbsoluteValue": ""
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Charge Barrier": {
+                            "stack": "SB_ChargeCountOnSelfDivide2"
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "ChargeCountOnSelfDivide2",
+                            "value": 0,
+                            "mode": "set"
+                        }
+                    ],
+                    "getbuff": {
+                        "Charge": {
+                            "count": -18
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Attack Power Down": {
+                            "stack": 6,
+                            "nextturn": true,
+                            "volatile": true
+                        },
+                        "Fragile": {
+                            "stack": 6,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 5,
+                "sin": "Lust",
+                "effects": []
+            },
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 5,
+                "sin": "Lust",
+                "effects": []
+            },
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 5,
+                "sin": "Lust",
+                "effects": []
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ]
+    }
+}

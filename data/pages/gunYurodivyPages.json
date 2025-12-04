@@ -1,0 +1,1455 @@
+{
+    "Crafty Cleavers": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": 5
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stagger_max%": 50
+                },
+                "get": {},
+                "modifiers": {
+                    "changedice": {
+                        "dice": "all",
+                        "boostmin": 1
+                    }
+                }
+            },
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": 3,
+                            "nextturn": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 10
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "gainlight": 1
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "takestaggerdamage": 10
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 5,
+                "sin": "Envy",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 3,
+                "max": 5,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Slash Fragility": {
+                                    "stack": 2,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ],
+        "attackweight": 1
+    },
+    "Yurodiviye Virtues: Perseverance (Упорство)": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "CON": {
+                        "add": 1
+                    }
+                },
+                "modifiers": {
+                    "recoverstagger": "CON_mod"
+                }
+            },
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "random_VALUE:CON_mod",
+                "filterfaction": [
+                    "AlliesOnly"
+                ],
+                "condition": {},
+                "get": {
+                    "CON": {
+                        "divide": 2,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Protection": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 10
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Protection": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 4,
+                "max": 6,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {
+                            "CON": {
+                                "add": 1
+                            }
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Charge": {
+                                    "count": "CON_mod",
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 5,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Protection": {
+                                    "stack": 2,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "discard": {
+                                "amount": 1,
+                                "mode": "random"
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {
+                            "CON": {
+                                "add": 1
+                            }
+                        },
+                        "modifiers": {
+                            "recoverstagger": "CON_mod"
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ],
+        "attackweight": 1
+    },
+    "Yurodiviye Virtues: Guts (Кишки)": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "discard": {
+                        "amount": 2,
+                        "mode": "random"
+                    }
+                }
+            },
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "random_VALUE:STR_mod",
+                "filterfaction": [
+                    "AlliesOnly"
+                ],
+                "condition": {},
+                "get": {
+                    "STR": {
+                        "divide": 2,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Damage Up": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 10
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Damage Up": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "blunt",
+                "min": 5,
+                "max": 9,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Charge": {
+                                    "count": 5
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "draw": 1
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ]
+    },
+    "Yurodiviye Virtues: Keenness (Острота)": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "random_VALUE:DEX_mod",
+                "filterfaction": [
+                    "AlliesOnly"
+                ],
+                "condition": {},
+                "get": {
+                    "DEX": {
+                        "divide": 2,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Haste": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 10
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Haste": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "DiceHitCountYurodiviye",
+                            "value": 1,
+                            "mode": "add"
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "storagebox_check": [
+                        {
+                            "name": "self",
+                            "valuename": "DiceHitCountYurodiviye",
+                            "min": 4
+                        }
+                    ]
+                },
+                "get": {},
+                "modifiers": {
+                    "discard": {
+                        "amount": 2,
+                        "mode": "random"
+                    },
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "DiceHitCountYurodiviye",
+                            "value": 0,
+                            "mode": "set"
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "DiceHitCountYurodiviye",
+                            "value": 0,
+                            "mode": "set"
+                        }
+                    ]
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 2,
+                "max": 3,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Charge": {
+                                    "count": 1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "DEX": {
+                                "divide": 2,
+                                "fix": ""
+                            }
+                        },
+                        "modifiers": {
+                            "flatdamage": {
+                                "pierce": "DEX_mod"
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {
+                            "DEX": {
+                                "fix": ""
+                            }
+                        },
+                        "modifiers": {
+                            "takestaggerdamage": "DEX_mod"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 1,
+                "max": 3,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Charge": {
+                                    "count": 1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "DEX": {
+                                "divide": 2,
+                                "fix": ""
+                            }
+                        },
+                        "modifiers": {
+                            "flatdamage": {
+                                "pierce": "DEX_mod"
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {
+                            "DEX": {
+                                "fix": ""
+                            }
+                        },
+                        "modifiers": {
+                            "takestaggerdamage": "DEX_mod"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 2,
+                "max": 2,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Charge": {
+                                    "count": 1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "DEX": {
+                                "divide": 2,
+                                "fix": ""
+                            }
+                        },
+                        "modifiers": {
+                            "flatdamage": {
+                                "pierce": "DEX_mod"
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {
+                            "DEX": {
+                                "fix": ""
+                            }
+                        },
+                        "modifiers": {
+                            "takestaggerdamage": "DEX_mod"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 1,
+                "max": 2,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Charge": {
+                                    "count": 1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "DEX": {
+                                "divide": 2,
+                                "fix": ""
+                            }
+                        },
+                        "modifiers": {
+                            "flatdamage": {
+                                "pierce": "DEX_mod"
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {
+                            "DEX": {
+                                "fix": ""
+                            }
+                        },
+                        "modifiers": {
+                            "takestaggerdamage": "DEX_mod"
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ],
+        "attackweight": 1
+    },
+    "Yurodiviye Virtues: Influence (Влияние)": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "random_VALUE:CHA_mod",
+                "filterfaction": [
+                    "AlliesOnly"
+                ],
+                "condition": {},
+                "get": {
+                    "CHA": {
+                        "divide": 2,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Clash Power Up": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 10
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Clash Power Up": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "draw": 1,
+                    "discard": {
+                        "amount": 1,
+                        "mode": "random"
+                    }
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "storagebox_check": [
+                        {
+                            "name": "self",
+                            "valuename": "SpentChargeWithInfluenceYurodiviye",
+                            "min": 1
+                        }
+                    ]
+                },
+                "get": {},
+                "modifiers": {
+                    "draw": 1,
+                    "discard": {
+                        "amount": 1,
+                        "mode": "random"
+                    },
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "SpentChargeWithInfluenceYurodiviye",
+                            "value": 0,
+                            "mode": "set"
+                        }
+                    ]
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "evade",
+                "min": 3,
+                "max": 7,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_evade",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Charge": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 4,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "count_min": {
+                                "buff": "Charge",
+                                "value": 5
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "flatdamage": {
+                                "blunt": 5
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "count_min": {
+                                "buff": "Charge",
+                                "value": 5
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Charge": {
+                                    "count": -5
+                                }
+                            },
+                            "storagebox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "SpentChargeWithInfluenceYurodiviye",
+                                    "value": 1,
+                                    "mode": "set"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ],
+        "attackweight": 1
+    },
+    "Yurodiviye Virtues: Knowledge (Знание)": {
+        "description": "",
+        "light_cost": 3,
+        "effects": [
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "random_VALUE:INT_mod",
+                "filterfaction": [
+                    "AlliesOnly"
+                ],
+                "condition": {},
+                "get": {
+                    "INT": {
+                        "divide": 2,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "gainlightnext": 1
+                }
+            },
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 10
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "gainlightnext": 1
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "INT": {
+                        "divide": 2,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "discard": {
+                        "amount": "INT_mod",
+                        "mode": "highest"
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "self",
+                            "valuename": "discardedThisTurn"
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "power_bonus": "SB_discardedThisTurn"
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "currentLight": 300
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": "currentLight"
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "currentLight": -100
+                },
+                "modifiers": {
+                    "gainlight": "currentLight"
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "evade",
+                "min": 3,
+                "max": 6,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "failed_evade",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "count_min": {
+                                "buff": "Charge",
+                                "value": 3
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "changedice": {
+                                "dice": 1,
+                                "boostmax": 2
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "failed_evade",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "count_min": {
+                                "buff": "Charge",
+                                "value": 3
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Charge": {
+                                    "count": -3
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 2,
+                "max": 5,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "pageusetype": [
+                                "Unopposed"
+                            ]
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "changedice": {
+                                "dice": 3,
+                                "boostmax": 2
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 5,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Charge": {
+                                "value": "count",
+                                "divide": 4,
+                                "fix": ""
+                            }
+                        },
+                        "modifiers": {
+                            "flatdamage": {
+                                "blunt": "Charge_count"
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {
+                            "Charge": {
+                                "value": "count",
+                                "divide": 2,
+                                "fix": "",
+                                "toNegative": ""
+                            }
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Charge": {
+                                    "count": "Charge_count"
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 6,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Charge": {
+                                "value": "count",
+                                "divide": 4,
+                                "fix": ""
+                            }
+                        },
+                        "modifiers": {
+                            "flatdamage": {
+                                "pierce": "Charge_count"
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {
+                            "Charge": {
+                                "value": "count",
+                                "divide": 2,
+                                "fix": "",
+                                "toNegative": ""
+                            }
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Charge": {
+                                    "count": "Charge_count"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ],
+        "globalpower": [],
+        "attackweight": 1
+    },
+    "For the Betterment of Humanity": {
+        "description": "",
+        "light_cost": 4,
+        "effects": [
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": 8
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 15
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Power Up": {
+                            "stack": 1,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 15
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": -5
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 8
+                    }
+                },
+                "get": {
+                    "Charge": {
+                        "value": "count",
+                        "divide": 8,
+                        "fix": "",
+                        "add": 1
+                    }
+                },
+                "modifiers": {
+                    "atkweightsetter": "Charge_count"
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "atkweightsetter": 1
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Bind": {
+                            "stack": 3,
+                            "volatile": true,
+                            "nextturn": true
+                        },
+                        "Attack Power Down": {
+                            "stack": 3,
+                            "volatile": true,
+                            "nextturn": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "currentLight": 100
+                },
+                "modifiers": {
+                    "draw": "currentLight"
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "currentLight": -100
+                },
+                "modifiers": {
+                    "gainlight": "currentLight"
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 4,
+                "max": 5,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "random1",
+                        "filterfaction": [
+                            "AlliesOnly"
+                        ],
+                        "condition": {
+                            "count_min": {
+                                "buff": "Charge",
+                                "value": 2
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Damage Up": {
+                                    "stack": 1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "count_min": {
+                                "buff": "Charge",
+                                "value": 2
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Charge": {
+                                    "count": -2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 4,
+                "max": 5,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "random1",
+                        "filterfaction": [
+                            "AlliesOnly"
+                        ],
+                        "condition": {
+                            "count_min": {
+                                "buff": "Charge",
+                                "value": 2
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Haste": {
+                                    "stack": 1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "count_min": {
+                                "buff": "Charge",
+                                "value": 2
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Charge": {
+                                    "count": -2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 4,
+                "max": 5,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "random1",
+                        "filterfaction": [
+                            "AlliesOnly"
+                        ],
+                        "condition": {
+                            "count_min": {
+                                "buff": "Charge",
+                                "value": 2
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Clash Power Up": {
+                                    "stack": 1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "count_min": {
+                                "buff": "Charge",
+                                "value": 2
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Charge": {
+                                    "count": -2
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ],
+        "originalattackweight": 1,
+        "attackweight": 1,
+        "globalpower": []
+    }
+}

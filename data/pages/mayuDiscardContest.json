@@ -1,0 +1,998 @@
+{
+    "Load em Up": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Poise": {
+                            "count": 2
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Poise",
+                        "value": 3
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "draw": 1
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Poise": {
+                            "stack": -3
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "storagebox_check": [
+                        {
+                            "name": "self",
+                            "valuename": "ammofromloademup",
+                            "max": 20
+                        }
+                    ]
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Ammo": {
+                            "stack": 1
+                        }
+                    },
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "ammofromloademup",
+                            "value": 1,
+                            "mode": "add"
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "storagebox_check": [
+                        {
+                            "name": "self",
+                            "valuename": "ammofromloademup",
+                            "max": 20
+                        }
+                    ]
+                },
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "self",
+                            "valuename": "discardedLastTurn"
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Ammo": {
+                            "stack": "SB_discardedLastTurn"
+                        }
+                    },
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "ammofromloademup",
+                            "value": "SB_discardedLastTurn",
+                            "mode": "add"
+                        }
+                    ]
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "evade",
+                "min": 2,
+                "max": 4,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_evade",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Ammo",
+            "Poise"
+        ]
+    },
+    "The Warmup": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Poise": {
+                            "count": 2
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "hand_min": 1
+                },
+                "get": {},
+                "modifiers": {
+                    "discard": {
+                        "amount": 1,
+                        "mode": "random"
+                    },
+                    "gainlightnext": 2
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 4,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "count": 1
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 2,
+                "max": 4,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "count": 1
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Poise"
+        ]
+    },
+    "This Will Be Easy": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Poise": {
+                            "stack": 3
+                        }
+                    },
+                    "draw": 1
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_min": {
+                        "buff": "Poise",
+                        "value": 4
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Poise": {
+                            "count": -2
+                        }
+                    },
+                    "draw": 1
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 4,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "draw": 1,
+                            "log": [
+                                {
+                                    "text": "triggered draw"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 2,
+                "max": 4,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "draw": 1,
+                            "log": [
+                                {
+                                    "text": "triggered draw"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Poise"
+        ]
+    },
+    "Beat Em Up": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Poise": {
+                            "stack": 3
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "hand_min": 1
+                },
+                "get": {},
+                "modifiers": {
+                    "discard": {
+                        "amount": 1,
+                        "mode": "random"
+                    },
+                    "power_bonus": 1
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Poise",
+                        "value": 10
+                    },
+                    "hand_min": 1
+                },
+                "get": {},
+                "modifiers": {
+                    "discard": {
+                        "amount": 1,
+                        "mode": "random"
+                    },
+                    "power_bonus": 1
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 4,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Ammo",
+                                "value": 1
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Ammo": {
+                                    "stack": -1
+                                }
+                            },
+                            "power_bonus": 1
+                        }
+                    },
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "takehpdamage": 2
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 2,
+                "max": 3,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Ammo",
+                                "value": 1
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Ammo": {
+                                    "stack": -1
+                                }
+                            },
+                            "power_bonus": 1
+                        }
+                    },
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "takehpdamage": 2
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 1,
+                "max": 2,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Ammo",
+                                "value": 1
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Ammo": {
+                                    "stack": -1
+                                }
+                            },
+                            "power_bonus": 1
+                        }
+                    },
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "takehpdamage": 2
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Ammo",
+            "Poise"
+        ],
+        "globalpower": []
+    },
+    "YAGAWT": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Poise": {
+                            "count": 3
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "hand_min": 1
+                },
+                "get": {},
+                "foreach": 2,
+                "modifiers": {
+                    "getbuff": {
+                        "Poise": {
+                            "stack": 3
+                        }
+                    },
+                    "discard": {
+                        "amount": 1,
+                        "mode": "random"
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 4,
+                "max": 6,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 4,
+                "max": 6,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Poise"
+        ],
+        "attackweight": 1
+    },
+    "Fists Of Strife": {
+        "description": "",
+        "light_cost": 3,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Poise": {
+                            "stack": 4
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Poise",
+                        "value": 10
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "discard": {
+                        "amount": 2,
+                        "mode": "random"
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Poise",
+                        "value": 10
+                    },
+                    "hand_min": 2
+                },
+                "get": {},
+                "foreach": "hand",
+                "modifiers": {
+                    "power_bonus": 1
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Poise",
+                        "value": 10
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "discard": {
+                        "amount": 2,
+                        "mode": "random"
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Poise",
+                        "value": 10
+                    },
+                    "hand_min": 2
+                },
+                "get": {},
+                "foreach": "hand",
+                "modifiers": {
+                    "power_bonus": 1
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_max": {
+                        "buff": "Poise",
+                        "value": 10
+                    },
+                    "hand_min": 1
+                },
+                "get": {},
+                "modifiers": {
+                    "discard": {
+                        "amount": 1,
+                        "mode": "random"
+                    },
+                    "power_bonus": 1
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "blunt",
+                "min": 4,
+                "max": 5,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Ammo",
+                                "value": 1
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Ammo": {
+                                    "stack": -1
+                                }
+                            },
+                            "power_bonus": 1
+                        }
+                    },
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "takehpdamage": 1
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 4,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Ammo",
+                                "value": 1
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Ammo": {
+                                    "stack": -1
+                                }
+                            },
+                            "power_bonus": 1
+                        }
+                    },
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "takehpdamage": 1
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 2,
+                "max": 3,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Ammo",
+                                "value": 1
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Ammo": {
+                                    "stack": -1
+                                }
+                            },
+                            "power_bonus": 1
+                        }
+                    },
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "takehpdamage": 1
+                        }
+                    }
+                ]
+            }
+        ],
+        "globalpower": [],
+        "pageTagList": [
+            "Ammo",
+            "Poise"
+        ]
+    },
+    "Fistful O Buckshot": {
+        "description": "",
+        "light_cost": 3,
+        "effects": [
+            {
+                "trigger": "on_roll",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Ammo",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "power_bonus": 1
+                }
+            },
+            {
+                "trigger": "on_roll",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Poise": {
+                        "value": "stack",
+                        "mult": 34,
+                        "max": 2
+                    }
+                },
+                "foreach": "Poise_stack",
+                "modifiers": {
+                    "power_bonus": 1
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Poise",
+                        "value": 10
+                    }
+                },
+                "get": {
+                    "hand": 100
+                },
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "discardsfromFistfulOBuckset",
+                            "value": "hand",
+                            "mode": "set"
+                        }
+                    ],
+                    "discard": {
+                        "amount": 8,
+                        "mode": "random"
+                    }
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "discardsfromFistfulOBuckset",
+                            "value": 0,
+                            "mode": "set"
+                        }
+                    ]
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 5,
+                "max": 8,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Ammo": {
+                                "value": "stack"
+                            }
+                        },
+                        "modifiers": {
+                            "takehpdamage": "Ammo_stack"
+                        }
+                    },
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Ammo": {
+                                "value": "stack",
+                                "mult": 20
+                            }
+                        },
+                        "modifiers": {
+                            "takehpdamage": "Ammo_stack"
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "discardsfromFistfulOBuckset"
+                                }
+                            ]
+                        },
+                        "foreach": "SB_discardsfromFistfulOBuckset",
+                        "modifiers": {
+                            "takehpdamage": 1
+                        }
+                    },
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "discardsfromFistfulOBuckset",
+                                    "mult": 20
+                                }
+                            ]
+                        },
+                        "modifiers": {
+                            "takehpdamage": "SB_discardsfromFistfulOBuckset"
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Ammo": {
+                                    "stack": -20
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Ammo",
+            "Poise"
+        ]
+    }
+}

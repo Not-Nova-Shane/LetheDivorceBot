@@ -1,0 +1,693 @@
+{
+    "Powered in his Likeship": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": 3
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 4,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "changedice": {
+                                "dice": 1,
+                                "boostmin": 2
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 5,
+                "sin": "Envy",
+                "effects": []
+            }
+        ],
+        "pageTagList": [
+            "Charge"
+        ]
+    },
+    "Deceitful Brawl": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 4,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Charge": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 1,
+                "max": 3,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Paralyze": {
+                                    "stack": 1,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 4,
+                "max": 6,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "count_min": {
+                                "buff": "Charge",
+                                "value": 3
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "flatdamage": {
+                                "pierce": 3
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Charge": {
+                                    "count": -3
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Paralyze",
+            "Charge"
+        ]
+    },
+    "Faulty Equipment": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": 2
+                        },
+                        "Paralyze": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 5
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "gainlightnext": 2
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": -5
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Charge": {
+                        "value": "count",
+                        "max": 3,
+                        "mult": 20,
+                        "fix": ""
+                    }
+                },
+                "foreach": "Charge_count",
+                "modifiers": {
+                    "changedice": {
+                        "dice": 1,
+                        "boostmin": 2,
+                        "boostmax": 2
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "evade",
+                "min": 2,
+                "max": 4,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_evade",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Charge": {
+                                    "count": 1
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 2,
+                "max": 2,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Paralyze": {
+                                    "stack": 2,
+                                    "volatile": true,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Paralyze",
+            "Charge"
+        ]
+    },
+    "Makeshift Blitz": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {
+                    "count_max": {
+                        "buff": "Charge",
+                        "value": 0
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "changedice": {
+                        "dice": 2,
+                        "boostmax": -10,
+                        "boostmin": -10
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 10
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "changedice": {
+                        "dice": "all",
+                        "boostmax": 2,
+                        "boostmin": 2
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": -10
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 3,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "flatdamage": {
+                                "pierce": 1
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 4,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "flatdamage": {
+                                "pierce": 2
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 4,
+                "max": 4,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "flatdamage": {
+                                "pierce": 3
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Charge"
+        ]
+    },
+    "Overcharger": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": 8,
+                            "nextturn": true
+                        },
+                        "Paralyze": {
+                            "stack": 3,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 2,
+                "max": 7,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Charge": {
+                                    "count": 3,
+                                    "nextturn": true
+                                },
+                                "Paralyze": {
+                                    "stack": 1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 2,
+                "max": 7,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Charge": {
+                                    "count": 3,
+                                    "nextturn": true
+                                },
+                                "Paralyze": {
+                                    "stack": 1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 2,
+                "max": 7,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Paralyze": {
+                                    "stack": -1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Paralyze",
+            "Charge"
+        ]
+    },
+    "Dynamite Rave": {
+        "description": "",
+        "light_cost": 3,
+        "effects": [],
+        "dice": [
+            {
+                "type": "evade",
+                "min": 2,
+                "max": 5,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "on_evade",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Charge": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 8,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Charge": {
+                                "value": "count",
+                                "mult": 50,
+                                "fix": ""
+                            }
+                        },
+                        "modifiers": {
+                            "flatdamage": {
+                                "pierce": "Charge_count"
+                            },
+                            "getbuff": {
+                                "Charge": {
+                                    "count": -20
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Charge"
+        ]
+    },
+    "Circuits Unsundered": {
+        "description": "",
+        "light_cost": 3,
+        "effects": [
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 10
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "draw": 2
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": -10
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 6,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Paralyze": {
+                                    "stack": 2,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 3,
+                "max": 5,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "count_min": {
+                                "buff": "Charge",
+                                "value": 10
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "changedice": {
+                                "dice": "next",
+                                "boostmin": 2
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "count_min": {
+                                "buff": "Charge",
+                                "value": 15
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "changedice": {
+                                "dice": "next",
+                                "boostmax": 1
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 4,
+                "max": 8,
+                "sin": "Gloom",
+                "effects": []
+            }
+        ],
+        "pageTagList": [
+            "Paralyze",
+            "Charge"
+        ],
+        "globalpower": []
+    }
+}

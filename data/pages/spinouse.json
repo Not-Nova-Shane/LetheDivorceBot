@@ -1,0 +1,778 @@
+{
+    "Bat Bash": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [],
+        "dice": [
+            {
+                "min": 2,
+                "max": 6,
+                "type": "blunt",
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "stack": 3
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "min": 3,
+                "max": 3,
+                "type": "blunt",
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Bleed"
+        ]
+    },
+    "Barbed Strikes": {
+        "description": "",
+        "light_cost": 3,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": [
+                    {
+                        "stack_min": {
+                            "buff": "Bleed",
+                            "value": 5
+                        }
+                    },
+                    {
+                        "stack_min": {
+                            "buff": "Rupture",
+                            "value": 5
+                        }
+                    }
+                ],
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Attack Power Up": {
+                            "stack": 1,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "min": 1,
+                "max": 2,
+                "type": "blunt",
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Rupture": {
+                                "value": "count",
+                                "max": 3,
+                                "mult": 50,
+                                "fix": "",
+                                "targetOverride": "target"
+                            }
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Paralyze": {
+                                    "volatile": true,
+                                    "stack": "Rupture_count"
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "min": 1,
+                "max": 2,
+                "type": "blunt",
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Bleed": {
+                                "value": "count",
+                                "max": 7,
+                                "mult": 50,
+                                "fix": "",
+                                "targetOverride": "target"
+                            }
+                        },
+                        "modifiers": {
+                            "flatdamage": {
+                                "pierce": "Bleed_count"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "min": 1,
+                "max": 2,
+                "type": "blunt",
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "min": 1,
+                "max": 2,
+                "type": "blunt",
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Paralyze",
+            "Rupture",
+            "Bleed"
+        ],
+        "globalpower": []
+    },
+    "Sneak Attack": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [],
+        "dice": [
+            {
+                "min": 2,
+                "max": 6,
+                "type": "pierce",
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "stack": 3
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "min": 3,
+                "max": 3,
+                "type": "pierce",
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Rupture",
+            "Bleed"
+        ]
+    },
+    "Bat Parry": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "modifiers": {
+                    "gainlightnext": 1
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 5,
+                "sin": "Sloth",
+                "effects": []
+            },
+            {
+                "type": "pierce",
+                "min": 1,
+                "max": 3,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "stack": 2
+                                },
+                                "Bleed": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 5,
+                "sin": "Sloth",
+                "effects": []
+            }
+        ],
+        "pageTagList": [
+            "Rupture",
+            "Bleed"
+        ]
+    },
+    "Rupturing Strikes": {
+        "description": "",
+        "light_cost": 3,
+        "effects": [],
+        "dice": [
+            {
+                "type": "blunt",
+                "min": 2,
+                "max": 7,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Rupture": {
+                                "value": "stack",
+                                "multbycountstack": "count",
+                                "targetOverride": "target",
+                                "max": 15.141592653589793
+                            }
+                        },
+                        "modifiers": {
+                            "flatdamage": {
+                                "pierce": "Rupture_stack"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Rupture"
+        ]
+    },
+    "Bleeding Strikes": {
+        "description": "",
+        "light_cost": 3,
+        "effects": [],
+        "dice": [
+            {
+                "type": "blunt",
+                "min": 2,
+                "max": 7,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Bleed": {
+                                "value": "stack",
+                                "multbycountstack": "count",
+                                "targetOverride": "target",
+                                "max": 15.141592653589793
+                            }
+                        },
+                        "modifiers": {
+                            "flatdamage": {
+                                "pierce": "Bleed_stack"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed"
+        ]
+    },
+    "DIE DIE DIE": {
+        "description": "",
+        "light_cost": 5,
+        "attackweight": 3,
+        "effects": [],
+        "dice": [
+            {
+                "type": "blunt",
+                "min": 1,
+                "max": 8,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Bleed": {
+                                "value": "stack",
+                                "targetOverride": "target",
+                                "max": 5
+                            },
+                            "Rupture": {
+                                "value": "stack",
+                                "targetOverride": "target",
+                                "max": 5
+                            }
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "stack": "Bleed_stack"
+                                },
+                                "Bleed": {
+                                    "stack": "Rupture_stack"
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 1,
+                "max": 8,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Bleed": {
+                                "value": "stack",
+                                "min": 1,
+                                "fix": "",
+                                "targetOverride": "target"
+                            }
+                        },
+                        "modifiers": {
+                            "storagebox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "dx3build",
+                                    "mode": "add",
+                                    "value": "Bleed_stack"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Rupture": {
+                                "value": "stack",
+                                "min": 1,
+                                "fix": "",
+                                "targetOverride": "target"
+                            }
+                        },
+                        "modifiers": {
+                            "storagebox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "dx3build",
+                                    "mode": "add",
+                                    "value": "Rupture_stack"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Bleed": {
+                                "value": "count",
+                                "min": 1,
+                                "fix": "",
+                                "targetOverride": "target"
+                            }
+                        },
+                        "modifiers": {
+                            "storagebox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "dx3build",
+                                    "mode": "add",
+                                    "value": "Bleed_count"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Rupture": {
+                                "value": "count",
+                                "min": 1,
+                                "fix": "",
+                                "targetOverride": "target"
+                            }
+                        },
+                        "modifiers": {
+                            "storagebox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "dx3build",
+                                    "mode": "add",
+                                    "value": "Rupture_count"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "dx3build",
+                                    "mult": 50,
+                                    "max": 10
+                                }
+                            ]
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Paralyze": {
+                                    "stack": "SB_dx3build",
+                                    "volatile": true,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Paralyze",
+            "Rupture",
+            "Bleed"
+        ]
+    },
+    "Torn Copy of 'DIE DIE DIE'": {
+        "description": "",
+        "light_cost": 3,
+        "effects": [],
+        "dice": [
+            {
+                "type": "blunt",
+                "min": 1,
+                "max": 8,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Bleed": {
+                                "value": "stack",
+                                "targetOverride": "target",
+                                "max": 5
+                            },
+                            "Rupture": {
+                                "value": "stack",
+                                "targetOverride": "target",
+                                "max": 5
+                            }
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "stack": "Bleed_stack"
+                                },
+                                "Bleed": {
+                                    "stack": "Rupture_stack"
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 1,
+                "max": 8,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Bleed": {
+                                "value": "stack",
+                                "min": 1,
+                                "fix": "",
+                                "targetOverride": "target"
+                            }
+                        },
+                        "modifiers": {
+                            "storagebox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "dx3build",
+                                    "mode": "add",
+                                    "value": "Bleed_stack"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Rupture": {
+                                "value": "stack",
+                                "min": 1,
+                                "fix": "",
+                                "targetOverride": "target"
+                            }
+                        },
+                        "modifiers": {
+                            "storagebox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "dx3build",
+                                    "mode": "add",
+                                    "value": "Rupture_stack"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Bleed": {
+                                "value": "count",
+                                "min": 1,
+                                "fix": "",
+                                "targetOverride": "target"
+                            }
+                        },
+                        "modifiers": {
+                            "storagebox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "dx3build",
+                                    "mode": "add",
+                                    "value": "Bleed_count"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Rupture": {
+                                "value": "count",
+                                "min": 1,
+                                "fix": "",
+                                "targetOverride": "target"
+                            }
+                        },
+                        "modifiers": {
+                            "storagebox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "dx3build",
+                                    "mode": "add",
+                                    "value": "Rupture_count"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "dx3build",
+                                    "mult": 50,
+                                    "max": 10
+                                }
+                            ]
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Paralyze": {
+                                    "stack": "SB_dx3build",
+                                    "volatile": true,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Paralyze",
+            "Rupture",
+            "Bleed"
+        ],
+        "globalpower": []
+    }
+}

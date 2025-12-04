@@ -1,0 +1,405 @@
+{
+    "##.532?@!": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 5,
+                "max": 9,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "flatdamage": {
+                                "Gloom": 5
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Noise",
+                                "value": 5
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "flatdamage": {
+                                "Gloom": 10
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 6,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "flatdamage": {
+                                "Gloom": 5
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Noise",
+                                "value": 5
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "flatdamage": {
+                                "Gloom": 10
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ],
+        "attackweight": 1
+    },
+    "####t.. 3½#..": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Noise",
+                        "value": 2
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "atkweightsetter": 3
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 3,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "flatdamage": {
+                                "Gloom": 5
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 6,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "flatdamage": {
+                                "Gloom": 5
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 1,
+                "max": 1,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "flatdamage": {
+                                "Gloom": 5
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 5,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "flatdamage": {
+                                "Gloom": 5
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ],
+        "attackweight": 1
+    },
+    "####....bçf.#": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Noise",
+                        "value": 6
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "atkweightsetter": 6
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 5,
+                "max": 8,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Sinking": {
+                                "value": "stack",
+                                "multbycountstack": "count",
+                                "targetOverride": "target"
+                            }
+                        },
+                        "modifiers": {
+                            "flatdamage": {
+                                "Gloom": "Sinking_stack"
+                            },
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": -99,
+                                    "count": -99
+                                },
+                                "Noise": {
+                                    "stack": -99
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ],
+        "attackweight": 1
+    },
+    "#..SG$5#3": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "ShieldTickerForNoise",
+                            "value": 1,
+                            "mode": "set"
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "modifiers": {
+                    "gainshield": {
+                        "min": 15,
+                        "max": 25
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 1,
+                "max": 1,
+                "sin": "Gloom",
+                "effects": []
+            }
+        ],
+        "pageTagList": [],
+        "globalpower": []
+    },
+    "War": {
+        "description": "",
+        "light_cost": 4,
+        "attackweight": 6,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "modifiers": {
+                    "lightcostchange": {
+                        "Ruin": -3
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "pageusetype": [
+                        "Clash"
+                    ]
+                },
+                "modifiers": {
+                    "power_bonus": 99
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 1,
+                "max": 1,
+                "sin": "none",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "modifiers": {
+                            "takehpdamage": 10,
+                            "getbuff": {
+                                "Noise": {
+                                    "stack": -99
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [],
+        "globalpower": []
+    },
+    "Ruin": {
+        "description": "",
+        "light_cost": 9,
+        "attackweight": 6,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "pageusetype": [
+                        "Clash"
+                    ]
+                },
+                "modifiers": {
+                    "power_bonus": 99
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 1,
+                "max": 1,
+                "sin": "none",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "modifiers": {
+                            "takehpdamage": 200
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [],
+        "globalpower": []
+    }
+}

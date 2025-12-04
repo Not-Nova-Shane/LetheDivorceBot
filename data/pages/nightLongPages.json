@@ -1,0 +1,629 @@
+{
+    "Lunge Through": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "draw": 1
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 2,
+                "max": 4,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Pierce Fragility": {
+                                    "stack": 2,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 6,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Pierce Fragility": {
+                                    "stack": 1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Tremor",
+            "Pierce Fragility"
+        ],
+        "attackweight": 1
+    },
+    "Exploit Shortcomings": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Pierce Damage Up": {
+                            "stack": 2,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "resist_max": {
+                        "res": "pierce",
+                        "restype": "resistances",
+                        "value": 1.4
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "power_bonus": 2
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "piercedamageadder",
+                            "mode": "set",
+                            "value": 0
+                        }
+                    ]
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 4,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bind": {
+                                    "stack": 2,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Pierce Damage Up": {
+                                    "stack": 1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "storagebox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "piercedamageadder",
+                                    "mode": "set",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 4,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "storagebox_check": [
+                                {
+                                    "name": "self",
+                                    "valuename": "piercedamageadder",
+                                    "equal": 1
+                                }
+                            ]
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "flatdamage": {
+                                "pierce": 5
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "negativeBuffCount": {
+                                "max": 10
+                            }
+                        },
+                        "modifiers": {
+                            "flatdamage": {
+                                "pierce": "negativeBuffCount"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 1,
+                "max": 5,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "negativeBuffCount": {
+                                "max": 3
+                            }
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Defense Level Up": {
+                                    "stack": "negativeBuffCount",
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Tremor",
+            "Defense Level Up",
+            "Bind",
+            "Pierce Damage Up",
+            "Damage Up"
+        ],
+        "globalpower": [],
+        "attackweight": 1
+    },
+    "Through the Night": {
+        "description": "",
+        "light_cost": 4,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Lights Out",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "power_bonus": 2
+                }
+            },
+            {
+                "trigger": "before_on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "speedDifference": {
+                        "mult": 200,
+                        "max": 6
+                    }
+                },
+                "modifiers": {
+                    "changedamage": {
+                        "value": "speedDifference",
+                        "mode": "add"
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "negativeBuffCount": {
+                        "divide": 3,
+                        "mult": 200,
+                        "max": 4
+                    }
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Offense Level Up": {
+                            "stack": "negativeBuffCount",
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 8,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "flatdamage": {
+                                "pierce": 5
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bind": {
+                                    "stack": 3,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Tremor",
+            "Offense Level Up",
+            "Lights Out",
+            "Bind"
+        ],
+        "attackweight": 1,
+        "globalpower": []
+    },
+    "Dustlunge": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "gainlightnext": 1
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 2,
+                "max": 7,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Pierce Fragility": {
+                                    "stack": 1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                },
+                                "Bind": {
+                                    "stack": 1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "pageusetype": [
+                                "Unopposed"
+                            ]
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Pierce Fragility": {
+                                    "stack": 1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                },
+                                "Bind": {
+                                    "stack": 1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                },
+                                "Defense Level Down": {
+                                    "stack": 1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Tremor",
+            "Defense Level Down",
+            "Bind",
+            "Pierce Fragility"
+        ],
+        "attackweight": 1
+    },
+    "Nightlong": {
+        "description": "",
+        "requiresTag": "Nightlong Office Section 5",
+        "light_cost": 1,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "everyone",
+                "condition": {
+                    "storagebox_check": [
+                        {
+                            "name": "LightsOutLocked",
+                            "valuename": "LightsOutLocked",
+                            "equal": 0
+                        }
+                    ]
+                },
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "LightsOutLocked",
+                            "valuename": "LightsOutLocked",
+                            "mode": "set",
+                            "value": 1
+                        }
+                    ],
+                    "getbuff": {
+                        "Lights Out": {
+                            "stack": 3,
+                            "nextturn": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Lights Out",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "power_bonus": 2,
+                    "gainlight": -1
+                }
+            },
+            {
+                "trigger": "clash_win",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "ClashWinCounter",
+                            "mode": "add",
+                            "value": 1
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "storagebox_check": [
+                        {
+                            "name": "self",
+                            "valuename": "ClashWinCounter",
+                            "equal": 2
+                        }
+                    ]
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Offense Level Up": {
+                            "stack": 1,
+                            "volatile": true,
+                            "nextturn": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "ClashWinCounter",
+                            "mode": "set",
+                            "value": 0
+                        }
+                    ]
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 2,
+                "max": 6,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Offense Level Up": {
+                                    "stack": 1,
+                                    "volatile": true,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 1,
+                "max": 5,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Offense Level Up": {
+                                    "stack": 1,
+                                    "volatile": true,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Tremor",
+            "Offense Level Up",
+            "Lights Out"
+        ],
+        "globalpower": [],
+        "attackweight": 1
+    }
+}

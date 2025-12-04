@@ -1,0 +1,353 @@
+{
+    "Allas Workshop": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Clash Power Down": {
+                            "stack": 2,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 5,
+                "max": 9,
+                "sin": "Gloom",
+                "effects": []
+            },
+            {
+                "type": "pierce",
+                "min": 5,
+                "max": 8,
+                "sin": "Gloom",
+                "effects": []
+            }
+        ],
+        "pageTagList": [],
+        "globalpower": [],
+        "attackweight": 1
+    },
+    "Wheel’s Industry": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [],
+        "dice": [
+            {
+                "type": "blunt",
+                "min": 14,
+                "max": 24,
+                "sin": "Wrath",
+                "effects": []
+            },
+            {
+                "type": "guard",
+                "min": 5,
+                "max": 8,
+                "sin": "Wrath",
+                "effects": []
+            }
+        ],
+        "pageTagList": [],
+        "globalpower": [],
+        "attackweight": 1
+    },
+    "Zelkova Workshop": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "draw": 1
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 4,
+                "max": 8,
+                "sin": "Lust",
+                "effects": []
+            },
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 8,
+                "sin": "Lust",
+                "effects": []
+            }
+        ],
+        "pageTagList": [],
+        "globalpower": [],
+        "attackweight": 1
+    },
+    "Old Boys Workshop": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "draw": 1,
+                    "gainlight": 3
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 5,
+                "max": 8,
+                "sin": "Sloth",
+                "effects": []
+            },
+            {
+                "type": "blunt",
+                "min": 4,
+                "max": 8,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "recoverstagger": 5
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [],
+        "globalpower": [],
+        "attackweight": 1
+    },
+    "Mook Workshop": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "draw": 1,
+                    "gainlight": 3
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 8,
+                "max": 15,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "takehpdamage": 3
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [],
+        "globalpower": [],
+        "attackweight": 1
+    },
+    "Ranga Workshop": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 7,
+                "sin": "Pride",
+                "effects": []
+            },
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 7,
+                "sin": "Pride",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 3,
+                "max": 7,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [],
+        "globalpower": [],
+        "attackweight": 1
+    },
+    "Crystal Atelier": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [],
+        "dice": [
+            {
+                "type": "evade",
+                "min": 8,
+                "max": 11,
+                "sin": "Envy",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 7,
+                "max": 11,
+                "sin": "Envy",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 7,
+                "max": 11,
+                "sin": "Envy",
+                "effects": []
+            }
+        ],
+        "pageTagList": [],
+        "globalpower": [],
+        "attackweight": 1
+    },
+    "Atelier Logic": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 4,
+                "max": 8,
+                "sin": "Gluttony",
+                "effects": []
+            },
+            {
+                "type": "pierce",
+                "min": 5,
+                "max": 8,
+                "sin": "Gluttony",
+                "effects": []
+            },
+            {
+                "type": "blunt",
+                "min": 7,
+                "max": 12,
+                "sin": "Gluttony",
+                "effects": []
+            }
+        ],
+        "pageTagList": [],
+        "globalpower": [],
+        "attackweight": 1
+    },
+    "Durandal": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 5,
+                "max": 9,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Attack Power Up": {
+                                    "stack": 1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 5,
+                "max": 9,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Attack Power Up": {
+                                    "stack": 1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [],
+        "globalpower": [],
+        "attackweight": 1
+    }
+}

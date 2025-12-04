@@ -1,0 +1,802 @@
+{
+    "Bereavement": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Bleed",
+                        "value": 6
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Attack Power Up": {
+                            "stack": 1,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Sinking",
+                        "value": 3
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Attack Power Up": {
+                            "stack": 1,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "min": 2,
+                "max": 5,
+                "type": "slash",
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "count": 3
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Bleed": {
+                                "value": "count",
+                                "divide": 2,
+                                "max": 5,
+                                "targetOverride": "target"
+                            }
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "count": "Bleed_count"
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "min": 4,
+                "max": 5,
+                "type": "slash",
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "count": 3
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Bleed": {
+                                "value": "count",
+                                "divide": 2,
+                                "max": 5,
+                                "targetOverride": "target"
+                            }
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "count": "Bleed_count"
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "min": 5,
+                "max": 8,
+                "type": "guard",
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 3
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Paralyze",
+            "Rupture",
+            "Bleed"
+        ],
+        "globalpower": []
+    },
+    "Prove Your Worth": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [],
+        "dice": [
+            {
+                "min": 5,
+                "max": 5,
+                "type": "guard",
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 3
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "min": 4,
+                "max": 5,
+                "type": "slash",
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "count": 3
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Bleed": {
+                                "value": "count",
+                                "divide": 2,
+                                "max": 5,
+                                "targetOverride": "target"
+                            }
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "count": "Bleed_count"
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "min": 4,
+                "max": 5,
+                "type": "slash",
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "count": 3
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Bleed": {
+                                "value": "count",
+                                "divide": 2,
+                                "max": 5,
+                                "targetOverride": "target"
+                            }
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "count": "Bleed_count"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Paralyze",
+            "Rupture",
+            "Bleed"
+        ],
+        "globalpower": []
+    },
+    "Training…": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Bind": {
+                            "stack": 10,
+                            "nextturn": true,
+                            "volatile": true
+                        },
+                        "Fragile": {
+                            "stack": 5,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "min": 10,
+                "max": 10,
+                "type": "guard",
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 10
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "min": 10,
+                "max": 10,
+                "type": "guard",
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 10
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "min": 10,
+                "max": 10,
+                "type": "guard",
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 10
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Paralyze",
+            "Rupture",
+            "Bleed"
+        ],
+        "globalpower": []
+    },
+    "Puncture": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [],
+        "dice": [
+            {
+                "min": 5,
+                "max": 5,
+                "type": "guard",
+                "sin": "Gluttony",
+                "effects": []
+            },
+            {
+                "min": 10,
+                "max": 10,
+                "type": "pierce",
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Congealing Wound": {
+                                    "stack": 1
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Paralyze",
+            "Rupture",
+            "Bleed"
+        ],
+        "globalpower": []
+    },
+    "Pierce and Tear": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [],
+        "dice": [
+            {
+                "min": 5,
+                "max": 5,
+                "type": "guard",
+                "sin": "Gluttony",
+                "effects": []
+            },
+            {
+                "min": 6,
+                "max": 6,
+                "type": "pierce",
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "clash_lose",
+                        "conditionTarget": "target",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Congealing Wound",
+                                "value": 1
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "stack": 1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "clash_lose",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Congealing Wound",
+                                "value": 1
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Congealing Wound": {
+                                    "stack": -1
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Paralyze",
+            "Rupture",
+            "Bleed"
+        ],
+        "globalpower": []
+    },
+    "Destroy Everything in Sight… Without Limit": {
+        "description": "",
+        "light_cost": 0,
+        "attackweight": 4,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Bloodtipped Bone Arrow",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "changedice": {
+                        "dice": "all",
+                        "invoke": true
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "min": 4,
+                "max": 8,
+                "type": "slash",
+                "sin": "Envy",
+                "effects": []
+            },
+            {
+                "min": 7,
+                "max": 12,
+                "type": "slash",
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "The Hounds Tarnished Jaws",
+                                "value": 1
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "power_bonus": -5
+                        }
+                    }
+                ]
+            },
+            {
+                "min": 11,
+                "max": 13,
+                "type": "slash",
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "The Hounds Tarnished Jaws",
+                                "value": 1
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "power_bonus": -10
+                        }
+                    }
+                ]
+            },
+            {
+                "min": 16,
+                "max": 17,
+                "type": "slash",
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "The Hounds Tarnished Jaws",
+                                "value": 1
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "power_bonus": -15
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 30,
+                "max": 30,
+                "sin": "Envy",
+                "invokeable": true,
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bloodtipped Bone Arrow": {
+                                    "stack": -1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Congealing Wound": {
+                                    "stack": 2
+                                },
+                                "Bleed": {
+                                    "count": 10
+                                },
+                                "Sinking": {
+                                    "stack": 10,
+                                    "count": 10
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Paralyze",
+            "Rupture",
+            "Bleed"
+        ],
+        "globalpower": []
+    },
+    "Loosening… Arrow": {
+        "description": "",
+        "light_cost": 0,
+        "attackweight": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Bloodtipped Bone Arrow",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "changedice": {
+                        "dice": "all",
+                        "invoke": true
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "min": 5,
+                "max": 5,
+                "type": "guard",
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 3
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "min": 4,
+                "max": 5,
+                "type": "slash",
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "count": 3
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Bleed": {
+                                "value": "count",
+                                "divide": 2,
+                                "max": 5,
+                                "targetOverride": "target"
+                            }
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "count": "Bleed_count"
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "min": 4,
+                "max": 5,
+                "type": "slash",
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "count": 3
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Bleed": {
+                                "value": "count",
+                                "divide": 2,
+                                "max": 5,
+                                "targetOverride": "target"
+                            }
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "count": "Bleed_count"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Paralyze",
+            "Rupture",
+            "Bleed"
+        ],
+        "globalpower": []
+    }
+}

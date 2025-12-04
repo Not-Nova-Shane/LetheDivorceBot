@@ -1,0 +1,1182 @@
+{
+    "Shielded Suppressing": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "removetypeeffects": {
+                        "value": 2,
+                        "type": "Neg"
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 5,
+                "max": 7,
+                "sin": "Gloom",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 6,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bind": {
+                                    "stack": 2,
+                                    "volatile": true,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Power Up",
+            "Defense Power Up"
+        ],
+        "attackweight": 1
+    },
+    "Fence": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "filterfaction": [
+                    "AlliesOnly"
+                ],
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Protection": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "everyone",
+                "filterfaction": [
+                    "AlliesOnly"
+                ],
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Protection": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "evade",
+                "min": 2,
+                "max": 5,
+                "sin": "Pride",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 3,
+                "max": 4,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "recoverhp": 2
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 5,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "pageusetype": [
+                                "Unopposed"
+                            ]
+                        },
+                        "get": {
+                            "roll": 100
+                        },
+                        "modifiers": {
+                            "flatdamage": {
+                                "blunt": "roll"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Power Up",
+            "Defense Power Up"
+        ],
+        "attackweight": 1
+    },
+    "Your Shield": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "random2",
+                "condition": {},
+                "filterfaction": [
+                    "Player"
+                ],
+                "get": {
+                    "Pride": {
+                        "faction": "Player",
+                        "absolute": true,
+                        "resonance": "",
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Defense Level Up": {
+                            "stack": "Pride_resource",
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 2,
+                "max": 6,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "takehpdamage": 5
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 1,
+                "max": 6,
+                "sin": "Pride",
+                "effects": []
+            },
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 5,
+                "sin": "Pride",
+                "effects": []
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Power Up",
+            "Defense Power Up"
+        ],
+        "attackweight": 1
+    },
+    "Combat Preparation": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "everyone",
+                "modifierTarget": "everyone",
+                "filterfaction": [
+                    "Player"
+                ],
+                "condition": {
+                    "stack_min": {
+                        "buff": "Defense Level Up",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Offense Level Up": {
+                            "stack": 3,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "everyone",
+                "modifierTarget": "everyone",
+                "filterfaction": [
+                    "Player"
+                ],
+                "condition": {
+                    "stack_max": {
+                        "buff": "Defense Level Up",
+                        "value": 0
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Defense Level Up": {
+                            "stack": 3,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 4,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "takehpdamage": 5
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 1,
+                "max": 5,
+                "sin": "Envy",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 1,
+                "max": 8,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "random2",
+                        "filterfaction": [
+                            "Player"
+                        ],
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Defense Power Up": {
+                                    "stack": 2,
+                                    "volatile": true,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Power Up",
+            "Defense Power Up"
+        ],
+        "attackweight": 1
+    },
+    "Blade Whirl": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 8,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Offense Level Down": {
+                                    "stack": 2,
+                                    "volatile": true,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 4,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "recoverstagger": 5
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 1,
+                "max": 4,
+                "sin": "Pride",
+                "effects": []
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Power Up",
+            "Defense Power Up"
+        ],
+        "attackweight": 1
+    },
+    "Avert": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "gainlight": 1
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Protection": {
+                            "stack": -5
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 1,
+                "max": 10,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Protection": {
+                                    "stack": 5,
+                                    "volatile": true,
+                                    "nextturn": false
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "pageusetype": [
+                                "Unopposed"
+                            ]
+                        },
+                        "get": {
+                            "roll": 100
+                        },
+                        "modifiers": {
+                            "flatdamage": {
+                                "blunt": "roll"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 2,
+                "max": 2,
+                "sin": "Sloth",
+                "effects": []
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Power Up",
+            "Defense Power Up"
+        ],
+        "attackweight": 1
+    },
+    "Kinetic Energy Absorption": {
+        "description": "",
+        "light_cost": 2,
+        "requiresTag": "Zwei Association Section 3 Acting Supervisor",
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Defense Level Up": {
+                        "value": "stack",
+                        "mult": 100,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": "Defense Level Up_stack",
+                            "nextturn": false
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_max": {
+                        "buff": "Charge",
+                        "value": 15
+                    }
+                },
+                "get": {
+                    "Charge": {
+                        "value": "count",
+                        "max": 15,
+                        "add": -15,
+                        "toAbsoluteValue": ""
+                    }
+                },
+                "modifiers": {
+                    "takestaggerdamage": "Charge_count",
+                    "getbuff": {
+                        "Charge": {
+                            "count": "Charge_count"
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 9,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "random2",
+                        "filterfaction": [
+                            "AlliesOnly"
+                        ],
+                        "condition": {},
+                        "get": {
+                            "Charge": {
+                                "value": "count",
+                                "divide": 2,
+                                "fix": "",
+                                "max": 10
+                            }
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Charge Barrier": {
+                                    "stack": "Charge_count",
+                                    "volatile": true,
+                                    "nextturn": false
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 4,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "random2",
+                        "filterfaction": [
+                            "AlliesOnly"
+                        ],
+                        "condition": {},
+                        "get": {
+                            "Charge": {
+                                "value": "count",
+                                "divide": 2,
+                                "fix": "",
+                                "max": 10
+                            }
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Charge Barrier": {
+                                    "stack": "Charge_count",
+                                    "volatile": true,
+                                    "nextturn": false
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Power Up",
+            "Defense Power Up"
+        ],
+        "attackweight": 1
+    },
+    "Synergetic Superpower": {
+        "description": "",
+        "light_cost": 4,
+        "requiresTag": "Zwei Association Section 3 Acting Supervisor",
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Defense Power Up": {
+                        "value": "stack",
+                        "max": 2,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "changedice": {
+                        "dice": "all",
+                        "boostmin": "Defense Power Up_stack"
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "everyone",
+                "modifierTarget": "self",
+                "filterfaction": [
+                    "AlliesOnly"
+                ],
+                "condition": {
+                    "stack_min": {
+                        "buff": "Defense Level Up",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "changedice": {
+                        "dice": "all",
+                        "boostmax": 1
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_min": {
+                        "buff": "Charge",
+                        "value": 16
+                    }
+                },
+                "get": {
+                    "Charge": {
+                        "value": "count",
+                        "divide": 3,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Slash Damage Up": {
+                            "stack": "Charge_count",
+                            "volatile": true
+                        },
+                        "Charge": {
+                            "count": -20
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 5,
+                "max": 9,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Offense Level Down": {
+                                    "stack": 3,
+                                    "volatile": true,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "flatdamage": {
+                                "slash": 5
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 6,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Offense Level Down": {
+                                    "stack": 3,
+                                    "volatile": true,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 5,
+                "max": 7,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "everyone",
+                        "filterfaction": [
+                            "AlliesOnly"
+                        ],
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Defense Level Up": {
+                                    "stack": 2,
+                                    "volatile": true,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Power Up",
+            "Defense Power Up"
+        ],
+        "attackweight": 1
+    },
+    "Dark Feathers": {
+        "description": "",
+        "light_cost": 2,
+        "requiresTag": "Zwei Association Section 6 Lieutenant",
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Defense Level Up": {
+                        "value": "stack",
+                        "mult": 50,
+                        "fix": "",
+                        "max": 4
+                    }
+                },
+                "modifiers": {
+                    "changedice": {
+                        "dice": "all",
+                        "boostmin": "Defense Level Up_stack"
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "draw": 1,
+                    "gainlight": 1
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 4,
+                "max": 8,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "random1",
+                        "filterfaction": [
+                            "AlliesOnly"
+                        ],
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Defense Level Up": {
+                                    "stack": 2,
+                                    "volatile": true,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 2,
+                "max": 6,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "random1",
+                        "filterfaction": [
+                            "AlliesOnly"
+                        ],
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Defense Level Up": {
+                                    "stack": 2,
+                                    "volatile": true,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 2,
+                "max": 6,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "random1",
+                        "filterfaction": [
+                            "AlliesOnly"
+                        ],
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Defense Level Up": {
+                                    "stack": 2,
+                                    "volatile": true,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Power Up",
+            "Defense Power Up"
+        ],
+        "attackweight": 1
+    },
+    "Unrestricted Outburst": {
+        "description": "",
+        "light_cost": 4,
+        "requiresTag": "Zwei Association Section 6 Lieutenant",
+        "effects": [
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "everyone",
+                "modifierTarget": "everyone",
+                "filterfaction": [
+                    "AlliesOnly"
+                ],
+                "condition": {},
+                "get": {
+                    "Defense Level Up": {
+                        "value": "stack"
+                    }
+                },
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "MarlaDrainAllDaDefenseUp",
+                            "valuename": "TotalCountOfDefenseLevelUp",
+                            "value": "Defense Level Up_stack",
+                            "mode": "add"
+                        }
+                    ],
+                    "getbuff": {
+                        "Defense Level Up": {
+                            "stack": -99,
+                            "volatile": false,
+                            "nextturn": false
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "MarlaDrainAllDaDefenseUp",
+                            "valuename": "TotalCountOfDefenseLevelUp",
+                            "toAbsoluteValue": ""
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Offense Level Up": {
+                            "stack": "SB_TotalCountOfDefenseLevelUp",
+                            "volatile": true,
+                            "nextturn": false
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Offense Level Up",
+                        "value": 10
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Power Up ": {
+                            "stack": 5,
+                            "volatile": true,
+                            "nextturn": false
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "currentMaxHP": 15
+                },
+                "modifiers": {
+                    "takehpdamage": "currentMaxHP"
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Defense Level Up": {
+                        "value": "stack"
+                    }
+                },
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "TotalCountOfBothOffenseAndDefense",
+                            "value": "Defense Level Up_stack",
+                            "mode": "add"
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Offense Level Up": {
+                        "value": "stack"
+                    }
+                },
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "TotalCountOfBothOffenseAndDefense",
+                            "value": "Offense Level Up_stack",
+                            "mode": "add"
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "TotalCountOfBothOffenseAndDefense",
+                            "value": 0,
+                            "mode": "set"
+                        }
+                    ]
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 5,
+                "max": 15,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "damagedealt": 50
+                        },
+                        "modifiers": {
+                            "takestaggerdamage": "damagedealt"
+                        }
+                    },
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "filterfaction": [
+                            "AlliesOnly"
+                        ],
+                        "condition": {},
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "TotalCountOfBothOffenseAndDefense",
+                                    "add": 15,
+                                    "toAbsoluteValue": ""
+                                }
+                            ]
+                        },
+                        "modifiers": {
+                            "recoverhp": "SB_TotalCountOfBothOffenseAndDefense"
+                        }
+                    },
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "random2",
+                        "filterfaction": [
+                            "AlliesOnly"
+                        ],
+                        "condition": {},
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "TotalCountOfBothOffenseAndDefense",
+                                    "add": 15,
+                                    "toAbsoluteValue": ""
+                                }
+                            ]
+                        },
+                        "modifiers": {
+                            "recoverhp": "SB_TotalCountOfBothOffenseAndDefense"
+                        }
+                    },
+                    {
+                        "trigger": "clash_lose",
+                        "conditionTarget": "self",
+                        "modifierTarget": "random2",
+                        "filterfaction": [
+                            "AlliesOnly"
+                        ],
+                        "condition": {},
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "TotalCountOfBothOffenseAndDefense",
+                                    "add": 15,
+                                    "toAbsoluteValue": ""
+                                }
+                            ]
+                        },
+                        "modifiers": {
+                            "takehpdamage": "SB_TotalCountOfBothOffenseAndDefense"
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Power Up",
+            "Defense Power Up"
+        ],
+        "attackweight": 1
+    }
+}

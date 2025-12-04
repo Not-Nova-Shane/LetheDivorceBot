@@ -1,0 +1,996 @@
+{
+    "Blank Up": {
+        "description": "",
+        "light_cost": 0,
+        "rarity": "Paperback",
+        "effects": [
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "antipassivecheck": "Rusty Taps"
+                },
+                "get": {},
+                "modifiers": {
+                    "addpassive": "Rusty Taps",
+                    "getbuff": {
+                        "Bullet..?": {
+                            "stack": 3
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Bullet..?": {
+                            "stack": 3
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Bullet..?",
+                        "value": 4
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "changedice": {
+                        "dice": "all",
+                        "invoke": true
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "blunt",
+                "min": 6,
+                "max": 10,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Bullet..?",
+                                "value": 1
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bullet..?": {
+                                    "stack": -1
+                                }
+                            },
+                            "power_bonus": -5
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "evade",
+                "min": 13,
+                "max": 16,
+                "sin": "Lust",
+                "invokeable": true,
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Bullet..?",
+                                "value": 1
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bullet..?": {
+                                    "stack": -2
+                                }
+                            },
+                            "power_bonus": -10
+                        }
+                    },
+                    {
+                        "trigger": "on_evade",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "count": 2,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [],
+        "globalpower": []
+    },
+    "Don’t Touch Me!!!!": {
+        "description": "",
+        "light_cost": 1,
+        "rarity": "Paperback",
+        "effects": [
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "antipassivecheck": "Rusty Taps"
+                },
+                "get": {},
+                "modifiers": {
+                    "addpassive": "Rusty Taps",
+                    "getbuff": {
+                        "Bullet..?": {
+                            "stack": 3
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Bullet..?": {
+                            "stack": 1
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Bullet..?",
+                        "value": 6
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "changedice": {
+                        "dice": "all",
+                        "invoke": true
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Bullet..?",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Bullet..?": {
+                            "stack": -1
+                        }
+                    },
+                    "power_bonus": -3
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "evade",
+                "min": 5,
+                "max": 7,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Bullet..?",
+                                "value": 1
+                            }
+                        },
+                        "get": {
+                            "Bullet..?": {
+                                "value": "stack",
+                                "fix": "",
+                                "toAbsoluteNegValue": ""
+                            }
+                        },
+                        "modifiers": {
+                            "power_bonus": "Bullet..?_stack"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 6,
+                "max": 9,
+                "sin": "Gluttony",
+                "effects": []
+            },
+            {
+                "type": "guard",
+                "min": 6,
+                "max": 9,
+                "sin": "Gluttony",
+                "effects": []
+            },
+            {
+                "type": "pierce",
+                "min": 6,
+                "max": 9,
+                "sin": "Gluttony",
+                "invokeable": true,
+                "effects": []
+            }
+        ],
+        "pageTagList": [],
+        "globalpower": []
+    },
+    "One Tap": {
+        "description": "",
+        "light_cost": 1,
+        "rarity": "Hardcover",
+        "effects": [
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "antipassivecheck": "Rusty Taps"
+                },
+                "get": {},
+                "modifiers": {
+                    "addpassive": "Rusty Taps",
+                    "getbuff": {
+                        "Bullet..?": {
+                            "stack": 3
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Bullet..?",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Bullet..?": {
+                            "stack": -1
+                        }
+                    },
+                    "power_bonus": -5
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 6,
+                "max": 9,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 3,
+                                    "count": 3
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 7,
+                "max": 7,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "gainlight": 3,
+                            "getbuff": {
+                                "Poise": {
+                                    "stack": 5,
+                                    "count": 5
+                                },
+                                "Sinking": {
+                                    "stack": 6
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 1
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [],
+        "globalpower": []
+    },
+    "After Dark Cleaning": {
+        "description": "",
+        "light_cost": 2,
+        "rarity": "Hardcover",
+        "effects": [
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "antipassivecheck": "Rusty Taps"
+                },
+                "get": {},
+                "modifiers": {
+                    "addpassive": "Rusty Taps",
+                    "getbuff": {
+                        "Bullet..?": {
+                            "stack": 3
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Bullet..?",
+                        "value": 6
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "changedice": {
+                        "dice": "all",
+                        "invoke": true
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Bullet..?",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Bullet..?": {
+                            "stack": -1
+                        }
+                    },
+                    "power_bonus": -5
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 8,
+                "max": 12,
+                "sin": "Sloth",
+                "invokeable": true,
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 8,
+                "max": 12,
+                "sin": "Sloth",
+                "invokeable": true,
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 8,
+                "max": 12,
+                "sin": "Sloth",
+                "invokeable": true,
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 7,
+                "max": 8,
+                "sin": "Sloth",
+                "effects": []
+            }
+        ],
+        "pageTagList": [],
+        "globalpower": []
+    },
+    "Liberating Volley": {
+        "description": "",
+        "light_cost": 2,
+        "rarity": "Limited",
+        "effects": [
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "antipassivecheck": "Rusty Taps"
+                },
+                "get": {},
+                "modifiers": {
+                    "addpassive": "Rusty Taps",
+                    "getbuff": {
+                        "Bullet..?": {
+                            "stack": 3
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Bullet..?",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Bullet..?": {
+                            "stack": -1
+                        }
+                    },
+                    "power_bonus": -10
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "blunt",
+                "min": 13,
+                "max": 19,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 14,
+                "max": 15,
+                "sin": "Gloom",
+                "effects": []
+            },
+            {
+                "type": "guard",
+                "min": 14,
+                "max": 15,
+                "sin": "Gloom",
+                "effects": []
+            }
+        ],
+        "pageTagList": [],
+        "globalpower": []
+    },
+    "BANG BANG BANG!": {
+        "description": "",
+        "light_cost": 3,
+        "rarity": "Limited",
+        "effects": [
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "antipassivecheck": "Rusty Taps"
+                },
+                "get": {},
+                "modifiers": {
+                    "addpassive": "Rusty Taps",
+                    "getbuff": {
+                        "Bullet..?": {
+                            "stack": 3
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Bullet..?": {
+                            "stack": 6
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Blunt Fragility": {
+                            "stack": 10
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Bullet..?",
+                        "value": 10
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "changedice": {
+                        "dice": "all",
+                        "invoke": true
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "speedDifference": {
+                        "divide": 2,
+                        "max": 3
+                    }
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Attack Power Up": {
+                            "stack": "speedDifference",
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Bullet..?",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Bullet..?": {
+                            "stack": -1
+                        }
+                    },
+                    "power_bonus": -5
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {
+                    "ifstaggered": false
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Blunt Fragility": {
+                            "stack": -10
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 6,
+                "max": 9,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 1
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 6,
+                "max": 9,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 1
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 7,
+                "max": 9,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": 1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Bullet..?": {
+                                "value": "stack",
+                                "add": -2,
+                                "fix": ""
+                            }
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": "Bullet..?_stack"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {
+                            "Bullet..?": {
+                                "value": "stack",
+                                "add": -2,
+                                "fix": ""
+                            }
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Sinking": {
+                                    "stack": "Bullet..?_stack"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {
+                            "Bullet..?": {
+                                "value": "stack",
+                                "add": -2,
+                                "fix": "",
+                                "toAbsoluteNegValue": ""
+                            }
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Bullet..?": {
+                                    "stack": "Bullet..?_stack"
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 11,
+                "max": 15,
+                "sin": "Pride",
+                "invokeable": true,
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Bullet..?",
+                                "value": 1
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bullet..?": {
+                                    "stack": -1
+                                }
+                            },
+                            "power_bonus": -5
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "faster": 100
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Power Down": {
+                                    "stack": 2,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 11,
+                "max": 15,
+                "sin": "Pride",
+                "invokeable": true,
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Bullet..?",
+                                "value": 1
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bullet..?": {
+                                    "stack": -1
+                                }
+                            },
+                            "power_bonus": -5
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "faster": 100
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Paralyze": {
+                                    "stack": 5,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [],
+        "globalpower": []
+    }
+}

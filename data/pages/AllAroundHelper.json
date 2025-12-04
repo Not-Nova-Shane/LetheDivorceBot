@@ -1,0 +1,587 @@
+{
+    "Charge Up": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "modifiers": {
+                    "gainshield": {
+                        "min": 15,
+                        "max": 15
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 7,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "clash_lose",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "gainlight": -1
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ],
+        "attackweight": 1
+    },
+    "Rest": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "gainlight": 1
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 5,
+                "max": 5,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "clash_lose",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "gainlight": -1
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 5,
+                "max": 5,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "clash_lose",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "gainlight": -1
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ],
+        "attackweight": 1
+    },
+    "Clean": {
+        "description": "",
+        "light_cost": 4,
+        "effects": [],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 7,
+                "max": 7,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "stack": 5,
+                                    "count": 2
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "gainlightnext": 5
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ],
+        "attackweight": 1
+    },
+    "Connected Circuitry": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "modifiers": {
+                    "gainshield": {
+                        "min": 25,
+                        "max": 30
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "currentLight": 100
+                },
+                "modifiers": {
+                    "gainlight": -99,
+                    "storagebox": [
+                        {
+                            "name": "ConnectedCircuitryBox",
+                            "valuename": "ConnectedCircuitryBox",
+                            "mode": "add",
+                            "value": "currentLight"
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Fragile": {
+                            "stack": 5,
+                            "volatile": true,
+                            "nextturn": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "evade",
+                "min": 0,
+                "max": 0,
+                "sin": "Pride",
+                "effects": []
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ],
+        "attackweight": 1
+    },
+    "Charge Up Mk.II": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "modifiers": {
+                    "gainshield": {
+                        "min": 15,
+                        "max": 15
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Attack Power Up": {
+                            "stack": 2,
+                            "nextturn": true,
+                            "volatile": true
+                        },
+                        "Defense Power Up": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 4,
+                "max": 9,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "clash_lose",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Attack Power Up": {
+                                    "stack": -1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 3,
+                "max": 3,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "clash_lose",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Attack Power Up": {
+                                    "stack": -1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 3,
+                "max": 3,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "clash_lose",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Defense Power Up": {
+                                    "stack": -1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "gainlight": 1
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ],
+        "attackweight": 1
+    },
+    "Clean Mk. II": {
+        "description": "",
+        "light_cost": 5,
+        "effects": [],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 6,
+                "max": 10,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "stack": 5,
+                                    "count": 1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "everyone",
+                        "modifierTarget": "everyone",
+                        "filterfaction": [
+                            "All Around Helper Mk. I"
+                        ],
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "gainlight": 2
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ],
+        "attackweight": 1
+    },
+    "Disable Limiter": {
+        "description": "",
+        "light_cost": 15,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "gainlight": 11
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "everyone",
+                "modifierTarget": "everyone",
+                "filterfaction": [
+                    "All Around Helper Mk. I"
+                ],
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "RemainingMk1AlliesLeft",
+                            "valuename": "RemainingMk1AlliesLeft",
+                            "mode": "add",
+                            "value": 1
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "storagebox_check": [
+                        {
+                            "name": "RemainingMk1AlliesLeft",
+                            "valuename": "RemainingMk1AlliesLeft",
+                            "min": 1
+                        }
+                    ]
+                },
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "RemainingMk1AlliesLeft",
+                            "valuename": "RemainingMk1AlliesLeft",
+                            "add": 1,
+                            "max": 6
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "atkweightsetter": "SB_RemainingMk1AlliesLeft"
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "atkweightsetter": 1,
+                    "setstat": {
+                        "is_staggered": true,
+                        "staggeredThisTurn": true
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "storagebox_check": [
+                        {
+                            "name": "RemainingMk1AlliesLeft",
+                            "valuename": "RemainingMk1AlliesLeft",
+                            "equal": 0
+                        }
+                    ]
+                },
+                "get": {},
+                "modifiers": {
+                    "power_bonus": -15
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "RemainingMk1AlliesLeft",
+                            "valuename": "RemainingMk1AlliesLeft",
+                            "mode": "set",
+                            "value": 0
+                        }
+                    ]
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 10,
+                "max": 20,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "stack": 9,
+                                    "count": 4
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 10,
+                "max": 20,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "stack": 9,
+                                    "count": 4
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 10,
+                "max": 20,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "stack": 9,
+                                    "count": 4
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ],
+        "attackweight": 1
+    }
+}

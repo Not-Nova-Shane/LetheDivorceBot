@@ -1,0 +1,1184 @@
+{
+    "Tendon Piercer": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Poise": {
+                            "count": 3
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "clash_win",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "ClashWinCounter",
+                            "valuename": "ClashWinCounter",
+                            "mode": "add",
+                            "value": 1
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "clash_lose",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "ClashWinCounter",
+                            "valuename": "ClashWinCounter",
+                            "mode": "set",
+                            "value": -99
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "storagebox_check": [
+                        {
+                            "name": "ClashWinCounter",
+                            "valuename": "ClashWinCounter",
+                            "min": 2
+                        }
+                    ]
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Poise": {
+                            "stack": 2
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "ClashWinCounter",
+                            "valuename": "ClashWinCounter",
+                            "mode": "set",
+                            "value": 0
+                        }
+                    ]
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 2,
+                "max": 6,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 4,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "count": 1
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Rupture",
+            "Poise"
+        ],
+        "globalpower": [],
+        "attackweight": 1
+    },
+    "Frantic Maelstrom": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Poise": {
+                            "stack": 4
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Poison",
+                        "value": 3
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Poise": {
+                            "count": 1
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 3,
+                "max": 5,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Poison",
+                                "value": 1
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 3,
+                "max": 5,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Poison",
+                                "value": 1
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 2,
+                "max": 4,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "everyone",
+                        "filterfaction": [
+                            "AlliesOnly"
+                        ],
+                        "condition": {
+                            "stack_min": {
+                                "buff": "ThornArrow",
+                                "value": 3
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "count": 1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "self",
+                        "filterfaction": [
+                            "AlliesOnly"
+                        ],
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Poise",
+                                "value": 3
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "draw": 1
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "ThornArrow",
+            "Poison",
+            "Rupture",
+            "Poise"
+        ]
+    },
+    "Refracted Frantic Maelstrom": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Poise": {
+                            "stack": 4
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Poise": {
+                        "value": "stack",
+                        "max": 3,
+                        "divide": 6,
+                        "fix": "",
+                        "targetOverride": ""
+                    }
+                },
+                "modifiers": {
+                    "power_bonus": "Poise_stack"
+                }
+            },
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Poison",
+                        "value": 3
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Poise": {
+                            "count": 1
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 3,
+                "max": 5,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Poison",
+                                "value": 1
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 3,
+                "max": 5,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Poison",
+                                "value": 1
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 2,
+                "max": 7,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "everyone",
+                        "filterfaction": [
+                            "AlliesOnly"
+                        ],
+                        "condition": {
+                            "stack_min": {
+                                "buff": "ThornArrow",
+                                "value": 3
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "count": 1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "self",
+                        "filterfaction": [
+                            "AlliesOnly"
+                        ],
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Poise",
+                                "value": 3
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "draw": 1
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "ThornArrow",
+            "Poison",
+            "Rupture",
+            "Poise"
+        ],
+        "globalpower": [],
+        "attackweight": 1
+    },
+    "Drawstring": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "ThornArrow",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "foreach": 5,
+                "modifiers": {
+                    "getbuff": {
+                        "ThornArrow": {
+                            "stack": -1
+                        }
+                    },
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "ammoconsumed",
+                            "value": 1,
+                            "mode": "add"
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "self",
+                            "valuename": "ammoconsumed"
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "power_bonus": "SB_ammoconsumed"
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {},
+                "get": {
+                    "Poise": {
+                        "value": "stack",
+                        "divide": 6,
+                        "max": 5,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "flatdamage": {
+                        "Gluttony": "Poise_stack"
+                    }
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "ammoconsumed",
+                            "value": 0,
+                            "mode": "set"
+                        }
+                    ]
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 4,
+                "max": 4,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "ammoconsumed",
+                                    "mult": 150
+                                }
+                            ]
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Poison": {
+                                    "stack": "SB_ammoconsumed"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "ammoconsumed"
+                                }
+                            ]
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Poison": {
+                                    "stack": "SB_ammoconsumed"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "ammoconsumed"
+                                }
+                            ]
+                        },
+                        "modifiers": {
+                            "flatdamage": {
+                                "Gluttony": "SB_ammoconsumed"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Haste",
+            "ThornArrow",
+            "Poison",
+            "Rupture",
+            "Ammo",
+            "Poise"
+        ],
+        "globalpower": [],
+        "attackweight": 1
+    },
+    "Death From Above": {
+        "description": "",
+        "light_cost": 3,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Poise",
+                        "value": 10
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "changedice": {
+                        "dice": "all",
+                        "boostmin": 2
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "ThornArrow",
+                        "value": 6
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "changedice": {
+                        "dice": "all",
+                        "boostmin": 1
+                    }
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "self",
+                            "valuename": "ammoconsumed",
+                            "add": -5,
+                            "max": 1
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "light": "SB_ammoconsumed"
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "ammoconsumed",
+                            "value": 0,
+                            "mode": "set"
+                        }
+                    ]
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 2,
+                "max": 7,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "stack": 3
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "ThornArrow",
+                                "value": 1
+                            }
+                        },
+                        "get": {},
+                        "foreach": 3,
+                        "modifiers": {
+                            "getbuff": {
+                                "ThornArrow": {
+                                    "stack": -1
+                                }
+                            },
+                            "storagebox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "ammoconsumed",
+                                    "value": 1,
+                                    "mode": "add"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "random2",
+                        "filterfaction": [
+                            "AlliesOnly"
+                        ],
+                        "condition": {},
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "ammoconsumed",
+                                    "max": 3
+                                }
+                            ]
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "stack": "SB_ammoconsumed"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "ammoconsumed",
+                                    "max": 3
+                                }
+                            ]
+                        },
+                        "modifiers": {
+                            "storagebox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "ammoconsumed",
+                                    "value": "SB_ammoconsumed",
+                                    "mode": "lower"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 2,
+                "max": 7,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "stack": 3
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "ThornArrow",
+                                "value": 1
+                            }
+                        },
+                        "get": {},
+                        "foreach": 3,
+                        "modifiers": {
+                            "getbuff": {
+                                "ThornArrow": {
+                                    "stack": -1
+                                }
+                            },
+                            "storagebox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "ammoconsumed",
+                                    "value": 1,
+                                    "mode": "add"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "random2",
+                        "filterfaction": [
+                            "AlliesOnly"
+                        ],
+                        "condition": {},
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "ammoconsumed",
+                                    "max": 3
+                                }
+                            ]
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "stack": "SB_ammoconsumed"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "ammoconsumed",
+                                    "max": 3
+                                }
+                            ]
+                        },
+                        "modifiers": {
+                            "storagebox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "ammoconsumed",
+                                    "value": "SB_ammoconsumed",
+                                    "mode": "lower"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 2,
+                "max": 7,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "ThornArrow",
+                                "value": 1
+                            }
+                        },
+                        "get": {
+                            "ThornArrow": {
+                                "value": "stack",
+                                "mult": 150,
+                                "fix": ""
+                            }
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Poison": {
+                                    "stack": "ThornArrow_stack"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "ThornArrow",
+            "Poison",
+            "Ammo",
+            "Poise"
+        ],
+        "attackweight": 1
+    },
+    "Quiver Smack": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "ThornArrow": {
+                            "stack": 2
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_max": {
+                        "buff": "ThornArrow",
+                        "value": 6
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "power_bonus": 1
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 2,
+                "max": 7,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "ThornArrow": {
+                                    "stack": 1
+                                },
+                                "Poise": {
+                                    "stack": 2,
+                                    "count": 2
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "before_on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "count": 1
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "ThornArrow",
+            "Rupture",
+            "Poise"
+        ],
+        "globalpower": [],
+        "attackweight": 1
+    },
+    "Volley of Arrows": {
+        "description": "",
+        "requiresTag": "Arrowedge Office Section 2",
+        "light_cost": 4,
+        "attackweight": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Poise": {
+                            "count": 3
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "ThornArrow",
+                        "value": 6
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "changedice": {
+                        "dice": 1,
+                        "invoke": true
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 8,
+                "sin": "Pride",
+                "effects": []
+            },
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 8,
+                "sin": "Pride",
+                "invokeable": true,
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "ThornArrow": {
+                                    "stack": -6
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {
+                            "ThornArrow": {
+                                "value": "stack",
+                                "max": 4,
+                                "fix": "",
+                                "targetOverride": ""
+                            }
+                        },
+                        "modifiers": {
+                            "power_bonus": "ThornArrow_stack",
+                            "getbuff": {
+                                "ThornArrow": {
+                                    "stack": -4
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "count": 1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Poise": {
+                                "value": "stack",
+                                "divide": 4,
+                                "max": 10,
+                                "fix": "",
+                                "targetOverride": ""
+                            }
+                        },
+                        "modifiers": {
+                            "flatdamage": "Poise_stack"
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Haste",
+            "ThornArrow",
+            "Rupture",
+            "Poise"
+        ]
+    }
+}

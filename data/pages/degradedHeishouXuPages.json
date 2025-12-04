@@ -1,0 +1,772 @@
+{
+    "Interfere": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Rupture",
+                        "value": 5
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "gainlightnext": 1
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "count_min": {
+                        "buff": "Rupture",
+                        "value": 5
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Protection": {
+                            "stack": 2,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 2,
+                "max": 5,
+                "sin": "Gluttony",
+                "effects": []
+            },
+            {
+                "type": "guard",
+                "min": 2,
+                "max": 5,
+                "sin": "Gluttony",
+                "effects": []
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ],
+        "attackweight": 1
+    },
+    "Deadlock": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "faster": 100
+                },
+                "get": {},
+                "modifiers": {
+                    "draw": 1
+                }
+            },
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Bind": {
+                            "stack": 3,
+                            "volatile": true,
+                            "nextturn": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Bind": {
+                            "stack": 3,
+                            "volatile": true,
+                            "nextturn": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 2,
+                "max": 6,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 5,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ]
+    },
+    "Lord’s Guard": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "target",
+                "modifierTarget": "target",
+                "condition": {
+                    "absolutefactioncheck": [
+                        "Enemy"
+                    ]
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Bind": {
+                            "stack": 2,
+                            "volatile": true,
+                            "nextturn": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "target",
+                "modifierTarget": "target",
+                "condition": {
+                    "absolutefactioncheck": [
+                        "Player"
+                    ]
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Protection": {
+                            "stack": 2,
+                            "volatile": true,
+                            "nextturn": false
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 5,
+                "max": 9,
+                "sin": "Pride",
+                "effects": []
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ]
+    },
+    "The Lord’s Loyal Hound": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "target",
+                "modifierTarget": "target",
+                "condition": {
+                    "absolutefactioncheck": [
+                        "Enemy"
+                    ]
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Power Down": {
+                            "stack": 2,
+                            "volatile": true,
+                            "nextturn": false
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "target",
+                "modifierTarget": "target",
+                "condition": {
+                    "absolutefactioncheck": [
+                        "Player"
+                    ]
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Power Up": {
+                            "stack": 2,
+                            "volatile": true,
+                            "nextturn": false
+                        }
+                    },
+                    "recoverhp": 5
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 8,
+                "sin": "Pride",
+                "effects": []
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ],
+        "attackweight": 1
+    },
+    "Fade Slash [残影斩]": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Haste": {
+                            "stack": 3,
+                            "volatile": true,
+                            "nextturn": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "self",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "faster": 100
+                },
+                "get": {
+                    "speedDifference": {
+                        "max": 5
+                    }
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Defense Level Up": {
+                            "stack": "speedDifference",
+                            "volatile": true,
+                            "nextturn": false
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "evade",
+                "min": 3,
+                "max": 8,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_evade",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "count": 1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_evade",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "limit_per_turn": 2,
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Attack Power Up": {
+                                    "stack": 1,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 3,
+                "max": 3,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "stack": 4
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ],
+        "attackweight": 1
+    },
+    "Give Chase [追擊]": {
+        "description": "",
+        "light_cost": 3,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "faster_by": 3
+                },
+                "get": {},
+                "modifiers": {
+                    "changedice": {
+                        "dice": 2,
+                        "invoke": true
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "faster_by": 6
+                },
+                "get": {},
+                "modifiers": {
+                    "changedice": {
+                        "dice": 3,
+                        "invoke": true
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "target",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Rupture",
+                        "value": 6
+                    }
+                },
+                "get": {
+                    "Rupture": {
+                        "value": "stack",
+                        "targetOverride": "target",
+                        "divide": 6,
+                        "max": 2,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Power Down": {
+                            "stack": "Rupture_stack",
+                            "volatile": true,
+                            "nextturn": false
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 4,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 4,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 3,
+                "max": 5,
+                "sin": "Pride",
+                "invokeable": true,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "count": 3
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_kill",
+                        "conditionTarget": "target",
+                        "modifierTarget": "everyone",
+                        "filterfaction": [
+                            "Enemy"
+                        ],
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bind": {
+                                    "stack": 1,
+                                    "volatile": true,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 3,
+                "max": 5,
+                "sin": "Pride",
+                "invokeable": true,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "stack": 3
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "Rupture": {
+                                "value": "stack",
+                                "targetOverride": "target",
+                                "max": 10
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "flatdamage": {
+                                "blunt": "Rupture_stack"
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_kill",
+                        "conditionTarget": "target",
+                        "modifierTarget": "everyone",
+                        "filterfaction": [
+                            "Enemy"
+                        ],
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bind": {
+                                    "stack": 1,
+                                    "volatile": true,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_kill",
+                        "conditionTarget": "target",
+                        "modifierTarget": "everyone",
+                        "filterfaction": [
+                            "Player"
+                        ],
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Haste": {
+                                    "stack": 1,
+                                    "volatile": true,
+                                    "nextturn": true
+                                }
+                            },
+                            "recoverstagger": 5
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ],
+        "attackweight": 1
+    },
+    "Forward, We March": {
+        "description": "",
+        "light_cost": 3,
+        "effects": [
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "target",
+                "modifierTarget": "target",
+                "condition": {
+                    "absolutefactioncheck": [
+                        "Enemy"
+                    ]
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Offense Level Down": {
+                            "stack": 3,
+                            "volatile": true,
+                            "nextturn": false
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "target",
+                "modifierTarget": "everyone",
+                "filterfaction": [
+                    "Player"
+                ],
+                "condition": {
+                    "absolutefactioncheck": [
+                        "Player"
+                    ]
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Protection": {
+                            "stack": 2,
+                            "volatile": true,
+                            "nextturn": true
+                        },
+                        "Stagger Protection": {
+                            "stack": 2,
+                            "volatile": true,
+                            "nextturn": true
+                        },
+                        "Haste": {
+                            "stack": 1,
+                            "volatile": true,
+                            "nextturn": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 2,
+                "max": 5,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 4,
+                "max": 5,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 4,
+                "max": 5,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ],
+        "attackweight": 1
+    }
+}

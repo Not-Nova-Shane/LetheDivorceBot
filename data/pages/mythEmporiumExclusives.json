@@ -1,0 +1,1948 @@
+{
+    "In The Shadows, We Hunt": {
+        "description": "",
+        "light_cost": 4,
+        "effects": [
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "self",
+                "modifierTarget": "everyone",
+                "condition": {
+                    "storagebox_check": [
+                        {
+                            "name": "InTheShadowsWeHuntCounter",
+                            "valuename": "InTheShadowsWeHuntCounter",
+                            "equal": 0
+                        }
+                    ],
+                    "stack_min": {
+                        "buff": "Lights Out",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "InTheShadowsWeHuntCounter",
+                            "valuename": "InTheShadowsWeHuntCounter",
+                            "mode": "set",
+                            "value": 1
+                        }
+                    ],
+                    "getbuff": {
+                        "Lights Out": {
+                            "stack": 1,
+                            "nextturn": false
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "turn_end",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "InTheShadowsWeHuntCounter",
+                            "valuename": "InTheShadowsWeHuntCounter",
+                            "mode": "set",
+                            "value": 0
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Pierce Fragility",
+                        "value": 2
+                    }
+                },
+                "get": {
+                    "Pierce Fragility": {
+                        "value": "stack",
+                        "add": -1,
+                        "max": 2,
+                        "fix": "",
+                        "targetOverride": ""
+                    }
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Clash Power Up": {
+                            "stack": "Pierce Fragility_stack",
+                            "volatile": true,
+                            "nextturn": false
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Pierce Fragility",
+                        "value": 4
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Haste": {
+                            "stack": 1,
+                            "volatile": true,
+                            "nextturn": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 6,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Pierce Fragility": {
+                                    "stack": 1,
+                                    "volatile": true,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Lights Out",
+                                "value": 1
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Pierce Fragility": {
+                                    "stack": 1,
+                                    "volatile": true,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 6,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Pierce Fragility": {
+                                    "stack": 1,
+                                    "volatile": true,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Lights Out",
+                                "value": 1
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Pierce Fragility": {
+                                    "stack": 1,
+                                    "volatile": true,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 5,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "target",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "slower": 100
+                        },
+                        "get": {
+                            "speedDifference": {
+                                "max": 3
+                            }
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Offense Level Up": {
+                                    "stack": "speedDifference",
+                                    "volatile": true,
+                                    "nextturn": false
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Tremor",
+            "Offense Level Up",
+            "Lights Out"
+        ],
+        "globalpower": [],
+        "attackweight": 1
+    },
+    "Under The Veil": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Pierce Fragility",
+                        "value": 1
+                    }
+                },
+                "get": {
+                    "Pierce Fragility": {
+                        "value": "stack",
+                        "max": 2,
+                        "fix": "",
+                        "targetOverride": ""
+                    }
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Defense Power Up": {
+                            "stack": "Pierce Fragility_stack",
+                            "volatile": true,
+                            "nextturn": false
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Lights Out",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Attack Power Down": {
+                            "stack": 1,
+                            "volatile": true,
+                            "nextturn": false
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "evade",
+                "min": 3,
+                "max": 4,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_evade",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "limit_per_turn": 1,
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bind": {
+                                    "stack": 1,
+                                    "volatile": true,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "evade",
+                "min": 3,
+                "max": 4,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_evade",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "limit_per_turn": 1,
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bind": {
+                                    "stack": 1,
+                                    "volatile": true,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 4,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Pierce Fragility": {
+                                    "stack": 1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Lights Out",
+                                "value": 1
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Pierce Fragility": {
+                                    "stack": 1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Tremor",
+            "Offense Level Up",
+            "Lights Out"
+        ],
+        "globalpower": []
+    },
+    "Nightshaded Wall": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "random_VALUE:speedDifference",
+                "filterfaction": [
+                    "AlliesOnly"
+                ],
+                "condition": {
+                    "slower": 100
+                },
+                "get": {
+                    "speedDifference": {
+                        "max": 99
+                    }
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Pierce Damage Up": {
+                            "stack": 1,
+                            "volatile": true,
+                            "nextturn": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Pierce Fragility",
+                        "value": 1
+                    }
+                },
+                "get": {
+                    "Pierce Fragility": {
+                        "value": "stack",
+                        "max": 3,
+                        "fix": "",
+                        "targetOverride": ""
+                    }
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Protection": {
+                            "stack": "Pierce Fragility_stack",
+                            "volatile": true,
+                            "nextturn": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 2,
+                "max": 6,
+                "sin": "Gluttony",
+                "effects": []
+            },
+            {
+                "type": "guard",
+                "min": 1,
+                "max": 4,
+                "sin": "Gluttony",
+                "effects": []
+            },
+            {
+                "type": "pierce",
+                "min": 2,
+                "max": 4,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Lights Out",
+                                "value": 1
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Pierce Fragility": {
+                                    "stack": 1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Tremor",
+            "Offense Level Up",
+            "Lights Out"
+        ],
+        "globalpower": []
+    },
+    "Starting Vibration": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Attack Power Up": {
+                            "stack": 2,
+                            "volatile": true,
+                            "nextturn": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 1,
+                "max": 3,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "count": 1,
+                                    "nextturn": false,
+                                    "volatile": false
+                                },
+                                "Burn": {
+                                    "count": 1,
+                                    "nextturn": false,
+                                    "volatile": false
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 1,
+                "max": 3,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "count": 2,
+                                    "nextturn": false,
+                                    "volatile": false
+                                },
+                                "Burn": {
+                                    "count": 2,
+                                    "nextturn": false,
+                                    "volatile": false
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Tremor",
+            "Offense Level Up",
+            "Lights Out"
+        ],
+        "globalpower": []
+    },
+    "Stolen Machinery": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Sloth Power Up": {
+                            "stack": 1,
+                            "volatile": true,
+                            "nextturn": false
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "self",
+                "modifierTarget": "random2",
+                "filterfaction": [
+                    "AlliesOnly"
+                ],
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Sloth Power Up": {
+                            "stack": 1,
+                            "volatile": true,
+                            "nextturn": false
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 7,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "count": 3,
+                                    "nextturn": false,
+                                    "volatile": false
+                                },
+                                "Burn": {
+                                    "count": 2,
+                                    "nextturn": false,
+                                    "volatile": false
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Tremor",
+            "Offense Level Up",
+            "Lights Out"
+        ],
+        "globalpower": []
+    },
+    "Grapple": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Sloth Power Up": {
+                            "stack": 2,
+                            "volatile": true,
+                            "nextturn": false
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "random_VALUE:Tremor_stack",
+                "filterfaction": [
+                    "AlliesOnly"
+                ],
+                "condition": {
+                    "stack_min": {
+                        "buff": "Tremor",
+                        "value": 10
+                    }
+                },
+                "get": {
+                    "Tremor": {
+                        "value": "stack",
+                        "divide": 6,
+                        "targetOverride": ""
+                    }
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Protection": {
+                            "stack": 1,
+                            "volatile": true,
+                            "nextturn": false
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 7,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "count": 3,
+                                    "nextturn": false,
+                                    "volatile": false
+                                },
+                                "Burn": {
+                                    "count": 2,
+                                    "nextturn": false,
+                                    "volatile": false
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Tremor",
+            "Offense Level Up",
+            "Lights Out"
+        ],
+        "globalpower": []
+    },
+    "Fwoot… Kaboom!": {
+        "description": "",
+        "light_cost": 3,
+        "effects": [
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Sloth Power Up": {
+                            "stack": 1,
+                            "volatile": true,
+                            "nextturn": false
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "self",
+                "modifierTarget": "everyone",
+                "filterfaction": [
+                    "AlliesOnly"
+                ],
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Sloth Power Up": {
+                            "stack": 1,
+                            "volatile": true,
+                            "nextturn": false
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "random_VALUE:Tremor_stack",
+                "filterfaction": [
+                    "AlliesOnly"
+                ],
+                "condition": {
+                    "stack_min": {
+                        "buff": "Tremor",
+                        "value": 10
+                    }
+                },
+                "get": {
+                    "Tremor": {
+                        "value": "stack",
+                        "divide": 6,
+                        "targetOverride": ""
+                    }
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Attack Power Up": {
+                            "stack": 1,
+                            "volatile": true,
+                            "nextturn": false
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 3,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 2,
+                                    "nextturn": false,
+                                    "volatile": false
+                                },
+                                "Burn": {
+                                    "stack": 2,
+                                    "nextturn": false,
+                                    "volatile": false
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 2,
+                "max": 3,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 2,
+                                    "nextturn": false,
+                                    "volatile": false
+                                },
+                                "Burn": {
+                                    "stack": 2,
+                                    "nextturn": false,
+                                    "volatile": false
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 1,
+                "max": 5,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Burn": {
+                                "value": "stack",
+                                "mult": 50,
+                                "fix": "",
+                                "targetOverride": ""
+                            }
+                        },
+                        "modifiers": {
+                            "tremorburst": 1,
+                            "takehpdamage": "Burn_stack",
+                            "getbuff": {
+                                "Tremor": {
+                                    "count": -2,
+                                    "nextturn": false,
+                                    "volatile": false
+                                },
+                                "Burn": {
+                                    "count": -2,
+                                    "nextturn": false,
+                                    "volatile": false
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Tremor",
+            "Offense Level Up",
+            "Lights Out"
+        ],
+        "globalpower": []
+    },
+    "IM GONNA FUCKING EXPLODE!": {
+        "description": "",
+        "light_cost": 4,
+        "attackweight": 5,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "hp_max%": 80
+                },
+                "get": {},
+                "modifiers": {
+                    "changedice": {
+                        "dice": "all",
+                        "boostmin": 10
+                    }
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "everyone",
+                "modifierTarget": "everyone",
+                "condition": {},
+                "filterfaction": [
+                    "AlliesOnly"
+                ],
+                "get": {},
+                "modifiers": {
+                    "gainlight": 1
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "currentHP": 100
+                },
+                "modifiers": {
+                    "takehpdamage": "currentHP",
+                    "takestaggerdamage": "currentHP"
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "blunt",
+                "min": 1,
+                "max": 12,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bind": {
+                                    "stack": 3,
+                                    "volatile": true,
+                                    "nextturn": false
+                                },
+                                "Fragile ": {
+                                    "stack": 3,
+                                    "volatile": true,
+                                    "nextturn": false
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Burn": {
+                                "value": "stack",
+                                "mult": 50,
+                                "fix": "",
+                                "targetOverride": ""
+                            }
+                        },
+                        "modifiers": {
+                            "tremorburst": 1,
+                            "takehpdamage": "Burn_stack",
+                            "getbuff": {
+                                "Tremor": {
+                                    "count": -2,
+                                    "nextturn": false,
+                                    "volatile": false
+                                },
+                                "Burn": {
+                                    "count": -2,
+                                    "nextturn": false,
+                                    "volatile": false
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "UwU; Laser Beam!!!": {
+        "description": "",
+        "light_cost": 3,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Defense Power Up",
+                        "value": 1
+                    }
+                },
+                "get": {
+                    "Defense Power Up": {
+                        "value": "stack",
+                        "max": 5
+                    }
+                },
+                "modifiers": {
+                    "changedice": {
+                        "dice": "all",
+                        "boostmin": "Defense Power Up_stack"
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Defense Power Up",
+                        "value": 1
+                    }
+                },
+                "get": {
+                    "Defense Power Up": {
+                        "value": "stack",
+                        "mult": 200,
+                        "max": 10
+                    }
+                },
+                "modifiers": {
+                    "changedice": {
+                        "dice": "all",
+                        "boostmax": "Defense Power Up_stack"
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "random_VALUE:Protection_stack",
+                "filterfaction": [
+                    "AlliesOnly"
+                ],
+                "condition": {},
+                "get": {
+                    "BuffCount": 100,
+                    "Protection": {
+                        "value": "stack",
+                        "max": 99
+                    }
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Defense Level Up": {
+                            "stack": "BuffCount",
+                            "volatile": true,
+                            "nextturn": false
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 4,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Defense Level Down": {
+                                    "stack": 3,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "BuffCount": 50
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Fragile": {
+                                    "stack": "BuffCount",
+                                    "volatile": true,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Tremor",
+            "Offense Level Up",
+            "Lights Out"
+        ],
+        "globalpower": []
+    },
+    "Kill Em With Kindness": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "random_VALUE:Rupture_stack",
+                "filterfaction": [
+                    "Spinouse Syndicate Member"
+                ],
+                "condition": {
+                    "stack_min": {
+                        "buff": "Rupture",
+                        "value": 6
+                    }
+                },
+                "get": {
+                    "Rupture": {
+                        "value": "stack",
+                        "divide": 6,
+                        "max": 4,
+                        "targetOverride": ""
+                    }
+                },
+                "modifiers": {
+                    "draw": 1
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {
+                    "pageusetype": [
+                        "Clash"
+                    ]
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Clash Power Down": {
+                            "stack": 1,
+                            "nextturn": false,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 5,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "stack": 2,
+                                    "nextturn": false,
+                                    "volatile": false
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 4,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "count": 1,
+                                    "nextturn": false,
+                                    "volatile": false
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "everyone",
+                        "modifierTarget": "everyone",
+                        "filterfaction": [
+                            "Spinouse Syndicate Member"
+                        ],
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "storagebox": [
+                                {
+                                    "name": "KillEmWithKindnessCounter",
+                                    "valuename": "KillEmWithKindnessCounter",
+                                    "mode": "add",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "storagebox_check": [
+                                {
+                                    "name": "KillEmWithKindnessCounter",
+                                    "valuename": "KillEmWithKindnessCounter",
+                                    "min": 1
+                                }
+                            ]
+                        },
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "KillEmWithKindnessCounter",
+                                    "valuename": "KillEmWithKindnessCounter",
+                                    "add": -1,
+                                    "max": 3,
+                                    "min": 0
+                                }
+                            ]
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "count": "SB_KillEmWithKindnessCounter",
+                                    "nextturn": false,
+                                    "volatile": false
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "storagebox": [
+                                {
+                                    "name": "KillEmWithKindnessCounter",
+                                    "valuename": "KillEmWithKindnessCounter",
+                                    "mode": "set",
+                                    "value": 0
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Tremor",
+            "Offense Level Up",
+            "Lights Out"
+        ],
+        "globalpower": []
+    },
+    "There… A Heavy SLAM!": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Rupture",
+                        "value": 6
+                    }
+                },
+                "get": {
+                    "Rupture": {
+                        "value": "stack",
+                        "divide": 6,
+                        "max": 3,
+                        "targetOverride": ""
+                    }
+                },
+                "modifiers": {
+                    "power_bonus": "Rupture_stack"
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "blunt",
+                "min": 2,
+                "max": 10,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "count": 3,
+                                    "nextturn": false,
+                                    "volatile": false
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Tremor",
+            "Offense Level Up",
+            "Lights Out"
+        ],
+        "globalpower": []
+    },
+    "Bury Yourself Even Deeper": {
+        "description": "",
+        "light_cost": 3,
+        "effects": [
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "self",
+                "modifierTarget": "random1",
+                "filterfaction": [
+                    "Spinouse Syndicate Member"
+                ],
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Fragile": {
+                            "stack": 1,
+                            "nextturn": false,
+                            "volatile": true
+                        },
+                        "Attack Power Up": {
+                            "stack": 1,
+                            "nextturn": false,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "everyone",
+                "modifierTarget": "everyone",
+                "filterfaction": [
+                    "Spinouse Syndicate Member"
+                ],
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Fragile": {
+                            "stack": 1,
+                            "nextturn": false,
+                            "volatile": true
+                        },
+                        "Attack Power Up": {
+                            "stack": 1,
+                            "nextturn": false,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Rupture",
+                        "value": 1
+                    }
+                },
+                "get": {
+                    "Rupture": {
+                        "value": "stack",
+                        "add": 5,
+                        "max": 18,
+                        "targetOverride": ""
+                    }
+                },
+                "modifiers": {
+                    "takestaggerdamage": "Rupture_stack",
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "SpinouseSelfStaggerCounter",
+                            "mode": "set",
+                            "value": "Rupture_stack"
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Rupture",
+                        "value": 1
+                    }
+                },
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "self",
+                            "valuename": "SpinouseSelfStaggerCounter",
+                            "divide": 6,
+                            "max": 3,
+                            "min": 0
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "power_bonus": "SB_SpinouseSelfStaggerCounter",
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "SpinouseSelfStaggerCounter",
+                            "mode": "set",
+                            "value": 0
+                        }
+                    ]
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 1,
+                "max": 1,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "clash_lose",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Protection": {
+                                    "stack": 2,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 7,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "count": 1,
+                                    "nextturn": false,
+                                    "volatile": false
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Bleed": {
+                                "value": "count",
+                                "targetOverride": "target",
+                                "divide": 4,
+                                "max": 3
+                            }
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "count": "Bleed_count",
+                                    "nextturn": false,
+                                    "volatile": false
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Paralyze": {
+                                    "count": 1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 6,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "stack": 1,
+                                    "nextturn": false,
+                                    "volatile": false
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Bleed": {
+                                "value": "stack",
+                                "targetOverride": "target",
+                                "divide": 4,
+                                "max": 5
+                            }
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "stack": "Bleed_stack",
+                                    "nextturn": false,
+                                    "volatile": false
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Paralyze": {
+                                    "count": 1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Tremor",
+            "Offense Level Up",
+            "Lights Out"
+        ],
+        "globalpower": []
+    },
+    "KILL THEM ALL!": {
+        "description": "",
+        "light_cost": 4,
+        "effects": [
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "self",
+                "modifierTarget": "random1",
+                "filterfaction": [
+                    "Spinouse Syndicate Member"
+                ],
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Max Dice Power Up": {
+                            "stack": 1,
+                            "nextturn": false,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "combat_start",
+                "conditionTarget": "everyone",
+                "modifierTarget": "everyone",
+                "filterfaction": [
+                    "Spinouse Syndicate Member"
+                ],
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Max Dice Power Up": {
+                            "stack": 1,
+                            "nextturn": false,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Rupture",
+                        "value": 1
+                    }
+                },
+                "get": {
+                    "Rupture": {
+                        "value": "stack",
+                        "add": 5,
+                        "max": 20,
+                        "targetOverride": ""
+                    }
+                },
+                "modifiers": {
+                    "takestaggerdamage": "Rupture_stack",
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "SpinouseSelfStaggerCounter",
+                            "mode": "set",
+                            "value": "Rupture_stack"
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "before_on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "self",
+                            "valuename": "SpinouseSelfStaggerCounter"
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "changedamage": {
+                        "value": "SB_SpinouseSelfStaggerCounter",
+                        "mode": "mult",
+                        "inverse_percent": -0.02
+                    }
+                }
+            },
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {
+                    "storagebox_check": [
+                        {
+                            "name": "self",
+                            "valuename": "SpinouseSelfStaggerCounter",
+                            "min": 10
+                        }
+                    ]
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Rupture": {
+                            "count": 1,
+                            "nextturn": false,
+                            "volatile": false
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "SpinouseSelfStaggerCounter",
+                            "mode": "set",
+                            "value": 0
+                        }
+                    ]
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 5,
+                "max": 6,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "gainlight": 1
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "count": 2,
+                                    "nextturn": false,
+                                    "volatile": false
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 5,
+                "max": 6,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "gainlight": 1
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "stack": 2,
+                                    "nextturn": false,
+                                    "volatile": false
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 4,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "stack": 2,
+                                    "nextturn": false,
+                                    "volatile": false
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Tremor",
+            "Offense Level Up",
+            "Lights Out"
+        ],
+        "globalpower": []
+    }
+}

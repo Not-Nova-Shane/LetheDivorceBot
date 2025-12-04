@@ -1,0 +1,4621 @@
+{
+    "CLERK DOWN": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Poise",
+                        "value": 11
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "power_bonus": 3
+                }
+            },
+            {
+                "trigger": "on_crit",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Rupture": {
+                            "stack": 3
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 5,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "stack": 5
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "count": 5
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 5,
+                "sin": "Envy",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 5,
+                "sin": "Envy",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 5,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "on_kill",
+                        "conditionTarget": "target",
+                        "modifierTarget": "random3",
+                        "filterfaction": [
+                            "AlliesOnly"
+                        ],
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "recoverhp": -5,
+                            "recoverstagger": -5,
+                            "getbuff": {
+                                "Poise": {
+                                    "count": 2,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Poise",
+            "Rupture"
+        ],
+        "globalpower": []
+    },
+    "The Page That Kills The Black Silence": {
+        "description": "",
+        "light_cost": 9,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Clash Power Down": {
+                            "stack": 2,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "draw": 3
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "gainlight": 6
+                }
+            },
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "draw": 1
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "draw": 1
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "limit_per_encounter": 5,
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Ammo": {
+                            "stack": 2
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Ammo",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "changedice": {
+                        "dice": "all",
+                        "invoke": true
+                    }
+                }
+            },
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "random2",
+                "filterfaction": [
+                    "Player"
+                ],
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Clash Power Up": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "self",
+                            "valuename": "lastDiscardedCost"
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "power_bonus": "SB_lastDiscardedCost"
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Tremor",
+                        "value": 5
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "power_bonus": 3
+                }
+            },
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "limit_per_turn": 1,
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Power Up": {
+                            "stack": 2,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Poise": {
+                            "count": 30,
+                            "nextturn": false
+                        }
+                    },
+                    "gainlightnext": 2
+                }
+            },
+            {
+                "trigger": "before_on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "changedamage": {
+                        "value": 20,
+                        "mode": "mult",
+                        "inverse_percent": -0.1
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 20,
+                "max": 39,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Fragile": {
+                                    "stack": 5,
+                                    "volatile": true,
+                                    "nextturn": false
+                                },
+                                "Bind": {
+                                    "stack": 5,
+                                    "volatile": true,
+                                    "nextturn": false
+                                },
+                                "Clash Power Down": {
+                                    "stack": 5,
+                                    "volatile": true,
+                                    "nextturn": false
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 5,
+                "max": 9,
+                "sin": "Gloom",
+                "effects": []
+            },
+            {
+                "type": "pierce",
+                "min": 5,
+                "max": 8,
+                "sin": "Gloom",
+                "effects": []
+            },
+            {
+                "type": "blunt",
+                "min": 14,
+                "max": 24,
+                "sin": "Wrath",
+                "effects": []
+            },
+            {
+                "type": "guard",
+                "min": 5,
+                "max": 8,
+                "sin": "Wrath",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 7,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "stack": 2,
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 7,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "stack": 2,
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 7,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "stack": 2,
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 7,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "stack": 2,
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 7,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "stack": 2,
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 4,
+                "max": 8,
+                "sin": "Lust",
+                "effects": []
+            },
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 8,
+                "sin": "Lust",
+                "effects": []
+            },
+            {
+                "type": "guard",
+                "min": 5,
+                "max": 8,
+                "sin": "Sloth",
+                "effects": []
+            },
+            {
+                "type": "blunt",
+                "min": 4,
+                "max": 8,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "recoverstagger": 5
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 8,
+                "max": 15,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "takehpdamage": 3
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 7,
+                "sin": "Pride",
+                "effects": []
+            },
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 7,
+                "sin": "Pride",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 3,
+                "max": 7,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "evade",
+                "min": 8,
+                "max": 11,
+                "sin": "Envy",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 7,
+                "max": 11,
+                "sin": "Envy",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 7,
+                "max": 11,
+                "sin": "Envy",
+                "effects": []
+            },
+            {
+                "type": "pierce",
+                "min": 4,
+                "max": 8,
+                "sin": "Gluttony",
+                "effects": []
+            },
+            {
+                "type": "pierce",
+                "min": 5,
+                "max": 8,
+                "sin": "Gluttony",
+                "effects": []
+            },
+            {
+                "type": "blunt",
+                "min": 7,
+                "max": 12,
+                "sin": "Gluttony",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 5,
+                "max": 9,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Attack Power Up": {
+                                    "stack": 1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 5,
+                "max": 9,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Attack Power Up": {
+                                    "stack": 1,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 5,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Power Down": {
+                                    "stack": 1,
+                                    "volatile": true,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 7,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 3
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 2,
+                "max": 6,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 2,
+                "max": 6,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 1,
+                "max": 6,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 1,
+                "max": 8,
+                "sin": "Lust",
+                "invokeable": true,
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Ammo",
+                                "value": 1
+                            }
+                        },
+                        "get": {},
+                        "foreach": 3,
+                        "modifiers": {
+                            "getbuff": {
+                                "Ammo": {
+                                    "stack": -1
+                                }
+                            },
+                            "storagebox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "ammoconsumed",
+                                    "value": 1,
+                                    "mode": "add"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "lastDiscardedCost"
+                                }
+                            ]
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": "SB_lastDiscardedCost"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "ammoconsumed"
+                                }
+                            ]
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "count": "SB_ammoconsumed"
+                                }
+                            },
+                            "storagebox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "ammoconsumed",
+                                    "value": "Delete"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "lastDiscardedCost",
+                                    "add": -3,
+                                    "max": 1,
+                                    "min": 0
+                                }
+                            ]
+                        },
+                        "modifiers": {
+                            "tremorburst": "SB_lastDiscardedCost"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 5,
+                "max": 11,
+                "sin": "Envy",
+                "invokeable": true,
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Ammo": {
+                                    "stack": -1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 4,
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 10,
+                "sin": "Pride",
+                "invokeable": true,
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Ammo": {
+                                    "stack": -1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 3,
+                                    "count": 2
+                                }
+                            },
+                            "tremorburst": 1
+                        }
+                    },
+                    {
+                        "trigger": "after_attack",
+                        "conditionTarget": "self",
+                        "modifierTarget": "random2",
+                        "filterfaction": [
+                            "Player"
+                        ],
+                        "condition": {
+                            "hand_check": "Musket Fire"
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "drawspecific": "Ordered Old Musket Fire",
+                            "forceaction": {
+                                "attacker": "modifier_target",
+                                "target": "target",
+                                "page": "Ordered Old Musket Fire"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 5,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 2,
+                                    "count": 1
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 4,
+                "max": 5,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 2,
+                                    "count": 1
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 2,
+                "max": 6,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "discardedLastTurn",
+                                    "min": 1,
+                                    "max": 4
+                                }
+                            ]
+                        },
+                        "foreach": "SB_discardedLastTurn",
+                        "modifiers": {
+                            "tremorburst": 1,
+                            "getbuff": {
+                                "Tremor": {
+                                    "count": -1
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [],
+        "globalpower": [],
+        "attackweight": 15
+    },
+    "The Page That Kills Synapse": {
+        "description": "",
+        "light_cost": 6,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Clash Power Down": {
+                            "stack": 2,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "draw": 3
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "gainlight": 6
+                }
+            },
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "draw": 1
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "draw": 1
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "limit_per_encounter": 5,
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Ammo": {
+                            "stack": 2
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Ammo",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "changedice": {
+                        "dice": "all",
+                        "invoke": true
+                    }
+                }
+            },
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "random2",
+                "filterfaction": [
+                    "Player"
+                ],
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Clash Power Up": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "self",
+                            "valuename": "lastDiscardedCost"
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "power_bonus": "SB_lastDiscardedCost"
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Tremor",
+                        "value": 5
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "power_bonus": 3
+                }
+            },
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "limit_per_turn": 1,
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Power Up": {
+                            "stack": 2,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Poise": {
+                            "count": 30,
+                            "nextturn": false
+                        }
+                    },
+                    "gainlightnext": 2
+                }
+            },
+            {
+                "trigger": "before_on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "changedamage": {
+                        "value": 20,
+                        "mode": "mult",
+                        "inverse_percent": -0.1
+                    }
+                }
+            },
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Attack Power Up": {
+                            "stack": 2,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "recoverhp": {
+                        "Attack Power Up": {
+                            "stack": 2,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 7,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "stack": 2,
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 7,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "stack": 2,
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 7,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "stack": 2,
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 7,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "stack": 2,
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 7,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Poise": {
+                                    "stack": 2,
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 4,
+                "max": 8,
+                "sin": "Lust",
+                "effects": []
+            },
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 8,
+                "sin": "Lust",
+                "effects": []
+            },
+            {
+                "type": "blunt",
+                "min": 4,
+                "max": 8,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "recoverstagger": 5
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 8,
+                "max": 15,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "takehpdamage": 3
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 7,
+                "sin": "Pride",
+                "effects": []
+            },
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 7,
+                "sin": "Pride",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 3,
+                "max": 7,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Bleed": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 7,
+                "max": 11,
+                "sin": "Envy",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 7,
+                "max": 11,
+                "sin": "Envy",
+                "effects": []
+            },
+            {
+                "type": "pierce",
+                "min": 4,
+                "max": 8,
+                "sin": "Gluttony",
+                "effects": []
+            },
+            {
+                "type": "pierce",
+                "min": 5,
+                "max": 8,
+                "sin": "Gluttony",
+                "effects": []
+            },
+            {
+                "type": "blunt",
+                "min": 7,
+                "max": 12,
+                "sin": "Gluttony",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 5,
+                "max": 9,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Attack Power Up": {
+                                    "stack": 2,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 5,
+                "max": 9,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Attack Power Up": {
+                                    "stack": 2,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 5,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Power Down": {
+                                    "stack": 1,
+                                    "volatile": true,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 7,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 3
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 2,
+                "max": 6,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 2,
+                "max": 6,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 1,
+                "max": 6,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 1,
+                "max": 8,
+                "sin": "Lust",
+                "invokeable": true,
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Ammo",
+                                "value": 1
+                            }
+                        },
+                        "get": {},
+                        "foreach": 3,
+                        "modifiers": {
+                            "getbuff": {
+                                "Ammo": {
+                                    "stack": -1
+                                }
+                            },
+                            "storagebox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "ammoconsumed",
+                                    "value": 1,
+                                    "mode": "add"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "lastDiscardedCost"
+                                }
+                            ]
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": "SB_lastDiscardedCost"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "ammoconsumed"
+                                }
+                            ]
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "count": "SB_ammoconsumed"
+                                }
+                            },
+                            "storagebox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "ammoconsumed",
+                                    "value": "Delete"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "lastDiscardedCost",
+                                    "add": -3,
+                                    "max": 1,
+                                    "min": 0
+                                }
+                            ]
+                        },
+                        "modifiers": {
+                            "tremorburst": "SB_lastDiscardedCost"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 5,
+                "max": 11,
+                "sin": "Envy",
+                "invokeable": true,
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Ammo": {
+                                    "stack": -1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 4,
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 10,
+                "sin": "Pride",
+                "invokeable": true,
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Ammo": {
+                                    "stack": -1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 3,
+                                    "count": 2
+                                }
+                            },
+                            "tremorburst": 1
+                        }
+                    },
+                    {
+                        "trigger": "after_attack",
+                        "conditionTarget": "self",
+                        "modifierTarget": "random2",
+                        "filterfaction": [
+                            "Player"
+                        ],
+                        "condition": {
+                            "hand_check": "Musket Fire"
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "drawspecific": "Ordered Old Musket Fire",
+                            "forceaction": {
+                                "attacker": "modifier_target",
+                                "target": "target",
+                                "page": "Ordered Old Musket Fire"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 5,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 2,
+                                    "count": 1
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 4,
+                "max": 5,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 2,
+                                    "count": 1
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 2,
+                "max": 6,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "discardedLastTurn",
+                                    "min": 1,
+                                    "max": 4
+                                }
+                            ]
+                        },
+                        "foreach": "SB_discardedLastTurn",
+                        "modifiers": {
+                            "tremorburst": 1,
+                            "getbuff": {
+                                "Tremor": {
+                                    "count": -1
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [],
+        "globalpower": [],
+        "attackweight": 1
+    },
+    "All Sunnys Must Die": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Damage Up": {
+                            "stack": 20,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 18,
+                "max": 30,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "flatdamage": {
+                                "Gloom": 15
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Noise",
+                                "value": 5
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "flatdamage": {
+                                "Gloom": 10
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 6,
+                "max": 30,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "flatdamage": {
+                                "Gloom": 15
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "target",
+                        "modifierTarget": "target",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Noise",
+                                "value": 5
+                            }
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "flatdamage": {
+                                "Gloom": 10
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Bleed",
+            "Poise",
+            "Tremor"
+        ],
+        "attackweight": 1
+    },
+    "Charge Test": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": 3
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": 3,
+                            "nextturn": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 4,
+                "sin": "Envy",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "changedice": {
+                                "dice": 1,
+                                "boostmin": 2
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 5,
+                "sin": "Envy",
+                "effects": []
+            }
+        ],
+        "pageTagList": [
+            "Charge"
+        ],
+        "attackweight": 1
+    },
+    "Empty Page": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "modifiers": {
+                    "power_bonus": -50
+                }
+            }
+        ],
+        "dice": [],
+        "pageTagList": [],
+        "globalpower": []
+    },
+    "Page With All Evade": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [],
+        "dice": [
+            {
+                "type": "blunt",
+                "min": 10,
+                "max": 10,
+                "sin": "Pride",
+                "effects": []
+            },
+            {
+                "type": "pierce",
+                "min": 10,
+                "max": 10,
+                "sin": "Pride",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 10,
+                "max": 10,
+                "sin": "Pride",
+                "effects": []
+            },
+            {
+                "type": "guard",
+                "min": 10,
+                "max": 10,
+                "sin": "Pride",
+                "effects": []
+            },
+            {
+                "type": "evade",
+                "min": 10,
+                "max": 10,
+                "sin": "Pride",
+                "effects": []
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Haste",
+            "Black Belt",
+            "Poise"
+        ]
+    },
+    "Page With All Dice Types": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [],
+        "dice": [
+            {
+                "type": "blunt",
+                "min": 10,
+                "max": 10,
+                "sin": "Pride",
+                "effects": []
+            },
+            {
+                "type": "pierce",
+                "min": 10,
+                "max": 10,
+                "sin": "Pride",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 10,
+                "max": 10,
+                "sin": "Pride",
+                "effects": []
+            },
+            {
+                "type": "guard",
+                "min": 10,
+                "max": 10,
+                "sin": "Pride",
+                "effects": []
+            },
+            {
+                "type": "guard",
+                "min": 10,
+                "max": 10,
+                "sin": "Pride",
+                "effects": []
+            },
+            {
+                "type": "evade",
+                "min": 10,
+                "max": 10,
+                "sin": "Pride",
+                "effects": []
+            },
+            {
+                "type": "evade",
+                "min": 10,
+                "max": 10,
+                "sin": "Pride",
+                "effects": []
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Haste",
+            "Black Belt",
+            "Poise"
+        ]
+    },
+    "Page With All Evades": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [],
+        "dice": [
+            {
+                "type": "evade",
+                "min": 16,
+                "max": 16,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_evade",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "stack": 6,
+                                    "count": 6,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Haste",
+            "Black Belt",
+            "Poise"
+        ]
+    },
+    "A Queen... Should Not Fight": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Defense Power Up": {
+                            "stack": 5,
+                            "volatile": true
+                        },
+                        "Protection": {
+                            "stack": 5,
+                            "volatile": true
+                        },
+                        "Stagger Protection": {
+                            "stack": 5,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Defense Power Up": {
+                            "stack": 5,
+                            "nextturn": true,
+                            "volatile": true
+                        },
+                        "Bind": {
+                            "stack": 5,
+                            "nextturn": true,
+                            "volatile": true
+                        },
+                        "Protection": {
+                            "stack": 5,
+                            "nextturn": true,
+                            "volatile": true
+                        },
+                        "Stagger Protection": {
+                            "stack": 5,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "evade",
+                "min": 8,
+                "max": 16,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_evade",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "stack": 6,
+                                    "count": 6,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "evade",
+                "min": 8,
+                "max": 16,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_evade",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "stack": 6,
+                                    "count": 6,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "evade",
+                "min": 8,
+                "max": 16,
+                "sin": "Pride",
+                "effects": [
+                    {
+                        "trigger": "on_evade",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "stack": 6,
+                                    "count": 6,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Haste",
+            "Black Belt",
+            "Poise"
+        ]
+    },
+    "Entertainment": {
+        "description": "",
+        "light_cost": 12,
+        "attackweight": 20,
+        "indiscriminate": true,
+        "effects": [],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 8,
+                "max": 8,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Rupture": {
+                                    "stack": 6,
+                                    "count": 6
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "clash_lose",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "changedice": {
+                                "dice": "all",
+                                "boostmax": -3,
+                                "boostmin": -3
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 5,
+                "max": 5,
+                "sin": "Gluttony",
+                "effects": []
+            },
+            {
+                "type": "pierce",
+                "min": 5,
+                "max": 5,
+                "sin": "Gluttony",
+                "effects": []
+            },
+            {
+                "type": "pierce",
+                "min": 5,
+                "max": 5,
+                "sin": "Gluttony",
+                "effects": []
+            },
+            {
+                "type": "pierce",
+                "min": 5,
+                "max": 5,
+                "sin": "Gluttony",
+                "effects": []
+            },
+            {
+                "type": "pierce",
+                "min": 5,
+                "max": 5,
+                "sin": "Gluttony",
+                "effects": []
+            },
+            {
+                "type": "pierce",
+                "min": 5,
+                "max": 5,
+                "sin": "Gluttony",
+                "effects": []
+            },
+            {
+                "type": "pierce",
+                "min": 5,
+                "max": 5,
+                "sin": "Gluttony",
+                "effects": []
+            }
+        ],
+        "pageTagList": []
+    },
+    "Testing Roll 1-1": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "everyone",
+                "condition": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Ammo": {
+                            "stack": 20
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 1,
+                "max": 1,
+                "sin": "Gloom",
+                "effects": []
+            }
+        ],
+        "pageTagList": [
+            "Haste",
+            "Poise"
+        ],
+        "globalpower": [],
+        "attackweight": 1
+    },
+    "Preludio": {
+        "description": "",
+        "light_cost": 5,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Poise": {
+                            "stack": 20,
+                            "count": 2
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 4,
+                "max": 8,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "takestaggerdamage": 5000000
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 9,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "damagedealt": 100
+                        },
+                        "modifiers": {
+                            "takestaggerdamage": "damagedealt"
+                        }
+                    },
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Haste": {
+                                    "stack": 10,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Haste",
+            "Poise"
+        ],
+        "globalpower": []
+    },
+    "GET AWAY": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [],
+        "dice": [
+            {
+                "type": "evade",
+                "min": 3,
+                "max": 6,
+                "sin": "Sloth",
+                "effects": []
+            }
+        ],
+        "pageTagList": []
+    },
+    "I WILL NOT LET YOU DESTROY MY OFFICE!!": {
+        "description": "",
+        "light_cost": 10,
+        "attackweight": 3,
+        "effects": [],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 10,
+                "max": 15,
+                "sin": "Wrath",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 10,
+                "max": 15,
+                "sin": "Wrath",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 10,
+                "max": 15,
+                "sin": "Wrath",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 10,
+                "max": 15,
+                "sin": "Wrath",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 10,
+                "max": 15,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "takehpdamage": 1
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "DIVINE POLAR LIGHT": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 200,
+                "max": 200,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "polarize": [
+                                "hp"
+                            ],
+                            "takehpdamage": 1
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "Raise Them Up": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "log": [
+                        {
+                            "text": "Unobservable Effects"
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "clash_win",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "log": [
+                        {
+                            "text": "Unobservable Effects"
+                        }
+                    ]
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "blunt",
+                "min": 6,
+                "max": 10,
+                "sin": "Wrath",
+                "hidden": true,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "Knuckleduster": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "log": [
+                        {
+                            "text": "Unobservable Effects"
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "log": [
+                        {
+                            "text": "Unobservable Effects"
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "log": [
+                        {
+                            "text": "Unobservable Effects"
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "log": [
+                        {
+                            "text": "Unobservable Effects"
+                        }
+                    ]
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "blunt",
+                "min": 6,
+                "max": 10,
+                "sin": "Wrath",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 5,
+                "max": 12,
+                "sin": "Wrath",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "Rispetta Le Regole": {
+        "description": "",
+        "light_cost": 3,
+        "effects": [],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 7,
+                "max": 10,
+                "sin": "Lust",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 6,
+                "max": 8,
+                "sin": "Lust",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 6,
+                "max": 9,
+                "sin": "Lust",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 6,
+                "max": 10,
+                "sin": "Lust",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "Sacrilegious Rend [通路]": {
+        "description": "",
+        "light_cost": 2,
+        "attackweight": 2,
+        "effects": [],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 10,
+                "max": 25,
+                "sin": "Pride",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 13,
+                "max": 29,
+                "sin": "Pride",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "Rite of Judgement [正義の裂け目]": {
+        "description": "",
+        "light_cost": 4,
+        "attackweight": 2,
+        "effects": [],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 30,
+                "max": 30,
+                "sin": "Pride",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 30,
+                "max": 30,
+                "sin": "Pride",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "Refracted Sacrilegious Rend [通路]": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 10,
+                "max": 20,
+                "sin": "Pride",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 8,
+                "max": 29,
+                "sin": "Pride",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "Refracted Rite of Judgement [正義の裂け目]": {
+        "description": "",
+        "light_cost": 6,
+        "attackweight": 3,
+        "effects": [],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 7,
+                "max": 25,
+                "sin": "Pride",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 7,
+                "max": 25,
+                "sin": "Pride",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "Refracted Silent Execution [無声の斬首]": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 8,
+                "max": 19,
+                "sin": "Lust",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 8,
+                "max": 19,
+                "sin": "Lust",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 8,
+                "max": 16,
+                "sin": "Lust",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "Refracted Echo of Severance [断絶の残響]": {
+        "description": "",
+        "light_cost": 6,
+        "effects": [],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 9,
+                "max": 15,
+                "sin": "Wrath",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 9,
+                "max": 15,
+                "sin": "Wrath",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 9,
+                "max": 15,
+                "sin": "Wrath",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 9,
+                "max": 15,
+                "sin": "Wrath",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "Refracted Bloodlit Mandate [血灯の勅命]": {
+        "description": "",
+        "light_cost": 7,
+        "attackweight": 1,
+        "effects": [],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 13,
+                "max": 23,
+                "sin": "Wrath",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 9,
+                "max": 23,
+                "sin": "Wrath",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "Executioner of Aurafarmers": {
+        "description": "",
+        "light_cost": 4,
+        "attackweight": 2,
+        "effects": [],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 300,
+                "max": 300,
+                "sin": "Pride",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "SUPER JEREMY FIXER SLASH": {
+        "description": "",
+        "light_cost": 4,
+        "attackweight": 6,
+        "effects": [],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 300,
+                "max": 300,
+                "sin": "Pride",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "SHTOOOOOP!!!": {
+        "description": "",
+        "light_cost": 4,
+        "attackweight": 10,
+        "effects": [],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 300,
+                "max": 300,
+                "sin": "Pride",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "Gun Shot of the Hood": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 10,
+                "max": 10,
+                "sin": "Sloth",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 10,
+                "max": 10,
+                "sin": "Sloth",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 10,
+                "max": 10,
+                "sin": "Sloth",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "Hail": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 1,
+                "max": 1,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "setpower": 1
+                        }
+                    }
+                ]
+            }
+        ],
+        "globalpower": [],
+        "pageTagList": []
+    }
+}

@@ -1,0 +1,840 @@
+{
+    "Warm Embrace": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "antipassivecheck": "Pages of Scorching Blades Effect"
+                },
+                "get": {},
+                "modifiers": {
+                    "addpassive": "Pages of Scorching Blades Effect"
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "draw": 1
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Burn",
+                        "value": 10
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "gainlightnext": 1
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 4,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "clash_lose",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Burn": {
+                                    "stack": 4,
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Burn"
+        ]
+    },
+    "Overheating": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "antipassivecheck": "Pages of Scorching Blades Effect"
+                },
+                "get": {},
+                "modifiers": {
+                    "addpassive": "Pages of Scorching Blades Effect"
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "draw": 1
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Burn",
+                        "value": 6
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "draw": 1
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "reusecounter",
+                            "value": "Delete"
+                        }
+                    ]
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 6,
+                "sin": "Sloth",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Burn": {
+                                    "count": 4
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Burn",
+                                "value": 6
+                            },
+                            "storagebox_check": [
+                                {
+                                    "name": "self",
+                                    "valuename": "reusecounter",
+                                    "max": 0
+                                }
+                            ]
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "changedice": {
+                                "dice": "self",
+                                "reuse": 1
+                            },
+                            "storagebox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "reusecounter",
+                                    "value": 1,
+                                    "mode": "add"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Burn"
+        ],
+        "attackweight": 1
+    },
+    "Burn Up": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "antipassivecheck": "Pages of Scorching Blades Effect"
+                },
+                "get": {},
+                "modifiers": {
+                    "addpassive": "Pages of Scorching Blades Effect"
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Burn",
+                        "value": 6
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Attack Power Up": {
+                            "stack": 1,
+                            "volatile": true
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 5,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Burn": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 2,
+                "max": 4,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Burn": {
+                                    "count": 1
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Burn"
+        ]
+    },
+    "Fierce Flames": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "antipassivecheck": "Pages of Scorching Blades Effect"
+                },
+                "get": {},
+                "modifiers": {
+                    "addpassive": "Pages of Scorching Blades Effect"
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Burn",
+                        "value": 6
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Attack Power Up": {
+                            "stack": 1,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "reusecounter",
+                            "value": "Delete"
+                        }
+                    ]
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 1,
+                "max": 6,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Burn": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Burn",
+                                "value": 10
+                            },
+                            "storagebox_check": [
+                                {
+                                    "name": "self",
+                                    "valuename": "reusecounter",
+                                    "max": 0
+                                }
+                            ]
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "changedice": {
+                                "dice": "self",
+                                "reuse": 1
+                            },
+                            "storagebox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "reusecounter",
+                                    "value": 1,
+                                    "mode": "add"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 5,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Burn": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Burn"
+        ]
+    },
+    "Traces of Heat": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "antipassivecheck": "Pages of Scorching Blades Effect"
+                },
+                "get": {},
+                "modifiers": {
+                    "addpassive": "Pages of Scorching Blades Effect"
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Burn": {
+                        "value": "stack",
+                        "mult": 17,
+                        "max": 2,
+                        "fix": ""
+                    }
+                },
+                "foreach": "Burn_stack",
+                "modifiers": {
+                    "getbuff": {
+                        "Attack Power Up": {
+                            "stack": 1,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "reusecounter",
+                            "value": "Delete"
+                        }
+                    ]
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "evade",
+                "min": 1,
+                "max": 6,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_evade",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Burn": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 4,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Burn",
+                                "value": 10
+                            },
+                            "storagebox_check": [
+                                {
+                                    "name": "self",
+                                    "valuename": "reusecounter",
+                                    "max": 0
+                                }
+                            ]
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "changedice": {
+                                "dice": "self",
+                                "reuse": 1
+                            },
+                            "storagebox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "reusecounter",
+                                    "value": 1,
+                                    "mode": "add"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Burn"
+        ]
+    },
+    "Engulf": {
+        "description": "",
+        "light_cost": 3,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "antipassivecheck": "Pages of Scorching Blades Effect"
+                },
+                "get": {},
+                "modifiers": {
+                    "addpassive": "Pages of Scorching Blades Effect"
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Burn": {
+                        "value": "stack",
+                        "mult": 17,
+                        "max": 3,
+                        "fix": ""
+                    }
+                },
+                "foreach": "Burn_stack",
+                "modifiers": {
+                    "getbuff": {
+                        "Attack Power Up": {
+                            "stack": 1,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "reusecounter",
+                            "value": "Delete"
+                        }
+                    ]
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 3,
+                "max": 6,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Burn": {
+                                    "stack": 3
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 3,
+                "max": 5,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Burn": {
+                                    "stack": 3
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 2,
+                "max": 5,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Burn": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Burn",
+                                "value": 10
+                            },
+                            "storagebox_check": [
+                                {
+                                    "name": "self",
+                                    "valuename": "reusecounter",
+                                    "max": 0
+                                }
+                            ]
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "changedice": {
+                                "dice": "self",
+                                "reuse": 1
+                            },
+                            "storagebox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "reusecounter",
+                                    "value": 1,
+                                    "mode": "add"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Burn"
+        ]
+    },
+    "Ashes to Ashes": {
+        "description": "",
+        "light_cost": 3,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "antipassivecheck": "Pages of Scorching Blades Effect"
+                },
+                "get": {},
+                "modifiers": {
+                    "addpassive": "Pages of Scorching Blades Effect"
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Burn",
+                        "value": 6
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Attack Power Up": {
+                            "stack": 1,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "after_attack",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "reusecounter",
+                            "value": "Delete"
+                        }
+                    ]
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 4,
+                "max": 8,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "Burn": {
+                                "value": "stack",
+                                "mult": 50,
+                                "fix": "",
+                                "targetOverride": ""
+                            }
+                        },
+                        "modifiers": {
+                            "takehpdamage": "Burn_stack",
+                            "getbuff": {
+                                "Burn": {
+                                    "count": -2,
+                                    "nextturn": false,
+                                    "volatile": false
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "storagebox_check": [
+                                {
+                                    "name": "self",
+                                    "valuename": "reusecounter",
+                                    "max": 1
+                                }
+                            ]
+                        },
+                        "get": {
+                            "Burn": {
+                                "value": "stack",
+                                "max": 2,
+                                "mult": 10
+                            }
+                        },
+                        "foreach": "Burn_stack",
+                        "modifiers": {
+                            "changedice": {
+                                "dice": "self",
+                                "reuse": 1
+                            },
+                            "storagebox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "reusecounter",
+                                    "value": 1,
+                                    "mode": "add"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [
+            "Attack Power Up",
+            "Power Up",
+            "Burn"
+        ],
+        "attackweight": 1
+    }
+}

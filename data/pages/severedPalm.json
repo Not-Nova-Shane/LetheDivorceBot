@@ -1,0 +1,770 @@
+{
+    "Rifle Puncture": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "draw": 1
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "draw": 1
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "limit_per_encounter": 5,
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Ammo": {
+                            "stack": 1
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 4,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Power Down": {
+                                    "stack": 1,
+                                    "volatile": true,
+                                    "nextturn": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 2,
+                "max": 6,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 3
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "globalpower": [],
+        "pageTagList": [
+            "Power Down",
+            "Tremor",
+            "Ammo"
+        ],
+        "attackweight": 1
+    },
+    "Ferrous Guard": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "gainlight": 1
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "draw": 1,
+                    "discard": {
+                        "amount": 1,
+                        "mode": "random"
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 7,
+                "sin": "Gluttony",
+                "effects": [
+                    {
+                        "trigger": "clash_lose",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "discard": {
+                                "amount": 2,
+                                "mode": "random"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "globalpower": [],
+        "pageTagList": [],
+        "attackweight": 1
+    },
+    "Musket Fire": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Ammo",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "changedice": {
+                        "dice": "all",
+                        "invoke": true
+                    }
+                }
+            },
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "draw": 1,
+                    "discard": {
+                        "amount": 1,
+                        "mode": "random"
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Tremor",
+                        "value": 5
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "power_bonus": 2
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 9,
+                "sin": "Envy",
+                "invokeable": true,
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Ammo": {
+                                    "stack": -1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 4,
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "globalpower": [],
+        "pageTagList": [
+            "Tremor",
+            "Ammo"
+        ]
+    },
+    "Ordered Musket Fire": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Ammo",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "changedice": {
+                        "dice": 0,
+                        "invoke": true
+                    },
+                    "discard": {
+                        "amount": "Musket Fire",
+                        "mode": "random"
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Tremor",
+                        "value": 5
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "power_bonus": 2
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 9,
+                "sin": "Envy",
+                "invokeable": true,
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Ammo": {
+                                    "stack": -1
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "globalpower": [],
+        "pageTagList": [
+            "Tremor",
+            "Ammo"
+        ]
+    },
+    "Smackdown": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "limit_per_turn": 1,
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Power Up": {
+                            "stack": 2,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "pageusetype": [
+                        "Clash"
+                    ]
+                },
+                "modifiers": {
+                    "power_bonus": -1
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "blunt",
+                "min": 3,
+                "max": 5,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 2,
+                                    "count": 1
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 4,
+                "max": 5,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 2,
+                                    "count": 1
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 2,
+                "max": 6,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "discardedLastTurn",
+                                    "min": 1,
+                                    "max": 4
+                                }
+                            ]
+                        },
+                        "foreach": "SB_discardedLastTurn",
+                        "modifiers": {
+                            "tremorburst": 1,
+                            "getbuff": {
+                                "Tremor": {
+                                    "count": -1
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "globalpower": [],
+        "pageTagList": [
+            "Power Up",
+            "Tremor"
+        ],
+        "attackweight": 1
+    },
+    "Suppressing Volley": {
+        "description": "",
+        "light_cost": 3,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Ammo",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "changedice": {
+                        "dice": 2,
+                        "invoke": true
+                    }
+                }
+            },
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "random2",
+                "filterfaction": [
+                    "AlliesOnly"
+                ],
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Clash Power Up": {
+                            "stack": 1,
+                            "nextturn": true,
+                            "volatile": true
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "self",
+                            "valuename": "lastDiscardedCost"
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "power_bonus": "SB_lastDiscardedCost"
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 2,
+                "max": 6,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 1,
+                "max": 5,
+                "sin": "Lust",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "count": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 1,
+                "max": 6,
+                "sin": "Lust",
+                "invokeable": true,
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {
+                            "stack_min": {
+                                "buff": "Ammo",
+                                "value": 1
+                            }
+                        },
+                        "get": {},
+                        "foreach": 3,
+                        "modifiers": {
+                            "getbuff": {
+                                "Ammo": {
+                                    "stack": -1
+                                }
+                            },
+                            "storagebox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "ammoconsumed",
+                                    "value": 1,
+                                    "mode": "add"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "lastDiscardedCost"
+                                }
+                            ]
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": "SB_lastDiscardedCost"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "ammoconsumed"
+                                }
+                            ]
+                        },
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "count": "SB_ammoconsumed"
+                                }
+                            },
+                            "storagebox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "ammoconsumed",
+                                    "value": "Delete"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "self",
+                                    "valuename": "lastDiscardedCost",
+                                    "add": -3,
+                                    "max": 1,
+                                    "min": 0
+                                }
+                            ]
+                        },
+                        "modifiers": {
+                            "tremorburst": "SB_lastDiscardedCost"
+                        }
+                    }
+                ]
+            }
+        ],
+        "globalpower": [],
+        "pageTagList": [
+            "Power Up",
+            "Tremor",
+            "Ammo",
+            "Clash Power Up"
+        ]
+    },
+    "Order Fire": {
+        "description": "",
+        "light_cost": 3,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Ammo",
+                        "value": 1
+                    }
+                },
+                "get": {},
+                "modifiers": {
+                    "changedice": {
+                        "dice": 0,
+                        "invoke": true
+                    }
+                }
+            },
+            {
+                "trigger": "on_discard",
+                "conditionTarget": "self",
+                "modifierTarget": "everyone",
+                "filterfaction": [
+                    "AlliesOnly"
+                ],
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "draw": 1
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 3,
+                "max": 10,
+                "sin": "Pride",
+                "invokeable": true,
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Ammo": {
+                                    "stack": -1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Tremor": {
+                                    "stack": 3,
+                                    "count": 2
+                                }
+                            },
+                            "tremorburst": 1
+                        }
+                    },
+                    {
+                        "trigger": "clash_win",
+                        "conditionTarget": "modifierTarget",
+                        "modifierTarget": "random99",
+                        "filterfaction": [
+                            "AlliesOnly"
+                        ],
+                        "condition": {
+                            "hand_check": "Musket Fire"
+                        },
+                        "get": {},
+                        "modifiers": {
+                            "drawspecific": "Ordered Musket Fire",
+                            "forceaction": {
+                                "attacker": "modifier_target",
+                                "target": "target",
+                                "page": "Ordered Musket Fire"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "globalpower": [],
+        "pageTagList": [
+            "Tremor",
+            "Ammo"
+        ]
+    }
+}
