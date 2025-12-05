@@ -4484,5 +4484,72 @@
                 }
             }
         ]
+    },
+    "Grace of The Prescript": {
+        "description": "On Round Start, 1 of the following effects trigger:\n- Gain 2 Slash Power Up\n- Gain 2 Pierce Power Up\n- Gain 2 Blunt Power Up",
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "effectselect": {
+                        "selector": "random",
+                        "effectLists": [
+                            [
+                                {
+                                    "trigger": "newturn",
+                                    "conditionTarget": "self",
+                                    "modifierTarget": "self",
+                                    "condition": {},
+                                    "get": {},
+                                    "modifiers": {
+                                        "getbuff": {
+                                            "Slash Power Up": {
+                                                "stack": 2
+                                            }
+                                        }
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "trigger": "newturn",
+                                    "conditionTarget": "self",
+                                    "modifierTarget": "self",
+                                    "condition": {},
+                                    "get": {},
+                                    "modifiers": {
+                                        "getbuff": {
+                                            "Blunt Power Up": {
+                                                "stack": 2
+                                            }
+                                        }
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "trigger": "newturn",
+                                    "conditionTarget": "self",
+                                    "modifierTarget": "self",
+                                    "condition": {},
+                                    "get": {},
+                                    "modifiers": {
+                                        "getbuff": {
+                                            "Pierce Power Up": {
+                                                "stack": 2
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        ]
+                    }
+                }
+            }
+        ]
     }
 }
