@@ -778,6 +778,63 @@
             }
         ]
     },
+    "Slash Power Up": {
+        "description": "Increases power of offensive slash dice.",
+        "type": "Pos",
+        "effects": [
+            {
+                "trigger": "on_roll",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "dice_type": [
+                        "slash"
+                    ]
+                },
+                "modifiers": {
+                    "power_bonus_per_stack": 1
+                }
+            }
+        ]
+    },
+    "Blunt Power Up": {
+        "description": "Increases power of offensive blunt dice.",
+        "type": "Pos",
+        "effects": [
+            {
+                "trigger": "on_roll",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "dice_type": [
+                        "blunt"
+                    ]
+                },
+                "modifiers": {
+                    "power_bonus_per_stack": 1
+                }
+            }
+        ]
+    },
+    "Pierce Power Up": {
+        "description": "Increases power of offensive pierce dice.",
+        "type": "Pos",
+        "effects": [
+            {
+                "trigger": "on_roll",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "dice_type": [
+                        "pierce"
+                    ]
+                },
+                "modifiers": {
+                    "power_bonus_per_stack": 1
+                }
+            }
+        ]
+    },
     "Max Dice Power Up": {
         "description": "For this turn, Dice Max Roll +X",
         "type": "Pos",
@@ -2079,5 +2136,10 @@
                 }
             }
         ]
+    },
+    "Fated Target": {
+        "description": "Used as a resource for the passive \"Blind Command\"",
+        "type": "Neg",
+        "effects": []
     }
 }

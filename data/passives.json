@@ -4496,5 +4496,98 @@
                 }
             }
         ]
+    },
+    "Grace of The Prescript": {
+        "description": "On Round Start, 1 of the following effects trigger:\n- Gain 2 Slash Power Up\n- Gain 2 Pierce Power Up\n- Gain 2 Blunt Power Up",
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "effectselect": {
+                        "selector": "random",
+                        "effectLists": [
+                            [
+                                {
+                                    "trigger": "newturn",
+                                    "conditionTarget": "self",
+                                    "modifierTarget": "self",
+                                    "condition": {},
+                                    "get": {},
+                                    "modifiers": {
+                                        "getbuff": {
+                                            "Slash Power Up": {
+                                                "stack": 2,
+                                                "volatile": true
+                                            }
+                                        }
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "trigger": "newturn",
+                                    "conditionTarget": "self",
+                                    "modifierTarget": "self",
+                                    "condition": {},
+                                    "get": {},
+                                    "modifiers": {
+                                        "getbuff": {
+                                            "Blunt Power Up": {
+                                                "stack": 2,
+                                                "volatile": true
+                                            }
+                                        }
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "trigger": "newturn",
+                                    "conditionTarget": "self",
+                                    "modifierTarget": "self",
+                                    "condition": {},
+                                    "get": {},
+                                    "modifiers": {
+                                        "getbuff": {
+                                            "Pierce Power Up": {
+                                                "stack": 2,
+                                                "volatile": true
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    "Blind Command": {
+        "description": "+(Amount of Fated Target on target - 1) Dice Power (Max 3)",
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "FatedTarget": {
+                        "value": "stack",
+                        "max": 3,
+                        "divide": 1,
+                        "fix": "",
+                        "targetOverride": "target"
+                    }
+                },
+                "modifiers": {
+                    "power_bonus": "FatedTarget_stack"
+                }
+            }
+        ]
     }
 }
