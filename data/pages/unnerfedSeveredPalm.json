@@ -379,7 +379,11 @@
                             ]
                         },
                         "modifiers": {
-                            "tremorburst": "SB_lastDiscardedCost"
+                            "trigger": {
+                                "amount": "SB_lastDiscardedCost",
+                                "trigger": "burst",
+                                "message": "{stagger} {target_name} Has been Tremor Bursted! {stagger}"
+                            }
                         }
                     }
                 ]
@@ -552,7 +556,11 @@
                                     "count": 2
                                 }
                             },
-                            "tremorburst": 1
+                            "trigger": {
+                                "amount": 1,
+                                "trigger": "burst",
+                                "message": "{stagger} {target_name} Has been Tremor Bursted! {stagger}"
+                            }
                         }
                     },
                     {

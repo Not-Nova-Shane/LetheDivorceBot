@@ -121,7 +121,11 @@
                         "condition": {},
                         "get": {},
                         "modifiers": {
-                            "tremorburst": 2,
+                            "trigger": {
+                                "amount": 2,
+                                "trigger": "burst",
+                                "message": "{stagger} {target_name} Has been Tremor Bursted! {stagger}"
+                            },
                             "getbuff": {
                                 "Tremor": {
                                     "count": -2
@@ -217,7 +221,11 @@
                         "condition": {},
                         "get": {},
                         "modifiers": {
-                            "tremorburst": 1,
+                            "trigger": {
+                                "amount": 1,
+                                "trigger": "burst",
+                                "message": "{stagger} {target_name} Has been Tremor Bursted! {stagger}"
+                            },
                             "getbuff": {
                                 "Tremor": {
                                     "count": -1

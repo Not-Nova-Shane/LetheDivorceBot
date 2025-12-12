@@ -2403,7 +2403,11 @@
                                 "stack": 3
                             }
                         },
-                        "tremorburst": 1
+                        "trigger": {
+                            "amount": 1,
+                            "trigger": "burst",
+                            "message": "{stagger} {target_name} Has been Tremor Bursted! {stagger}"
+                        }
                     }
                 },
                 {
@@ -2422,7 +2426,11 @@
                                 "stack": 3
                             }
                         },
-                        "tremorburst": 1
+                        "trigger": {
+                            "amount": 1,
+                            "trigger": "burst",
+                            "message": "{stagger} {target_name} Has been Tremor Bursted! {stagger}"
+                        }
                     }
                 }
             ]
@@ -3798,7 +3806,11 @@
                                 "count": 4
                             }
                         },
-                        "tremorburst": 1
+                        "trigger": {
+                            "amount": 1,
+                            "trigger": "burst",
+                            "message": "{stagger} {target_name} Has been Tremor Bursted! {stagger}"
+                        }
                     }
                 }
             ]
@@ -3823,7 +3835,11 @@
                                 "count": 4
                             }
                         },
-                        "tremorburst": 2
+                        "trigger": {
+                            "amount": 2,
+                            "trigger": "burst",
+                            "message": "{stagger} {target_name} Has been Tremor Bursted! {stagger}"
+                        }
                     }
                 }
             ]
@@ -3848,7 +3864,11 @@
                                 "count": 6
                             }
                         },
-                        "tremorburst": 2
+                        "trigger": {
+                            "amount": 2,
+                            "trigger": "burst",
+                            "message": "{stagger} {target_name} Has been Tremor Bursted! {stagger}"
+                        }
                     }
                 }
             ]
